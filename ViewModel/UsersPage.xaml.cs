@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Kudomion
 {
@@ -17,7 +15,7 @@ namespace Kudomion
             InitializeComponent();
         }
 
-        protected override void OnAppearing()
+     /*   protected override void OnAppearing()
         {
             try
             {
@@ -28,6 +26,6 @@ namespace Kudomion
             }
             catch
             { }
-        }
+        }*/
     }
 }

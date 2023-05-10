@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+
 
 namespace Kudomion
 {
@@ -46,7 +45,7 @@ namespace Kudomion
             LoginPage.currentLoggedInUser = nUser.Text;
 
             //Update User Profile.
-            Home.loggedInUsername.Text = nUser.Text;
+            //Home.loggedInUsername.Text = nUser.Text;
           
             //Reset Values
             nUser.Text = String.Empty;

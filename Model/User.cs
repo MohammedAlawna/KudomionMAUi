@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SQLite;
 
 namespace Kudomion
 {
     public class User
     {
-        [PrimaryKey, AutoIncrement]
+        
         public int Id { get; set; }
         public string name { get; set; }
         public int posts { get; set; }
@@ -17,7 +16,7 @@ namespace Kudomion
         public int points { get; set; }
       
         public string usertype { get; set; }
-        [MaxLength(17)]
+        
         public string password { get; set; }
        
         public string NumberOfPosts

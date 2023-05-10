@@ -97,8 +97,8 @@ namespace Kudomion
                     //Update User Profile In Home Page.
                     User currentUser = await FirebaseHelper.GetUsrFromName(LoginPage.currentLoggedInUser);
                     Home h = new Home();
-                    h.GetNumberOfDuels() = currentUser.duels.ToString();
-                    h.GetNumberOfPoints = currentUser.points.ToString();
+               //     h.GetNumberOfDuels() = currentUser.duels.ToString();
+                 //   h.GetNumberOfPoints() = currentUser.points.ToString();
 
                     //            ::Deprecated Code::
                     // Home.noDuels.Text = currentUser.duels.ToString();

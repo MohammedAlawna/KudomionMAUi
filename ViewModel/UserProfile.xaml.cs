@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+
 
 namespace Kudomion.ViewModel
 {
@@ -128,7 +127,7 @@ namespace Kudomion.ViewModel
         private void InviteToDuelClicked(object sender, EventArgs e)
         {
             //Change BG of Button.
-            invDuel.BackgroundColor = Color.White;
+            invDuel.BackgroundColor = Colors.White;
 
             //Prompt Alert (Testing Purposes).
             DisplayAlert("Success!", $"Invitation Sent To Your Opponent Notifications!", "OK!");
@@ -137,7 +136,7 @@ namespace Kudomion.ViewModel
         private void SendChatRequest(object sender, EventArgs e)
         {
             //Change BG of Button.
-            chatReq.BackgroundColor = Color.White;
+            chatReq.BackgroundColor = Colors.White;
            
             //Prompt Alert (Testing Purposes)
             DisplayAlert("Success!", "Chat Invitation Has Been Sent!", "OK!");
