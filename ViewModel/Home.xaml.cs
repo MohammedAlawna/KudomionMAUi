@@ -40,6 +40,17 @@ namespace Kudomion
             noRanking.Text = duelistRanking;
         }
 
+        //Get User Data
+        public string GetNumberOfDuels()
+        {
+            return noDuels.Text; 
+        }
+
+        public string GetNumberOfPoints()
+        {
+            return noPoints.Text;
+        }
+
         private async void Profile_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new UserSettings());
