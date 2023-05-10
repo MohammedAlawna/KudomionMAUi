@@ -40,8 +40,80 @@ build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Challen
 build_metadata.AdditionalFiles.TargetPath = ViewModel\Challenges.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewModel\Challenges.xaml
 
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/DecksList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.DecksList.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\DecksList.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\DecksList.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/Home.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Home.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\Home.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\Home.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\HomePage.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/Leaderboard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Leaderboard.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\Leaderboard.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\Leaderboard.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/LoggedInPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.LoggedInPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\LoggedInPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\LoggedInPage.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\LoginPage.xaml
+
 [D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ViewModel\MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewModel\MainPage.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/NewsFeed.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.NewsFeed.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\NewsFeed.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\NewsFeed.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/NotificationsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.NotificationsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\NotificationsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\NotificationsPage.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/SignUpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.SignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\SignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\SignUpPage.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/UserProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.UserProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\UserProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\UserProfile.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/UserSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.UserSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\UserSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\UserSettings.xaml
+
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/UsersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.UsersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\UsersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\UsersPage.xaml

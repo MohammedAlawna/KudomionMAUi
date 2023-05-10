@@ -7,6 +7,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
+		Navigation.PushAsync(new Challenges());
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)

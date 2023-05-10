@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kudomion.LoggedInPage"
+            xmlns:local="clr-namespace:Kudomion" xmlns:local1="clr-namespace:Kudomion.ViewModel"
+            BarBackgroundColor="RoyalBlue"
+            NavigationPage.HasNavigationBar="False"
+            BackgroundColor="#202024"
+            >
+    <local1:NotificationsPage Title="" IconImageSource="notif" />
+    <local:Home Title=""  IconImageSource="hme"/>
+    <local1:NewsFeed Title="" IconImageSource="newss"/>
+    <local:Challenges Title="" IconImageSource="btlic"/>
+    <local:Leaderboard Title="" IconImageSource="rnke"/>
+
+
+</TabbedPage>

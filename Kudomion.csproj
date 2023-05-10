@@ -60,7 +60,12 @@
 
 	<ItemGroup>
 	  <Folder Include="Model\" />
-	  <Folder Include="FirebaseManager\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="ViewModel\Challenges.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
