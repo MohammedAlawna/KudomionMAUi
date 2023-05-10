@@ -135,8 +135,8 @@ namespace Kudomion
 
                     //Update User Profile In Home Page.
                     User currentUser = await FirebaseHelper.GetUsrFromName(LoginPage.currentLoggedInUser);
-                    Home.noDuels.Text = currentUser.duels.ToString();
-                    Home.noPoints.Text = currentUser.points.ToString();
+                   // Home.noDuels.Text = currentUser.duels.ToString();
+                    //Home.noPoints.Text = currentUser.points.ToString();
 
                     //Prompt Admit Defeat.
                     await DisplayAlert("You Lost!", $"You just admit defeated! Duel Records Will be changed!" + getWinningPlayer.name, "OK");
