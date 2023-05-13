@@ -37,43 +37,60 @@ namespace Kudomion
 
         private async void SignInClicked(object sender, EventArgs e)
         {
-            try
-            {
-
-                currentLoggedInUser = userNameText.Text;
-            var outPut = await FirebaseHelper.GetUsrFromName(userNameText.Text);
-            Console.WriteLine("This OUTPUT!!" + outPut.name);
-
-                if (userNameText.Text == outPut.name && passwordText.Text == outPut.password)
-                {
-                    await Navigation.PushAsync(new LoggedInPage());
-                    currentLoggedInUser = outPut.name;
-                    return;
-
-                }
-
-                if (outPut == null)
-                {
-
-                    await DisplayAlert("User Not Found!", "No such user exist!", "OK!");
-                    return;
-                }
-
-
             
+           currentLoggedInUser = userNameText.Text;
+            User outPut = await firebase.GetUserByName(currentLoggedInUser);
+            if(outPut == null)
+            {
+                await DisplayAlert("Empty!", "No Users Found!", "OK!");
+            }
             else
             {
-              
-               await DisplayAlert("Wrong Credentials!", "Either Password or Useranme incorrect!", "OK!");
-                    return;
-                }
-               
-            } catch(NullReferenceException n)
-            {
-                await DisplayAlert("Exception!", "Null Reference Exception caught!", "OK!");
-                return;
+                await DisplayAlert("Found!", $"User: {outPut.name}", "OK!");
+
+                await Navigation.PushAsync(new LoggedInPage());
             }
-          
+
+
+
+
+           /*  try
+              {
+
+                  currentLoggedInUser = userNameText.Text;
+                  User outPut = await firebase.GetUserByName(currentLoggedInUser);
+                  // Console.WriteLine("This OUTPUT!!" + outPut.name);
+
+                  if (userNameText.Text == outPut.name && passwordText.Text == outPut.password)
+                  {
+                      await Navigation.PushAsync(new LoggedInPage());
+                      currentLoggedInUser = outPut.name;
+                      return;
+
+                  }
+
+                  if (outPut == null)
+                  {
+
+                      await DisplayAlert("User Not Found!", "No such user exist!", "OK!");
+                      return;
+                  }
+
+
+
+              else
+              {
+
+                 await DisplayAlert("Wrong Credentials!", "Either Password or Useranme incorrect!", "OK!");
+                      return;
+                  }
+
+              } catch(NullReferenceException n)
+              {
+                  await DisplayAlert("Exception!", "Null Reference Exception caught!", "OK!");
+                  return;
+              }*/
+
         }
 
         private void LoginButton_Clicked(object sender, EventArgs e)

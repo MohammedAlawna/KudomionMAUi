@@ -8,10 +8,10 @@
             BackgroundColor="#202024"
             >
     <local1:NotificationsPage Title="" IconImageSource="notif" />
-    <local:Home Title=""  IconImageSource="hme"/>
+    <!--<local:Home Title=""  IconImageSource="hme"/>
     <local1:NewsFeed Title="" IconImageSource="newss"/>
     <local:Challenges Title="" IconImageSource="btlic"/>
-    <local:Leaderboard Title="" IconImageSource="rnke"/>
+    <local:Leaderboard Title="" IconImageSource="rnke"/>-->
 
 
 </TabbedPage>
