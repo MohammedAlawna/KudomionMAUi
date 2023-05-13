@@ -37219,7 +37219,8 @@
       "FirebaseDatabase.net >= 4.2.0",
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
-      "Xamarin.Firebase.Messaging >= 123.1.1.1"
+      "Xamarin.Firebase.Messaging >= 123.1.1.1",
+      "Xamarin.GooglePlayServices.Base >= 118.1.0.1"
     ],
     "net6.0-ios16.1": [
       "FirebaseDatabase.net >= 4.2.0",
@@ -37321,6 +37322,10 @@
           "Xamarin.Firebase.Messaging": {
             "target": "Package",
             "version": "[123.1.1.1, )"
+          },
+          "Xamarin.GooglePlayServices.Base": {
+            "target": "Package",
+            "version": "[118.1.0.1, )"
           }
         },
         "imports": [
