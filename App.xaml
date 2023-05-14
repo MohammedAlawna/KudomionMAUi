@@ -14,14 +14,14 @@
 
     <Application.MainPage>
         <Shell>
-            <TabBar x:Name="MyTab" >
-                <Tab>
+           
+                <Tab Title="">
                     <ShellContent Title="Home" ContentTemplate="{DataTemplate local:SamplePage}"/>
                     <ShellContent Title="Challenges" ContentTemplate="{DataTemplate local:SamplePage}"/>
                 </Tab>
 
                 
-            </TabBar>
+            
         </Shell>
     </Application.MainPage>
 </Application>
