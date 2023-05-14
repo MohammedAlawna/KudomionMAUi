@@ -58,12 +58,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Leaderb
 build_metadata.AdditionalFiles.TargetPath = ViewModel\Leaderboard.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewModel\Leaderboard.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/LoggedInPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.LoggedInPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\LoggedInPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\LoggedInPage.xaml
-
 [D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.LoginPage.xaml

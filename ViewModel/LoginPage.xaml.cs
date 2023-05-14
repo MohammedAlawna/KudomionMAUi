@@ -48,7 +48,7 @@ namespace Kudomion
             {
                 await DisplayAlert("Found!", $"User: {outPut.name}", "OK!");
 
-                await Navigation.PushAsync(new LoggedInPage());
+               // await Navigation.PushAsync(new LoggedInPage());
             }
 
 

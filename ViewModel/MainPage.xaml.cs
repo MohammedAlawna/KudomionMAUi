@@ -7,7 +7,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-		Navigation.PushAsync(new LoginPage());
+		//Navigation.PushAsync(new LoginPage());
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)

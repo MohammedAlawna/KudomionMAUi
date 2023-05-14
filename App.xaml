@@ -11,4 +11,14 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
+
+    <Application.MainPage>
+        <Shell>
+            <TabBar x:Name="MyTab">
+                <Tab Title="Home">
+                    <ShellContent ContentTemplate="{DataTemplate local:Home}"/>
+                </Tab>
+            </TabBar>
+        </Shell>
+    </Application.MainPage>
 </Application>
