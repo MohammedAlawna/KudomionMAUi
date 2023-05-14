@@ -33,13 +33,18 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\Images\btlic.png" />
+		<MauiIcon Include="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+		<MauiIcon Include="Resources\Images\hme.png" />
+		<MauiIcon Include="Resources\Images\newss.png" />
+		<MauiIcon Include="Resources\Images\notif.png" />
+		<MauiIcon Include="Resources\Images\rnke.png" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -55,6 +60,23 @@
 	  <PackageReference Include="Xamarin.GooglePlayServices.Base">
 	    <Version>118.1.0.1</Version>
 	  </PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\btlic.png" />
+	  <MauiImage Remove="Resources\Images\dotnet_bot.svg" />
+	  <MauiImage Remove="Resources\Images\hme.png" />
+	  <MauiImage Remove="Resources\Images\newss.png" />
+	  <MauiImage Remove="Resources\Images\notif.png" />
+	  <MauiImage Remove="Resources\Images\rnke.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\btlic.png" />
+	  <None Remove="Resources\Images\hme.png" />
+	  <None Remove="Resources\Images\newss.png" />
+	  <None Remove="Resources\Images\notif.png" />
+	  <None Remove="Resources\Images\rnke.png" />
 	</ItemGroup>
 
 	<ItemGroup>

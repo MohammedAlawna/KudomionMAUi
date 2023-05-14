@@ -2,6 +2,7 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Kudomion"
+             NavigationPage.HasNavigationBar="False"
              x:Class="Kudomion.App">
     <Application.Resources>
         <ResourceDictionary>
@@ -14,13 +15,41 @@
 
     <Application.MainPage>
         <Shell>
-           
-                <Tab Title="">
-                    <ShellContent Title="Home" ContentTemplate="{DataTemplate local:SamplePage}"/>
-                    <ShellContent Title="Challenges" ContentTemplate="{DataTemplate local:SamplePage}"/>
+            <TabBar Shell.BackgroundColor="RoyalBlue">
+                <Tab Title="Home" Icon="hme">
+                    <ShellContent Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:SamplePage}"/>
                 </Tab>
 
+                <Tab Title="News" Icon="newss">
+                    <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
+                </Tab>
+
+                <Tab Title="Lobby" Icon="btlic">
+                    <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
+                </Tab>
+
+                <Tab Title="Ranking" Icon="rnke">
+                    <ShellContent ContentTemplate="{DataTemplate local:SamplePage}" />
+                </Tab>
+            </TabBar>
+              
                 
+                <Tab>
+                  </Tab>
+
+                <Tab>
+                 
+                </Tab>
+
+                <Tab>
+                  
+                </Tab>
+
+                <Tab>
+                 
+                </Tab>
+          
+            
             
         </Shell>
     </Application.MainPage>
