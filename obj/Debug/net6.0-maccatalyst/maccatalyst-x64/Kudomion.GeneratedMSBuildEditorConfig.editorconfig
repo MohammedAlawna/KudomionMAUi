@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.Resources.Styles.
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/SamplePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.SamplePage.xaml
+build_metadata.AdditionalFiles.TargetPath = SamplePage.xaml
+build_metadata.AdditionalFiles.RelativePath = SamplePage.xaml
+
 [D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/Challenges.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Challenges.xaml
