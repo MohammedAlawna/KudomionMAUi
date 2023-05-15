@@ -26,7 +26,7 @@ namespace Kudomion
         private async void LoadDuelistsData()
         {
             //Load LoggedInUser Name.
-            var loggedInUserName = await FirebaseHelper.GetUsrFromName(LoginPage.currentLoggedInUser);
+            var loggedInUserName = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
             p1.Text = loggedInUserName.name;
             p1.IsEnabled = false;
 
@@ -61,7 +61,7 @@ namespace Kudomion
         {
             try { 
                 //First:: Get Selected Room (The One You Clicked At).
-                getPlayerRoom = await firebase.GetPlayerRoom(LoginPage.currentLoggedInUser);
+                getPlayerRoom = await firebase.GetPlayerRoom(MainPage.currentLoggedInUser);
                 firstPlayer = await FirebaseHelper.GetUsrFromName(getPlayerRoom.p1);
                 secondPlayer = await FirebaseHelper.GetUsrFromName(getPlayerRoom.p2);
 
@@ -70,7 +70,7 @@ namespace Kudomion
                 //Second:: Get Selected User From That Room.
                 string getSelectedPlayer = getPlayerRoom.p1;
 
-                User getLoggedInPlayer = await FirebaseHelper.GetUsrFromName(LoginPage.currentLoggedInUser);
+                User getLoggedInPlayer = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
 
               
                 getWinningPlayer = null;
@@ -79,7 +79,7 @@ namespace Kudomion
                     await DisplayAlert("Missing Duelist!", "You Are Not Involved In This Room!", "OK!");
                     return;
                 }
-                if (LoginPage.currentLoggedInUser == getPlayerRoom.p1)
+                if (MainPage.currentLoggedInUser == getPlayerRoom.p1)
                 {
                     //Second Player => winner.
                     getWinningPlayer = secondPlayer;
@@ -95,7 +95,7 @@ namespace Kudomion
                     await firebase.UpdateRoom(getPlayerRoom.p1, getPlayerRoom.p2, getPlayerRoom);
 
                     //Update User Profile In Home Page.
-                    User currentUser = await FirebaseHelper.GetUsrFromName(LoginPage.currentLoggedInUser);
+                    User currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
                     Home h = new Home();
                //     h.GetNumberOfDuels() = currentUser.duels.ToString();
                  //   h.GetNumberOfPoints() = currentUser.points.ToString();
@@ -119,7 +119,7 @@ namespace Kudomion
 
                     return;
                 }
-                if (LoginPage.currentLoggedInUser != getPlayerRoom.p1)
+                if (MainPage.currentLoggedInUser != getPlayerRoom.p1)
                 {
                     //First Player => winner.
                     getWinningPlayer = firstPlayer;
@@ -134,7 +134,7 @@ namespace Kudomion
                     await firebase.UpdateRoom(getPlayerRoom.p1, getPlayerRoom.p2, getPlayerRoom);
 
                     //Update User Profile In Home Page.
-                    User currentUser = await FirebaseHelper.GetUsrFromName(LoginPage.currentLoggedInUser);
+                    User currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
                    // Home.noDuels.Text = currentUser.duels.ToString();
                     //Home.noPoints.Text = currentUser.points.ToString();
 

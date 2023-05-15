@@ -86,7 +86,7 @@ namespace Kudomion
 
         private async void OnClickYGOGuide(object sender, EventArgs e)
         {
-            string currentUser = LoginPage.currentLoggedInUser;
+            string currentUser = MainPage.currentLoggedInUser;
             await Navigation.PushAsync(new UserProfile(currentUser));
         }
 
@@ -99,7 +99,7 @@ namespace Kudomion
 
         private async void Logout_Tapped(object sender, EventArgs e)
         {
-            LoginPage.currentLoggedInUser = string.Empty;
+            MainPage.currentLoggedInUser = string.Empty;
             await Navigation.PushAsync(new LoginPage());
         }
     }

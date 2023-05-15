@@ -232,7 +232,7 @@ namespace Kudomion.FirebaseManager
                List<Room> getAllActiveRooms =  await GetAllRMs();
                foreach(Room r in getAllActiveRooms)
                 {
-                    if(r.p1 == LoginPage.currentLoggedInUser || r.p2 == LoginPage.currentLoggedInUser)
+                    if(r.p1 == MainPage.currentLoggedInUser || r.p2 == MainPage.currentLoggedInUser)
                     {
                     return true;
                 }

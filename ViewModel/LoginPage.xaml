@@ -7,42 +7,26 @@
              BackgroundImageSource="lgBg"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-            <Image Source="AppLogo.png" WidthRequest="180" HeightRequest="180" ></Image>
-            <Entry x:Name="userNameText" ReturnType="Next" Placeholder="Username" TextColor="White" PlaceholderColor="White"/>
-            <Entry x:Name="passwordText" Placeholder="Password" IsPassword="True" ReturnType="Done" TextColor="White" PlaceholderColor="White"></Entry>
-            
-            <Button
-                VerticalOptions="Center"
-                Text="Login"
-                TextColor="White"
-                Clicked="LoginButton_Clicked"
-                BackgroundColor="RoyalBlue" 
-                BorderWidth="1.5"
-                CornerRadius="50"></Button>
+        <StackLayout VerticalOptions="EndAndExpand">
+            <Shell>
+                <TabBar>
+                    <Tab Title="Home" Icon="hme">
+                        <ShellContent Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:Home}"/>
+                    </Tab>
 
-            <Button
-                VerticalOptions="Center"
-                Text="Get Me"
-                TextColor="White"
-                Clicked="SignInClicked"
-                BackgroundColor="Gold" 
-                BorderWidth="1.5"
-                CornerRadius="50"></Button>
+                    <Tab Title="News" Icon="newss">
+                        <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
+                    </Tab>
 
-            <Label HorizontalOptions="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Not Registered?" TextColor="White"/>
-                        <Span Text="Sign-Up" TextColor="RoyalBlue" FontAttributes="Bold" TextDecorations="Underline"/>
-                        
-                    </FormattedString>
-                </Label.FormattedText>
-            
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                </Label.GestureRecognizers>
-            </Label>
+                    <Tab Title="Lobby" Icon="btlic">
+                        <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
+                    </Tab>
+
+                    <Tab Title="Ranking" Icon="rnke">
+                        <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
+                    </Tab>
+                </TabBar>
+            </Shell>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -10,24 +10,98 @@ namespace Kudomion;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+    public static string currentLoggedInUser;
+    FirebaseHelper firebase = new FirebaseHelper();
 
-	public MainPage()
+    public MainPage()
 	{
 		InitializeComponent();
-		Navigation.PushAsync(new LoginPage());
-	}
+        NavigationPage.SetHasBackButton(this, false);
+        // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
+    }
 
-	/*private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    /* public string GetUserName()
+     {
+         return userNameText.Text;
+     }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+     public string GetUserPassword()
+     {
+         return passwordText.Text;
+     }
+    */
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}*/
+    private async void SignInClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new LoginPage());
+
+       /* currentLoggedInUser = userNameText.Text;
+        User outPut = await firebase.GetUserByName(currentLoggedInUser);
+        if (outPut == null)
+        {
+            await DisplayAlert("Empty!", "No Users Found!", "OK!");
+        }
+        else
+        {
+            await DisplayAlert("Found!", $"User: {outPut.name}", "OK!");
+
+            // await Navigation.PushAsync(new LoggedInPage());
+        }*/
+
+
+
+
+        /*  try
+           {
+
+               currentLoggedInUser = userNameText.Text;
+               User outPut = await firebase.GetUserByName(currentLoggedInUser);
+               // Console.WriteLine("This OUTPUT!!" + outPut.name);
+
+               if (userNameText.Text == outPut.name && passwordText.Text == outPut.password)
+               {
+                   await Navigation.PushAsync(new LoggedInPage());
+                   currentLoggedInUser = outPut.name;
+                   return;
+
+               }
+
+               if (outPut == null)
+               {
+
+                   await DisplayAlert("User Not Found!", "No such user exist!", "OK!");
+                   return;
+               }
+
+
+
+           else
+           {
+
+              await DisplayAlert("Wrong Credentials!", "Either Password or Useranme incorrect!", "OK!");
+                   return;
+               }
+
+           } catch(NullReferenceException n)
+           {
+               await DisplayAlert("Exception!", "Null Reference Exception caught!", "OK!");
+               return;
+           }*/
+
+    }
+
+    private void LoginButton_Clicked(object sender, EventArgs e)
+    {
+
+
+    }
+
+
+
+
+    private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new SignUpPage());
+    }
 }
 

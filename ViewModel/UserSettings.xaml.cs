@@ -23,7 +23,7 @@ namespace Kudomion
             {
                 if (AreEntriesEmpty() == true) return;
             
-            User getCurrentUser = await FirebaseHelper.GetUsrFromName(LoginPage.currentLoggedInUser);
+            User getCurrentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
 
             
             //Assign New Values To The Current Logged In User.
@@ -39,10 +39,10 @@ namespace Kudomion
             };
 
             //Update User Via Firebase.
-            await firebase.UpdateUser(LoginPage.currentLoggedInUser, userToBeUpdated);
+            await firebase.UpdateUser(MainPage.currentLoggedInUser, userToBeUpdated);
 
             //Update Current Logged In User Name.
-            LoginPage.currentLoggedInUser = nUser.Text;
+            MainPage.currentLoggedInUser = nUser.Text;
 
             //Update User Profile.
             //Home.loggedInUsername.Text = nUser.Text;

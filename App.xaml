@@ -17,19 +17,19 @@
     <Application.MainPage>
         <Shell>
             <TabBar Shell.BackgroundColor="RoyalBlue">
-                <Tab Title="Home" Icon="hme">
+                <Tab Title="" Icon="hme">
                     <ShellContent Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:Home}"/>
                 </Tab>
 
-                <Tab Title="News" Icon="newss">
+                <Tab Title="" Icon="newss">
                     <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
                 </Tab>
 
-                <Tab Title="Lobby" Icon="btlic">
+                <Tab Title="" Icon="btlic">
                     <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
                 </Tab>
 
-                <Tab Title="Ranking" Icon="rnke">
+                <Tab Title="" Icon="rnke">
                     <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
                 </Tab>
             </TabBar>
