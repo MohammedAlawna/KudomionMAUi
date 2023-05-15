@@ -1,4 +1,35 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kudomion.MainPage"
+             xmlns:local="clr-namespace:Kudomion"
+             BackgroundColor="#1c1c1c"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Shell>
+                <TabBar>
+                    <Tab Title="Home" Icon="hme">
+                        <ShellContent Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:Home}"/>
+                    </Tab>
+
+                    <Tab Title="News" Icon="newss">
+                        <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
+                    </Tab>
+
+                    <Tab Title="Lobby" Icon="btlic">
+                        <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
+                    </Tab>
+
+                    <Tab Title="Ranking" Icon="rnke">
+                        <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
+                    </Tab>
+                </TabBar>
+            </Shell>
+        </StackLayout>
+    </ContentPage.Content>
+    
+    <!--<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.MainPage"
              NavigationPage.HasNavigationBar="False"
@@ -39,4 +70,4 @@
         </VerticalStackLayout>
     </ScrollView>
 
-</ContentPage>
+</ContentPage>-->
