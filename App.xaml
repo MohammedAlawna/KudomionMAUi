@@ -17,7 +17,7 @@
         <Shell>
             <TabBar Shell.BackgroundColor="RoyalBlue">
                 <Tab Title="Home" Icon="hme">
-                    <ShellContent Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:SamplePage}"/>
+                    <ShellContent Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:Home}"/>
                 </Tab>
 
                 <Tab Title="News" Icon="newss">

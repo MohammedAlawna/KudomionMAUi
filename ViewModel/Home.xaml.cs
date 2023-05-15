@@ -15,8 +15,8 @@ namespace Kudomion
         public Home()
         {
             InitializeComponent();
-            loggedInUsername.Text = LoginPage.currentLoggedInUser;
-            LoadDuelistProfile();
+            //loggedInUsername.Text = LoginPage.currentLoggedInUser;
+          //  LoadDuelistProfile();
         }
 
         public async void LoadDuelistProfile()
