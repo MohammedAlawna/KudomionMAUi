@@ -52,12 +52,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Home.xa
 build_metadata.AdditionalFiles.TargetPath = ViewModel\Home.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewModel\Home.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/HomePage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.HomePage.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\HomePage.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\HomePage.xaml
-
 [D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/Leaderboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Leaderboard.xaml

@@ -92,6 +92,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="FirebaseDatabase.net" Version="4.2.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -102,9 +103,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewModel\Home.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="ViewModel\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewModel\Leaderboard.xaml">

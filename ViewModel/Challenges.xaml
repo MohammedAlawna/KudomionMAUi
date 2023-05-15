@@ -7,14 +7,15 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-            <Frame Margin="15" BackgroundColor="#2c2c2c" HeightRequest="1100">
+            <Frame Margin="15" BackgroundColor="#2c2c2c" HeightRequest="450">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
-                    </Grid.RowDefinitions>
+                        <RowDefinition/>
+                        </Grid.RowDefinitions>
                     
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -23,19 +24,19 @@
                     </Grid.ColumnDefinitions>
 
                     <Label Text="Please Choose Your Opponent Name" Grid.ColumnSpan="3" TextColor="Wheat" VerticalTextAlignment="Start" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold"/>
-                    <SearchBar x:Name="p1" Grid.Row="1" Grid.Column="0" TextColor="White" CancelButtonColor="White" PlaceholderColor="White" BackgroundColor="RoyalBlue" Grid.ColumnSpan="3" Placeholder="Your UserName will be assigned here."/>
+                    <SearchBar x:Name="p1" HeightRequest="40" Grid.Row="1" Grid.Column="0" TextColor="White" CancelButtonColor="White" PlaceholderColor="White" BackgroundColor="RoyalBlue" Grid.ColumnSpan="3" Placeholder="Your UserName will be assigned here."/>
                     <Label Text="V.S" Grid.Row="2" Margin="15" Grid.ColumnSpan="3" TextColor="RoyalBlue" VerticalTextAlignment="Start" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold"/>
-                    <Picker x:Name="p2" Title="Choose Your Opponent.." TitleColor="White" BackgroundColor="#CA6F1E" ItemDisplayBinding="{Binding name}" Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="0" Margin="0" TextColor="White"/>
-                    <Button Grid.Row="4" Grid.Column="1" Text="Reset" TextColor="White" Clicked="Reset_Clicked" BackgroundColor="RoyalBlue" />
-                    <Button Grid.Row="4" Grid.Column="2" Text="Create" TextColor="White" Clicked="CreateRoom_Clicked" BackgroundColor="#CA6F1E" />
-                    
-                </Grid>
+                    <Picker HeightRequest="40" x:Name="p2" Title="Choose Your Opponent.." TitleColor="White" BackgroundColor="#CA6F1E" ItemDisplayBinding="{Binding name}" Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="0" Margin="0" TextColor="White"/>
+                    <Button Grid.Row="5" HeightRequest="40" WidthRequest="40" Grid.Column="1" Text="Reset" TextColor="White" Clicked="Reset_Clicked" BackgroundColor="RoyalBlue" />
+                    <Button Grid.Row="5" Grid.Column="2" Text="Create" TextColor="White" Clicked="CreateRoom_Clicked" BackgroundColor="#CA6F1E" />
+                     
+                    </Grid>
                 
 
             </Frame>
             </StackLayout>
 
-            <StackLayout x:Name="roomsInLobby">
+            <StackLayout Margin="15" x:Name="roomsInLobby">
                 <Frame  BackgroundColor="#1c1c1c" x:Name="lobbyCard">
                     <StackLayout>
                         <CollectionView x:Name="roomsCollectionView">

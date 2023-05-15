@@ -1152,3 +1152,7 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resi
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\ygo_guide.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\lgout.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\prfle.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Microsoft.EntityFrameworkCore.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Microsoft.Extensions.Caching.Abstractions.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Microsoft.Extensions.Caching.Memory.dll
