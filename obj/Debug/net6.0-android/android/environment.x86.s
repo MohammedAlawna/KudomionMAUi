@@ -3577,7 +3577,7 @@ application_config:
 
 	.type	.L.autostr.8, @object
 .L.autostr.8:
-	.asciz	"fd941f53-f071-4011-9f1c-6042ac81363a"
+	.asciz	"a74ea539-ac3f-4c71-98b5-61e3c45480bb"
 	.size	.L.autostr.8, 37
 
 	.type	.L.autostr.9, @object
