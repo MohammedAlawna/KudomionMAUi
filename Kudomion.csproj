@@ -73,10 +73,21 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\btlic.png" />
+	  <None Remove="Resources\Images\dcks.png" />
+	  <None Remove="Resources\Images\discrd.png" />
 	  <None Remove="Resources\Images\hme.png" />
+	  <None Remove="Resources\Images\lby.png" />
+	  <None Remove="Resources\Images\lgOut.png" />
 	  <None Remove="Resources\Images\newss.png" />
 	  <None Remove="Resources\Images\notif.png" />
+	  <None Remove="Resources\Images\prfle.png" />
+	  <None Remove="Resources\Images\prof.png" />
+	  <None Remove="Resources\Images\pst.png" />
+	  <None Remove="Resources\Images\rnk.png" />
 	  <None Remove="Resources\Images\rnke.png" />
+	  <None Remove="Resources\Images\settings.png" />
+	  <None Remove="Resources\Images\tournies.png" />
+	  <None Remove="Resources\Images\ygo_guide.png" />
 	</ItemGroup>
 
 	<ItemGroup>

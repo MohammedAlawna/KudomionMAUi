@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.Home"
-             BackgroundImageSource="bgkd"
-           
+             BackgroundColor="#1c1c1c"
              >
     
     <ContentPage.Content>
@@ -12,6 +11,7 @@
             <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="Kudo Shinichi" x:Name="loggedInUsername" FontSize="20"/>
             <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
@@ -89,7 +89,7 @@
                     </Image.GestureRecognizers>
                 </Image>
                 
-                <Image x:Name="logOut" Source="lgOut" Grid.Column="2" Grid.Row="2">
+                <Image x:Name="logout" Source="lgout" Grid.Column="2" Grid.Row="2">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Logout_Tapped"/>
                     </Image.GestureRecognizers>
