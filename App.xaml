@@ -22,7 +22,7 @@
                 </Tab>
 
                 <Tab Title="News" Icon="newss">
-                    <ShellContent ContentTemplate="{DataTemplate local:NewsFeed}"/>
+                    <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
                 </Tab>
 
                 <Tab Title="Lobby" Icon="btlic">
