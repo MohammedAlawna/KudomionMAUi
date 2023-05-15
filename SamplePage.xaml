@@ -46,10 +46,6 @@
                                                 </Image>
                                                 <Label x:Name="lblNo" Margin="25,7,0,0" Grid.Row="8" Grid.RowSpan="2" Text="0" FontSize="14" TextColor="White" HorizontalOptions="Center"/>
 
-
-
-
-
                                             </Grid>
                                         </StackLayout>
                                     </Frame>

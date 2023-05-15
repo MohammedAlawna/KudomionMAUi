@@ -16,7 +16,7 @@ namespace Kudomion
         {
             InitializeComponent();
             ResetRoomValues();
-            LoadDuelistsData();
+           // LoadDuelistsData();
         }
 
         private async void ProcessRoomCreation()
