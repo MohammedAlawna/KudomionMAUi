@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.Home"
+             xmlns:controls="clr-namespace:Kudomion.Controls"
              BackgroundColor="#1c1c1c"
              >
     
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center">
+        
             <Image Source="prfle" Margin="10" HeightRequest="85"/>
             <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="Kudo Shinichi" x:Name="loggedInUsername" FontSize="20"/>
             <Grid>

@@ -2,10 +2,13 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Kudomion"
-             xmlns:local2="clr-namesapce:Kudomion.ViewModel"
+             xmlns:controls="clr-namespace:Kudomion.Controls"
              NavigationPage.HasNavigationBar="False"
+             
              Shell.NavBarIsVisible="False"
              x:Class="Kudomion.App">
+
+   
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -17,8 +20,16 @@
 
     <Application.MainPage>
         <Shell>
-          
+            
+
+            <Shell.SearchHandler>
+                <controls:SearchField Placeholder="Search Keyword Here.." />
+
+
+            </Shell.SearchHandler>
+
             <TabBar Shell.NavBarIsVisible="False">
+
                 <Tab Title="">
                     <ShellContent Title="Home" Icon="hme.png" Shell.BackgroundColor="#1c1c1c" ContentTemplate="{DataTemplate local:Home}"/>
                     <ShellContent Title="News" Icon="newss.png" ContentTemplate="{DataTemplate local:SamplePage}"/>
