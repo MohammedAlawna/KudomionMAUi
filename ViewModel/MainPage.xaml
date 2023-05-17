@@ -4,7 +4,8 @@
              x:Class="Kudomion.MainPage"
              xmlns:local="clr-namespace:Kudomion"
              BackgroundColor="#1c1c1c"
-             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="lgbg"
+             Shell.NavBarIsVisible="False"
              >
     <ContentPage.Content>
         <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">

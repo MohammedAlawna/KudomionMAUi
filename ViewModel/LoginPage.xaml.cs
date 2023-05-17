@@ -18,7 +18,7 @@ namespace Kudomion
 
         public LoginPage()
         {
-            InitializeComponent();
+           InitializeComponent();
         }
 
 

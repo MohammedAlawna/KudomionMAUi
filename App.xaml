@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:Kudomion"
              xmlns:local2="clr-namesapce:Kudomion.ViewModel"
              NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
              x:Class="Kudomion.App">
     <Application.Resources>
         <ResourceDictionary>
@@ -16,22 +17,15 @@
 
     <Application.MainPage>
         <Shell>
-            <TabBar Shell.BackgroundColor="RoyalBlue">
-                <Tab Title="" Icon="hme">
-                    <ShellContent Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:Home}"/>
+          
+            <TabBar Shell.NavBarIsVisible="False">
+                <Tab Title="">
+                    <ShellContent Title="Home" Icon="hme.png" Shell.BackgroundColor="#1c1c1c" ContentTemplate="{DataTemplate local:Home}"/>
+                    <ShellContent Title="News" Icon="newss.png" ContentTemplate="{DataTemplate local:SamplePage}"/>
+                    <ShellContent Title="Challenges" Icon="lby.png" ContentTemplate="{DataTemplate local:Challenges}"/>
+                    <ShellContent Title="Leaderboard" Icon="rnke.png" ContentTemplate="{DataTemplate local:Leaderboard}" />
                 </Tab>
 
-                <Tab Title="" Icon="newss">
-                    <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
-                </Tab>
-
-                <Tab Title="" Icon="btlic">
-                    <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
-                </Tab>
-
-                <Tab Title="" Icon="rnke">
-                    <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
-                </Tab>
             </TabBar>
         </Shell>
     </Application.MainPage>

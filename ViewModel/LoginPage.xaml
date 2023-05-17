@@ -1,32 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Kudomion"
+             xmlns:local="clr-namespace:Kudomion"
              x:Class="Kudomion.LoginPage"
-             BackgroundImageSource="lgBg"
-             NavigationPage.HasNavigationBar="False">
+             BackgroundColor="#1c1c1c"
+             Shell.NavBarIsVisible="False"
+             >
     <ContentPage.Content>
         <StackLayout VerticalOptions="EndAndExpand">
-            <Shell>
-                <TabBar>
-                    <Tab Title="Home" Icon="hme">
-                        <ShellContent Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:Home}"/>
-                    </Tab>
-
-                    <Tab Title="News" Icon="newss">
-                        <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
-                    </Tab>
-
-                    <Tab Title="Lobby" Icon="btlic">
-                        <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
-                    </Tab>
-
-                    <Tab Title="Ranking" Icon="rnke">
-                        <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
-                    </Tab>
-                </TabBar>
-            </Shell>
+            <TabbedPage>
+                <local:Home Title="Home"/>
+                <local:SamplePage Title="News"/>
+                <local:Challenges Title="Lobby"/>
+                <local:Leaderboard Title="Ranking"/>
+            </TabbedPage>
+         
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

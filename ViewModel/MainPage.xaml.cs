@@ -6,8 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Kudomion;
 
+namespace Kudomion;
 public partial class MainPage : ContentPage
 {
     public static string currentLoggedInUser;
@@ -17,6 +17,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
+       
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
     }
 
@@ -33,7 +34,7 @@ public partial class MainPage : ContentPage
 
     private async void SignInClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new LoginPage());
+        await Navigation.PushAsync(new TabbedView());
 
        /* currentLoggedInUser = userNameText.Text;
         User outPut = await firebase.GetUserByName(currentLoggedInUser);
