@@ -20,13 +20,8 @@
 
     <Application.MainPage>
         <Shell>
-            
-
-            <Shell.SearchHandler>
-                <controls:SearchField Placeholder="Search Keyword Here.." />
-
-
-            </Shell.SearchHandler>
+            <FlyoutItem Title="Login">
+            </FlyoutItem>
 
             <TabBar Shell.NavBarIsVisible="False">
 
