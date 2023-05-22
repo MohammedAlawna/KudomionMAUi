@@ -3,10 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Kudomion"
              xmlns:controls="clr-namespace:Kudomion.Controls"
-             NavigationPage.HasNavigationBar="False"
-             
-             Shell.NavBarIsVisible="False"
-             x:Class="Kudomion.App">
+             x:Class="Kudomion.App"
+             Shell.NavBarIsVisible="True"
+             >
 
    
     <Application.Resources>
@@ -20,18 +19,22 @@
 
     <Application.MainPage>
         <Shell>
-            <FlyoutItem Title="Login">
-            </FlyoutItem>
-
-            <TabBar Shell.NavBarIsVisible="False">
-
-                <Tab Title="">
-                    <ShellContent Title="Home" Icon="hme.png" Shell.BackgroundColor="#1c1c1c" ContentTemplate="{DataTemplate local:Home}"/>
-                    <ShellContent Title="News" Icon="newss.png" ContentTemplate="{DataTemplate local:SamplePage}"/>
-                    <ShellContent Title="Challenges" Icon="lby.png" ContentTemplate="{DataTemplate local:Challenges}"/>
-                    <ShellContent Title="Leaderboard" Icon="rnke.png" ContentTemplate="{DataTemplate local:Leaderboard}" />
+            <TabBar>
+                <Tab Title="Home" Icon="hme">
+                    <ShellContent Shell.NavBarIsVisible="True" Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:Home}"/>
                 </Tab>
 
+                <Tab Title="News" Icon="newss">
+                    <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
+                </Tab>
+
+                <Tab Title="Lobby" Icon="btlic">
+                    <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
+                </Tab>
+
+                <Tab Title="Ranking" Icon="rnke">
+                    <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
+                </Tab>
             </TabBar>
         </Shell>
     </Application.MainPage>
