@@ -21,8 +21,7 @@
         <Shell>
             <TabBar>
                 <Tab Title="Home" Icon="hme">
-                    <ShellContent Shell.NavBarIsVisible="True" Shell.BackgroundColor="RoyalBlue" ContentTemplate="{DataTemplate local:Home}"/>
-                </Tab>
+                  </Tab>
 
                 <Tab Title="News" Icon="newss">
                     <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
