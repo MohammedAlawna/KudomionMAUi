@@ -4,7 +4,7 @@
              x:Class="Kudomion.Challenges"
              BackgroundColor="#202024"
              >
-    <ContentPage.Content>
+   
         <StackLayout>
             <StackLayout>
             <Frame Margin="15" BackgroundColor="#2c2c2c" HeightRequest="240">
@@ -90,5 +90,5 @@
         </StackLayout>
 
         
-    </ContentPage.Content>
+  
 </ContentPage>
