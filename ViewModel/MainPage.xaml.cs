@@ -12,6 +12,7 @@ public partial class MainPage : ContentPage
 {
     public static string currentLoggedInUser;
     FirebaseHelper firebase = new FirebaseHelper();
+    public static bool loggedIn = false;
 
     public MainPage()
 	{
@@ -34,7 +35,13 @@ public partial class MainPage : ContentPage
 
     private async void SignInClicked(object sender, EventArgs e)
     {
+        //Step (1): Check Credentials..
+
+        //Step (2): if Login Success => A- Go To LoginPage, B- Assign loggedIn = true..
+
+
         await Navigation.PushAsync(new TabbedView());
+
 
        /* currentLoggedInUser = userNameText.Text;
         User outPut = await firebase.GetUserByName(currentLoggedInUser);
