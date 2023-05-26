@@ -31,6 +31,12 @@
         />
 
     <ShellContent
+        Title="Alerts"
+        FlyoutIcon="notif"
+        ContentTemplate="{DataTemplate local:NotificationsPage}"
+        />
+
+    <ShellContent
         Title="Log-Out"
         FlyoutIcon=""
         />
