@@ -4,47 +4,47 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Kudomion"
+    Shell.BackgroundColor="RoyalBlue"
     Shell.FlyoutBehavior="Flyout">
 
-    <TabBar>
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
-            <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
-            <ShellContent ContentTemplate="{DataTemplate local:SignUpPage}"/>
-        </Tab>
-    </TabBar>
-
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+   
+    <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
+         
         Title="Log-In"
         FlyoutIcon=""
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
     <ShellContent
-        Title="Main"
+        Title="Home"
         FlyoutIcon="hme"
         ContentTemplate="{DataTemplate local:LoginPage}"
         />
 
     <ShellContent
-        Title="Duel Arena"
+        Title="Challenges"
         FlyoutIcon=""
         ContentTemplate="{DataTemplate local:Challenges}"
         />
 
     <ShellContent
-        Title="Ranking"
+        Title="Rankings"
         FlyoutIcon=""
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
     <ShellContent
-        Title="Alerts"
+        Title="Settings"
         FlyoutIcon="notif"
         />
 
-    <ShellContent
+        <ShellContent
+        Title="About"
+        FlyoutIcon="notif"
+        />
+
+        <ShellContent
         Title="Log-Out"
         FlyoutIcon=""
         />
