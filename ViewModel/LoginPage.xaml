@@ -5,14 +5,15 @@
              xmlns:local="clr-namespace:Kudomion"
     xmlns:controls="clr-namespace:Kudomion.Controls"
              x:Class="Kudomion.LoginPage"
-    Shell.TabBarIsVisible="False"
+    
              BackgroundColor="#1c1c1c"
             
              >
+    <Shell.SearchHandler>
+        <controls:SearchField Placeholder="Enter Search Here.." ShowsResults="True" />
+    </Shell.SearchHandler>
     <StackLayout>
-        <Shell.SearchHandler>
-            <controls:SearchField Placeholder="Enter Search Here.." ShowsResults="True" />
-        </Shell.SearchHandler>
+        
         <StackLayout HorizontalOptions="Center">
            
             <Image Source="prfle" Margin="10" HeightRequest="85"/>
