@@ -6,7 +6,16 @@
     xmlns:local="clr-namespace:Kudomion"
     Shell.FlyoutBehavior="Flyout">
 
-    <ShellContent
+    <TabBar>
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
+            <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
+            <ShellContent ContentTemplate="{DataTemplate local:SignUpPage}"/>
+        </Tab>
+    </TabBar>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
         Title="Log-In"
         FlyoutIcon=""
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -33,12 +42,12 @@
     <ShellContent
         Title="Alerts"
         FlyoutIcon="notif"
-        ContentTemplate="{DataTemplate local:NotificationsPage}"
         />
 
     <ShellContent
         Title="Log-Out"
         FlyoutIcon=""
         />
+    </FlyoutItem>
 
 </Shell>
