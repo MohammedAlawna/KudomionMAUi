@@ -4,9 +4,11 @@
              x:Class="Kudomion.MainPage"
              BackgroundColor="#1c1c1c"
              BackgroundImageSource="lgbg"
-             
+           
              >
-
+    <!--Shell.TabBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"-->
+    
     <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
         <Image Source="AppLogo.png" WidthRequest="180" HeightRequest="180" ></Image>
         <Entry x:Name="userNameText" ReturnType="Next" Placeholder="Username" TextColor="White" PlaceholderColor="White"/>
