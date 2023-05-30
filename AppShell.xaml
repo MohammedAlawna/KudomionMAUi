@@ -9,17 +9,9 @@
     Shell.FlyoutBehavior="Flyout"
     >
 
-    
-   
     <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent
-         
-        Title="Log-In"
-        FlyoutIcon=""
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
 
-    <ShellContent
+        <ShellContent
         Title="Home"
         FlyoutIcon="hme"
         ContentTemplate="{DataTemplate local:LoginPage}"

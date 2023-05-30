@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Kudomion"
              xmlns:controls="clr-namespace:Kudomion.Controls"
              x:Class="Kudomion.App"
-             Shell.NavBarIsVisible="True"
+             Shell.NavBarIsVisible="False"
              >
 
    
@@ -20,19 +20,8 @@
     <Application.MainPage>
         <Shell>
             <TabBar>
-                <Tab Title="Home" Icon="hme">
-                  </Tab>
-
-                <Tab Title="News" Icon="newss">
-                    <ShellContent ContentTemplate="{DataTemplate local:SamplePage}"/>
-                </Tab>
-
-                <Tab Title="Lobby" Icon="btlic">
-                    <ShellContent ContentTemplate="{DataTemplate local:Challenges}"/>
-                </Tab>
-
-                <Tab Title="Ranking" Icon="rnke">
-                    <ShellContent ContentTemplate="{DataTemplate local:Leaderboard}" />
+                <Tab Title="login" Icon="lg">
+                    <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
                 </Tab>
             </TabBar>
         </Shell>

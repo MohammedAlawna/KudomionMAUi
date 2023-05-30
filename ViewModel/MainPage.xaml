@@ -4,7 +4,8 @@
              x:Class="Kudomion.MainPage"
              BackgroundColor="#1c1c1c"
              BackgroundImageSource="lgbg"
-           
+             Shell.TabBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
              >
     <!--Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"-->

@@ -40,8 +40,8 @@ public partial class MainPage : ContentPage
         //Step (2): if Login Success => A- Go To LoginPage, B- Assign loggedIn = true..
 
 
-        await Navigation.PushAsync(new TabbedView());
-
+        await Navigation.PushAsync(new AppShell());
+        
 
        /* currentLoggedInUser = userNameText.Text;
         User outPut = await firebase.GetUserByName(currentLoggedInUser);
