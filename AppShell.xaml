@@ -45,11 +45,6 @@
         FlyoutIcon="notif"
         />
 
-        <ShellContent
-        Title="Log-Out"
-        FlyoutIcon=""
-        ContentTemplate="{DataTemplate local:MainPage}"
-        />
     </FlyoutItem>
 
 </Shell>

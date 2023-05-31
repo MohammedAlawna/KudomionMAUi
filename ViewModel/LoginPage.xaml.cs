@@ -100,7 +100,8 @@ namespace Kudomion
         private async void Logout_Tapped(object sender, EventArgs e)
         {
             MainPage.currentLoggedInUser = string.Empty;
-            await Navigation.PushAsync(new LoginPage());
+            MainPage.loggedIn = false;
+            await Navigation.PushAsync(new MainPage());
         }
 
 
