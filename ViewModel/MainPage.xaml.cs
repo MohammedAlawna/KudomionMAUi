@@ -14,11 +14,16 @@ public partial class MainPage : ContentPage
     FirebaseHelper firebase = new FirebaseHelper();
     public static bool loggedIn = false;
 
+    
     public MainPage()
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
-       
+       /* TODO:
+        - If Logged In, then disable loginButtons, indicate that you are logged in as
+          "Username..".
+        */
+        
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
     }
 
@@ -39,8 +44,7 @@ public partial class MainPage : ContentPage
 
         //Step (2): if Login Success => A- Go To LoginPage, B- Assign loggedIn = true..
 
-
-        await Navigation.PushAsync(new AppShell());
+        await Navigation.PushAsync(new LoginPage());
         
 
        /* currentLoggedInUser = userNameText.Text;

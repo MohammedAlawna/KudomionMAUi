@@ -12,9 +12,15 @@
     <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
 
         <ShellContent
-        Title="Home"
+            Title="Home"
+            FlyoutIcon=""
+            ContentTemplate="{DataTemplate local:MainPage}"
+            />
+
+        <ShellContent
+        Title="News"
         FlyoutIcon="hme"
-        ContentTemplate="{DataTemplate local:LoginPage}"
+        ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
     <ShellContent
@@ -42,6 +48,7 @@
         <ShellContent
         Title="Log-Out"
         FlyoutIcon=""
+        ContentTemplate="{DataTemplate local:MainPage}"
         />
     </FlyoutItem>
 

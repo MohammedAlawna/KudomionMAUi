@@ -4,14 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Kudomion;
 
+namespace Kudomion;
 public partial class App : Application
 {
 	public App()
 	{
 		InitializeComponent();
 
-		//MainPage = new MainPage();
+		MainPage = new AppShell();
 	}
+
 }
