@@ -6,6 +6,7 @@
              BackgroundImageSource="lgbg"
              Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False"
              >
     <!--Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"-->
