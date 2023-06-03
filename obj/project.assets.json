@@ -2308,6 +2308,22 @@
           }
         }
       },
+      "Xamarin.Google.Dagger/2.46.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.JavaX.Inject": "1.0.0.8"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
         "type": "package",
         "compile": {
@@ -2445,7 +2461,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
-      "Xamarin.JavaX.Inject/1.0.0.7": {
+      "Xamarin.JavaX.Inject/1.0.0.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll": {
@@ -4897,6 +4913,22 @@
           }
         }
       },
+      "Xamarin.Google.Dagger/2.46.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.JavaX.Inject": "1.0.0.8"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
         "type": "package",
         "compile": {
@@ -5034,7 +5066,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
-      "Xamarin.JavaX.Inject/1.0.0.7": {
+      "Xamarin.JavaX.Inject/1.0.0.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll": {
@@ -7486,6 +7518,22 @@
           }
         }
       },
+      "Xamarin.Google.Dagger/2.46.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.JavaX.Inject": "1.0.0.8"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
         "type": "package",
         "compile": {
@@ -7623,7 +7671,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
-      "Xamarin.JavaX.Inject/1.0.0.7": {
+      "Xamarin.JavaX.Inject/1.0.0.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll": {
@@ -10075,6 +10123,22 @@
           }
         }
       },
+      "Xamarin.Google.Dagger/2.46.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.JavaX.Inject": "1.0.0.8"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
         "type": "package",
         "compile": {
@@ -10212,7 +10276,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
-      "Xamarin.JavaX.Inject/1.0.0.7": {
+      "Xamarin.JavaX.Inject/1.0.0.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll": {
@@ -12664,6 +12728,22 @@
           }
         }
       },
+      "Xamarin.Google.Dagger/2.46.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.JavaX.Inject": "1.0.0.8"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
         "type": "package",
         "compile": {
@@ -12801,7 +12881,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
-      "Xamarin.JavaX.Inject/1.0.0.7": {
+      "Xamarin.JavaX.Inject/1.0.0.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll": {
@@ -15253,6 +15333,22 @@
           }
         }
       },
+      "Xamarin.Google.Dagger/2.46.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.JavaX.Inject": "1.0.0.8"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
         "type": "package",
         "compile": {
@@ -15390,7 +15486,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
-      "Xamarin.JavaX.Inject/1.0.0.7": {
+      "Xamarin.JavaX.Inject/1.0.0.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll": {
@@ -17842,6 +17938,22 @@
           }
         }
       },
+      "Xamarin.Google.Dagger/2.46.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.JavaX.Inject": "1.0.0.8"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
         "type": "package",
         "compile": {
@@ -17979,7 +18091,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
-      "Xamarin.JavaX.Inject/1.0.0.7": {
+      "Xamarin.JavaX.Inject/1.0.0.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll": {
@@ -20431,6 +20543,22 @@
           }
         }
       },
+      "Xamarin.Google.Dagger/2.46.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.JavaX.Inject": "1.0.0.8"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
         "type": "package",
         "compile": {
@@ -20568,7 +20696,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
-      "Xamarin.JavaX.Inject/1.0.0.7": {
+      "Xamarin.JavaX.Inject/1.0.0.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll": {
@@ -39304,6 +39432,24 @@
         "xamarin.google.crypto.tink.android.nuspec"
       ]
     },
+    "Xamarin.Google.Dagger/2.46.1.1": {
+      "sha512": "PRgs/Isioaj4QiTP7gBGIT4djwupmLWo04TfJx7ZUf3xNXCbobB0hmQrm6dHsw4FGGMks0p6TMYE2HqMXqaAZA==",
+      "type": "package",
+      "path": "xamarin.google.dagger/2.46.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid12.0/Xamarin.Google.Dagger.dll",
+        "lib/monoandroid12.0/Xamarin.Google.Dagger.xml",
+        "lib/net6.0-android31.0/Xamarin.Google.Dagger.aar",
+        "lib/net6.0-android31.0/Xamarin.Google.Dagger.dll",
+        "lib/net6.0-android31.0/Xamarin.Google.Dagger.xml",
+        "xamarin.google.dagger.2.46.1.1.nupkg.sha512",
+        "xamarin.google.dagger.nuspec"
+      ]
+    },
     "Xamarin.Google.ErrorProne.Annotations/2.16.0.1": {
       "sha512": "qun0dz+fM4F6psXGjn3GSNYHTmv6Orz1ERls7XhYv7LNTgiPukd+g+xJrQhZHGmwNiKqEU+aEL4TjCDqD6S+5Q==",
       "type": "package",
@@ -39461,10 +39607,10 @@
         "xamarin.googleplayservices.tasks.nuspec"
       ]
     },
-    "Xamarin.JavaX.Inject/1.0.0.7": {
-      "sha512": "4B8A12jab2y/4vmdVuHuuNsPAeuqXgcDq8GtQSwHbAy6PGfevefbzdiVeLgjKveOZvyNxtV+aoj4sOAM+8UFfQ==",
+    "Xamarin.JavaX.Inject/1.0.0.8": {
+      "sha512": "05swJPzS8le67FQuz2Gbz+KbQbFcgjk18mFN6aXnZvbBM3mk77S0f8MDTPiNYXM/i9cqAEwXgzSLo3xv+TLDXA==",
       "type": "package",
-      "path": "xamarin.javax.inject/1.0.0.7",
+      "path": "xamarin.javax.inject/1.0.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -39475,7 +39621,7 @@
         "lib/net6.0-android31.0/Xamarin.JavaX.Inject.aar",
         "lib/net6.0-android31.0/Xamarin.JavaX.Inject.dll",
         "lib/net6.0-android31.0/Xamarin.JavaX.Inject.xml",
-        "xamarin.javax.inject.1.0.0.7.nupkg.sha512",
+        "xamarin.javax.inject.1.0.0.8.nupkg.sha512",
         "xamarin.javax.inject.nuspec"
       ]
     },
@@ -39641,6 +39787,7 @@
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
       "Xamarin.Firebase.Messaging >= 123.1.1.1",
+      "Xamarin.Google.Dagger >= 2.46.1.1",
       "Xamarin.GooglePlayServices.Base >= 118.1.0.1"
     ],
     "net6.0-ios16.1": [
@@ -39750,6 +39897,10 @@
           "Xamarin.Firebase.Messaging": {
             "target": "Package",
             "version": "[123.1.1.1, )"
+          },
+          "Xamarin.Google.Dagger": {
+            "target": "Package",
+            "version": "[2.46.1.1, )"
           },
           "Xamarin.GooglePlayServices.Base": {
             "target": "Package",

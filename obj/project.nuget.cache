@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7ygSvBaVg50ALvWdDvuOcTUYCiryakDhlJGq104HK2P2fl56xsxwi0XNPzuDJt3VvKYtvIvGLMpIwQFuqDNBUQ==",
+  "dgSpecHash": "dx9BMgT4rvHhzrgDVflMchOWIMTO2BMieNuAdQyNlqzTveQIC/AecVWWwNAmzWlRi21KTAJOgl3ip5kr2rIfoA==",
   "success": true,
   "projectFilePath": "D:\\OGRE Tech CO\\KudomionUpgraded\\Kudomion\\Kudomion\\Kudomion.csproj",
   "expectedPackageFiles": [
@@ -140,6 +140,7 @@
     "C:\\Users\\User\\.nuget\\packages\\xamarin.google.android.datatransport.transportruntime\\3.1.8.1\\xamarin.google.android.datatransport.transportruntime.3.1.8.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.google.android.material\\1.6.0\\xamarin.google.android.material.1.6.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.google.crypto.tink.android\\1.6.1.6\\xamarin.google.crypto.tink.android.1.6.1.6.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\xamarin.google.dagger\\2.46.1.1\\xamarin.google.dagger.2.46.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.google.errorprone.annotations\\2.16.0.1\\xamarin.google.errorprone.annotations.2.16.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.11\\xamarin.google.guava.listenablefuture.1.0.0.11.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.googleplayservices.base\\118.1.0.1\\xamarin.googleplayservices.base.118.1.0.1.nupkg.sha512",
@@ -147,7 +148,7 @@
     "C:\\Users\\User\\.nuget\\packages\\xamarin.googleplayservices.cloudmessaging\\117.0.2.3\\xamarin.googleplayservices.cloudmessaging.117.0.2.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.googleplayservices.stats\\117.0.3.3\\xamarin.googleplayservices.stats.117.0.3.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.googleplayservices.tasks\\118.0.2.1\\xamarin.googleplayservices.tasks.118.0.2.1.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\xamarin.javax.inject\\1.0.0.7\\xamarin.javax.inject.1.0.0.7.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\xamarin.javax.inject\\1.0.0.8\\xamarin.javax.inject.1.0.0.8.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.jetbrains.annotations\\24.0.0.1\\xamarin.jetbrains.annotations.24.0.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.kotlin.stdlib\\1.8.0.1\\xamarin.kotlin.stdlib.1.8.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xamarin.kotlin.stdlib.common\\1.8.0.1\\xamarin.kotlin.stdlib.common.1.8.0.1.nupkg.sha512",
