@@ -14,16 +14,16 @@ public partial class MainPage : ContentPage
     FirebaseHelper firebase = new FirebaseHelper();
     public static bool loggedIn = false;
 
+    //Firebase Plugin Parameters..
+    private string _deviceToken;
     
     public MainPage()
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
-       /* TODO:
-        - If Logged In, then disable loginButtons, indicate that you are logged in as
-          "Username..".
-        */
+
         
+
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
     }
 

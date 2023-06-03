@@ -12,11 +12,18 @@ using System.Threading.Tasks;
 namespace Kudomion
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+  
     public partial class LoginPage : ContentPage
     {
+        //Firebase Plugin Parameters..
+        private string _deviceToken;
         public LoginPage()
         {
            InitializeComponent();
+            if (Preferences.ContainsKey("DeviceToken"))
+            {
+                _deviceToken = Preferences.Get("DeviceToken", "");
+            }
         }
 
         public async void LoadDuelistProfile()
