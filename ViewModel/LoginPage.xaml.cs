@@ -10,7 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Kudomion.Model;
 
 namespace Kudomion
 {
@@ -96,9 +96,21 @@ namespace Kudomion
             //  await Navigation.PushAsync(new DecksList());
 
             //Trial:: Push Notifications.
-            
+            var pushNotificationRequest = new PushNotificationRequest
+            {
+                notification = new NotificationMessageBody
+                {
+                    title = "Notification Title",
+                    body = "Notification Body",
+                },
+                registration_ids = new List<string> { _deviceToken }
+            };
+            string url = "https://fcm.googleapis.com/fcm/send";
 
-            
+            using(var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=", "");
+            }
         }
 
         private async void OnClickYGOGuide(object sender, EventArgs e)
