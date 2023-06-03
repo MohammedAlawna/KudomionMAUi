@@ -1,5 +1,8 @@
 ﻿using Kudomion.FirebaseManager;
 using Kudomion.ViewModel;
+using Firebase;
+using FirebaseAdmin;
+using FirebaseAdmin.Messaging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -24,6 +27,8 @@ namespace Kudomion
             {
                 _deviceToken = Preferences.Get("DeviceToken", "");
             }
+            
+            
         }
 
         public async void LoadDuelistProfile()
@@ -86,9 +91,14 @@ namespace Kudomion
             Console.WriteLine("Discord Tapped");
         }
 
-        private async void OnClickDecks(object sender, EventArgs e)
+        private void OnClickDecks(object sender, EventArgs e)
         {
             //  await Navigation.PushAsync(new DecksList());
+
+            //Trial:: Push Notifications.
+            PushNotification
+
+            
         }
 
         private async void OnClickYGOGuide(object sender, EventArgs e)
