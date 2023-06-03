@@ -14,8 +14,7 @@ public partial class MainPage : ContentPage
     FirebaseHelper firebase = new FirebaseHelper();
     public static bool loggedIn = false;
 
-    //Firebase Plugin Parameters..
-    private string _deviceToken;
+    
     
     public MainPage()
 	{

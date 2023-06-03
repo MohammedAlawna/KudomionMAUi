@@ -75,6 +75,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Platforms\Android\google-services.json" />
 	  <None Remove="Resources\Images\btlic.png" />
 	  <None Remove="Resources\Images\dcks.png" />
 	  <None Remove="Resources\Images\discrd.png" />
@@ -92,6 +93,10 @@
 	  <None Remove="Resources\Images\settings.png" />
 	  <None Remove="Resources\Images\tournies.png" />
 	  <None Remove="Resources\Images\ygo_guide.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <GoogleServicesJson Include="Platforms\Android\google-services.json" />
 	</ItemGroup>
 
 	<ItemGroup>

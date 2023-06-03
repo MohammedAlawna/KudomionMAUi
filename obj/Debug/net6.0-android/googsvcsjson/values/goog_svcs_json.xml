@@ -1,10 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<resources>
-  <string name="gcm_defaultSenderId" translatable="false">243543683849</string>
-  <string name="google_app_id" translatable="false">1:243543683849:android:d1aab26867503d87b419d8</string>
-  <string name="default_web_client_id" translatable="false">243543683849-cf6i8bndp09i5gfqt5jpflrv0d3ldkqo.apps.googleusercontent.com</string>
-  <string name="google_api_key" translatable="false">AIzaSyBBX22NZAbeChNlR492D9Y721QFQrs6NWA</string>
-  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBBX22NZAbeChNlR492D9Y721QFQrs6NWA</string>
-  <string name="google_storage_bucket" translatable="false">kdbeta.appspot.com</string>
-  <string name="project_id" translatable="false">kdbeta</string>
-</resources>
+<resources><string name="gcm_defaultSenderId" translatable="false">243543683849</string><string name="google_app_id" translatable="false">1:243543683849:android:d1aab26867503d87b419d8</string><string name="default_web_client_id" translatable="false">243543683849-cf6i8bndp09i5gfqt5jpflrv0d3ldkqo.apps.googleusercontent.com</string><string name="google_api_key" translatable="false">AIzaSyBBX22NZAbeChNlR492D9Y721QFQrs6NWA</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyBBX22NZAbeChNlR492D9Y721QFQrs6NWA</string><string name="google_storage_bucket" translatable="false">kdbeta.appspot.com</string><string name="project_id" translatable="false">kdbeta</string></resources>

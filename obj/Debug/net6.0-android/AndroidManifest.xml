@@ -17,6 +17,11 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <service android:exported="true" android:name="crc64b0f1f70064186880.FirebaseService">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
     <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="crc6468b6408a11370c2f.WebAuthenticatorIntermediateActivity" />
     <provider android:authorities="com.blouza.kudomion.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="microsoft.maui.essentials.fileProvider">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/microsoft_maui_essentials_fileprovider_file_paths" />

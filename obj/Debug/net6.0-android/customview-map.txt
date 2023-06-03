@@ -284,6 +284,7 @@ microsoft.maui.controls.platform.compatibility.ShellFlyoutLayout;D:\OGRE Tech CO
 padding;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\drawable\common_google_signin_btn_icon_disabled.xml
 padding;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\drawable\common_google_signin_btn_text_disabled.xml
 paths;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\178\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
+resources;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\googsvcsjson\values\goog_svcs_json.xml
 resources;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\174\jl\res\values\strings.xml
 resources;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\175\jl\res\values\attrs.xml
 resources;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\175\jl\res\values\styles.xml
@@ -480,6 +481,7 @@ solid;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-androi
 solid;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\drawable\common_google_signin_btn_text_dark_focused.xml
 solid;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\drawable\common_google_signin_btn_text_disabled.xml
 solid;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\drawable\common_google_signin_btn_text_light_focused.xml
+string;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\googsvcsjson\values\goog_svcs_json.xml
 string;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\174\jl\res\values\strings.xml
 string;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\176\jl\res\values\values.xml
 string;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\190\jl\res\values\values.xml
