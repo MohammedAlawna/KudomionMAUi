@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lVeKZxh1KTzlCPPepqJB25qLEFZ0dSpzXvkvNMkbdEJuoQzGOOkE8EteqbvaZeQAhJ+H4FS2Q5ebj4awV5/9iw==",
+  "dgSpecHash": "O5ruBTTdx+C7XXtIuyIXqG7R3BdnARrqIBAnOWeRaMrll9T6+RJ4sgP0IOluDFDnyw40yxeP4G7M1DJHiW/LDA==",
   "success": true,
   "projectFilePath": "D:\\OGRE Tech CO\\KudomionUpgraded\\Kudomion\\Kudomion\\Kudomion.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\firebaseadmin\\2.3.0\\firebaseadmin.2.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\firebasedatabase.net\\4.2.0\\firebasedatabase.net.4.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\google.api.gax\\3.2.0\\google.api.gax.3.2.0.nupkg.sha512",

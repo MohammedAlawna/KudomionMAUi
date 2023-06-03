@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Kudomion.Model
 {
-    public class PushNotificationReceived : ValueChangedMessage<string>
+  /*  public class PushNotificationReceived : ValueChangedMessage<string>
     {
         public PushNotificationReceived(string message) : base(message) { }
-    }
+    }*/
 }

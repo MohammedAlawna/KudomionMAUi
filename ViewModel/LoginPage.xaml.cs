@@ -96,7 +96,7 @@ namespace Kudomion
             //  await Navigation.PushAsync(new DecksList());
 
             //Trial:: Push Notifications.
-            PushNotification
+            
 
             
         }
