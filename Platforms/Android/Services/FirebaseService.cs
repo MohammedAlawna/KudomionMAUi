@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using AndroidX.Core.App;
 using Firebase.Messaging;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,29 @@ namespace Kudomion.Platforms.Android.Services
                 Preferences.Remove("DeviceToken");
             }
             Preferences.Set("DeviceToken", token);
+        }
+
+        public override void OnMessageReceived(RemoteMessage message)
+        {
+            base.OnMessageReceived(message);
+
+            var notification = message.GetNotification();
+
+            SendNotification(notification.Body, notification.Title, message.Data);
+        }
+
+        public void SendNotification(string messageBody, string title, IDictionary<string, string> data)
+        {
+            var notificationBuilder = new NotificationCompat.Builder(this, MainActivity.Channel_ID)
+                .SetContentTitle(title)
+                .SetSmallIcon(Resource.Mipmap.appicon)
+                .SetContentTitle(messageBody)
+                .SetChannelId(MainActivity.Channel_ID)
+                .SetPriority(2);
+
+            var notificationManager = NotificationManagerCompat.From(this);
+            notificationManager.Notify(MainActivity.NotificationID, notificationBuilder.Build());
+
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Kudomion;
 public class MainActivity : MauiAppCompatActivity
 {
     internal static readonly string Channel_ID = "NotificationsChannel";
+    internal static readonly int NotificationID = 101; 
     protected override void OnCreate(Bundle savedInstanceState)
     {
         base.OnCreate(savedInstanceState);
