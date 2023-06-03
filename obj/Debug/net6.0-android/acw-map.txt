@@ -3658,6 +3658,108 @@ com.google.crypto.tink.shaded.protobuf.Parser;com.google.crypto.tink.shaded.prot
 Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IProtocolStringList, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.ProtocolStringList
 Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IProtocolStringList;com.google.crypto.tink.shaded.protobuf.ProtocolStringList
 com.google.crypto.tink.shaded.protobuf.ProtocolStringList;com.google.crypto.tink.shaded.protobuf.ProtocolStringList
+Dagger.IBinds, Xamarin.Google.Dagger;dagger.Binds
+Dagger.IBinds;dagger.Binds
+dagger.Binds;dagger.Binds
+Dagger.IBindsInstance, Xamarin.Google.Dagger;dagger.BindsInstance
+Dagger.IBindsInstance;dagger.BindsInstance
+dagger.BindsInstance;dagger.BindsInstance
+Dagger.IBindsOptionalOf, Xamarin.Google.Dagger;dagger.BindsOptionalOf
+Dagger.IBindsOptionalOf;dagger.BindsOptionalOf
+dagger.BindsOptionalOf;dagger.BindsOptionalOf
+Dagger.IComponentBuilder, Xamarin.Google.Dagger;dagger.Component$Builder
+Dagger.IComponentBuilder;dagger.Component$Builder
+dagger.Component$Builder;dagger.Component$Builder
+Dagger.IComponentFactory, Xamarin.Google.Dagger;dagger.Component$Factory
+Dagger.IComponentFactory;dagger.Component$Factory
+dagger.Component$Factory;dagger.Component$Factory
+Dagger.IComponent, Xamarin.Google.Dagger;dagger.Component
+Dagger.IComponent;dagger.Component
+dagger.Component;dagger.Component
+Dagger.ILazy, Xamarin.Google.Dagger;dagger.Lazy
+Dagger.ILazy;dagger.Lazy
+dagger.Lazy;dagger.Lazy
+Dagger.IMapKey, Xamarin.Google.Dagger;dagger.MapKey
+Dagger.IMapKey;dagger.MapKey
+dagger.MapKey;dagger.MapKey
+Dagger.IMembersInjector, Xamarin.Google.Dagger;dagger.MembersInjector
+Dagger.IMembersInjector;dagger.MembersInjector
+dagger.MembersInjector;dagger.MembersInjector
+Dagger.IModule, Xamarin.Google.Dagger;dagger.Module
+Dagger.IModule;dagger.Module
+dagger.Module;dagger.Module
+Dagger.IProvides, Xamarin.Google.Dagger;dagger.Provides
+Dagger.IProvides;dagger.Provides
+dagger.Provides;dagger.Provides
+Dagger.IReusable, Xamarin.Google.Dagger;dagger.Reusable
+Dagger.IReusable;dagger.Reusable
+dagger.Reusable;dagger.Reusable
+Dagger.ISubcomponentBuilder, Xamarin.Google.Dagger;dagger.Subcomponent$Builder
+Dagger.ISubcomponentBuilder;dagger.Subcomponent$Builder
+dagger.Subcomponent$Builder;dagger.Subcomponent$Builder
+Dagger.ISubcomponentFactory, Xamarin.Google.Dagger;dagger.Subcomponent$Factory
+Dagger.ISubcomponentFactory;dagger.Subcomponent$Factory
+dagger.Subcomponent$Factory;dagger.Subcomponent$Factory
+Dagger.ISubcomponent, Xamarin.Google.Dagger;dagger.Subcomponent
+Dagger.ISubcomponent;dagger.Subcomponent
+dagger.Subcomponent;dagger.Subcomponent
+Dagger.Multibindings.IClassKey, Xamarin.Google.Dagger;dagger.multibindings.ClassKey
+Dagger.Multibindings.IClassKey;dagger.multibindings.ClassKey
+dagger.multibindings.ClassKey;dagger.multibindings.ClassKey
+Dagger.Multibindings.IElementsIntoSet, Xamarin.Google.Dagger;dagger.multibindings.ElementsIntoSet
+Dagger.Multibindings.IElementsIntoSet;dagger.multibindings.ElementsIntoSet
+dagger.multibindings.ElementsIntoSet;dagger.multibindings.ElementsIntoSet
+Dagger.Multibindings.IIntKey, Xamarin.Google.Dagger;dagger.multibindings.IntKey
+Dagger.Multibindings.IIntKey;dagger.multibindings.IntKey
+dagger.multibindings.IntKey;dagger.multibindings.IntKey
+Dagger.Multibindings.IIntoMap, Xamarin.Google.Dagger;dagger.multibindings.IntoMap
+Dagger.Multibindings.IIntoMap;dagger.multibindings.IntoMap
+dagger.multibindings.IntoMap;dagger.multibindings.IntoMap
+Dagger.Multibindings.IIntoSet, Xamarin.Google.Dagger;dagger.multibindings.IntoSet
+Dagger.Multibindings.IIntoSet;dagger.multibindings.IntoSet
+dagger.multibindings.IntoSet;dagger.multibindings.IntoSet
+Dagger.Multibindings.ILongKey, Xamarin.Google.Dagger;dagger.multibindings.LongKey
+Dagger.Multibindings.ILongKey;dagger.multibindings.LongKey
+dagger.multibindings.LongKey;dagger.multibindings.LongKey
+Dagger.Multibindings.IMultibinds, Xamarin.Google.Dagger;dagger.multibindings.Multibinds
+Dagger.Multibindings.IMultibinds;dagger.multibindings.Multibinds
+dagger.multibindings.Multibinds;dagger.multibindings.Multibinds
+Dagger.Multibindings.IStringKey, Xamarin.Google.Dagger;dagger.multibindings.StringKey
+Dagger.Multibindings.IStringKey;dagger.multibindings.StringKey
+dagger.multibindings.StringKey;dagger.multibindings.StringKey
+Dagger.Assisted.IAssisted, Xamarin.Google.Dagger;dagger.assisted.Assisted
+Dagger.Assisted.IAssisted;dagger.assisted.Assisted
+dagger.assisted.Assisted;dagger.assisted.Assisted
+Dagger.Assisted.IAssistedFactory, Xamarin.Google.Dagger;dagger.assisted.AssistedFactory
+Dagger.Assisted.IAssistedFactory;dagger.assisted.AssistedFactory
+dagger.assisted.AssistedFactory;dagger.assisted.AssistedFactory
+Dagger.Assisted.IAssistedInject, Xamarin.Google.Dagger;dagger.assisted.AssistedInject
+Dagger.Assisted.IAssistedInject;dagger.assisted.AssistedInject
+dagger.assisted.AssistedInject;dagger.assisted.AssistedInject
+Dagger.Internal.IBeta, Xamarin.Google.Dagger;dagger.internal.Beta
+Dagger.Internal.IBeta;dagger.internal.Beta
+dagger.internal.Beta;dagger.internal.Beta
+Dagger.Internal.IComponentDefinitionType, Xamarin.Google.Dagger;dagger.internal.ComponentDefinitionType
+Dagger.Internal.IComponentDefinitionType;dagger.internal.ComponentDefinitionType
+dagger.internal.ComponentDefinitionType;dagger.internal.ComponentDefinitionType
+Dagger.Internal.IDaggerGenerated, Xamarin.Google.Dagger;dagger.internal.DaggerGenerated
+Dagger.Internal.IDaggerGenerated;dagger.internal.DaggerGenerated
+dagger.internal.DaggerGenerated;dagger.internal.DaggerGenerated
+Dagger.Internal.IFactory, Xamarin.Google.Dagger;dagger.internal.Factory
+Dagger.Internal.IFactory;dagger.internal.Factory
+dagger.internal.Factory;dagger.internal.Factory
+Dagger.Internal.IGwtIncompatible, Xamarin.Google.Dagger;dagger.internal.GwtIncompatible
+Dagger.Internal.IGwtIncompatible;dagger.internal.GwtIncompatible
+dagger.internal.GwtIncompatible;dagger.internal.GwtIncompatible
+Dagger.Internal.IInjectedFieldSignature, Xamarin.Google.Dagger;dagger.internal.InjectedFieldSignature
+Dagger.Internal.IInjectedFieldSignature;dagger.internal.InjectedFieldSignature
+dagger.internal.InjectedFieldSignature;dagger.internal.InjectedFieldSignature
+Dagger.Internal.IQualifierMetadata, Xamarin.Google.Dagger;dagger.internal.QualifierMetadata
+Dagger.Internal.IQualifierMetadata;dagger.internal.QualifierMetadata
+dagger.internal.QualifierMetadata;dagger.internal.QualifierMetadata
+Dagger.Internal.IScopeMetadata, Xamarin.Google.Dagger;dagger.internal.ScopeMetadata
+Dagger.Internal.IScopeMetadata;dagger.internal.ScopeMetadata
+dagger.internal.ScopeMetadata;dagger.internal.ScopeMetadata
 Xamarin.Google.ErrorProne.Annotations.ICanIgnoreReturnValue, Xamarin.Google.ErrorProne.Annotations;com.google.errorprone.annotations.CanIgnoreReturnValue
 Xamarin.Google.ErrorProne.Annotations.ICanIgnoreReturnValue;com.google.errorprone.annotations.CanIgnoreReturnValue
 com.google.errorprone.annotations.CanIgnoreReturnValue;com.google.errorprone.annotations.CanIgnoreReturnValue

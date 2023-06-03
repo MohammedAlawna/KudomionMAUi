@@ -93,6 +93,7 @@ Xamarin.Google.Android.DataTransport.TransportBackendCct.dll
 Xamarin.Google.Android.DataTransport.TransportRuntime.dll
 Xamarin.Google.Android.Material.dll
 Xamarin.Google.Crypto.Tink.Android.dll
+Xamarin.Google.Dagger.dll
 Xamarin.Google.ErrorProne.Annotations.dll
 Xamarin.Google.Guava.ListenableFuture.dll
 Xamarin.GooglePlayServices.Base.dll
@@ -192,6 +193,7 @@ transport-api.aar
 transport-backend-cct.aar
 transport-runtime.aar
 Xamarin.Google.Crypto.Tink.Android.aar
+Xamarin.Google.Dagger.aar
 Xamarin.Google.ErrorProne.Annotations.aar
 play-services-base.aar
 play-services-basement.aar
@@ -213,5 +215,3 @@ firebaseinstallations-17.1.0.aar
 firebaseiidinterop-17.1.0.aar
 firebasedatatransport-18.1.7.aar
 firebasemessaging-23.1.1.aar
-Xamarin.Google.Dagger.dll
-Xamarin.Google.Dagger.aar

@@ -15,7 +15,7 @@
 		<ApplicationTitle>Kudomion</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.kudomion</ApplicationId>
+		<ApplicationId>com.blouza.kudomion</ApplicationId>
 		<ApplicationIdGuid>95d4911d-3705-4d66-af1e-b4b8f6ebf084</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -56,6 +56,9 @@
 	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
 	  <PackageReference Include="Xamarin.Firebase.Messaging">
 	    <Version>123.1.1.1</Version>
+	  </PackageReference>
+	  <PackageReference Include="Xamarin.Google.Dagger">
+	    <Version>2.46.1.1</Version>
 	  </PackageReference>
 	  <PackageReference Include="Xamarin.GooglePlayServices.Base">
 	    <Version>118.1.0.1</Version>

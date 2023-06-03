@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243543683849",
+    "project_id": "kdbeta",
+    "storage_bucket": "kdbeta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243543683849:android:d1aab26867503d87b419d8",
+        "android_client_info": {
+          "package_name": "com.blouza.kudomion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243543683849-cf6i8bndp09i5gfqt5jpflrv0d3ldkqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBX22NZAbeChNlR492D9Y721QFQrs6NWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243543683849-cf6i8bndp09i5gfqt5jpflrv0d3ldkqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -114,6 +114,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Google.Android.DataTransport.TransportRuntime.dll",
 		"Xamarin.Google.Android.Material.dll",
 		"Xamarin.Google.Crypto.Tink.Android.dll",
+		"Xamarin.Google.Dagger.dll",
 		"Xamarin.Google.ErrorProne.Annotations.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
 		"Xamarin.GooglePlayServices.Base.dll",

@@ -1300,6 +1300,10 @@ app_system_properties:
 .L.env.buf.315:
 	.zero	73
 	.size	.L.env.buf.315, 73
+	.type	.L.env.buf.316, @object
+.L.env.buf.316:
+	.zero	73
+	.size	.L.env.buf.316, 73
 	# Bundled assemblies data
 
 	.type	bundled_assemblies, @object
@@ -4152,7 +4156,16 @@ bundled_assemblies:
 	.zero	4
 	.quad	.L.env.buf.315	# name
 
-	.size	bundled_assemblies, 12640
+	.long	0xffffffff	# apk_fd
+	.long	0x0	# data_offset
+	.long	0x0	# data_size
+	.zero	4
+	.quad	0x0	# data
+	.long	0x0	# name_length
+	.zero	4
+	.quad	.L.env.buf.316	# name
+
+	.size	bundled_assemblies, 12680
 	# Assembly store individual assembly data
 	.type	assembly_store_bundled_assemblies, @object
 	.global	assembly_store_bundled_assemblies
@@ -4388,7 +4401,7 @@ application_config:
 	.long	0x3	# package_naming_policy
 	.long	0xc	# environment_variable_count
 	.long	0x0	# system_property_count
-	.long	0x13c	# number_of_assemblies_in_apk
+	.long	0x13d	# number_of_assemblies_in_apk
 	.long	0x49	# bundled_assembly_name_width
 	.long	0x2	# number_of_assembly_store_files
 	.long	0x20	# number_of_dso_cache_entries
@@ -4441,7 +4454,7 @@ application_config:
 
 	.type	.L.autostr.8, @object
 .L.autostr.8:
-	.asciz	"ab10c0f3-9a4e-4e3e-b984-6d1062628735"
+	.asciz	"4bc2e45d-9704-4667-8c7c-786fe4292440"
 	.size	.L.autostr.8, 37
 
 	.type	.L.autostr.9, @object
@@ -4626,8 +4639,8 @@ application_config:
 
 	.type	.L.autostr.45, @object
 .L.autostr.45:
-	.asciz	"com.companyname.kudomion"
-	.size	.L.autostr.45, 25
+	.asciz	"com.blouza.kudomion"
+	.size	.L.autostr.45, 20
 
 
 	.ident	"Xamarin.Android remotes/origin/release/6.0.4xx @ 619ab7a92a09825ecb274bf87d8086d2dbe63aea"
