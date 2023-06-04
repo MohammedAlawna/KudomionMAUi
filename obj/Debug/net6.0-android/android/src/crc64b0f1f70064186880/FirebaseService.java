@@ -11,6 +11,7 @@ public class FirebaseService
 	static {
 		__md_methods = 
 			"n_onNewToken:(Ljava/lang/String;)V:GetOnNewToken_Ljava_lang_String_Handler\n" +
+			"n_onMessageReceived:(Lcom/google/firebase/messaging/RemoteMessage;)V:GetOnMessageReceived_Lcom_google_firebase_messaging_RemoteMessage_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Kudomion.Platforms.Android.Services.FirebaseService, Kudomion", FirebaseService.class, __md_methods);
 	}
@@ -30,6 +31,14 @@ public class FirebaseService
 	}
 
 	private native void n_onNewToken (java.lang.String p0);
+
+
+	public void onMessageReceived (com.google.firebase.messaging.RemoteMessage p0)
+	{
+		n_onMessageReceived (p0);
+	}
+
+	private native void n_onMessageReceived (com.google.firebase.messaging.RemoteMessage p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
