@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Kudomion.Model;
+using Newtonsoft.Json;
 
 namespace Kudomion
 {
@@ -91,7 +92,7 @@ namespace Kudomion
             Console.WriteLine("Discord Tapped");
         }
 
-        private void OnClickDecks(object sender, EventArgs e)
+        private async void OnClickDecks(object sender, EventArgs e)
         {
             //  await Navigation.PushAsync(new DecksList());
 
@@ -109,7 +110,14 @@ namespace Kudomion
 
             using(var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=", "");
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=" + "8b3446a163c622a4494d7614a0cc38244be66090\t");
+                string serializeRequest = JsonConvert.SerializeObject(pushNotificationRequest);
+                var response = await client.PostAsync(url, new StringContent(serializeRequest, Encoding.UTF8, "application/json"));
+                if(response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    await App.Current.MainPage.DisplayAlert("Notification Sent!", "Notification Sent", "OK!");
+                }
+                    
             }
         }
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O5ruBTTdx+C7XXtIuyIXqG7R3BdnARrqIBAnOWeRaMrll9T6+RJ4sgP0IOluDFDnyw40yxeP4G7M1DJHiW/LDA==",
+  "dgSpecHash": "Y5/kL2+4RskB4LXkejKgo6GuiIliidL8kU4coNE6+ZHVsJBBdAGBKmrG1XHODEn0HcM8POaoL55+uS++RL+bGw==",
   "success": true,
   "projectFilePath": "D:\\OGRE Tech CO\\KudomionUpgraded\\Kudomion\\Kudomion\\Kudomion.csproj",
   "expectedPackageFiles": [
@@ -37,7 +37,7 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.5\\microsoft.windowsappsdk.1.1.5.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.any.system.io\\4.3.0\\runtime.any.system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.any.system.reflection\\4.3.0\\runtime.any.system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.any.system.reflection.primitives\\4.3.0\\runtime.any.system.reflection.primitives.4.3.0.nupkg.sha512",
