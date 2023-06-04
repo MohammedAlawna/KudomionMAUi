@@ -7,35 +7,37 @@
     xmlns:controls="clr-namespace:Kudomion.Controls"
     Shell.BackgroundColor="RoyalBlue"
     Shell.FlyoutBehavior="Flyout"
+    Shell.TabBarBackgroundColor="#2e2e2e"
+    
     >
 
     <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
 
         <ShellContent
             Title="Home"
-            FlyoutIcon=""
+            FlyoutIcon="hme"
             ContentTemplate="{DataTemplate local:MainPage}"
             />
 
         <ShellContent
         Title="News"
-        FlyoutIcon="hme"
+        FlyoutIcon="newss.png"
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
     <ShellContent
         Title="Challenges"
-        FlyoutIcon=""
+        FlyoutIcon="lby"
         ContentTemplate="{DataTemplate local:Challenges}"
         />
 
     <ShellContent
         Title="Rankings"
-        FlyoutIcon=""
+        FlyoutIcon="rnk"
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
-    <ShellContent
+    <!--<ShellContent
         Title="Settings"
         FlyoutIcon="notif"
         />
@@ -43,7 +45,7 @@
         <ShellContent
         Title="About"
         FlyoutIcon="notif"
-        />
+        />-->
 
     </FlyoutItem>
 
