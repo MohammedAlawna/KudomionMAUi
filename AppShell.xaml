@@ -11,6 +11,9 @@
     Shell.TabBarUnselectedColor="White"
     >
 
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
+    </Shell.BackButtonBehavior>
     <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
 
         <ShellContent
@@ -23,7 +26,7 @@
         <ShellContent
         Icon="newss.png"
         Title="News"
-        FlyoutIcon="newss.png"
+        
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
@@ -35,6 +38,7 @@
 
     <ShellContent
         Title="Rankings"
+
         Icon="rnke"
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />

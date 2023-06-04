@@ -8,6 +8,9 @@
              BackgroundColor="#1c1c1c"
             
              >
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
+    </Shell.BackButtonBehavior>
     <Shell.SearchHandler>
         <controls:SearchField Placeholder="Enter Search Here.." ShowsResults="True" />
     </Shell.SearchHandler>
