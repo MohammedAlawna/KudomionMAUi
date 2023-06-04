@@ -110,7 +110,7 @@ namespace Kudomion
 
             using(var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=" + "8b3446a163c622a4494d7614a0cc38244be66090\t");
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=" + "8b3446a163c622a4494d7614a0cc38244be66090");
                 string serializeRequest = JsonConvert.SerializeObject(pushNotificationRequest);
                 var response = await client.PostAsync(url, new StringContent(serializeRequest, Encoding.UTF8, "application/json"));
                 if(response.StatusCode == System.Net.HttpStatusCode.OK)
