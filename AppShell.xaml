@@ -8,18 +8,20 @@
     Shell.BackgroundColor="RoyalBlue"
     Shell.FlyoutBehavior="Flyout"
     Shell.TabBarBackgroundColor="#2e2e2e"
-    
+    Shell.TabBarUnselectedColor="White"
     >
 
     <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
 
         <ShellContent
+            Icon="hme"
             Title="Home"
-            FlyoutIcon="hme"
+            
             ContentTemplate="{DataTemplate local:MainPage}"
             />
 
         <ShellContent
+        Icon="newss.png"
         Title="News"
         FlyoutIcon="newss.png"
         ContentTemplate="{DataTemplate local:Leaderboard}"
@@ -27,13 +29,13 @@
 
     <ShellContent
         Title="Challenges"
-        FlyoutIcon="lby"
+        Icon="btlic"
         ContentTemplate="{DataTemplate local:Challenges}"
         />
 
     <ShellContent
         Title="Rankings"
-        FlyoutIcon="rnk"
+        Icon="rnke"
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
