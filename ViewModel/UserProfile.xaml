@@ -27,11 +27,11 @@
                 
             </StackLayout>
 
-            <StackLayout Orientation="Vertical">
-                <Picker Margin="0" SelectedIndex="1" x:Name="userStatPicker" TextColor="White" BackgroundColor="#323232"/>
+            <StackLayout Orientation="Vertical" Margin="0">
+                <Picker VerticalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="userStatPicker" TextColor="White" BackgroundColor="#323232"/>
             </StackLayout>
 
-            <StackLayout x:Name="stats" IsVisible="false">
+            <StackLayout x:Name="stats" IsVisible="false" Margin="5">
                 <Frame Margin="0" BackgroundColor="#323232" >
                     <StackLayout>
                         <Label x:Name="noDuels" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Duels: 0"/>
@@ -43,7 +43,7 @@
                 </Frame>
             </StackLayout>
 
-            <StackLayout x:Name="duels" IsVisible="false">
+            <StackLayout x:Name="duels" IsVisible="false" Margin="5">
                 <Frame Margin="0" BackgroundColor="#323232">
                     <StackLayout>
                         <CollectionView x:Name="userDuels">
@@ -75,7 +75,7 @@
                 </Frame>
             </StackLayout>
 
-            <StackLayout x:Name="posts" IsVisible="false">
+            <StackLayout x:Name="posts" IsVisible="false" Margin="5">
                 <Frame Margin="0" BackgroundColor="#323232">
                     <StackLayout>
                         <Label FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Posts Currently Not Available.."/>
@@ -84,7 +84,7 @@
                 </Frame>
             </StackLayout>
 
-            <StackLayout x:Name="signature" IsVisible="false">
+            <StackLayout x:Name="signature" IsVisible="false" Margin="5">
                 <Frame Margin="0" BackgroundColor="#323232">
                     <StackLayout>
                         <Label FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Signature Currently Not Available."/>

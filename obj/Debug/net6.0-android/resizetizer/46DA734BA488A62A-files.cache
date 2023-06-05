@@ -36,6 +36,8 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\splash.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr.xml
+obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr_round.xml
 obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\btlic.xml
 obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\btlic_round.xml
 obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot.xml
@@ -51,6 +53,9 @@ obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\rnke_round.xml
 obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\appicon.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\appicon_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\appicon_foreground.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\bluestr.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\bluestr_background.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\bluestr_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\btlic.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\btlic_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\btlic_foreground.png
@@ -72,6 +77,9 @@ obj\Debug\net6.0-android\resizetizer\r\mipmap-hdpi\rnke_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\appicon.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\appicon_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\appicon_foreground.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\bluestr.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\bluestr_background.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\bluestr_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\btlic.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\btlic_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\btlic_foreground.png
@@ -93,6 +101,9 @@ obj\Debug\net6.0-android\resizetizer\r\mipmap-mdpi\rnke_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\appicon.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\appicon_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\appicon_foreground.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\bluestr.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\bluestr_background.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\bluestr_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\btlic.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\btlic_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\btlic_foreground.png
@@ -114,6 +125,9 @@ obj\Debug\net6.0-android\resizetizer\r\mipmap-xhdpi\rnke_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\appicon.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\appicon_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\appicon_foreground.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\bluestr.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\bluestr_background.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\bluestr_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\btlic.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\btlic_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\btlic_foreground.png
@@ -135,6 +149,9 @@ obj\Debug\net6.0-android\resizetizer\r\mipmap-xxhdpi\rnke_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\appicon.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\appicon_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\appicon_foreground.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\bluestr.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\bluestr_background.png
+obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\bluestr_foreground.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\btlic.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\btlic_background.png
 obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\btlic_foreground.png
