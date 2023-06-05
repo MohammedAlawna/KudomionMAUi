@@ -4,7 +4,7 @@
              x:Class="Kudomion.ViewModel.NewsFeed"
              BackgroundImageSource="bgkd"
              >
-    <ContentPage.Content>
+   
         <StackLayout>
             <Frame BackgroundColor="#313338">
                 <StackLayout>
@@ -60,5 +60,5 @@
                 </StackLayout>
             </Frame>
         </StackLayout>
-    </ContentPage.Content>
+   
 </ContentPage>

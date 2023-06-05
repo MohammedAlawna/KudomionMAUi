@@ -4,30 +4,31 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Kudomion"
+    xmlns:viewModel="clr-namespace:Kudomion.ViewModel"
     xmlns:controls="clr-namespace:Kudomion.Controls"
     Shell.BackgroundColor="RoyalBlue"
     Shell.FlyoutBehavior="Flyout"
     Shell.TabBarBackgroundColor="#2e2e2e"
     Shell.TabBarUnselectedColor="White"
+    FlyoutBackgroundColor="RoyalBlue"
     >
 
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
     </Shell.BackButtonBehavior>
+    
     <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
 
         <ShellContent
             Icon="hme"
             Title="Home"
-            
             ContentTemplate="{DataTemplate local:MainPage}"
             />
 
         <ShellContent
         Icon="newss.png"
         Title="News"
-        
-        ContentTemplate="{DataTemplate local:Leaderboard}"
+        ContentTemplate="{DataTemplate viewModel:NewsFeed}"
         />
 
     <ShellContent
@@ -38,7 +39,6 @@
 
     <ShellContent
         Title="Rankings"
-
         Icon="rnke"
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
