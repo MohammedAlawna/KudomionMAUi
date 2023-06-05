@@ -32,7 +32,7 @@
             </StackLayout>
 
             <StackLayout x:Name="stats" IsVisible="false">
-                <Frame Margin="0" BackgroundColor="#323232">
+                <Frame Margin="0" BackgroundColor="#323232" >
                     <StackLayout>
                         <Label x:Name="noDuels" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Duels: 0"/>
                         <Label x:Name="noPoints" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Points: 0"/>

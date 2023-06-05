@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.UsersPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <CollectionView x:Name="myCollectionView" SelectionMode="Single" Margin="20, 5, 20, 0">
+
+    <StackLayout>
+        <CollectionView x:Name="myCollectionView" SelectionMode="Single" Margin="20, 5, 20, 0">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid RowSpacing="0">
@@ -34,5 +34,5 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </StackLayout>
-    </ContentPage.Content>
+ 
 </ContentPage>

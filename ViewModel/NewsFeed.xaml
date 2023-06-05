@@ -5,7 +5,7 @@
              BackgroundImageSource="bgkd"
              >
    
-        <StackLayout>
+        <StackLayout Margin="15">
             <Frame BackgroundColor="#313338">
                 <StackLayout>
                     <CollectionView x:Name="postsInNewsFeed">

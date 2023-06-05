@@ -991,13 +991,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\stam
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.x86.s
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\environment.x86.s
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\compressed_assemblies.x86.s
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.x86.o
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\environment.x86.o
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\compressed_assemblies.x86.o
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\app_shared_libraries\x86\libxamarin-app.so
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\btlic.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\hme.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\newss.png
@@ -1185,3 +1178,10 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resi
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\ranking.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\yg.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\ygb.jpg
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
