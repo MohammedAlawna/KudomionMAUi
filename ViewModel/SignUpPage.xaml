@@ -3,9 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.SignUpPage"
              BackgroundImageSource="lgBg"
+             Shell.TabBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False"
              >
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Spacing="20">
             <Label Text="Sign Up"
                    FontAttributes="Bold"
                    FontSize="25"
@@ -14,15 +17,15 @@
                 HorizontalOptions="CenterAndExpand" />
             
             <Frame HorizontalOptions="Center" WidthRequest="330"  CornerRadius="30" Padding="3" BorderColor="RoyalBlue" BackgroundColor="Transparent">
-            <Entry x:Name="userName" HorizontalOptions="CenterAndExpand" WidthRequest="270" Placeholder="Enter Username.." ReturnType="Next" PlaceholderColor="gray" TextColor="White" />
+            <Entry x:Name="userName" HorizontalOptions="CenterAndExpand" WidthRequest="270" Placeholder="Enter Username.." ReturnType="Next" PlaceholderColor="White" TextColor="White" />
             </Frame>
             
             <Frame HorizontalOptions="Center" WidthRequest="330"  CornerRadius="30" Padding="3" BackgroundColor="Transparent" BorderColor="RoyalBlue">
-                <Entry x:Name="password" HorizontalOptions="CenterAndExpand" WidthRequest="270" ReturnType="Next" MaxLength="17" IsPassword="True" TextColor="White" Placeholder="Enter Password.." PlaceholderColor="Gray" />
+                <Entry x:Name="password" HorizontalOptions="CenterAndExpand" WidthRequest="270" ReturnType="Next" MaxLength="17" IsPassword="True" TextColor="White" Placeholder="Enter Password.." PlaceholderColor="White" />
             </Frame>
 
             <Frame HorizontalOptions="Center" WidthRequest="330"  CornerRadius="30" Padding="3" BackgroundColor="Transparent" BorderColor="RoyalBlue">
-                <Entry x:Name="confirmPassword" HorizontalOptions="CenterAndExpand" WidthRequest="270" ReturnType="Next" IsPassword="True" TextColor="White" Placeholder="Confirm Password.." PlaceholderColor="Gray" />
+                <Entry x:Name="confirmPassword" HorizontalOptions="CenterAndExpand" WidthRequest="270" ReturnType="Next" IsPassword="True" TextColor="White" Placeholder="Confirm Password.." PlaceholderColor="White" />
             </Frame>
 
 
@@ -31,8 +34,10 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 WidthRequest="200"
-                Text="Sign Up"
+                HeightRequest="50"
+                Text="Submit"
                 Padding="5"
+                FontSize="20"
                 TextColor="White"
                 Clicked="SignUpButton_Clicked"
                 BackgroundColor="RoyalBlue" 

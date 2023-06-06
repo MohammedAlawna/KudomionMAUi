@@ -7,7 +7,6 @@
              Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarIsVisible="False"
-             
              >
     <!--Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"-->
@@ -21,21 +20,21 @@
                 VerticalOptions="Center"
                 Text="Login"
                 TextColor="White"
-                Clicked="LoginButton_Clicked"
+                Clicked="SignInClicked"
                 BackgroundColor="RoyalBlue" 
                 BorderWidth="1.5"
                 CornerRadius="50"></Button>
 
         <Button
                 VerticalOptions="Center"
-                Text="Get Me"
+                Text="Sign-Up"
                 TextColor="White"
-                Clicked="SignInClicked"
-                BackgroundColor="Gold" 
+                Clicked="SignUpClicked"
+                BackgroundColor="Orange" 
                 BorderWidth="1.5"
                 CornerRadius="50"></Button>
 
-        <Label HorizontalOptions="Center">
+        <!--<Label HorizontalOptions="Center">
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="Not Registered?" TextColor="White"/>
@@ -47,7 +46,7 @@
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
             </Label.GestureRecognizers>
-        </Label>
+        </Label>-->
     </StackLayout>
     <!--<ScrollView>
         <VerticalStackLayout

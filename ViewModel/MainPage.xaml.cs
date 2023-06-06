@@ -37,6 +37,11 @@ public partial class MainPage : ContentPage
      }
     */
 
+    private async void SignUpClicked(object sender, EventArgs e)
+    {
+       await Navigation.PushAsync(new SignUpPage());
+    }
+
     private async void SignInClicked(object sender, EventArgs e)
     {
         //Step (1): Check Credentials..
