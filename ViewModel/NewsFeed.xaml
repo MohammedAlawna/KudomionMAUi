@@ -12,6 +12,7 @@
                       
                         <CollectionView.ItemTemplate >
                             <DataTemplate >
+                            <ScrollView>
                                 <StackLayout Margin="7">
                                     <Frame  BorderColor="DarkGray" BackgroundColor="#303030" HorizontalOptions="CenterAndExpand">
                                     <StackLayout HeightRequest="203" HorizontalOptions="CenterAndExpand">
@@ -54,7 +55,8 @@
                                     </StackLayout>
                                 </Frame>
                                 </StackLayout>
-                            </DataTemplate>
+                            </ScrollView>
+                        </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
                 </StackLayout>
