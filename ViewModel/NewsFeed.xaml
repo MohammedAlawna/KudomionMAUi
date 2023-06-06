@@ -14,7 +14,7 @@
                             <DataTemplate >
                                 <StackLayout Margin="7">
                                     <Frame  BorderColor="DarkGray" BackgroundColor="#303030" HorizontalOptions="CenterAndExpand">
-                                    <StackLayout HeightRequest="200" HorizontalOptions="CenterAndExpand">
+                                    <StackLayout HeightRequest="203" HorizontalOptions="CenterAndExpand">
                                         <Grid >
                                             <Grid.RowDefinitions>
                                                 <RowDefinition/>
@@ -37,9 +37,9 @@
                                               
                                             <Label Grid.Row="0" Grid.Column="0" FontSize="13" TextColor="White" Text="Hello Duelists. New Tournament Available."/>
                                             <!--Image for Post (If exits!)-->
-                                            <Image Source="ygb" Grid.RowSpan="6" Grid.Row="2" Grid.Column="0" />
+                                            <Image Margin="5" Source="ygb" Grid.RowSpan="6" Grid.Row="2" Grid.Column="0" />
                                                 <!--Reaction Item Frame (if not exits, it counts 0)-->
-                                                <Image HorizontalOptions="Center" Source="emj" Grid.Row="8" Grid.RowSpan="2">
+                                                <Image HorizontalOptions="Center" HeightRequest="30" Source="emj" Grid.Row="8" Grid.RowSpan="2">
                                                     <Image.GestureRecognizers>
                                                         <TapGestureRecognizer Tapped="StandradReactClicked"/>
                                                     </Image.GestureRecognizers>
