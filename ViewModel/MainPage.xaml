@@ -27,18 +27,18 @@
 
         <Button
                 VerticalOptions="Center"
-                Text="Sign-Up"
+                Text="Forget Password?"
                 TextColor="White"
-                Clicked="SignUpClicked"
+                Clicked="ForgetPasswordClicked"
                 BackgroundColor="Orange" 
                 BorderWidth="1.5"
                 CornerRadius="50"></Button>
 
-        <!--<Label HorizontalOptions="Center">
+      <Label HorizontalOptions="Center">
             <Label.FormattedText>
                 <FormattedString>
-                    <Span Text="Not Registered?" TextColor="White"/>
-                    <Span Text="Sign-Up" TextColor="RoyalBlue" FontAttributes="Bold" TextDecorations="Underline"/>
+                    <Span FontSize="18" Text="Not Registered?" TextColor="White"/>
+                    <Span FontSize="18" Text="Sign-Up" TextColor="RoyalBlue" FontAttributes="Bold" TextDecorations="Underline"/>
 
                 </FormattedString>
             </Label.FormattedText>
@@ -46,7 +46,7 @@
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
             </Label.GestureRecognizers>
-        </Label>-->
+        </Label>
     </StackLayout>
     <!--<ScrollView>
         <VerticalStackLayout

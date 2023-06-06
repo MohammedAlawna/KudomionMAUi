@@ -37,9 +37,10 @@ public partial class MainPage : ContentPage
      }
     */
 
-    private async void SignUpClicked(object sender, EventArgs e)
+    private async void ForgetPasswordClicked(object sender, EventArgs e)
     {
-       await Navigation.PushAsync(new SignUpPage());
+        await DisplayAlert("Password Recovery System!", "Password Recovery System is Still Under Development! Please Contact Developer..", "OK!");
+     //  await Navigation.PushAsync(new SignUpPage());
     }
 
     private async void SignInClicked(object sender, EventArgs e)
