@@ -37,8 +37,8 @@
       <Label HorizontalOptions="Center">
             <Label.FormattedText>
                 <FormattedString>
-                    <Span FontSize="18" Text="Not Registered?" TextColor="White"/>
-                    <Span FontSize="18" Text="Sign-Up" TextColor="RoyalBlue" FontAttributes="Bold" TextDecorations="Underline"/>
+                    <Span FontSize="24" Text="Not Registered?" TextColor="White"/>
+                    <Span FontSize="24" Text="Sign-Up" TextColor="RoyalBlue" FontAttributes="Bold" TextDecorations="Underline"/>
 
                 </FormattedString>
             </Label.FormattedText>
