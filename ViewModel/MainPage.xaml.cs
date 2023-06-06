@@ -48,10 +48,10 @@ public partial class MainPage : ContentPage
 
         //Step (2): if Login Success => A- Go To LoginPage, B- Assign loggedIn = true..
 
-        await Navigation.PushAsync(new LoginPage());
+        //await Navigation.PushAsync(new LoginPage());
         
-
-       /* currentLoggedInUser = userNameText.Text;
+/*
+        currentLoggedInUser = userNameText.Text;
         User outPut = await firebase.GetUserByName(currentLoggedInUser);
         if (outPut == null)
         {
@@ -67,7 +67,7 @@ public partial class MainPage : ContentPage
 
 
 
-        /*  try
+         try
            {
 
                currentLoggedInUser = userNameText.Text;
@@ -76,7 +76,7 @@ public partial class MainPage : ContentPage
 
                if (userNameText.Text == outPut.name && passwordText.Text == outPut.password)
                {
-                   await Navigation.PushAsync(new LoggedInPage());
+                   await Navigation.PushAsync(new LoginPage());
                    currentLoggedInUser = outPut.name;
                    return;
 
@@ -102,7 +102,7 @@ public partial class MainPage : ContentPage
            {
                await DisplayAlert("Exception!", "Null Reference Exception caught!", "OK!");
                return;
-           }*/
+           }
 
     }
 
