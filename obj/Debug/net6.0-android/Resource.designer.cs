@@ -8064,28 +8064,31 @@ namespace Kudomion
 			public const int splash = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
-			public const int test_custom_background = 2131165381;
+			public const int splsh = 2131165381;
 			
 			// aapt resource value: 0x7F0700C6
-			public const int test_level_drawable = 2131165382;
+			public const int test_custom_background = 2131165382;
 			
 			// aapt resource value: 0x7F0700C7
-			public const int tooltip_frame_dark = 2131165383;
+			public const int test_level_drawable = 2131165383;
 			
 			// aapt resource value: 0x7F0700C8
-			public const int tooltip_frame_light = 2131165384;
+			public const int tooltip_frame_dark = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int tournies = 2131165385;
+			public const int tooltip_frame_light = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
-			public const int yg = 2131165386;
+			public const int tournies = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int ygb = 2131165387;
+			public const int yg = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int ygo_guide = 2131165388;
+			public const int ygb = 2131165388;
+			
+			// aapt resource value: 0x7F0700CD
+			public const int ygo_guide = 2131165389;
 			
 			static Drawable()
 			{

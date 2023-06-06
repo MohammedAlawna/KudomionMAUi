@@ -11163,14 +11163,15 @@ public final class R {
     public static final int rnke=0x7f0700c2;
     public static final int settings=0x7f0700c3;
     public static final int splash=0x7f0700c4;
-    public static final int test_custom_background=0x7f0700c5;
-    public static final int test_level_drawable=0x7f0700c6;
-    public static final int tooltip_frame_dark=0x7f0700c7;
-    public static final int tooltip_frame_light=0x7f0700c8;
-    public static final int tournies=0x7f0700c9;
-    public static final int yg=0x7f0700ca;
-    public static final int ygb=0x7f0700cb;
-    public static final int ygo_guide=0x7f0700cc;
+    public static final int splsh=0x7f0700c5;
+    public static final int test_custom_background=0x7f0700c6;
+    public static final int test_level_drawable=0x7f0700c7;
+    public static final int tooltip_frame_dark=0x7f0700c8;
+    public static final int tooltip_frame_light=0x7f0700c9;
+    public static final int tournies=0x7f0700ca;
+    public static final int yg=0x7f0700cb;
+    public static final int ygb=0x7f0700cc;
+    public static final int ygo_guide=0x7f0700cd;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
