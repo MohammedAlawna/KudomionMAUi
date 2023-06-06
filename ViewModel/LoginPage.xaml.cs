@@ -16,7 +16,6 @@ using Newtonsoft.Json;
 namespace Kudomion
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-  
     public partial class LoginPage : ContentPage
     {
         //Firebase Plugin Parameters..
@@ -28,14 +27,15 @@ namespace Kudomion
             {
                 _deviceToken = Preferences.Get("DeviceToken", "");
             }
-            
-            
+            LoadDuelistProfile();
         }
 
         public async void LoadDuelistProfile()
         {
             //Get Current Logged-In User/Duelist.
-            User getDuelist = await FirebaseHelper.GetUsrFromName(loggedInUsername.Text);
+            User getDuelist = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+
+            //DisplayAlert("User Found!", $"User is: {getDuelist.name}", "OK!");
 
             //Get & Assign The Name (New one if Updated).
             loggedInUsername.Text = getDuelist.name;
@@ -123,8 +123,9 @@ namespace Kudomion
 
         private async void OnClickYGOGuide(object sender, EventArgs e)
         {
-            string currentUser = MainPage.currentLoggedInUser;
-            await Navigation.PushAsync(new UserProfile(currentUser));
+            await DisplayAlert("Not Available!", "Guide System in not available in this release.", "OK!");
+           /* string currentUser = MainPage.currentLoggedInUser;
+            await Navigation.PushAsync(new UserProfile(currentUser));*/
         }
 
 
