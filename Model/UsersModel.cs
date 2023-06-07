@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using UIKit;
 
 namespace Kudomion.Model
 {
@@ -17,7 +18,22 @@ namespace Kudomion.Model
   
         public UsersModel()
         {
-            LoadUsersFromDb();   
+            users.Add(new User { 
+            name = "Nael", 
+            points = 99,
+            });
+
+            users.Add(new User
+            {
+                name = "Sahera", 
+                points = 20,
+            });
+
+            users.Add(new User
+            {
+                name = "Bomera",
+                points = 30,
+            });
         }
 
         async void LoadUsersFromDb()

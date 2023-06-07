@@ -13,7 +13,7 @@
         <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
     </Shell.BackButtonBehavior>
     <Shell.SearchHandler>
-        <controls:SearchField users="{x:Static modl:UsersModel.users}" Placeholder="Enter Search Here.." ShowsResults="True" />
+        <controls:SearchField users="{x:Static modl:UsersModel.users}" Placeholder="Search Users Here.." ShowsResults="True" />
     </Shell.SearchHandler>
     <StackLayout>
         
