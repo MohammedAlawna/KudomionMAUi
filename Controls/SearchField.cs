@@ -8,6 +8,8 @@ namespace Kudomion.Controls
 {
     public class SearchField : SearchHandler
     {
+        public List<User> users { get; set; }
+        public Type SelectedItemNavigationTarget { get; set; }
         protected override void OnQueryChanged(string oldValue, string newValue)
         {
             base.OnQueryChanged(oldValue, newValue);
@@ -18,9 +20,13 @@ namespace Kudomion.Controls
             }
             else
             {
-               /* ItemsSource = Animals
-                .Where(animal => animal.Name.ToLower().Contains(newValue.ToLower()))
-                .ToList<Animal>();*/
+                /* ItemsSource = Animals
+                 .Where(animal => animal.Name.ToLower().Contains(newValue.ToLower()))
+                 .ToList<Animal>();*/
+                ItemsSource = users.Where(user => user.name.ToLower().
+                Contains(newValue.ToLower())).ToList<User>();
+
+
             }
         }
 
