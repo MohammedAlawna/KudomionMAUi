@@ -23,7 +23,7 @@ namespace Kudomion.Model
         async void LoadUsersFromDb()
         {
             var usersAwaiter = await firebase.GetAllUsers();
-            users = usersAwaiter;
+            users = usersAwaiter.ToList();
         }
     }
 }

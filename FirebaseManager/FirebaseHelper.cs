@@ -12,17 +12,11 @@ namespace Kudomion.FirebaseManager
     public class FirebaseHelper
     {
         //Follow this Article: https://www.c-sharpcorner.com/article/xamarin-forms-working-with-firebase-realtime-database-crud-operations/
-        public static List<User> users { get; private set; } = new List<User>();
         FirebaseClient firebaseClient = new FirebaseClient("https://kudo2-87dde-default-rtdb.firebaseio.com/");
      
 
         //Start User-Related Functions.
-        public static List<User> allUsrs()
-        {
-            FirebaseHelper fb = new FirebaseHelper();
-            var allUsr = await fb.GetAllUsers();
-            return allUsr;
-        }
+       
         public async Task<List<User>> GetAllUsers()
         {
             try
