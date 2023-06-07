@@ -96,13 +96,6 @@ namespace Kudomion
 
                     //Update User Profile In Home Page.
                     User currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
-                 //   Home h = new Home();
-               //     h.GetNumberOfDuels() = currentUser.duels.ToString();
-                 //   h.GetNumberOfPoints() = currentUser.points.ToString();
-
-                    //            ::Deprecated Code::
-                    // Home.noDuels.Text = currentUser.duels.ToString();
-                   // Home.noPoints.Text = currentUser.points.ToString();
 
                     //Update Ranking
                     Leaderboard lb = new Leaderboard();
@@ -135,14 +128,12 @@ namespace Kudomion
 
                     //Update User Profile In Home Page.
                     User currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
-                   // Home.noDuels.Text = currentUser.duels.ToString();
-                    //Home.noPoints.Text = currentUser.points.ToString();
-
+                 
                     //Prompt Admit Defeat.
                     await DisplayAlert("You Lost!", $"You just admit defeated! Duel Records Will be changed!" + getWinningPlayer.name, "OK");
 
                     //Update Rooms List.
-                    
+                    UpdateRoomsList();
 
                     //Reseting Room Values:
                     ResetRoomValues();
@@ -150,8 +141,6 @@ namespace Kudomion
                     return;
                 }
 
-
-               
             }
             catch(Exception er)
             {
