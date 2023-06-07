@@ -8,9 +8,8 @@
         <StackLayout Margin="15">
             <Frame BackgroundColor="#313338">
                 <StackLayout>
-                    <CollectionView x:Name="postsInNewsFeed">
-                      
-                        <CollectionView.ItemTemplate >
+                <CollectionView HeightRequest="470" x:Name="postsInNewsFeed">
+                    <CollectionView.ItemTemplate >
                             <DataTemplate >
                             <ScrollView>
                                 <StackLayout Margin="7">

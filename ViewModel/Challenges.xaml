@@ -50,7 +50,7 @@
             <StackLayout Margin="15" x:Name="roomsInLobby">
                 <Frame  BackgroundColor="#1c1c1c" x:Name="lobbyCard">
                     <StackLayout>
-                        <CollectionView x:Name="roomsCollectionView">
+                    <CollectionView HeightRequest="200" x:Name="roomsCollectionView">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <StackLayout>

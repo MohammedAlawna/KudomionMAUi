@@ -46,7 +46,7 @@
             <StackLayout x:Name="duels" IsVisible="false" Margin="5">
                 <Frame Margin="0" BackgroundColor="#323232">
                     <StackLayout>
-                        <CollectionView x:Name="userDuels">
+                    <CollectionView HeightRequest="200" x:Name="userDuels">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <Frame BorderColor="Black" BackgroundColor="RoyalBlue" HorizontalOptions="CenterAndExpand">
