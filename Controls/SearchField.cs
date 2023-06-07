@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kudomion.FirebaseManager;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,8 @@ namespace Kudomion.Controls
 {
     public class SearchField : SearchHandler
     {
-        public List<User> users { get; set; }
+        FirebaseHelper firebase;
+        public IList<User> users { get; set; }
         public Type SelectedItemNavigationTarget { get; set; }
         protected override void OnQueryChanged(string oldValue, string newValue)
         {
@@ -20,11 +22,13 @@ namespace Kudomion.Controls
             }
             else
             {
-                /* ItemsSource = Animals
-                 .Where(animal => animal.Name.ToLower().Contains(newValue.ToLower()))
-                 .ToList<Animal>();*/
-                ItemsSource = users.Where(user => user.name.ToLower().
-                Contains(newValue.ToLower())).ToList<User>();
+                ItemsSource = users
+                 .Where(usr => usr.name.ToLower().Contains(newValue.ToLower()))
+                 .ToList<User>();
+
+
+                /*ItemsSource =  users.Where(user => user.name.ToLower().
+                Contains(newValue.ToLower())).ToList();*/
 
 
             }
@@ -38,7 +42,10 @@ namespace Kudomion.Controls
             await Task.Delay(1000);
 
             ShellNavigationState state = (App.Current.MainPage as Shell).CurrentState;
+            MainPage main = new MainPage();
 
+            var getSelectedUser = (User)item;
+            main.ViewUserProfile(getSelectedUser.name);
             //Go To Route:
            /* await Shell.Current.GoToAsync($"{GetNavigationTarget()}?name={((Animal)item).Name}");
            */  

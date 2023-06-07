@@ -23,6 +23,7 @@ namespace Kudomion
         public LoginPage()
         {
            InitializeComponent();
+            
             if (Preferences.ContainsKey("DeviceToken"))
             {
                 _deviceToken = Preferences.Get("DeviceToken", "");

@@ -1,4 +1,5 @@
 ﻿using Kudomion.FirebaseManager;
+using Kudomion.ViewModel;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Storage;
 using System;
@@ -41,6 +42,11 @@ public partial class MainPage : ContentPage
     {
         await DisplayAlert("Password Recovery System!", "Password Recovery System is Still Under Development! Please Contact Developer..", "OK!");
      //  await Navigation.PushAsync(new SignUpPage());
+    }
+
+    public void ViewUserProfile(string username)
+    {
+        Navigation.PushAsync(new UserProfile(username));
     }
 
     private async void SignInClicked(object sender, EventArgs e)

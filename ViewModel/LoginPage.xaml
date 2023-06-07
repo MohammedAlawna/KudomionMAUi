@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Kudomion"
              xmlns:controls="clr-namespace:Kudomion.Controls"
+             xmlns:modl="clr-namespace:Kudomion.Model"
              x:Class="Kudomion.LoginPage"
              BackgroundColor="#1c1c1c"
             
@@ -12,7 +13,7 @@
         <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
     </Shell.BackButtonBehavior>
     <Shell.SearchHandler>
-        <controls:SearchField Placeholder="Enter Search Here.." ShowsResults="True" />
+        <controls:SearchField users="{x:Static modl:UsersModel.users}" Placeholder="Enter Search Here.." ShowsResults="True" />
     </Shell.SearchHandler>
     <StackLayout>
         
