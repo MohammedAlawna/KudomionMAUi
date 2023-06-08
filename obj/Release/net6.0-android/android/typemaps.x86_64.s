@@ -374,23 +374,12 @@ map_modules:
 	.zero	4
 	.quad	0x0	# java_map
 
-	.byte	0xca, 0x1e, 0x5c, 0x65, 0x69, 0x2e, 0xf3, 0x46, 0x8a, 0xc7, 0xf7, 0x5a, 0xd0, 0xaf, 0xfb, 0x50	# module_uuid: 655c1eca-2e69-46f3-8ac7-f75ad0affb50
-	.long	0x3	# entry_count
-	.long	0x0	# duplicate_count
-	.quad	.L.module30_managed_to_java	# map
-	.quad	0	# duplicate_map
-	.quad	map_aname.30	# assembly_name: Kudomion
-	.quad	0x0	# image
-	.long	0x0	# java_name_width
-	.zero	4
-	.quad	0x0	# java_map
-
 	.byte	0xd0, 0x57, 0x49, 0xe0, 0x28, 0x81, 0x1d, 0x41, 0x81, 0x30, 0x94, 0xda, 0xe1, 0xca, 0x6d, 0xe8	# module_uuid: e04957d0-8128-411d-8130-94dae1ca6de8
 	.long	0xa	# entry_count
 	.long	0x6	# duplicate_count
-	.quad	.L.module31_managed_to_java	# map
-	.quad	.L.module31_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.31	# assembly_name: Xamarin.AndroidX.Activity
+	.quad	.L.module30_managed_to_java	# map
+	.quad	.L.module30_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.30	# assembly_name: Xamarin.AndroidX.Activity
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -399,9 +388,9 @@ map_modules:
 	.byte	0xd2, 0x28, 0x43, 0xb9, 0x2f, 0x16, 0xfa, 0x4f, 0xa8, 0x23, 0x9e, 0x10, 0xd9, 0xdc, 0x24, 0xf7	# module_uuid: b94328d2-162f-4ffa-a823-9e10d9dc24f7
 	.long	0x1	# entry_count
 	.long	0x0	# duplicate_count
-	.quad	.L.module32_managed_to_java	# map
+	.quad	.L.module31_managed_to_java	# map
 	.quad	0	# duplicate_map
-	.quad	map_aname.32	# assembly_name: Microsoft.Maui.Graphics
+	.quad	map_aname.31	# assembly_name: Microsoft.Maui.Graphics
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -410,9 +399,9 @@ map_modules:
 	.byte	0xd2, 0x54, 0xde, 0x5, 0x40, 0xd, 0xf7, 0x43, 0x92, 0xd0, 0xd3, 0x87, 0x8e, 0x5d, 0xef, 0xb3	# module_uuid: 05de54d2-0d40-43f7-92d0-d3878e5defb3
 	.long	0x1	# entry_count
 	.long	0x1	# duplicate_count
-	.quad	.L.module33_managed_to_java	# map
-	.quad	.L.module33_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.33	# assembly_name: Xamarin.AndroidX.CursorAdapter
+	.quad	.L.module32_managed_to_java	# map
+	.quad	.L.module32_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.32	# assembly_name: Xamarin.AndroidX.CursorAdapter
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -421,9 +410,9 @@ map_modules:
 	.byte	0xd7, 0x5b, 0x20, 0x8e, 0x9a, 0xdf, 0x44, 0x4e, 0x83, 0x3a, 0x49, 0xbe, 0x2c, 0xb1, 0xc3, 0x53	# module_uuid: 8e205bd7-df9a-4e44-833a-49be2cb1c353
 	.long	0xa	# entry_count
 	.long	0x8	# duplicate_count
-	.quad	.L.module34_managed_to_java	# map
-	.quad	.L.module34_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.34	# assembly_name: Xamarin.Kotlin.StdLib
+	.quad	.L.module33_managed_to_java	# map
+	.quad	.L.module33_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.33	# assembly_name: Xamarin.Kotlin.StdLib
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -432,9 +421,20 @@ map_modules:
 	.byte	0xdd, 0xf3, 0x14, 0x7a, 0x5, 0xba, 0x87, 0x4d, 0x8c, 0x8e, 0xab, 0x59, 0x55, 0x38, 0x59, 0xde	# module_uuid: 7a14f3dd-ba05-4d87-8c8e-ab59553859de
 	.long	0x4	# entry_count
 	.long	0x4	# duplicate_count
+	.quad	.L.module34_managed_to_java	# map
+	.quad	.L.module34_managed_to_java_duplicates	# duplicate_map
+	.quad	map_aname.34	# assembly_name: Xamarin.KotlinX.Coroutines.Core.Jvm
+	.quad	0x0	# image
+	.long	0x0	# java_name_width
+	.zero	4
+	.quad	0x0	# java_map
+
+	.byte	0xde, 0x7a, 0xe4, 0x3b, 0x10, 0x41, 0x31, 0x4b, 0x80, 0xa0, 0x58, 0x19, 0xec, 0x3c, 0x7a, 0x42	# module_uuid: 3be47ade-4110-4b31-80a0-5819ec3c7a42
+	.long	0x3	# entry_count
+	.long	0x0	# duplicate_count
 	.quad	.L.module35_managed_to_java	# map
-	.quad	.L.module35_managed_to_java_duplicates	# duplicate_map
-	.quad	map_aname.35	# assembly_name: Xamarin.KotlinX.Coroutines.Core.Jvm
+	.quad	0	# duplicate_map
+	.quad	map_aname.35	# assembly_name: Kudomion
 	.quad	0x0	# image
 	.long	0x0	# java_name_width
 	.zero	4
@@ -2434,55 +2434,55 @@ map_java:
 	.zero	78	# byteCount == 25; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x200000b	# type_token_id
 	.ascii	"androidx/activity/ComponentActivity"	# java_name
 	.zero	68	# byteCount == 35; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x200000e	# type_token_id
 	.ascii	"androidx/activity/OnBackPressedCallback"	# java_name
 	.zero	64	# byteCount == 39; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x2000010	# type_token_id
 	.ascii	"androidx/activity/OnBackPressedDispatcher"	# java_name
 	.zero	62	# byteCount == 41; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/activity/contextaware/OnContextAvailableListener"	# java_name
 	.zero	46	# byteCount == 57; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"androidx/activity/result/ActivityResultCallback"	# java_name
 	.zero	56	# byteCount == 47; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x2000015	# type_token_id
 	.ascii	"androidx/activity/result/ActivityResultLauncher"	# java_name
 	.zero	56	# byteCount == 47; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x2000017	# type_token_id
 	.ascii	"androidx/activity/result/ActivityResultRegistry"	# java_name
 	.zero	56	# byteCount == 47; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x200001c	# type_token_id
 	.ascii	"androidx/activity/result/contract/ActivityResultContract"	# java_name
 	.zero	47	# byteCount == 56; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x200001d	# type_token_id
 	.ascii	"androidx/activity/result/contract/ActivityResultContract$SynchronousResult"	# java_name
 	.zero	29	# byteCount == 74; fixedWidth == 103; returned size == 103
@@ -3310,7 +3310,7 @@ map_java:
 	.zero	68	# byteCount == 35; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x21	# module_index
+	.long	0x20	# module_index
 	.long	0x200000d	# type_token_id
 	.ascii	"androidx/cursoradapter/widget/CursorAdapter"	# java_name
 	.zero	60	# byteCount == 43; fixedWidth == 103; returned size == 103
@@ -4720,7 +4720,7 @@ map_java:
 	.zero	38	# byteCount == 65; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x20	# module_index
+	.long	0x1f	# module_index
 	.long	0x2000082	# type_token_id
 	.ascii	"crc643f2b18b2570eaa5a/PlatformGraphicsView"	# java_name
 	.zero	61	# byteCount == 42; fixedWidth == 103; returned size == 103
@@ -5248,7 +5248,7 @@ map_java:
 	.zero	55	# byteCount == 48; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1e	# module_index
+	.long	0x23	# module_index
 	.long	0x2000056	# type_token_id
 	.ascii	"crc64b0f1f70064186880/FirebaseService"	# java_name
 	.zero	66	# byteCount == 37; fixedWidth == 103; returned size == 103
@@ -5428,13 +5428,13 @@ map_java:
 	.zero	58	# byteCount == 45; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1e	# module_index
+	.long	0x23	# module_index
 	.long	0x2000010	# type_token_id
 	.ascii	"crc64ed1a5dc4ae00162a/MainActivity"	# java_name
 	.zero	69	# byteCount == 34; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1e	# module_index
+	.long	0x23	# module_index
 	.long	0x2000011	# type_token_id
 	.ascii	"crc64ed1a5dc4ae00162a/MainApplication"	# java_name
 	.zero	66	# byteCount == 37; fixedWidth == 103; returned size == 103
@@ -6058,85 +6058,85 @@ map_java:
 	.zero	68	# byteCount == 35; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlin/Function"	# java_name
 	.zero	88	# byteCount == 15; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x200001b	# type_token_id
 	.ascii	"kotlin/collections/AbstractMutableList"	# java_name
 	.zero	65	# byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x200001d	# type_token_id
 	.ascii	"kotlin/collections/ArrayDeque"	# java_name
 	.zero	74	# byteCount == 29; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlin/coroutines/Continuation"	# java_name
 	.zero	73	# byteCount == 30; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlin/coroutines/CoroutineContext"	# java_name
 	.zero	69	# byteCount == 34; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlin/coroutines/CoroutineContext$Key"	# java_name
 	.zero	65	# byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlin/jvm/functions/Function1"	# java_name
 	.zero	73	# byteCount == 30; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlin/jvm/functions/Function2"	# java_name
 	.zero	73	# byteCount == 30; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x2000010	# type_token_id
 	.ascii	"kotlin/jvm/internal/DefaultConstructorMarker"	# java_name
 	.zero	59	# byteCount == 44; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x22	# module_index
+	.long	0x21	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlin/sequences/Sequence"	# java_name
 	.zero	78	# byteCount == 25; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x23	# module_index
+	.long	0x22	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlinx/coroutines/flow/Flow"	# java_name
 	.zero	75	# byteCount == 28; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x23	# module_index
+	.long	0x22	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlinx/coroutines/flow/FlowCollector"	# java_name
 	.zero	66	# byteCount == 37; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x23	# module_index
+	.long	0x22	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlinx/coroutines/flow/SharedFlow"	# java_name
 	.zero	69	# byteCount == 34; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x23	# module_index
+	.long	0x22	# module_index
 	.long	0x0	# type_token_id
 	.ascii	"kotlinx/coroutines/flow/StateFlow"	# java_name
 	.zero	70	# byteCount == 33; fixedWidth == 103; returned size == 103
@@ -6286,7 +6286,7 @@ map_java:
 	.zero	41	# byteCount == 62; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x1f	# module_index
+	.long	0x1e	# module_index
 	.long	0x2000014	# type_token_id
 	.ascii	"mono/androidx/activity/contextaware/OnContextAvailableListenerImplementor"	# java_name
 	.zero	30	# byteCount == 73; fixedWidth == 103; returned size == 103

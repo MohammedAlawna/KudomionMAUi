@@ -124,7 +124,7 @@ namespace Kudomion
                     //Update User and Room Records.
                     await firebase.UpdateUser(getWinningPlayer.name, getWinningPlayer);
                     await firebase.UpdateUser(secondPlayer.name, secondPlayer);
-                    await firebase.UpdateRoom(getPlayerRoom.p1, getPlayerRoom.p2, getPlayerRoom);
+                    await firebase.UpdateRoom(getPlayerRoom.p2, getPlayerRoom.p1, getPlayerRoom);
 
                     //Update User Profile In Home Page.
                     User currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);

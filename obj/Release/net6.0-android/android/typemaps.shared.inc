@@ -152,33 +152,33 @@ map_aname.29:
 
 	.type	map_aname.30, @object
 map_aname.30:
-	.asciz	"Kudomion"
-	.size	map_aname.30, 9
+	.asciz	"Xamarin.AndroidX.Activity"
+	.size	map_aname.30, 26
 
 	.type	map_aname.31, @object
 map_aname.31:
-	.asciz	"Xamarin.AndroidX.Activity"
-	.size	map_aname.31, 26
+	.asciz	"Microsoft.Maui.Graphics"
+	.size	map_aname.31, 24
 
 	.type	map_aname.32, @object
 map_aname.32:
-	.asciz	"Microsoft.Maui.Graphics"
-	.size	map_aname.32, 24
+	.asciz	"Xamarin.AndroidX.CursorAdapter"
+	.size	map_aname.32, 31
 
 	.type	map_aname.33, @object
 map_aname.33:
-	.asciz	"Xamarin.AndroidX.CursorAdapter"
-	.size	map_aname.33, 31
+	.asciz	"Xamarin.Kotlin.StdLib"
+	.size	map_aname.33, 22
 
 	.type	map_aname.34, @object
 map_aname.34:
-	.asciz	"Xamarin.Kotlin.StdLib"
-	.size	map_aname.34, 22
+	.asciz	"Xamarin.KotlinX.Coroutines.Core.Jvm"
+	.size	map_aname.34, 36
 
 	.type	map_aname.35, @object
 map_aname.35:
-	.asciz	"Xamarin.KotlinX.Coroutines.Core.Jvm"
-	.size	map_aname.35, 36
+	.asciz	"Kudomion"
+	.size	map_aname.35, 9
 
 	.type	map_aname.36, @object
 map_aname.36:
