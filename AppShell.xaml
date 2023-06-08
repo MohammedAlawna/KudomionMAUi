@@ -21,12 +21,14 @@
 
         <ShellContent
             Icon="hme"
+            
             Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
             />
 
         <ShellContent
-        Icon="newss.png"
+        Icon="newss"
+        
         Title="News"
         ContentTemplate="{DataTemplate viewModel:NewsFeed}"
         />

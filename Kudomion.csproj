@@ -30,15 +30,17 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|AnyCPU'">
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
+	</PropertyGroup>
+
+  
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\bluestr.png" Color="#512BD4" />
-		<MauiIcon Include="Resources\Images\btlic.png" />
 		<MauiIcon Include="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
-		<MauiIcon Include="Resources\Images\hme.png" />
-		<MauiIcon Include="Resources\Images\newss.png" />
 		<MauiIcon Include="Resources\Images\notif.png" />
-		<MauiIcon Include="Resources\Images\rnke.png" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Images\splsh.jpg" Color="#512BD4" BaseSize="128,128" />
@@ -66,12 +68,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\btlic.png" />
 	  <MauiImage Remove="Resources\Images\dotnet_bot.svg" />
-	  <MauiImage Remove="Resources\Images\hme.png" />
-	  <MauiImage Remove="Resources\Images\newss.png" />
 	  <MauiImage Remove="Resources\Images\notif.png" />
-	  <MauiImage Remove="Resources\Images\rnke.png" />
 	</ItemGroup>
 
 	<ItemGroup>

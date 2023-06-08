@@ -107,7 +107,7 @@ public partial class MainPage : ContentPage
 
            } catch(NullReferenceException n)
            {
-               await DisplayAlert("Exception!", "Null Reference Exception caught!", "OK!");
+               await DisplayAlert("Exception!", $"Null Reference Exception caught! -- {n.Data}", "OK!");
                return;
            }
 

@@ -15,7 +15,7 @@ namespace Kudomion.Controls
 
         public SearchField()
         {
-            LoadAllUsers();
+          //  LoadAllUsers();
         }
 
         async void LoadAllUsers()

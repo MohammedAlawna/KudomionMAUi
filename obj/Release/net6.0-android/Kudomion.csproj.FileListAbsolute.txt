@@ -565,3 +565,7 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\st
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\stamp\_GenerateJavaStubs.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\btlic.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\hme.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\newss.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\rnke.png

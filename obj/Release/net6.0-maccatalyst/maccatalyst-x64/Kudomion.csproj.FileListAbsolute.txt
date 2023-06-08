@@ -373,3 +373,7 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalys
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\Kudomion.pdb
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\Kudomion.genruntimeconfig.cache
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\ref\Kudomion.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\btlic.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\hme.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\newss.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\rnke.png
