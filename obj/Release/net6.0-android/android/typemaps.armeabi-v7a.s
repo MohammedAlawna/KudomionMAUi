@@ -205,12 +205,22 @@ map_modules:
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
 
+	.byte	0x75, 0x8c, 0x27, 0xbd, 0xdd, 0xf6, 0x53, 0x4d, 0xa4, 0x9b, 0x87, 0x39, 0x8d, 0x14, 0x36, 0x38	@ module_uuid: bd278c75-f6dd-4d53-a49b-87398d143638
+	.long	0x3	@ entry_count
+	.long	0x0	@ duplicate_count
+	.long	.L.module14_managed_to_java	@ map
+	.long	0	@ duplicate_map
+	.long	map_aname.14	@ assembly_name: Kudomion
+	.long	0x0	@ image
+	.long	0x0	@ java_name_width
+	.long	0x0	@ java_map
+
 	.byte	0x77, 0xe7, 0xaf, 0x78, 0x47, 0x5c, 0x98, 0x49, 0xb6, 0x18, 0x24, 0xcc, 0x78, 0x57, 0x46, 0xc8	@ module_uuid: 78afe777-5c47-4998-b618-24cc785746c8
 	.long	0x11	@ entry_count
 	.long	0x6	@ duplicate_count
-	.long	.L.module14_managed_to_java	@ map
-	.long	.L.module14_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.14	@ assembly_name: Xamarin.AndroidX.Navigation.Common
+	.long	.L.module15_managed_to_java	@ map
+	.long	.L.module15_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.15	@ assembly_name: Xamarin.AndroidX.Navigation.Common
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -218,9 +228,9 @@ map_modules:
 	.byte	0x88, 0xe1, 0x1, 0x7f, 0xe5, 0x4b, 0x2f, 0x48, 0xb3, 0xc6, 0x11, 0x7e, 0x43, 0x1e, 0xab, 0x82	@ module_uuid: 7f01e188-4be5-482f-b3c6-117e431eab82
 	.long	0x6	@ entry_count
 	.long	0x4	@ duplicate_count
-	.long	.L.module15_managed_to_java	@ map
-	.long	.L.module15_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.15	@ assembly_name: Xamarin.AndroidX.Lifecycle.ViewModel
+	.long	.L.module16_managed_to_java	@ map
+	.long	.L.module16_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.16	@ assembly_name: Xamarin.AndroidX.Lifecycle.ViewModel
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -228,9 +238,9 @@ map_modules:
 	.byte	0x89, 0xa, 0xc, 0xd5, 0x84, 0xbb, 0xe5, 0x4f, 0xb0, 0xff, 0x93, 0xef, 0xb6, 0xbc, 0x46, 0x93	@ module_uuid: d50c0a89-bb84-4fe5-b0ff-93efb6bc4693
 	.long	0x29	@ entry_count
 	.long	0x15	@ duplicate_count
-	.long	.L.module16_managed_to_java	@ map
-	.long	.L.module16_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.16	@ assembly_name: Xamarin.AndroidX.RecyclerView
+	.long	.L.module17_managed_to_java	@ map
+	.long	.L.module17_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.17	@ assembly_name: Xamarin.AndroidX.RecyclerView
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -238,9 +248,9 @@ map_modules:
 	.byte	0x8a, 0x34, 0x21, 0xc8, 0xbd, 0xa3, 0x7a, 0x45, 0x86, 0xe3, 0x71, 0x25, 0xd, 0xae, 0xab, 0x72	@ module_uuid: c821348a-a3bd-457a-86e3-71250daeab72
 	.long	0x3b	@ entry_count
 	.long	0x15	@ duplicate_count
-	.long	.L.module17_managed_to_java	@ map
-	.long	.L.module17_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.17	@ assembly_name: Xamarin.Google.Android.Material
+	.long	.L.module18_managed_to_java	@ map
+	.long	.L.module18_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.18	@ assembly_name: Xamarin.Google.Android.Material
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -248,9 +258,9 @@ map_modules:
 	.byte	0x8a, 0x91, 0x61, 0x52, 0x0, 0x1a, 0x50, 0x4a, 0x95, 0x41, 0x7e, 0xcc, 0xb8, 0x78, 0x68, 0xe3	@ module_uuid: 5261918a-1a00-4a50-9541-7eccb87868e3
 	.long	0x2	@ entry_count
 	.long	0x1	@ duplicate_count
-	.long	.L.module18_managed_to_java	@ map
-	.long	.L.module18_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.18	@ assembly_name: Xamarin.AndroidX.SavedState
+	.long	.L.module19_managed_to_java	@ map
+	.long	.L.module19_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.19	@ assembly_name: Xamarin.AndroidX.SavedState
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -258,19 +268,9 @@ map_modules:
 	.byte	0x96, 0xbf, 0x6d, 0xb6, 0x23, 0xe9, 0xb6, 0x4c, 0x95, 0x81, 0x76, 0x13, 0xa2, 0x8a, 0xd5, 0xcd	@ module_uuid: b66dbf96-e923-4cb6-9581-7613a28ad5cd
 	.long	0x7	@ entry_count
 	.long	0x4	@ duplicate_count
-	.long	.L.module19_managed_to_java	@ map
-	.long	.L.module19_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.19	@ assembly_name: Xamarin.AndroidX.ViewPager
-	.long	0x0	@ image
-	.long	0x0	@ java_name_width
-	.long	0x0	@ java_map
-
-	.byte	0x9e, 0x1a, 0x3a, 0xc7, 0x32, 0x3d, 0x8c, 0x44, 0xab, 0xe5, 0x79, 0x9b, 0x7a, 0x80, 0x1b, 0x5d	@ module_uuid: c73a1a9e-3d32-448c-abe5-799b7a801b5d
-	.long	0x3	@ entry_count
-	.long	0x0	@ duplicate_count
 	.long	.L.module20_managed_to_java	@ map
-	.long	0	@ duplicate_map
-	.long	map_aname.20	@ assembly_name: Kudomion
+	.long	.L.module20_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.20	@ assembly_name: Xamarin.AndroidX.ViewPager
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -3478,37 +3478,37 @@ map_java:
 	.zero	68	@ byteCount == 35; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000009	@ type_token_id
 	.ascii	"androidx/lifecycle/ViewModelProvider"	@ java_name
 	.zero	67	@ byteCount == 36; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/lifecycle/ViewModelProvider$Factory"	@ java_name
 	.zero	59	@ byteCount == 44; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x200000c	@ type_token_id
 	.ascii	"androidx/lifecycle/ViewModelStore"	@ java_name
 	.zero	70	@ byteCount == 33; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/lifecycle/ViewModelStoreOwner"	@ java_name
 	.zero	65	@ byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x200000d	@ type_token_id
 	.ascii	"androidx/lifecycle/viewmodel/CreationExtras"	@ java_name
 	.zero	60	@ byteCount == 43; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/lifecycle/viewmodel/CreationExtras$Key"	@ java_name
 	.zero	56	@ byteCount == 47; fixedWidth == 103; returned size == 103
@@ -3544,19 +3544,19 @@ map_java:
 	.zero	50	@ byteCount == 53; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000011	@ type_token_id
 	.ascii	"androidx/navigation/NavAction"	@ java_name
 	.zero	74	@ byteCount == 29; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000012	@ type_token_id
 	.ascii	"androidx/navigation/NavArgument"	@ java_name
 	.zero	72	@ byteCount == 31; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000013	@ type_token_id
 	.ascii	"androidx/navigation/NavBackStackEntry"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
@@ -3574,7 +3574,7 @@ map_java:
 	.zero	41	@ byteCount == 62; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000014	@ type_token_id
 	.ascii	"androidx/navigation/NavDeepLink"	@ java_name
 	.zero	72	@ byteCount == 31; fixedWidth == 103; returned size == 103
@@ -3586,37 +3586,37 @@ map_java:
 	.zero	65	@ byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000015	@ type_token_id
 	.ascii	"androidx/navigation/NavDeepLinkRequest"	@ java_name
 	.zero	65	@ byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000016	@ type_token_id
 	.ascii	"androidx/navigation/NavDestination"	@ java_name
 	.zero	69	@ byteCount == 34; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000017	@ type_token_id
 	.ascii	"androidx/navigation/NavDestination$DeepLinkMatch"	@ java_name
 	.zero	55	@ byteCount == 48; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/navigation/NavDirections"	@ java_name
 	.zero	70	@ byteCount == 33; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000018	@ type_token_id
 	.ascii	"androidx/navigation/NavGraph"	@ java_name
 	.zero	75	@ byteCount == 28; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000019	@ type_token_id
 	.ascii	"androidx/navigation/NavGraphNavigator"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
@@ -3634,43 +3634,43 @@ map_java:
 	.zero	72	@ byteCount == 31; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000021	@ type_token_id
 	.ascii	"androidx/navigation/NavOptions"	@ java_name
 	.zero	73	@ byteCount == 30; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000022	@ type_token_id
 	.ascii	"androidx/navigation/NavType"	@ java_name
 	.zero	76	@ byteCount == 27; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/navigation/NavViewModelStoreProvider"	@ java_name
 	.zero	58	@ byteCount == 45; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x200001a	@ type_token_id
 	.ascii	"androidx/navigation/Navigator"	@ java_name
 	.zero	74	@ byteCount == 29; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/navigation/Navigator$Extras"	@ java_name
 	.zero	67	@ byteCount == 36; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x200001e	@ type_token_id
 	.ascii	"androidx/navigation/NavigatorProvider"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xe	@ module_index
+	.long	0xf	@ module_index
 	.long	0x200001f	@ type_token_id
 	.ascii	"androidx/navigation/NavigatorState"	@ java_name
 	.zero	69	@ byteCount == 34; fixedWidth == 103; returned size == 103
@@ -3718,241 +3718,241 @@ map_java:
 	.zero	68	@ byteCount == 35; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200004c	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/GridLayoutManager"	@ java_name
 	.zero	57	@ byteCount == 46; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200004d	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/GridLayoutManager$SpanSizeLookup"	@ java_name
 	.zero	42	@ byteCount == 61; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000051	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/ItemTouchHelper"	@ java_name
 	.zero	59	@ byteCount == 44; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000052	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/ItemTouchHelper$Callback"	@ java_name
 	.zero	50	@ byteCount == 53; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/ItemTouchUIUtil"	@ java_name
 	.zero	59	@ byteCount == 44; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000054	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/LinearLayoutManager"	@ java_name
 	.zero	55	@ byteCount == 48; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000055	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/LinearSmoothScroller"	@ java_name
 	.zero	54	@ byteCount == 49; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000056	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/LinearSnapHelper"	@ java_name
 	.zero	58	@ byteCount == 45; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000057	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/OrientationHelper"	@ java_name
 	.zero	57	@ byteCount == 46; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000059	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/PagerSnapHelper"	@ java_name
 	.zero	59	@ byteCount == 44; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200005a	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView"	@ java_name
 	.zero	62	@ byteCount == 41; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200005b	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$Adapter"	@ java_name
 	.zero	54	@ byteCount == 49; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200005c	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$Adapter$StateRestorationPolicy"	@ java_name
 	.zero	31	@ byteCount == 72; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200005e	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$AdapterDataObserver"	@ java_name
 	.zero	42	@ byteCount == 61; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$ChildDrawingOrderCallback"	@ java_name
 	.zero	36	@ byteCount == 67; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000062	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$EdgeEffectFactory"	@ java_name
 	.zero	44	@ byteCount == 59; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000063	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$ItemAnimator"	@ java_name
 	.zero	49	@ byteCount == 54; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener"	@ java_name
 	.zero	20	@ byteCount == 83; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000066	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$ItemAnimator$ItemHolderInfo"	@ java_name
 	.zero	34	@ byteCount == 69; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000068	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$ItemDecoration"	@ java_name
 	.zero	47	@ byteCount == 56; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200006a	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$LayoutManager"	@ java_name
 	.zero	48	@ byteCount == 55; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$LayoutManager$LayoutPrefetchRegistry"	@ java_name
 	.zero	25	@ byteCount == 78; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200006d	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$LayoutManager$Properties"	@ java_name
 	.zero	37	@ byteCount == 66; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200006f	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$LayoutParams"	@ java_name
 	.zero	49	@ byteCount == 54; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$OnChildAttachStateChangeListener"	@ java_name
 	.zero	29	@ byteCount == 74; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000075	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$OnFlingListener"	@ java_name
 	.zero	46	@ byteCount == 57; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$OnItemTouchListener"	@ java_name
 	.zero	42	@ byteCount == 61; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200007d	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$OnScrollListener"	@ java_name
 	.zero	45	@ byteCount == 58; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200007f	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$RecycledViewPool"	@ java_name
 	.zero	45	@ byteCount == 58; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000080	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$Recycler"	@ java_name
 	.zero	53	@ byteCount == 50; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$RecyclerListener"	@ java_name
 	.zero	45	@ byteCount == 58; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000085	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$SmoothScroller"	@ java_name
 	.zero	47	@ byteCount == 56; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000086	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$SmoothScroller$Action"	@ java_name
 	.zero	40	@ byteCount == 63; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000088	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$State"	@ java_name
 	.zero	56	@ byteCount == 47; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000089	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$ViewCacheExtension"	@ java_name
 	.zero	43	@ byteCount == 60; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200008b	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerView$ViewHolder"	@ java_name
 	.zero	51	@ byteCount == 52; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000099	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/RecyclerViewAccessibilityDelegate"	@ java_name
 	.zero	41	@ byteCount == 62; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200009a	@ type_token_id
 	.ascii	"androidx/recyclerview/widget/SnapHelper"	@ java_name
 	.zero	64	@ byteCount == 39; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x12	@ module_index
+	.long	0x13	@ module_index
 	.long	0x2000005	@ type_token_id
 	.ascii	"androidx/savedstate/SavedStateRegistry"	@ java_name
 	.zero	65	@ byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x12	@ module_index
+	.long	0x13	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/savedstate/SavedStateRegistry$SavedStateProvider"	@ java_name
 	.zero	46	@ byteCount == 57; fixedWidth == 103; returned size == 103
@@ -3982,31 +3982,31 @@ map_java:
 	.zero	49	@ byteCount == 54; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x13	@ module_index
+	.long	0x14	@ module_index
 	.long	0x200001d	@ type_token_id
 	.ascii	"androidx/viewpager/widget/PagerAdapter"	@ java_name
 	.zero	65	@ byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x13	@ module_index
+	.long	0x14	@ module_index
 	.long	0x200001f	@ type_token_id
 	.ascii	"androidx/viewpager/widget/ViewPager"	@ java_name
 	.zero	68	@ byteCount == 35; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x13	@ module_index
+	.long	0x14	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/viewpager/widget/ViewPager$OnAdapterChangeListener"	@ java_name
 	.zero	44	@ byteCount == 59; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x13	@ module_index
+	.long	0x14	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/viewpager/widget/ViewPager$OnPageChangeListener"	@ java_name
 	.zero	47	@ byteCount == 56; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x13	@ module_index
+	.long	0x14	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/viewpager/widget/ViewPager$PageTransformer"	@ java_name
 	.zero	52	@ byteCount == 51; fixedWidth == 103; returned size == 103
@@ -4048,313 +4048,313 @@ map_java:
 	.zero	31	@ byteCount == 72; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200008d	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout"	@ java_name
 	.zero	56	@ byteCount == 47; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200008e	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout$BaseBehavior"	@ java_name
 	.zero	43	@ byteCount == 60; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200008f	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout$BaseBehavior$BaseDragCallback"	@ java_name
 	.zero	26	@ byteCount == 77; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000091	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout$Behavior"	@ java_name
 	.zero	47	@ byteCount == 56; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000092	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout$ChildScrollEffect"	@ java_name
 	.zero	38	@ byteCount == 65; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000094	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout$LayoutParams"	@ java_name
 	.zero	43	@ byteCount == 60; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout$LiftOnScrollListener"	@ java_name
 	.zero	35	@ byteCount == 68; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout$OnOffsetChangedListener"	@ java_name
 	.zero	32	@ byteCount == 71; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200009d	@ type_token_id
 	.ascii	"com/google/android/material/appbar/AppBarLayout$ScrollingViewBehavior"	@ java_name
 	.zero	34	@ byteCount == 69; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200008c	@ type_token_id
 	.ascii	"com/google/android/material/appbar/CollapsingToolbarLayout"	@ java_name
 	.zero	45	@ byteCount == 58; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x20000a2	@ type_token_id
 	.ascii	"com/google/android/material/appbar/HeaderBehavior"	@ java_name
 	.zero	54	@ byteCount == 49; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x20000a4	@ type_token_id
 	.ascii	"com/google/android/material/appbar/HeaderScrollingViewBehavior"	@ java_name
 	.zero	41	@ byteCount == 62; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x20000a6	@ type_token_id
 	.ascii	"com/google/android/material/appbar/MaterialToolbar"	@ java_name
 	.zero	53	@ byteCount == 50; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x20000a7	@ type_token_id
 	.ascii	"com/google/android/material/appbar/ViewOffsetBehavior"	@ java_name
 	.zero	50	@ byteCount == 53; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000055	@ type_token_id
 	.ascii	"com/google/android/material/badge/BadgeDrawable"	@ java_name
 	.zero	56	@ byteCount == 47; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000085	@ type_token_id
 	.ascii	"com/google/android/material/bottomnavigation/BottomNavigationItemView"	@ java_name
 	.zero	34	@ byteCount == 69; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000086	@ type_token_id
 	.ascii	"com/google/android/material/bottomnavigation/BottomNavigationMenuView"	@ java_name
 	.zero	34	@ byteCount == 69; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000087	@ type_token_id
 	.ascii	"com/google/android/material/bottomnavigation/BottomNavigationView"	@ java_name
 	.zero	38	@ byteCount == 65; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/bottomnavigation/BottomNavigationView$OnNavigationItemReselectedListener"	@ java_name
 	.zero	3	@ byteCount == 100; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/bottomnavigation/BottomNavigationView$OnNavigationItemSelectedListener"	@ java_name
 	.zero	5	@ byteCount == 98; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000051	@ type_token_id
 	.ascii	"com/google/android/material/bottomsheet/BottomSheetBehavior"	@ java_name
 	.zero	44	@ byteCount == 59; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000052	@ type_token_id
 	.ascii	"com/google/android/material/bottomsheet/BottomSheetBehavior$BottomSheetCallback"	@ java_name
 	.zero	24	@ byteCount == 79; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000054	@ type_token_id
 	.ascii	"com/google/android/material/bottomsheet/BottomSheetDialog"	@ java_name
 	.zero	46	@ byteCount == 57; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200004a	@ type_token_id
 	.ascii	"com/google/android/material/button/MaterialButton"	@ java_name
 	.zero	54	@ byteCount == 49; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/button/MaterialButton$OnCheckedChangeListener"	@ java_name
 	.zero	30	@ byteCount == 73; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000049	@ type_token_id
 	.ascii	"com/google/android/material/checkbox/MaterialCheckBox"	@ java_name
 	.zero	50	@ byteCount == 53; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000048	@ type_token_id
 	.ascii	"com/google/android/material/imageview/ShapeableImageView"	@ java_name
 	.zero	47	@ byteCount == 56; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000084	@ type_token_id
 	.ascii	"com/google/android/material/internal/ScrimInsetsFrameLayout"	@ java_name
 	.zero	44	@ byteCount == 59; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000063	@ type_token_id
 	.ascii	"com/google/android/material/navigation/NavigationBarItemView"	@ java_name
 	.zero	43	@ byteCount == 60; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000065	@ type_token_id
 	.ascii	"com/google/android/material/navigation/NavigationBarMenuView"	@ java_name
 	.zero	43	@ byteCount == 60; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000067	@ type_token_id
 	.ascii	"com/google/android/material/navigation/NavigationBarPresenter"	@ java_name
 	.zero	42	@ byteCount == 61; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000056	@ type_token_id
 	.ascii	"com/google/android/material/navigation/NavigationBarView"	@ java_name
 	.zero	47	@ byteCount == 56; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/navigation/NavigationBarView$OnItemReselectedListener"	@ java_name
 	.zero	22	@ byteCount == 81; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/navigation/NavigationBarView$OnItemSelectedListener"	@ java_name
 	.zero	24	@ byteCount == 79; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000069	@ type_token_id
 	.ascii	"com/google/android/material/navigation/NavigationView"	@ java_name
 	.zero	50	@ byteCount == 53; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener"	@ java_name
 	.zero	17	@ byteCount == 86; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/shape/CornerSize"	@ java_name
 	.zero	59	@ byteCount == 44; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200003d	@ type_token_id
 	.ascii	"com/google/android/material/shape/CornerTreatment"	@ java_name
 	.zero	54	@ byteCount == 49; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200003e	@ type_token_id
 	.ascii	"com/google/android/material/shape/EdgeTreatment"	@ java_name
 	.zero	56	@ byteCount == 47; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000041	@ type_token_id
 	.ascii	"com/google/android/material/shape/MaterialShapeDrawable"	@ java_name
 	.zero	48	@ byteCount == 55; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000042	@ type_token_id
 	.ascii	"com/google/android/material/shape/ShapeAppearanceModel"	@ java_name
 	.zero	49	@ byteCount == 54; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000043	@ type_token_id
 	.ascii	"com/google/android/material/shape/ShapeAppearanceModel$Builder"	@ java_name
 	.zero	41	@ byteCount == 62; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/shape/ShapeAppearanceModel$CornerSizeUnaryOperator"	@ java_name
 	.zero	25	@ byteCount == 78; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000046	@ type_token_id
 	.ascii	"com/google/android/material/shape/ShapePath"	@ java_name
 	.zero	60	@ byteCount == 43; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000047	@ type_token_id
 	.ascii	"com/google/android/material/shape/ShapePathModel"	@ java_name
 	.zero	55	@ byteCount == 48; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000070	@ type_token_id
 	.ascii	"com/google/android/material/tabs/TabLayout"	@ java_name
 	.zero	61	@ byteCount == 42; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/tabs/TabLayout$BaseOnTabSelectedListener"	@ java_name
 	.zero	35	@ byteCount == 68; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/tabs/TabLayout$OnTabSelectedListener"	@ java_name
 	.zero	39	@ byteCount == 64; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200007a	@ type_token_id
 	.ascii	"com/google/android/material/tabs/TabLayout$Tab"	@ java_name
 	.zero	57	@ byteCount == 46; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000071	@ type_token_id
 	.ascii	"com/google/android/material/tabs/TabLayout$TabView"	@ java_name
 	.zero	53	@ byteCount == 50; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000081	@ type_token_id
 	.ascii	"com/google/android/material/tabs/TabLayoutMediator"	@ java_name
 	.zero	53	@ byteCount == 50; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"com/google/android/material/tabs/TabLayoutMediator$TabConfigurationStrategy"	@ java_name
 	.zero	28	@ byteCount == 75; fixedWidth == 103; returned size == 103
@@ -5230,7 +5230,7 @@ map_java:
 	.zero	55	@ byteCount == 48; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x14	@ module_index
+	.long	0xe	@ module_index
 	.long	0x2000056	@ type_token_id
 	.ascii	"crc64b0f1f70064186880/FirebaseService"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
@@ -5410,13 +5410,13 @@ map_java:
 	.zero	58	@ byteCount == 45; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x14	@ module_index
+	.long	0xe	@ module_index
 	.long	0x2000010	@ type_token_id
 	.ascii	"crc64ed1a5dc4ae00162a/MainActivity"	@ java_name
 	.zero	69	@ byteCount == 34; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x14	@ module_index
+	.long	0xe	@ module_index
 	.long	0x2000011	@ type_token_id
 	.ascii	"crc64ed1a5dc4ae00162a/MainApplication"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
@@ -6352,19 +6352,19 @@ map_java:
 	.zero	25	@ byteCount == 78; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000074	@ type_token_id
 	.ascii	"mono/androidx/recyclerview/widget/RecyclerView_OnChildAttachStateChangeListenerImplementor"	@ java_name
 	.zero	13	@ byteCount == 90; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x200007c	@ type_token_id
 	.ascii	"mono/androidx/recyclerview/widget/RecyclerView_OnItemTouchListenerImplementor"	@ java_name
 	.zero	26	@ byteCount == 77; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0x11	@ module_index
 	.long	0x2000084	@ type_token_id
 	.ascii	"mono/androidx/recyclerview/widget/RecyclerView_RecyclerListenerImplementor"	@ java_name
 	.zero	29	@ byteCount == 74; fixedWidth == 103; returned size == 103
@@ -6376,55 +6376,55 @@ map_java:
 	.zero	16	@ byteCount == 87; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x13	@ module_index
+	.long	0x14	@ module_index
 	.long	0x2000023	@ type_token_id
 	.ascii	"mono/androidx/viewpager/widget/ViewPager_OnAdapterChangeListenerImplementor"	@ java_name
 	.zero	28	@ byteCount == 75; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x13	@ module_index
+	.long	0x14	@ module_index
 	.long	0x2000029	@ type_token_id
 	.ascii	"mono/androidx/viewpager/widget/ViewPager_OnPageChangeListenerImplementor"	@ java_name
 	.zero	31	@ byteCount == 72; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000098	@ type_token_id
 	.ascii	"mono/com/google/android/material/appbar/AppBarLayout_LiftOnScrollListenerImplementor"	@ java_name
 	.zero	19	@ byteCount == 84; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200009c	@ type_token_id
 	.ascii	"mono/com/google/android/material/appbar/AppBarLayout_OnOffsetChangedListenerImplementor"	@ java_name
 	.zero	16	@ byteCount == 87; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200004e	@ type_token_id
 	.ascii	"mono/com/google/android/material/button/MaterialButton_OnCheckedChangeListenerImplementor"	@ java_name
 	.zero	14	@ byteCount == 89; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200005b	@ type_token_id
 	.ascii	"mono/com/google/android/material/navigation/NavigationBarView_OnItemReselectedListenerImplementor"	@ java_name
 	.zero	6	@ byteCount == 97; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200005e	@ type_token_id
 	.ascii	"mono/com/google/android/material/navigation/NavigationBarView_OnItemSelectedListenerImplementor"	@ java_name
 	.zero	8	@ byteCount == 95; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x200006d	@ type_token_id
 	.ascii	"mono/com/google/android/material/navigation/NavigationView_OnNavigationItemSelectedListenerImplementor"	@ java_name
 	.zero	1	@ byteCount == 102; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x11	@ module_index
+	.long	0x12	@ module_index
 	.long	0x2000077	@ type_token_id
 	.ascii	"mono/com/google/android/material/tabs/TabLayout_BaseOnTabSelectedListenerImplementor"	@ java_name
 	.zero	19	@ byteCount == 84; fixedWidth == 103; returned size == 103

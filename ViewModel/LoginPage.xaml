@@ -7,13 +7,12 @@
              xmlns:modl="clr-namespace:Kudomion.Model"
              x:Class="Kudomion.LoginPage"
              BackgroundColor="#1c1c1c"
-            
              >
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
     </Shell.BackButtonBehavior>
     <Shell.SearchHandler>
-        <controls:SearchField ShowsResults="True" DisplayMemberName="name" Placeholder="Search Users Here.." />
+        <controls:SearchField IsSearchEnabled="False" ShowsResults="True" DisplayMemberName="name" Placeholder="Search Users Here.. (Disabled)" />
     </Shell.SearchHandler>
     <StackLayout>
         

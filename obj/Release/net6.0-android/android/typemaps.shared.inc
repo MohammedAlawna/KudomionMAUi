@@ -72,38 +72,38 @@ map_aname.13:
 
 	.type	map_aname.14, @object
 map_aname.14:
-	.asciz	"Xamarin.AndroidX.Navigation.Common"
-	.size	map_aname.14, 35
+	.asciz	"Kudomion"
+	.size	map_aname.14, 9
 
 	.type	map_aname.15, @object
 map_aname.15:
-	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
-	.size	map_aname.15, 37
+	.asciz	"Xamarin.AndroidX.Navigation.Common"
+	.size	map_aname.15, 35
 
 	.type	map_aname.16, @object
 map_aname.16:
-	.asciz	"Xamarin.AndroidX.RecyclerView"
-	.size	map_aname.16, 30
+	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
+	.size	map_aname.16, 37
 
 	.type	map_aname.17, @object
 map_aname.17:
-	.asciz	"Xamarin.Google.Android.Material"
-	.size	map_aname.17, 32
+	.asciz	"Xamarin.AndroidX.RecyclerView"
+	.size	map_aname.17, 30
 
 	.type	map_aname.18, @object
 map_aname.18:
-	.asciz	"Xamarin.AndroidX.SavedState"
-	.size	map_aname.18, 28
+	.asciz	"Xamarin.Google.Android.Material"
+	.size	map_aname.18, 32
 
 	.type	map_aname.19, @object
 map_aname.19:
-	.asciz	"Xamarin.AndroidX.ViewPager"
-	.size	map_aname.19, 27
+	.asciz	"Xamarin.AndroidX.SavedState"
+	.size	map_aname.19, 28
 
 	.type	map_aname.20, @object
 map_aname.20:
-	.asciz	"Kudomion"
-	.size	map_aname.20, 9
+	.asciz	"Xamarin.AndroidX.ViewPager"
+	.size	map_aname.20, 27
 
 	.type	map_aname.21, @object
 map_aname.21:
