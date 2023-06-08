@@ -33,7 +33,6 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\bluestr.png" Color="#512BD4" />
-		<MauiIcon Include="Resources\Images\bluestr.png" />
 		<MauiIcon Include="Resources\Images\btlic.png" />
 		<MauiIcon Include="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 		<MauiIcon Include="Resources\Images\hme.png" />
@@ -67,7 +66,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\bluestr.png" />
 	  <MauiImage Remove="Resources\Images\btlic.png" />
 	  <MauiImage Remove="Resources\Images\dotnet_bot.svg" />
 	  <MauiImage Remove="Resources\Images\hme.png" />
@@ -79,7 +77,6 @@
 	<ItemGroup>
 	  <None Remove="Platforms\Android\google-services.json" />
 	  <None Remove="Resources\AppIcon\bluestr.png" />
-	  <None Remove="Resources\Images\bluestr.png" />
 	  <None Remove="Resources\Images\btlic.png" />
 	  <None Remove="Resources\Images\dcks.png" />
 	  <None Remove="Resources\Images\discrd.png" />

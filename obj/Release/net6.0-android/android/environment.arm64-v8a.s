@@ -5746,7 +5746,7 @@ application_config:
 
 	.type	.L.autostr.4, @object
 .L.autostr.4:
-	.asciz	"1b2b6256-03f3-4e85-b9e2-ef5d3f53841a"
+	.asciz	"9527fee5-c9d1-4b42-a30b-c4b768ff8c87"
 	.size	.L.autostr.4, 37
 
 	.type	.L.autostr.5, @object
