@@ -100,10 +100,9 @@ public partial class MainPage : ContentPage
 
            else
            {
-
               await DisplayAlert("Wrong Credentials!", "Either Password or Useranme incorrect!", "OK!");
-                   return;
-               }
+              return;
+           }
 
            } catch(NullReferenceException n)
            {

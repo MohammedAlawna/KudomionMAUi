@@ -72,88 +72,88 @@ map_aname.13:
 
 	.type	map_aname.14, %object
 map_aname.14:
-	.asciz	"Kudomion"
-	.size	map_aname.14, 9
+	.asciz	"Xamarin.AndroidX.Navigation.Common"
+	.size	map_aname.14, 35
 
 	.type	map_aname.15, %object
 map_aname.15:
-	.asciz	"Xamarin.AndroidX.Navigation.Common"
-	.size	map_aname.15, 35
+	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
+	.size	map_aname.15, 37
 
 	.type	map_aname.16, %object
 map_aname.16:
-	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
-	.size	map_aname.16, 37
+	.asciz	"Xamarin.AndroidX.RecyclerView"
+	.size	map_aname.16, 30
 
 	.type	map_aname.17, %object
 map_aname.17:
-	.asciz	"Xamarin.AndroidX.RecyclerView"
-	.size	map_aname.17, 30
+	.asciz	"Xamarin.Google.Android.Material"
+	.size	map_aname.17, 32
 
 	.type	map_aname.18, %object
 map_aname.18:
-	.asciz	"Xamarin.Google.Android.Material"
-	.size	map_aname.18, 32
+	.asciz	"Xamarin.AndroidX.SavedState"
+	.size	map_aname.18, 28
 
 	.type	map_aname.19, %object
 map_aname.19:
-	.asciz	"Xamarin.AndroidX.SavedState"
-	.size	map_aname.19, 28
+	.asciz	"Xamarin.AndroidX.ViewPager"
+	.size	map_aname.19, 27
 
 	.type	map_aname.20, %object
 map_aname.20:
-	.asciz	"Xamarin.AndroidX.ViewPager"
-	.size	map_aname.20, 27
+	.asciz	"Xamarin.AndroidX.Fragment"
+	.size	map_aname.20, 26
 
 	.type	map_aname.21, %object
 map_aname.21:
-	.asciz	"Xamarin.AndroidX.Fragment"
+	.asciz	"Microsoft.Maui.Essentials"
 	.size	map_aname.21, 26
 
 	.type	map_aname.22, %object
 map_aname.22:
-	.asciz	"Microsoft.Maui.Essentials"
-	.size	map_aname.22, 26
+	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
+	.size	map_aname.22, 46
 
 	.type	map_aname.23, %object
 map_aname.23:
-	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
-	.size	map_aname.23, 46
+	.asciz	"Xamarin.AndroidX.Core"
+	.size	map_aname.23, 22
 
 	.type	map_aname.24, %object
 map_aname.24:
-	.asciz	"Xamarin.AndroidX.Core"
-	.size	map_aname.24, 22
+	.asciz	"Xamarin.AndroidX.AppCompat"
+	.size	map_aname.24, 27
 
 	.type	map_aname.25, %object
 map_aname.25:
-	.asciz	"Xamarin.AndroidX.AppCompat"
+	.asciz	"Xamarin.Firebase.Messaging"
 	.size	map_aname.25, 27
 
 	.type	map_aname.26, %object
 map_aname.26:
-	.asciz	"Xamarin.Firebase.Messaging"
-	.size	map_aname.26, 27
+	.asciz	"Xamarin.AndroidX.CardView"
+	.size	map_aname.26, 26
 
 	.type	map_aname.27, %object
 map_aname.27:
-	.asciz	"Xamarin.AndroidX.CardView"
-	.size	map_aname.27, 26
+	.asciz	"Xamarin.AndroidX.Collection"
+	.size	map_aname.27, 28
 
 	.type	map_aname.28, %object
 map_aname.28:
-	.asciz	"Xamarin.AndroidX.Collection"
-	.size	map_aname.28, 28
+	.asciz	"Xamarin.GooglePlayServices.Basement"
+	.size	map_aname.28, 36
 
 	.type	map_aname.29, %object
 map_aname.29:
-	.asciz	"Xamarin.GooglePlayServices.Basement"
+	.asciz	"Xamarin.AndroidX.Navigation.Runtime"
 	.size	map_aname.29, 36
 
 	.type	map_aname.30, %object
 map_aname.30:
-	.asciz	"Xamarin.AndroidX.Navigation.Runtime"
-	.size	map_aname.30, 36
+	.asciz	"Kudomion"
+	.size	map_aname.30, 9
 
 	.type	map_aname.31, %object
 map_aname.31:
