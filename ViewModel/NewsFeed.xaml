@@ -4,11 +4,16 @@
              x:Class="Kudomion.ViewModel.NewsFeed"
              BackgroundColor="#1c1c1c"
              >
-   
-        <StackLayout Margin="15">
-            <Frame BackgroundColor="#313338">
+    <StackLayout>
+
+        <StackLayout HorizontalOptions="Center" Spacing="5" Orientation="Horizontal" Margin="10">
+            <Button Clicked="CreatePostClicked" FontAttributes="Bold" Text="Create Post" BackgroundColor="RoyalBlue" WidthRequest="150"/>
+            <Button Clicked="ReportPostClicked" FontAttributes="Bold" Text="Report Post" BackgroundColor="DarkRed" WidthRequest="150"/>
+
+        </StackLayout>
+        <Frame BackgroundColor="#313338">
                 <StackLayout>
-                <CollectionView HeightRequest="470" x:Name="postsInNewsFeed">
+                <CollectionView HeightRequest="500" x:Name="postsInNewsFeed">
                     <CollectionView.ItemTemplate >
                             <DataTemplate >
                             <ScrollView>

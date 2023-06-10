@@ -39,6 +39,16 @@ namespace Kudomion.ViewModel
             await firebase.AddPost(_postToAdd);
         }
 
+        private async void CreatePostClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Warning!", "Only Admins Can Create Posts In This Trial Release", "OK!");
+        }
+
+        private async void ReportPostClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Warning!", "Post Reporting Is Not Available In This Release", "OK!");
+        }
+
         public void StandradReactClicked(object sender, EventArgs e)
         {
             
