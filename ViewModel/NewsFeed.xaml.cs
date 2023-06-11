@@ -5,8 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
 namespace Kudomion.ViewModel
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -16,7 +14,7 @@ namespace Kudomion.ViewModel
         public NewsFeed()
         {
             InitializeComponent();
-            //AddPostTrial();
+           // AddPostTrial();
             LoadNewsData();
            
         }
@@ -24,14 +22,13 @@ namespace Kudomion.ViewModel
         async void LoadNewsData()
         {
             postsInNewsFeed.ItemsSource = await firebase.GetAllPosts();
-            
         }
 
         async void AddPostTrial()
         {
             Post _postToAdd = new Post
             {
-                content = "Welcome Duelists!",
+                content = "Welcome To Shadow Realm!",
                 imageSource = "",
                 YGOGoodReaction = 0
             };
@@ -41,6 +38,8 @@ namespace Kudomion.ViewModel
 
         private async void CreatePostClicked(object sender, EventArgs e)
         {
+            AddPostTrial();
+            LoadNewsData();
             await DisplayAlert("Warning!", "Only Admins Can Create Posts In This Trial Release", "OK!");
         }
 

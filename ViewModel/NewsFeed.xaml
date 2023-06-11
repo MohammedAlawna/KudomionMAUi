@@ -11,16 +11,16 @@
             <Button Clicked="ReportPostClicked" FontAttributes="Bold" Text="Report Post" BackgroundColor="DarkRed" WidthRequest="150"/>
 
         </StackLayout>
-        <Frame BackgroundColor="#313338">
+        <Frame BackgroundColor="Transparent" BorderColor="Transparent">
                 <StackLayout>
-                <CollectionView HeightRequest="500" x:Name="postsInNewsFeed">
+                <CollectionView HeightRequest="470" x:Name="postsInNewsFeed">
                     <CollectionView.ItemTemplate >
                             <DataTemplate >
                             <ScrollView>
-                                <StackLayout Margin="7">
+                                <StackLayout Margin="5" >
                                     <Frame  BorderColor="DarkGray" BackgroundColor="#303030" HorizontalOptions="CenterAndExpand">
-                                    <StackLayout HeightRequest="203" HorizontalOptions="CenterAndExpand">
-                                        <Grid >
+                                    <StackLayout HeightRequest="230" HorizontalOptions="CenterAndExpand">
+                                        <Grid>
                                             <Grid.RowDefinitions>
                                                 <RowDefinition/>
                                                 <RowDefinition/>
