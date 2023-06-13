@@ -64,7 +64,7 @@ namespace Kudomion.FirebaseManager
         {
                 var allUsers = await GetAllUsers();
                 await firebaseClient.Child("Users").OnceAsync<User>();
-                return allUsers.Where(a => a.name == name).FirstOrDefault();   
+                return allUsers.Where(a => a.name.ToLower() == name.ToLower()).FirstOrDefault();   
         }
 
         public static async Task<User> GetUsrFromName(string _name)

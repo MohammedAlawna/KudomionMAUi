@@ -74,17 +74,27 @@ public partial class MainPage : ContentPage
 
 
 
-         try
-           {
+       /*  try
+           {*/
 
                currentLoggedInUser = userNameText.Text;
                User outPut = await firebase.GetUserByName(currentLoggedInUser);
-               // Console.WriteLine("This OUTPUT!!" + outPut.name);
+               //Console.WriteLine("This OUTPUT!!" + outPut.name + " -- Lowered Case: " + outPut.name.ToLower() + ",  --" + userNameText.Text.ToLower());
 
-               if (userNameText.Text == outPut.name && passwordText.Text == outPut.password)
+               //Case Insensitive Strings
+               string loweredCaseName = userNameText.Text.ToLower().ToString();
+               string loweredCaseNameDB = outPut.name.ToLower().ToString();
+
+               //Case Insensitive Check using => string.Equals()
+               bool caseInsensitiveCheck = string.Equals(loweredCaseName, loweredCaseNameDB, StringComparison.CurrentCultureIgnoreCase);
+               
+           
+                
+                
+               if (caseInsensitiveCheck == true && passwordText.Text == outPut.password)
                {
                    await Navigation.PushAsync(new LoginPage());
-                   currentLoggedInUser = outPut.name;
+                   currentLoggedInUser = userNameText.Text;
                    return;
 
                }
@@ -104,11 +114,11 @@ public partial class MainPage : ContentPage
               return;
            }
 
-           } catch(NullReferenceException n)
+            /*catch(NullReferenceException n)
            {
                await DisplayAlert("Exception!", $"Null Reference Exception caught! -- {n.Data}", "OK!");
                return;
-           }
+           }*/
 
     }
 
