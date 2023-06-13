@@ -12,6 +12,7 @@ namespace Kudomion;
 public partial class MainPage : ContentPage
 {
     public static string currentLoggedInUser;
+    public static User currentUser = null;
     FirebaseHelper firebase = new FirebaseHelper();
     public static bool loggedIn = false;
 
@@ -79,8 +80,8 @@ public partial class MainPage : ContentPage
 
                currentLoggedInUser = userNameText.Text;
                User outPut = await firebase.GetUserByName(currentLoggedInUser);
-               //Console.WriteLine("This OUTPUT!!" + outPut.name + " -- Lowered Case: " + outPut.name.ToLower() + ",  --" + userNameText.Text.ToLower());
-
+        //Console.WriteLine("This OUTPUT!!" + outPut.name + " -- Lowered Case: " + outPut.name.ToLower() + ",  --" + userNameText.Text.ToLower());
+               currentUser = outPut;
                //Case Insensitive Strings
                string loweredCaseName = userNameText.Text.ToLower().ToString();
                string loweredCaseNameDB = outPut.name.ToLower().ToString();

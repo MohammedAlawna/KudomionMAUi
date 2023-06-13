@@ -20,6 +20,7 @@ namespace Kudomion
     {
         //Firebase Plugin Parameters..
         private string _deviceToken;
+        FirebaseHelper firebase;
         public LoginPage()
         {
            InitializeComponent();
@@ -28,9 +29,15 @@ namespace Kudomion
             {
                 _deviceToken = Preferences.Get("DeviceToken", "");
             }
-            LoadDuelistProfile();
+            // LoadDuelistProfile();
+            loggedInUsername.Text = MainPage.currentUser.name;
+            
         }
 
+        async void LoadDemo()
+        {
+            User getDuelist = await firebase.GetUserByName(MainPage.currentLoggedInUser);
+        }
         public async void LoadDuelistProfile()
         {
             //Get Current Logged-In User/Duelist.
