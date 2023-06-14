@@ -228,7 +228,6 @@ namespace Kudomion.FirebaseManager
 
         public async Task<bool> CheckIfUserExists()
         {
-          
                List<Room> getAllActiveRooms =  await GetAllRMs();
                foreach(Room r in getAllActiveRooms)
                 {
@@ -236,21 +235,14 @@ namespace Kudomion.FirebaseManager
                     {
                     return true;
                 }
-
-
             }
-            return false;
-                
-               
-              
-            
-           
+            return false;           
         }
 
-        public async Task<List<Room>> GetActiveRoom(string nameOfUser)
+      /*  public async Task<List<Room>> GetActiveRoom(string nameOfUser)
         {
             return null;
-        }
+        }*/
 
         //This function is used to get specific room (Player1, Player20)
         public async Task<Room> GetSpecificRoom(string _p1, string _p2)
@@ -289,9 +281,6 @@ namespace Kudomion.FirebaseManager
             //Delete Room.
             return false;
         }
-
-     
-       
 
         
         public async Task<List<DeckItem>> GetAllDecks()
