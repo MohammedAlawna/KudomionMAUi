@@ -14,10 +14,10 @@
             <StackLayout x:Name="allUsersRank">
                 <Frame Margin="10" BackgroundColor="#2c2c2c" x:Name="leaderboardCard">
                     <StackLayout>
-                        <CollectionView x:Name="userRankingsToLoad">
+                        <CollectionView HeightRequest="330" x:Name="userRankingsToLoad">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
-                                    <Frame BorderColor="Black" HeightRequest="100" BackgroundColor="#7C0000">
+                                    <Frame Margin="5" BorderColor="Black" HeightRequest="100" BackgroundColor="#7C0000">
                                         <StackLayout HorizontalOptions="Center">
                                             <Grid Padding="3">
                                                 <Grid.RowDefinitions>
