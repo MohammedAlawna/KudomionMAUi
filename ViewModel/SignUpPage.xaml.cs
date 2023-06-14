@@ -27,7 +27,30 @@ namespace Kudomion
         
         private async void SignUpButton_Clicked(object sender, EventArgs e)
         {
-            List<string> stringsL = new List<string>();
+            //Variables (array, list<user>, bool)
+            List<string> userStrings = new List<string>();
+            List<User> AllUsersDB = await firebase.GetAllUsers();
+            bool isUserExist;
+            
+            foreach(User user in AllUsersDB)
+            {
+                userStrings.Add(user.name.ToLower());
+            }
+
+            //Boolean Check (Worked!~)
+            isUserExist = userStrings.Contains(userName.Text.ToLower());
+
+            //Testing Prompt (Worked!~)
+            //await DisplayAlert("Warning!", "User Registered Success!" + userStrings[0] + "-- Bool: " + isUserExist, "OK!");
+
+            //Check if username already in the DB records. (Worked!~)
+            if (isUserExist)
+            {
+                await DisplayAlert("Error!", "Username already exists. Please choose another name.", "OK!");
+                return;
+            }
+
+         /*   List<string> stringsL = new List<string>();
             List<User> allUsers = await firebase.GetAllUsers();
             //await DisplayAlert("Alert!", $"Number Of Users: ${allUsers.Count}", "OK!");
 
@@ -81,7 +104,7 @@ namespace Kudomion
             if (allUsers.Count == 0)
             {
                 RegisterNewUser();
-            }
+            }*/
         }
 
         private async void CheckIfUserExist()
