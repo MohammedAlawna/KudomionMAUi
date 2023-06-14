@@ -22,22 +22,10 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
-
-        
-
-        // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
     }
 
-    /* public string GetUserName()
-     {
-         return userNameText.Text;
-     }
+    //Hot-Update Functions..
 
-     public string GetUserPassword()
-     {
-         return passwordText.Text;
-     }
-    */
 
     private async void ForgetPasswordClicked(object sender, EventArgs e)
     {
