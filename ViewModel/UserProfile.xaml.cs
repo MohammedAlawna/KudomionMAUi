@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Kudomion.ViewModel
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]

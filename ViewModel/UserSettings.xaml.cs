@@ -12,6 +12,7 @@ namespace Kudomion
     public partial class UserSettings : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
+        MainPage main = new MainPage();
         public UserSettings()
         {
             InitializeComponent();
@@ -22,8 +23,8 @@ namespace Kudomion
             try
             {
                 if (AreEntriesEmpty() == true) return;
-            
-            User getCurrentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+
+                User getCurrentUser = await firebase.GetUserByName(MainPage.currentUser.name);
 
             
             //Assign New Values To The Current Logged In User.
@@ -45,7 +46,7 @@ namespace Kudomion
             MainPage.currentLoggedInUser = nUser.Text;
 
             //Update User Profile.
-            //Home.loggedInUsername.Text = nUser.Text;
+            MainPage.UpdateUserName(nUser.Text);
           
             //Reset Values
             nUser.Text = String.Empty;

@@ -5,6 +5,7 @@ using Microsoft.Maui.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,7 +26,18 @@ public partial class MainPage : ContentPage
     }
 
     //Hot-Update Functions..
+    public static void UpdateUserName(string newUser)
+    {
+        MainPage main = new MainPage();
+        main.userNameText.Text = newUser;
+        
 
+    }
+
+    public void UpdateUserDuels()
+    {
+
+    }
 
     private async void ForgetPasswordClicked(object sender, EventArgs e)
     {
