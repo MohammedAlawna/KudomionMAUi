@@ -37,6 +37,8 @@ namespace Kudomion
                 userStrings.Add(user.name.ToLower());
             }
 
+            if (userStrings.Count == 0) { isUserExist = false; }
+
             //Boolean Check (Worked!~)
             isUserExist = userStrings.Contains(userName.Text.ToLower());
 
@@ -50,61 +52,33 @@ namespace Kudomion
                 return;
             }
 
-         /*   List<string> stringsL = new List<string>();
-            List<User> allUsers = await firebase.GetAllUsers();
-            //await DisplayAlert("Alert!", $"Number Of Users: ${allUsers.Count}", "OK!");
-
-            //Check if User Exists and The !allUsers.Count == 0.
-            List<string> userStrings = new List<string>();
-            if (allUsers.Count > 0)
+            else if (!isUserExist)
             {
-                bool isUserExists = false;
-                foreach (User item in allUsers)
+                //Check for Whitespaces and Empty Strings.
+                if (string.IsNullOrWhiteSpace(userName.Text) || string.IsNullOrWhiteSpace(password.Text) || string.IsNullOrWhiteSpace(confirmPassword.Text))
                 {
-                    userStrings.Add(item.name.ToLower());
-                }
-
-                //Assign Bool Value If Exist..
-                //Value of upper should equalize the lower case value:
-                isUserExists = userStrings.Contains(userName.Text.ToLower());
-
-                //Check Point.
-                if (isUserExists)
-                {
-                    await DisplayAlert("User Exists!", "Sorry. This Name Already Registered, Choose another name..", "OK!");
+                    await DisplayAlert("Invalid", "Whitespace or Blank Value is Invalid.", "OK!");
                     return;
                 }
 
-                //If User Not Exist Then Add The User.
-                if (!isUserExists)
+                //Check If Input (User, Pass) is/are Empty.
+                if (string.IsNullOrWhiteSpace(userName.Text) || string.IsNullOrWhiteSpace(password.Text) || string.IsNullOrWhiteSpace(confirmPassword.Text))
                 {
-                    RegisterNewUser();
+                    await DisplayAlert("Invalid", "Whitespace or Blank Value is Invalid.", "OK!");
+                    return;
                 }
-               
 
-            }
+                //Check If Credentials Are Mis-Matched.
+                if (password.Text != confirmPassword.Text)
+                {
 
-            //Check If Input (User, Pass) is/are Empty.
-            if (string.IsNullOrWhiteSpace(userName.Text) || string.IsNullOrWhiteSpace(password.Text) || string.IsNullOrWhiteSpace(confirmPassword.Text))
-            {
-                await DisplayAlert("Invalid", "Whitespace or Blank Value is Invalid.", "OK!");
-                return;
-            }
+                    await DisplayAlert("Password Mismatch!", "Please Make Sure That Passwords Are Match!", "OK!");
+                    return;
+                }
 
-            //Check If Credentials Are Mis-Matched.
-            if (password.Text != confirmPassword.Text)
-            {
-                
-                await DisplayAlert("Password Mismatch!", "Please Make Sure That Passwords Are Match!", "OK!");
-                return;
-            }
-
-
-            //CheckRegisterNewUser(); if List of Users Empty..
-            if (allUsers.Count == 0)
-            {
                 RegisterNewUser();
-            }*/
+            }
+
         }
 
         private async void CheckIfUserExist()
