@@ -34,10 +34,18 @@ namespace Kudomion
             
         }
 
-        async void LoadDemo()
+        public string UserName
         {
-            User getDuelist = await firebase.GetUserByName(MainPage.currentLoggedInUser);
+            get
+            {
+                return loggedInUsername.Text;
+            }
+            set
+            {
+                loggedInUsername.Text = "KuDo";
+            }
         }
+
         public async void LoadDuelistProfile()
         {
             //Get Current Logged-In User/Duelist.
@@ -60,6 +68,7 @@ namespace Kudomion
             string duelistRanking = getDuelist.ranking.ToString();
             noRanking.Text = duelistRanking;
         }
+
 
         //Get User Data
         public string GetNumberOfDuels()

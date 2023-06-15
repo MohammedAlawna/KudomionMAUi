@@ -25,19 +25,8 @@ public partial class MainPage : ContentPage
         NavigationPage.SetHasBackButton(this, false);
     }
 
-    //Hot-Update Functions..
-    public static void UpdateUserName(string newUser)
-    {
-        MainPage main = new MainPage();
-        main.userNameText.Text = newUser;
-        
 
-    }
-
-    public void UpdateUserDuels()
-    {
-
-    }
+    
 
     private async void ForgetPasswordClicked(object sender, EventArgs e)
     {
