@@ -23,6 +23,7 @@ namespace Kudomion
         {
             try
             {
+            
             if (AreEntriesEmpty() == true) return;
 
             User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
@@ -66,13 +67,45 @@ namespace Kudomion
                 await DisplayAlert("Error!", $"An Error Occured.. Missing Info..{er}", "OK!");
             }
         }
+
+        //Get All Users Method..
+        async 
         
         //Check If The New User (Name) already used..
-        bool UserExist()
+        async void UserExist()
         {
             try
             {
-                 //Variables (array, bool, users list)..
+                //Variables (array, users list)..
+                List<string> userStrings = new List<string>();
+                List<User> AllUsersDB = await firebase.GetAllUsers();
+               // bool isUserExist;
+
+                foreach (User usr in AllUsersDB)
+                {
+                    userStrings.Add(usr.name.ToLower());
+                }
+
+                if(userStrings.Count == 0)
+                {
+                  //  isUserExist = true;
+                    return false;
+                }
+
+                //Boolean Check (Worked~)
+                bool checkUserDB = userStrings.Contains(nUser.Text.ToLower());
+
+                if (checkUserDB)
+                {
+                    return true;
+                }
+
+                if(checkUserDB == false)
+                {
+                    return false;
+                }
+                return true;
+
             }
             catch(Exception e)
             {
