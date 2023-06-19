@@ -23,7 +23,14 @@ namespace Kudomion
         {
             try
             {
-            
+            //Get All Users.
+            List<User> GetAllUsers = await firebase.GetAllUsers();
+            if(UserExist(GetAllUsers) == true)
+            {
+                 await DisplayAlert("Name Error!", "Name Already Taken, Please Specify Another Name!", "OK!");
+                 return;
+            }
+
             if (AreEntriesEmpty() == true) return;
 
             User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
@@ -68,17 +75,17 @@ namespace Kudomion
             }
         }
 
-        //Get All Users Method..
-        async 
+       
+        
         
         //Check If The New User (Name) already used..
-        async void UserExist()
+        bool UserExist(List<User> allUsrs)
         {
             try
             {
                 //Variables (array, users list)..
                 List<string> userStrings = new List<string>();
-                List<User> AllUsersDB = await firebase.GetAllUsers();
+                List<User> AllUsersDB = allUsrs;
                // bool isUserExist;
 
                 foreach (User usr in AllUsersDB)
@@ -104,13 +111,14 @@ namespace Kudomion
                 {
                     return false;
                 }
-                return true;
+               
 
             }
             catch(Exception e)
             {
                 DisplayAlert("Warning!", "Error Just Occured!", "OK!");
             }
+            return true;
         }
         bool AreEntriesEmpty()
         {
