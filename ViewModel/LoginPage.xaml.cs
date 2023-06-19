@@ -34,7 +34,7 @@ namespace Kudomion
             
         }
 
-        public string UserName
+     /*   public string UserName
         {
             get
             {
@@ -44,7 +44,7 @@ namespace Kudomion
             {
                 loggedInUsername.Text = "KuDo";
             }
-        }
+        }*/
 
         public async void LoadDuelistProfile()
         {
@@ -79,6 +79,16 @@ namespace Kudomion
         public string GetNumberOfPoints()
         {
             return noPoints.Text;
+        }
+
+        public string GetOriginalUserName()
+        {
+            return loggedInUsername.Text;
+        }
+
+        public void UpdateCurrentLoggedInUser(string newName)
+        {
+            loggedInUsername.Text = newName;
         }
 
         private async void Profile_Tapped(object sender, EventArgs e)

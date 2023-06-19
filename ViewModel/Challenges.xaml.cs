@@ -25,17 +25,24 @@ namespace Kudomion
         }
         private async void LoadDuelistsData()
         {
-            //Load LoggedInUser Name.
-            var loggedInUserName = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
-            p1.Text = loggedInUserName.name;
-            p1.IsEnabled = false;
+            try
+            {
+                //Load LoggedInUser Name.
+                var loggedInUserName = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+                p1.Text = loggedInUserName.name;
+                p1.IsEnabled = false;
 
-            //Load AllUsersIntoSelector.
-            List<User> listOfUsers = await firebase.GetAllUsers();
-            p2.ItemsSource = listOfUsers;
+                //Load AllUsersIntoSelector.
+                List<User> listOfUsers = await firebase.GetAllUsers();
+                p2.ItemsSource = listOfUsers;
 
-            //Load All Rooms In The Lobby.
-            roomsCollectionView.ItemsSource = await firebase.GetAllRooms();           
+                //Load All Rooms In The Lobby.
+                roomsCollectionView.ItemsSource = await firebase.GetAllRooms();
+            }
+            catch(Exception e)
+            {
+                await DisplayAlert("Error!", "Unexpected error just occured!", "OK!");
+            }
         }
 
      
@@ -151,10 +158,17 @@ namespace Kudomion
 
         void ResetRoomValues()
         {
-            getPlayerRoom = null;
-            firstPlayer = null;
-            secondPlayer = null;
-            getWinningPlayer = null;
+            try
+            {
+                getPlayerRoom = null;
+                firstPlayer = null;
+                secondPlayer = null;
+                getWinningPlayer = null;
+            }
+            catch(Exception e)
+            {
+                DisplayAlert("Error!", "An UnExpected Error Just Occured!", "OK!");
+            }
         }
 
        

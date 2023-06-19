@@ -23,10 +23,12 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
+
+        
+
+        // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
     }
 
-
-    
 
     private async void ForgetPasswordClicked(object sender, EventArgs e)
     {
@@ -46,69 +48,70 @@ public partial class MainPage : ContentPage
         //Step (2): if Login Success => A- Go To LoginPage, B- Assign loggedIn = true..
 
         //await Navigation.PushAsync(new LoginPage());
-        
-/*
-        currentLoggedInUser = userNameText.Text;
-        User outPut = await firebase.GetUserByName(currentLoggedInUser);
-        if (outPut == null)
+
+        /*
+                currentLoggedInUser = userNameText.Text;
+                User outPut = await firebase.GetUserByName(currentLoggedInUser);
+                if (outPut == null)
+                {
+                    await DisplayAlert("Empty!", "No Users Found!", "OK!");
+                }
+                else
+                {
+                    await DisplayAlert("Found!", $"User: {outPut.name}", "OK!");
+
+                    // await Navigation.PushAsync(new LoggedInPage());
+                }*/
+
+
+
+
+        try
         {
-            await DisplayAlert("Empty!", "No Users Found!", "OK!");
+
+            currentLoggedInUser = userNameText.Text;
+            User outPut = await firebase.GetUserByName(currentLoggedInUser);
+            //Console.WriteLine("This OUTPUT!!" + outPut.name + " -- Lowered Case: " + outPut.name.ToLower() + ",  --" + userNameText.Text.ToLower());
+            currentUser = outPut;
+            //Case Insensitive Strings
+            string loweredCaseName = userNameText.Text.ToLower().ToString();
+            string loweredCaseNameDB = outPut.name.ToLower().ToString();
+
+            //Case Insensitive Check using => string.Equals()
+            bool caseInsensitiveCheck = string.Equals(loweredCaseName, loweredCaseNameDB, StringComparison.CurrentCultureIgnoreCase);
+
+
+
+
+            if (caseInsensitiveCheck == true && passwordText.Text == outPut.password)
+            {
+                await Navigation.PushAsync(new LoginPage());
+                currentLoggedInUser = userNameText.Text;
+                return;
+
+            }
+
+            if (outPut == null)
+            {
+
+                await DisplayAlert("User Not Found!", "No such user exist!", "OK!");
+                return;
+            }
+
+
+
+            else
+            {
+                await DisplayAlert("Wrong Credentials!", "Either Password or Useranme incorrect!", "OK!");
+                return;
+            }
         }
-        else
+
+        catch (NullReferenceException n)
         {
-            await DisplayAlert("Found!", $"User: {outPut.name}", "OK!");
-
-            // await Navigation.PushAsync(new LoggedInPage());
-        }*/
-
-
-
-
-       /*  try
-           {*/
-
-               currentLoggedInUser = userNameText.Text;
-               User outPut = await firebase.GetUserByName(currentLoggedInUser);
-        //Console.WriteLine("This OUTPUT!!" + outPut.name + " -- Lowered Case: " + outPut.name.ToLower() + ",  --" + userNameText.Text.ToLower());
-               currentUser = outPut;
-               //Case Insensitive Strings
-               string loweredCaseName = userNameText.Text.ToLower().ToString();
-               string loweredCaseNameDB = outPut.name.ToLower().ToString();
-
-               //Case Insensitive Check using => string.Equals()
-               bool caseInsensitiveCheck = string.Equals(loweredCaseName, loweredCaseNameDB, StringComparison.CurrentCultureIgnoreCase);
-               
-           
-                
-                
-               if (caseInsensitiveCheck == true && passwordText.Text == outPut.password)
-               {
-                   await Navigation.PushAsync(new LoginPage());
-                   currentLoggedInUser = userNameText.Text;
-                   return;
-
-               }
-
-               if (outPut == null)
-               {
-
-                   await DisplayAlert("User Not Found!", "No such user exist!", "OK!");
-                   return;
-               }
-
-
-
-           else
-           {
-              await DisplayAlert("Wrong Credentials!", "Either Password or Useranme incorrect!", "OK!");
-              return;
-           }
-
-            /*catch(NullReferenceException n)
-           {
-               await DisplayAlert("Exception!", $"Null Reference Exception caught! -- {n.Data}", "OK!");
-               return;
-           }*/
+            await DisplayAlert("Exception!", $"Null Reference Exception caught! -- {n.Data}", "OK!");
+            return;
+        }
 
     }
 

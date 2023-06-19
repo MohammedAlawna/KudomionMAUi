@@ -13,6 +13,7 @@ namespace Kudomion
     {
         FirebaseHelper firebase = new FirebaseHelper();
         MainPage main = new MainPage();
+        LoginPage log = new LoginPage();
         public UserSettings()
         {
             InitializeComponent();
@@ -22,9 +23,9 @@ namespace Kudomion
         {
             try
             {
-                if (AreEntriesEmpty() == true) return;
+            if (AreEntriesEmpty() == true) return;
 
-                User getCurrentUser = await firebase.GetUserByName(MainPage.currentUser.name);
+            User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
 
             
             //Assign New Values To The Current Logged In User.
@@ -40,13 +41,15 @@ namespace Kudomion
             };
 
             //Update User Via Firebase.
-            await firebase.UpdateUser(MainPage.currentLoggedInUser, userToBeUpdated);
+            await firebase.UpdateUser(log.GetOriginalUserName(), userToBeUpdated);
 
             //Update Current Logged In User Name.
             MainPage.currentLoggedInUser = nUser.Text;
+            log.UpdateCurrentLoggedInUser(nUser.Text);
 
             //Update User Profile.
-            MainPage.UpdateUserName(nUser.Text);
+          /*  LoginPage log = new LoginPage();
+            log.UserName = nUser.Text;*/
           
             //Reset Values
             nUser.Text = String.Empty;
@@ -55,8 +58,8 @@ namespace Kudomion
             nPassConfirm.Text = String.Empty;
 
 
-                //Display Alert
-                await DisplayAlert("User Updated!", "User Information changed successfully.", "OK!");
+            //Display Alert
+            await DisplayAlert("User Updated!", "User Information changed successfully.", "OK!");
             }
             catch(NullReferenceException er)
             {

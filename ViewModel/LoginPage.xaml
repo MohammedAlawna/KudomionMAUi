@@ -15,9 +15,8 @@
         <controls:SearchField IsSearchEnabled="False" ShowsResults="True" DisplayMemberName="name" Placeholder="Search Users Here.. (Disabled)" />
     </Shell.SearchHandler>
     <StackLayout>
-        
+
         <StackLayout HorizontalOptions="Center">
-          
             <Image Source="prfle" Margin="10" HeightRequest="85"/>
             <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="Kudo" x:Name="loggedInUsername" FontSize="20"/>
             <Grid>
