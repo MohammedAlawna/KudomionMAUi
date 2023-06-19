@@ -66,7 +66,19 @@ namespace Kudomion
                 await DisplayAlert("Error!", $"An Error Occured.. Missing Info..{er}", "OK!");
             }
         }
-
+        
+        //Check If The New User (Name) already used..
+        bool UserExist()
+        {
+            try
+            {
+                 //Variables (array, bool, users list)..
+            }
+            catch(Exception e)
+            {
+                DisplayAlert("Warning!", "Error Just Occured!", "OK!");
+            }
+        }
         bool AreEntriesEmpty()
         {
             if (string.IsNullOrEmpty(nUser.Text))

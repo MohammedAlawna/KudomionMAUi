@@ -20,8 +20,6 @@ namespace Kudomion
             userName.ReturnCommand = new Command(() => userName.Focus());
             password.ReturnCommand = new Command(() => password.Focus());
             confirmPassword.ReturnCommand = new Command(() => confirmPassword.Focus());
-
-
         }
 
         
