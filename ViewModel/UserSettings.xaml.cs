@@ -60,7 +60,7 @@ namespace Kudomion
 
             //Update Current Logged In User Name.
             MainPage.currentLoggedInUser = nUser.Text;
-            log.UpdateUsername();
+            //log.UpdateUsername();
             log.UpdateCurrentLoggedInUser(nUser.Text);
 
             //Update User Profile.

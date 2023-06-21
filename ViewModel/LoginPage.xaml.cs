@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Kudomion.Model;
 using Newtonsoft.Json;
+using System.Windows.Input;
 
 namespace Kudomion
 {
@@ -38,6 +39,20 @@ namespace Kudomion
         void LoadRefreshingView()
         {
             RefreshView refreshView = new RefreshView();
+            ICommand refreshCommand = new Command(() =>
+            {
+                //Is Refreshing: True.
+                //Refresh Data.
+
+                refreshView.IsRefreshing = true;
+            });
+
+            refreshView.Command = refreshCommand;
+
+            ScrollView scrollView = new ScrollView();
+            StackLayout stackLayout = new StackLayout();
+            scrollView.Content = stackLayout;
+            refreshView.Content = scrollView;
         }
     
         public async void LoadDuelistProfile()
