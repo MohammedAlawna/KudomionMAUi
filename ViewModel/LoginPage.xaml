@@ -15,7 +15,7 @@
         <controls:SearchField IsSearchEnabled="False" ShowsResults="True" DisplayMemberName="name" Placeholder="Search Users Here.. (Disabled)" />
     </Shell.SearchHandler>
     <StackLayout>
-
+        <RefreshView HorizontalOptions="Center">
         <StackLayout HorizontalOptions="Center">
             <Image Source="prfle" Margin="10" HeightRequest="85"/>
             <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="{Binding UserName}" x:Name="loggedInUsername" FontSize="20"/>
@@ -102,5 +102,6 @@
                 </Image>
             </Grid>
         </StackLayout>
+        </RefreshView>
     </StackLayout>
 </ContentPage>

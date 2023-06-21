@@ -35,23 +35,11 @@ namespace Kudomion
             
         }
 
-    public string UserName
-    {
-      get
+        void LoadRefreshingView()
         {
-          return GetOriginalUserName();
+            RefreshView refreshView = new RefreshView();
         }
-    }
-
-
-        public string UserDuels
-        {
-            get
-            {
-                return noDuels.Text;
-            }
-        }
-
+    
         public async void LoadDuelistProfile()
         {
             //Get Current Logged-In User/Duelist.
@@ -73,6 +61,22 @@ namespace Kudomion
             //Get & Assign The Ranking.
             string duelistRanking = getDuelist.ranking.ToString();
             noRanking.Text = duelistRanking;
+        }
+        public string UserName
+        {
+            get
+            {
+                return GetOriginalUserName();
+            }
+        }
+
+
+        public string UserDuels
+        {
+            get
+            {
+                return noDuels.Text;
+            }
         }
 
 
