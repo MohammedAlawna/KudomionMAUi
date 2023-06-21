@@ -38,7 +38,6 @@ namespace Kudomion
                  await DisplayAlert("Name Error!", "Name Already Taken, Please Specify Another Name!", "OK!");
                  return;
             }
-
            
 
             User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
@@ -61,11 +60,11 @@ namespace Kudomion
 
             //Update Current Logged In User Name.
             MainPage.currentLoggedInUser = nUser.Text;
+            log.UpdateUsername();
             log.UpdateCurrentLoggedInUser(nUser.Text);
 
             //Update User Profile.
-            LoginPage loggedIn = new LoginPage();
-            loggedIn.UpdateUsername(nUser.Text);
+          
           
             //Reset Values
             nUser.Text = String.Empty;

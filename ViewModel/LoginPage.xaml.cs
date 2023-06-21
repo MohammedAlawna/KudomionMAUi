@@ -43,23 +43,13 @@ namespace Kudomion
         }
     }
 
-   /* public string UserPoints
-    {
 
-    }*/
-
-    public string UserDuels
-    {
+        public string UserDuels
+        {
             get
             {
                 return noDuels.Text;
             }
-    }
-
-
-        public void UpdateUsername(string myTxt)
-        {
-            this.loggedInUsername.Text = myTxt;
         }
 
         public async void LoadDuelistProfile()
@@ -129,7 +119,6 @@ namespace Kudomion
 
         private async void Discord_Tapped(object sender, EventArgs e)
         {
-
             string url = "https://discord.gg/mpvmEP8";
             await Browser.OpenAsync(url);
             Console.WriteLine("Discord Tapped");
