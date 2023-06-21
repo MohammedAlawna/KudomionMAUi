@@ -25,13 +25,21 @@ namespace Kudomion
             {
             //Get All Users.
             List<User> GetAllUsers = await firebase.GetAllUsers();
-            if(UserExist(GetAllUsers) == true)
+
+
+                if (AreEntriesEmpty() == true)
+                {
+                  //  await DisplayAlert("Empty Field!", "System Detected Empty fields!", "OK!");
+                    return;
+                }
+
+                if (UserExist(GetAllUsers) == true)
             {
                  await DisplayAlert("Name Error!", "Name Already Taken, Please Specify Another Name!", "OK!");
                  return;
             }
 
-            if (AreEntriesEmpty() == true) return;
+           
 
             User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
 
@@ -56,8 +64,8 @@ namespace Kudomion
             log.UpdateCurrentLoggedInUser(nUser.Text);
 
             //Update User Profile.
-          /*  LoginPage log = new LoginPage();
-            log.UserName = nUser.Text;*/
+            LoginPage loggedIn = new LoginPage();
+            loggedIn.UpdateUsername(nUser.Text);
           
             //Reset Values
             nUser.Text = String.Empty;
@@ -67,7 +75,7 @@ namespace Kudomion
 
 
             //Display Alert
-            await DisplayAlert("User Updated!", "User Information changed successfully.", "OK!");
+            await DisplayAlert("User Updated!", "User Information changed successfully. Please Log-Out or restart Application for Changes to be Applies!", "OK!");
             }
             catch(NullReferenceException er)
             {

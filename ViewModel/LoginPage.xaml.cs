@@ -31,20 +31,36 @@ namespace Kudomion
             }
             // LoadDuelistProfile();
             loggedInUsername.Text = MainPage.currentUser.name;
+            DisplayAlert("Warning!", "Name Is: " + UserName, "OK!");
             
         }
 
-     /*   public string UserName
+    public string UserName
+    {
+      get
         {
+          return GetOriginalUserName();
+        }
+    }
+
+   /* public string UserPoints
+    {
+
+    }*/
+
+    public string UserDuels
+    {
             get
             {
-                return loggedInUsername.Text;
+                return noDuels.Text;
             }
-            set
-            {
-                loggedInUsername.Text = "KuDo";
-            }
-        }*/
+    }
+
+
+        public void UpdateUsername(string myTxt)
+        {
+            this.loggedInUsername.Text = myTxt;
+        }
 
         public async void LoadDuelistProfile()
         {

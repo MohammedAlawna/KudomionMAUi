@@ -18,7 +18,7 @@
 
         <StackLayout HorizontalOptions="Center">
             <Image Source="prfle" Margin="10" HeightRequest="85"/>
-            <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="Kudo" x:Name="loggedInUsername" FontSize="20"/>
+            <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="{Binding UserName}" x:Name="loggedInUsername" FontSize="20"/>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
