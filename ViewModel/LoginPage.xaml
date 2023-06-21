@@ -15,7 +15,7 @@
         <controls:SearchField IsSearchEnabled="False" ShowsResults="True" DisplayMemberName="name" Placeholder="Search Users Here.. (Disabled)" />
     </Shell.SearchHandler>
     <StackLayout>
-        <RefreshView RefreshColor="RoyalBlue" HorizontalOptions="Center">
+        <RefreshView RefreshColor="RoyalBlue" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}" HorizontalOptions="Center">
             <ScrollView>
         <StackLayout HorizontalOptions="Center">
             <Image Source="prfle" Margin="10" HeightRequest="85"/>

@@ -32,19 +32,20 @@ namespace Kudomion
             }
             // LoadDuelistProfile();
             loggedInUsername.Text = MainPage.currentUser.name;
+            ProcessRefreshView();
             DisplayAlert("Warning!", "Name Is: " + UserName, "OK!");
             
         }
 
-        void LoadRefreshingView()
+        void ProcessRefreshView()
         {
             RefreshView refreshView = new RefreshView();
             ICommand refreshCommand = new Command(() =>
             {
                 //Is Refreshing: True.
                 //Refresh Data.
-
-                refreshView.IsRefreshing = true;
+                loggedInUsername.Text = "Nael!";
+                refreshView.IsRefreshing = false;
             });
 
             refreshView.Command = refreshCommand;
@@ -54,6 +55,25 @@ namespace Kudomion
             scrollView.Content = stackLayout;
             refreshView.Content = scrollView;
         }
+
+     /*   public ICommand RefreshCommand()
+        {
+            RefreshView refreshView = new RefreshView();
+            ICommand refreshCommand = new Command(() =>
+            {
+                //Is Refreshing: True.
+                //Refresh Data.
+                loggedInUsername.Text = "Nael!";
+                refreshView.IsRefreshing = false;
+            });
+
+            refreshView.Command = refreshCommand;
+
+            ScrollView scrollView = new ScrollView();
+            StackLayout stackLayout = new StackLayout();
+            scrollView.Content = stackLayout;
+            refreshView.Content = scrollView;
+        }*/
     
         public async void LoadDuelistProfile()
         {
