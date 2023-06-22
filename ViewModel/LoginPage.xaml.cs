@@ -19,6 +19,9 @@ namespace Kudomion
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        //Refreshing View..
+        public bool IsRefreshing { get; set; }
+
         //Firebase Plugin Parameters..
         private string _deviceToken;
         FirebaseHelper firebase;
@@ -32,14 +35,26 @@ namespace Kudomion
             }
             // LoadDuelistProfile();
             loggedInUsername.Text = MainPage.currentUser.name;
-            ProcessRefreshView();
-            DisplayAlert("Warning!", "Name Is: " + UserName, "OK!");
+           // ProcessRefreshView();
+            //DisplayAlert("Warning!", "Name Is: " + UserName, "OK!");
             
         }
 
+        //ICommand..
+        public ICommand RefreshCommand => new Command(async () =>
+        {
+            IsRefreshing = true;
+            await Task.Delay(200);
+            loggedInUsername.Text = "Nael";
+            IsRefreshing = false;
+        });
+
         void ProcessRefreshView()
         {
-            RefreshView refreshView = new RefreshView();
+            loggedInUsername.Text = "Nael!";
+
+            //Manually Creation of RefreshView~!
+           /* RefreshView refreshView = new RefreshView();
             ICommand refreshCommand = new Command(() =>
             {
                 //Is Refreshing: True.
@@ -53,7 +68,7 @@ namespace Kudomion
             ScrollView scrollView = new ScrollView();
             StackLayout stackLayout = new StackLayout();
             scrollView.Content = stackLayout;
-            refreshView.Content = scrollView;
+            refreshView.Content = scrollView;*/
         }
 
      /*   public ICommand RefreshCommand()
