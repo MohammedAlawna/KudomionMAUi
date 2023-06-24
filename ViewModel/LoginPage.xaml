@@ -8,6 +8,9 @@
              x:Class="Kudomion.LoginPage"
              BackgroundColor="#1c1c1c"
              >
+    <ContentPage.BindingContext>
+        <modl:RefreshModel/>
+    </ContentPage.BindingContext>
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
     </Shell.BackButtonBehavior>
