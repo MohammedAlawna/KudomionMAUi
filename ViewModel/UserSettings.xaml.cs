@@ -61,7 +61,7 @@ namespace Kudomion
             //Update Current Logged In User Name.
             MainPage.currentLoggedInUser = nUser.Text;
             //log.UpdateUsername();
-            log.UpdateCurrentLoggedInUser(nUser.Text);
+            //log.UpdateCurrentLoggedInUser(nUser.Text);
 
             //Update User Profile.
           
@@ -93,7 +93,7 @@ namespace Kudomion
                 //Variables (array, users list)..
                 List<string> userStrings = new List<string>();
                 List<User> AllUsersDB = allUsrs;
-               // bool isUserExist;
+               //bool isUserExist;
 
                 foreach (User usr in AllUsersDB)
                 {
@@ -123,7 +123,7 @@ namespace Kudomion
             }
             catch(Exception e)
             {
-                DisplayAlert("Warning!", "Error Just Occured!", "OK!");
+                DisplayAlert("Warning!", "Error Just Occured! " + e.Message, "OK!");
             }
             return true;
         }

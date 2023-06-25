@@ -9,7 +9,7 @@
              BackgroundColor="#1c1c1c"
              >
     <ContentPage.BindingContext>
-        <modl:RefreshModel/>
+        <local:LoginPage/>
     </ContentPage.BindingContext>
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False" IsEnabled="False"/>

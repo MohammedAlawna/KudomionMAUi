@@ -13,15 +13,18 @@ using System.Threading.Tasks;
 using Kudomion.Model;
 using Newtonsoft.Json;
 using System.Windows.Input;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace Kudomion
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class LoginPage : ContentPage, INotifyPropertyChanged
     {
         //Firebase Plugin Parameters..
         private string _deviceToken;
         FirebaseHelper firebase;
+
         public LoginPage()
         {
            InitializeComponent();
@@ -36,46 +39,6 @@ namespace Kudomion
             //DisplayAlert("Warning!", "Name Is: " + UserName, "OK!");
         }
 
-        void ProcessRefreshView()
-        {
-            loggedInUsername.Text = "Nael!";
-
-            //Manually Creation of RefreshView~!
-           /* RefreshView refreshView = new RefreshView();
-            ICommand refreshCommand = new Command(() =>
-            {
-                //Is Refreshing: True.
-                //Refresh Data.
-                loggedInUsername.Text = "Nael!";
-                refreshView.IsRefreshing = false;
-            });
-
-            refreshView.Command = refreshCommand;
-
-            ScrollView scrollView = new ScrollView();
-            StackLayout stackLayout = new StackLayout();
-            scrollView.Content = stackLayout;
-            refreshView.Content = scrollView;*/
-        }
-
-     /*   public ICommand RefreshCommand()
-        {
-            RefreshView refreshView = new RefreshView();
-            ICommand refreshCommand = new Command(() =>
-            {
-                //Is Refreshing: True.
-                //Refresh Data.
-                loggedInUsername.Text = "Nael!";
-                refreshView.IsRefreshing = false;
-            });
-
-            refreshView.Command = refreshCommand;
-
-            ScrollView scrollView = new ScrollView();
-            StackLayout stackLayout = new StackLayout();
-            scrollView.Content = stackLayout;
-            refreshView.Content = scrollView;
-        }*/
     
         public async void LoadDuelistProfile()
         {
@@ -98,34 +61,6 @@ namespace Kudomion
             //Get & Assign The Ranking.
             string duelistRanking = getDuelist.ranking.ToString();
             noRanking.Text = duelistRanking;
-        }
-        public string UserName
-        {
-            get
-            {
-                return GetOriginalUserName();
-            }
-        }
-
-
-        public string UserDuels
-        {
-            get
-            {
-                return noDuels.Text;
-            }
-        }
-
-
-        //Get User Data
-        public string GetNumberOfDuels()
-        {
-            return noDuels.Text;
-        }
-
-        public string GetNumberOfPoints()
-        {
-            return noPoints.Text;
         }
 
         public string GetOriginalUserName()
@@ -215,6 +150,5 @@ namespace Kudomion
             await Navigation.PushAsync(new MainPage());
         }
 
-
-    }  
+    }
 }
