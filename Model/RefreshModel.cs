@@ -42,9 +42,8 @@ namespace Kudomion.Model
           {
               IsRefreshing = true;
               await Task.Delay(TimeSpan.FromSeconds(refreshTime));
-              //Console.WriteLine("Sahera Info Just Updated: " + MainPage.currentLoggedInUser);
-              LoginPage log = new LoginPage();
-              log.UpdateCurrentLoggedInUser(MainPage.currentLoggedInUser);
+              Console.WriteLine("Sahera Info Just Updated: " + MainPage.currentLoggedInUser);
+              
               IsRefreshing = false;
           }
 
@@ -59,4 +58,4 @@ namespace Kudomion.Model
 
       }
     }
-}
+
