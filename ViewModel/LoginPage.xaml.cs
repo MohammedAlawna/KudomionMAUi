@@ -15,11 +15,13 @@ using Newtonsoft.Json;
 using System.Windows.Input;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Android.Text;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 
 namespace Kudomion
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage, INotifyPropertyChanged
+    public partial class LoginPage : ContentPage
     {
         //Firebase Plugin Parameters..
         private string _deviceToken;
@@ -34,11 +36,13 @@ namespace Kudomion
                 _deviceToken = Preferences.Get("DeviceToken", "");
             }
             // LoadDuelistProfile();
-            loggedInUsername.Text = MainPage.currentUser.name;
+             loggedInUsername.Text = MainPage.currentUser.name;
+          //  loggedInUsername.Text = _userName;
            // ProcessRefreshView();
             //DisplayAlert("Warning!", "Name Is: " + UserName, "OK!");
         }
 
+        
     
         public async void LoadDuelistProfile()
         {
@@ -63,16 +67,17 @@ namespace Kudomion
             noRanking.Text = duelistRanking;
         }
 
+        public void TrialFunction()
+        {
+            DisplayAlert("Horray!","OMG! A giant rock! You just called me from the loginPage" + MainPage.currentLoggedInUser, "OK!");
+        }
+
         public string GetOriginalUserName()
         {
             return loggedInUsername.Text;
         }
 
-        public void UpdateCurrentLoggedInUser(string newName)
-        {
-            loggedInUsername.Text = newName;
-        }
-
+      
         private async void Profile_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new UserSettings());

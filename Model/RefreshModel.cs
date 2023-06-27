@@ -43,7 +43,6 @@ namespace Kudomion.Model
               IsRefreshing = true;
               await Task.Delay(TimeSpan.FromSeconds(refreshTime));
               Console.WriteLine("Sahera Info Just Updated: " + MainPage.currentLoggedInUser);
-              
               IsRefreshing = false;
           }
 
@@ -55,7 +54,6 @@ namespace Kudomion.Model
               PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
           }
           #endregion
-
       }
     }
 

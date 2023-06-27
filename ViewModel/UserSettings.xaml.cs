@@ -1,4 +1,5 @@
 ﻿using Kudomion.FirebaseManager;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,11 +61,11 @@ namespace Kudomion
 
             //Update Current Logged In User Name.
             MainPage.currentLoggedInUser = nUser.Text;
-            //log.UpdateUsername();
-            //log.UpdateCurrentLoggedInUser(nUser.Text);
+                //log.UpdateUsername();
+                //log.UpdateCurrentLoggedInUser(nUser.Text);
 
-            //Update User Profile.
-          
+                //Update User Profile.
+                log.TrialFunction();
           
             //Reset Values
             nUser.Text = String.Empty;
@@ -155,6 +156,8 @@ namespace Kudomion
                 return;
             }*/
         }
+
+        
 
         private void OnClickAvatar(object sender, EventArgs e)
         {
