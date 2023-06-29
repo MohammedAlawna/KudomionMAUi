@@ -1,4 +1,5 @@
 ﻿using Kudomion.FirebaseManager;
+using Kudomion.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,8 +14,8 @@ namespace Kudomion
     public partial class UserSettings : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
-        MainPage main = new MainPage();
-        LoginPage log = new LoginPage();
+        
+       
         public UserSettings()
         {
             InitializeComponent();
@@ -22,6 +23,11 @@ namespace Kudomion
 
         private async void SubmitButton(object sender, EventArgs e)
         {
+            LoginPage log = new LoginPage();
+            CredentialsStore cred = new CredentialsStore();
+            cred.UpdateUserName("Nael!");
+         
+            return;
             try
             {
             //Get All Users.
@@ -39,8 +45,8 @@ namespace Kudomion
                  await DisplayAlert("Name Error!", "Name Already Taken, Please Specify Another Name!", "OK!");
                  return;
             }
-           
 
+           
             User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
 
             
@@ -56,16 +62,16 @@ namespace Kudomion
             //TODO ImageSrc.
             };
 
+               
             //Update User Via Firebase.
             await firebase.UpdateUser(log.GetOriginalUserName(), userToBeUpdated);
 
             //Update Current Logged In User Name.
             MainPage.currentLoggedInUser = nUser.Text;
-                //log.UpdateUsername();
-                //log.UpdateCurrentLoggedInUser(nUser.Text);
+            log.UpdateNameLabel(nUser.Text);
 
-                //Update User Profile.
-                log.TrialFunction();
+              
+               
           
             //Reset Values
             nUser.Text = String.Empty;

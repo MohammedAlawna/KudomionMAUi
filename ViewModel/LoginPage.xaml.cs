@@ -23,22 +23,25 @@ namespace Kudomion
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        
         //Firebase Plugin Parameters..
         private string _deviceToken;
         FirebaseHelper firebase;
 
+        public string currentLoggedInUserName;
+
         public LoginPage()
         {
-           InitializeComponent();
-            
+            InitializeComponent();
+            BindingContext = this;
             if (Preferences.ContainsKey("DeviceToken"))
             {
                 _deviceToken = Preferences.Get("DeviceToken", "");
             }
             // LoadDuelistProfile();
-             loggedInUsername.Text = MainPage.currentUser.name;
-        
-            DisplayAlert("Warning!", "This is only a trial constructor call!", "OK!");
+            loggedInUsername.Text = MainPage.currentUser.name;
+           // currentLoggedInUserName = MainPage.currentLoggedInUser;
+          //  DisplayAlert("Warning!", "This is only a trial constructor call!", "OK!");
         }
 
         
@@ -66,9 +69,10 @@ namespace Kudomion
             noRanking.Text = duelistRanking;
         }
 
-        public void TrialFunction()
+        public void UpdateNameLabel(string name)
         {
-            DisplayAlert("Horray!","OMG! A giant rock! You just called me from the loginPage" + MainPage.currentLoggedInUser, "OK!");
+            this.loggedInUsername.Text = name;
+            DisplayAlert("Warning!","Hello! ", "OK!");
         }
 
         public string GetOriginalUserName()
