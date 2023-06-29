@@ -15,8 +15,8 @@ using Newtonsoft.Json;
 using System.Windows.Input;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using Android.Text;
-using Microsoft.Maui.Controls.Compatibility.Platform.Android;
+/*using Android.Text;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;*/
 
 namespace Kudomion
 {
@@ -37,9 +37,8 @@ namespace Kudomion
             }
             // LoadDuelistProfile();
              loggedInUsername.Text = MainPage.currentUser.name;
-          //  loggedInUsername.Text = _userName;
-           // ProcessRefreshView();
-            //DisplayAlert("Warning!", "Name Is: " + UserName, "OK!");
+        
+            DisplayAlert("Warning!", "This is only a trial constructor call!", "OK!");
         }
 
         
