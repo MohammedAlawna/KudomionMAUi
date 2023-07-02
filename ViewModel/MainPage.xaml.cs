@@ -82,7 +82,7 @@ public partial class MainPage : ContentPage
 
             if (caseInsensitiveCheck == true && passwordText.Text == outPut.password)
             {
-                await Navigation.PushAsync(new LoginPage());
+                await Navigation.PushAsync(new LoginPage(userNameText.Text));
                 currentLoggedInUser = userNameText.Text;
                 return;
 

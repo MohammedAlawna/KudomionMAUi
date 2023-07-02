@@ -30,7 +30,7 @@ namespace Kudomion
 
         public string currentLoggedInUserName;
 
-        public LoginPage()
+        public LoginPage(string _username)
         {
             InitializeComponent();
             BindingContext = this;
@@ -38,7 +38,8 @@ namespace Kudomion
             {
                 _deviceToken = Preferences.Get("DeviceToken", "");
             }
-             LoadDuelistProfile();
+            // LoadDuelistProfile();
+            loggedInUsername.Text = _username;
             //loggedInUsername.Text = MainPage.currentUser.name;
            // currentLoggedInUserName = MainPage.currentLoggedInUser;
           //  DisplayAlert("Warning!", "This is only a trial constructor call!", "OK!");

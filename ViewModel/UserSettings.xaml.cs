@@ -27,7 +27,7 @@ namespace Kudomion
 
         private async void SubmitButton(object sender, EventArgs e)
         {
-            LoginPage log = new LoginPage();
+            //LoginPage log = new LoginPage();
             
             try
             {
@@ -48,8 +48,8 @@ namespace Kudomion
             }
 
            
-            User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
-
+         //   User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
+            User getCurrentUser = MainPage.currentUser;
             
             //Assign New Values To The Current Logged In User.
             User userToBeUpdated = new User {
@@ -65,11 +65,11 @@ namespace Kudomion
 
                
             //Update User Via Firebase.
-            await firebase.UpdateUser(log.GetOriginalUserName(), userToBeUpdated);
+            await firebase.UpdateUser(MainPage.currentUser.name, userToBeUpdated);
 
             //Update Current Logged In User Name.
             MainPage.currentLoggedInUser = nUser.Text;
-            log.UpdateNameLabel(nUser.Text);
+          //  log.UpdateNameLabel(nUser.Text);
 
 
 
@@ -87,7 +87,7 @@ namespace Kudomion
             var saveChanges = await DisplayAlert("Save Changes?", "Are you sure you want to apply new user credentials?", "Yes", "No");
                 if (saveChanges)
                 {
-                    await Navigation.PushAsync(new LoginPage());
+                    await Navigation.PushAsync(new LoginPage(MainPage.currentLoggedInUser));
                     return;
                     
                 }
