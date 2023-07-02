@@ -28,7 +28,8 @@ namespace Kudomion
             try
             {
                 //Load LoggedInUser Name.
-                var loggedInUserName = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+                // var loggedInUserName = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+                User loggedInUserName = MainPage.currentUser;
                 p1.Text = loggedInUserName.name;
                 p1.IsEnabled = false;
 

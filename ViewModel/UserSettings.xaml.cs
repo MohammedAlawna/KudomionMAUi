@@ -14,20 +14,21 @@ namespace Kudomion
     public partial class UserSettings : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
-        
        
+
+       
+
         public UserSettings()
         {
             InitializeComponent();
         }
 
+
+
         private async void SubmitButton(object sender, EventArgs e)
         {
             LoginPage log = new LoginPage();
-            CredentialsStore cred = new CredentialsStore();
-            cred.UpdateUserName("Nael!");
-         
-            return;
+            
             try
             {
             //Get All Users.
@@ -70,6 +71,8 @@ namespace Kudomion
             MainPage.currentLoggedInUser = nUser.Text;
             log.UpdateNameLabel(nUser.Text);
 
+
+
               
                
           
@@ -81,7 +84,14 @@ namespace Kudomion
 
 
             //Display Alert
-            await DisplayAlert("User Updated!", "User Information changed successfully. Please Log-Out or restart Application for Changes to be Applies!", "OK!");
+            var saveChanges = await DisplayAlert("Save Changes?", "Are you sure you want to apply new user credentials?", "Yes", "No");
+                if (saveChanges)
+                {
+                    await Navigation.PushAsync(new LoginPage());
+                    return;
+                    
+                }
+
             }
             catch(NullReferenceException er)
             {
@@ -89,9 +99,10 @@ namespace Kudomion
             }
         }
 
-       
-        
-        
+     
+
+
+
         //Check If The New User (Name) already used..
         bool UserExist(List<User> allUsrs)
         {

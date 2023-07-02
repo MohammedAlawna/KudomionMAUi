@@ -68,7 +68,6 @@ public partial class MainPage : ContentPage
 
         try
         {
-
             currentLoggedInUser = userNameText.Text;
             User outPut = await firebase.GetUserByName(currentLoggedInUser);
             //Console.WriteLine("This OUTPUT!!" + outPut.name + " -- Lowered Case: " + outPut.name.ToLower() + ",  --" + userNameText.Text.ToLower());
@@ -79,8 +78,6 @@ public partial class MainPage : ContentPage
 
             //Case Insensitive Check using => string.Equals()
             bool caseInsensitiveCheck = string.Equals(loweredCaseName, loweredCaseNameDB, StringComparison.CurrentCultureIgnoreCase);
-
-
 
 
             if (caseInsensitiveCheck == true && passwordText.Text == outPut.password)
@@ -115,11 +112,7 @@ public partial class MainPage : ContentPage
 
     }
 
-    private void LoginButton_Clicked(object sender, EventArgs e)
-    {
 
-
-    }
 
 
 

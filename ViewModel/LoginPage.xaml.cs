@@ -38,8 +38,8 @@ namespace Kudomion
             {
                 _deviceToken = Preferences.Get("DeviceToken", "");
             }
-            // LoadDuelistProfile();
-            loggedInUsername.Text = MainPage.currentUser.name;
+             LoadDuelistProfile();
+            //loggedInUsername.Text = MainPage.currentUser.name;
            // currentLoggedInUserName = MainPage.currentLoggedInUser;
           //  DisplayAlert("Warning!", "This is only a trial constructor call!", "OK!");
         }
@@ -48,25 +48,35 @@ namespace Kudomion
     
         public async void LoadDuelistProfile()
         {
-            //Get Current Logged-In User/Duelist.
-            User getDuelist = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+            try
+            {
 
-            //DisplayAlert("User Found!", $"User is: {getDuelist.name}", "OK!");
 
-            //Get & Assign The Name (New one if Updated).
-            loggedInUsername.Text = getDuelist.name;
+                //Get Current Logged-In User/Duelist.
+                User getDuelist = MainPage.currentUser;
+               // User getDuelist = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
 
-            //Get & Assign The Number Of Points.
-            string numberOfPoints = getDuelist.points.ToString();
-            noPoints.Text = numberOfPoints;
+                //DisplayAlert("User Found!", $"User is: {getDuelist.name}", "OK!");
 
-            //Get & Assign The Number of Duels.
-            string numberOfDuels = getDuelist.duels.ToString();
-            noDuels.Text = numberOfDuels;
+                //Get & Assign The Name (New one if Updated).
+                loggedInUsername.Text = getDuelist.name;
 
-            //Get & Assign The Ranking.
-            string duelistRanking = getDuelist.ranking.ToString();
-            noRanking.Text = duelistRanking;
+                //Get & Assign The Number Of Points.
+                string numberOfPoints = getDuelist.points.ToString();
+                noPoints.Text = numberOfPoints;
+
+                //Get & Assign The Number of Duels.
+                string numberOfDuels = getDuelist.duels.ToString();
+                noDuels.Text = numberOfDuels;
+
+                //Get & Assign The Ranking.
+                string duelistRanking = getDuelist.ranking.ToString();
+                noRanking.Text = duelistRanking;
+            }
+            catch(Exception e)
+            {
+                await DisplayAlert("Error!", "Unexpected error!", "OK!");
+            }
         }
 
         public void UpdateNameLabel(string name)
@@ -155,6 +165,7 @@ namespace Kudomion
         {
             MainPage.currentLoggedInUser = string.Empty;
             MainPage.loggedIn = false;
+            MainPage.currentUser = null;
             await Navigation.PushAsync(new MainPage());
         }
 
