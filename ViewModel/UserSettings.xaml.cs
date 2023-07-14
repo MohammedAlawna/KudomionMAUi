@@ -14,9 +14,6 @@ namespace Kudomion
     public partial class UserSettings : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
-       
-
-       
 
         public UserSettings()
         {
