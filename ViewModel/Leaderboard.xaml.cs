@@ -14,6 +14,7 @@ namespace Kudomion
     public partial class Leaderboard : ContentPage
     {
         FirebaseHelper firebaseHelper = new FirebaseHelper();
+        
         public Leaderboard()
         {
             InitializeComponent();

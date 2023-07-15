@@ -656,7 +656,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Xamarin.Kotlin.StdLib.Jdk8.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Xamarin.KotlinX.Coroutines.Android.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Xamarin.KotlinX.Coroutines.Core.Jvm.dll
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.x86.s
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.shared.inc
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\AndroidManifest.xml
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\AndroidManifest.xml
@@ -666,7 +665,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\bin\mono.android.jar
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\static.flag
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\buildid.txt
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\environment.x86.s
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\src\androidx\activity\ktx\R.java
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\src\androidx\activity\R.java
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\src\androidx\annotation\experimental\R.java
@@ -1166,11 +1164,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\src\mono\MonoPackageManager_Resources.java
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\bin\packaged_resources
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\src\com\blouza\kudomion\R.java
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\compressed_assemblies.x86.s
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.x86.o
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\environment.x86.o
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\compressed_assemblies.x86.o
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\app_shared_libraries\x86\libxamarin-app.so
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\bin\classes.dex
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\bin\classes2.dex
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\stamp\_CleanIntermediateIfNeeded.stamp
@@ -1194,3 +1187,10 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Xml.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.x86.s
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\environment.x86.s
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\compressed_assemblies.x86.s
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\typemaps.x86.o
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\environment.x86.o
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\compressed_assemblies.x86.o
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\app_shared_libraries\x86\libxamarin-app.so
