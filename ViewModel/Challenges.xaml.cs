@@ -85,7 +85,10 @@ namespace Kudomion
             //TODO Get ID of the Room (uID).
             //var getIDCHild = (Label)parent.Children(4);
 
-            await DisplayAlert("Debugging Alert!",$"First Player: {firstPlayerChild.Text}, Second Player: {secondPlayerChild.Text}", "OK!");
+            //Get Room
+            var getSpecifiedRoom = await firebase.GetRoomInstant(firstPlayerChild.Text, secondPlayerChild.Text);
+            await DisplayAlert("Debugging Alert!",$"Room is: {getSpecifiedRoom.p1}, {getSpecifiedRoom.p2}, First Player: {firstPlayerChild.Text}, Second Player: {secondPlayerChild.Text}", "OK!");
+
             return;
 
 

@@ -172,6 +172,7 @@ namespace Kudomion.FirebaseManager
             }
         }
 
+        //Get All Rooms That Are Not Finished Yet (isDone = false).
         public async Task<List<Room>> GetAllRooms()
         {
            try
@@ -252,6 +253,22 @@ namespace Kudomion.FirebaseManager
                 var allRooms = await GetAllRooms();
                 await firebaseClient.Child("Rooms").OnceAsync<Room>();
                 return allRooms.Where(r => r.p1 == _p1 && r.p2 == _p2).FirstOrDefault();
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine($"Error: {e}");
+                return null;
+            }
+        }
+
+        //More Accurate Function to Get The Player Room.
+        public async Task<Room> GetRoomInstant(string p1, string p2)
+        {
+            try
+            {
+                List<Room> allRooms = await GetAllRooms();
+                await firebaseClient.Child("Rooms").OnceAsync<Room>();
+                return allRooms.Where(r => r.p1 == p1 && r.p2 == p2).FirstOrDefault();
             }
             catch(Exception e)
             {
