@@ -70,32 +70,30 @@ namespace Kudomion
         public User getWinningPlayer = null;
         private async void AdmitDefeat_Clicked(object sender, EventArgs e)
         {
-            //Get Current Button (Clicked Button)
-            var el = (Button)sender;
+            try {
+                //The Following Code Is Needed To Get The Specific Room!
+                //1- Get Current Button (Clicked Button)
+                var el = (Button)sender;
 
-            //Get Parent of The Button (Main Grid).
-            var parent = (Grid)el.Parent;
+                //2- Get Parent of The Button (Main Grid).
+                var parent = (Grid)el.Parent;
 
-            //Get First Player Name.
-            var firstPlayerChild = (Label)parent.Children[0];
+                //3- Get First Player Name.
+                var firstPlayerChild = (Label)parent.Children[0];
 
-            //Get Second Player Name.
-            var secondPlayerChild = (Label)parent.Children[2];
+                //4- Get Second Player Name.
+                var secondPlayerChild = (Label)parent.Children[2];
 
-            //TODO Get ID of the Room (uID).
-            //var getIDCHild = (Label)parent.Children(4);
+                //TODO Get ID of the Room (uID).
+                //var getIDCHild = (Label)parent.Children(4);
 
-            //Get Room
-            var getSpecifiedRoom = await firebase.GetRoomInstant(firstPlayerChild.Text, secondPlayerChild.Text);
-            await DisplayAlert("Debugging Alert!",$"Room is: {getSpecifiedRoom.p1}, {getSpecifiedRoom.p2}, First Player: {firstPlayerChild.Text}, Second Player: {secondPlayerChild.Text}", "OK!");
-
-            return;
-
+                //Get Room By P1, P2 Retrieved from the Grid Childs.
+                //await DisplayAlert("Debugging Alert!", $"Room is: {getSpecifiedRoom.p1}, {getSpecifiedRoom.p2}, First Player: {firstPlayerChild.Text}, Second Player: {secondPlayerChild.Text}", "OK!");
 
 
-            try { 
                 //First:: Get Selected Room (The One You Clicked At).
-                getPlayerRoom = await firebase.GetPlayerRoom(MainPage.currentUser.name);
+                //getPlayerRoom = await firebase.GetPlayerRoom(MainPage.currentUser.name);
+                var getPlayerRoom = await firebase.GetRoomInstant(firstPlayerChild.Text, secondPlayerChild.Text);
                 firstPlayer = await FirebaseHelper.GetUsrFromName(getPlayerRoom.p1);
                 secondPlayer = await FirebaseHelper.GetUsrFromName(getPlayerRoom.p2);
 
@@ -115,7 +113,7 @@ namespace Kudomion
                 }
                 if (MainPage.currentUser.name == getPlayerRoom.p1)
                 {
-                    getPlayerRoom = await firebase.GetPlayerRoom(MainPage.currentUser.name);
+                   // getPlayerRoom = await firebase.GetPlayerRoom(MainPage.currentUser.name);
 
                     //Second Player => winner.
                     getWinningPlayer = secondPlayer;
@@ -134,7 +132,6 @@ namespace Kudomion
                     User currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentUser.name);
 
                   
-
                     //Prompt Admit Defeat!
                     await DisplayAlert("You Lost!", $"You just admit defeated! Duel Records Will be changed! Room Winner: {getPlayerRoom.winner}, P1{getPlayerRoom.p1} P2{getPlayerRoom.p2} Winning Player{getWinningPlayer.name}", "OK");
 
@@ -148,7 +145,7 @@ namespace Kudomion
                 }
                 if (MainPage.currentUser.name != getPlayerRoom.p1)
                 {
-                    getPlayerRoom = await firebase.GetPlayerRoom(MainPage.currentUser.name);
+                   // getPlayerRoom = await firebase.GetPlayerRoom(MainPage.currentUser.name);
 
                     //First Player => winner.
                     getWinningPlayer = firstPlayer;
@@ -190,7 +187,7 @@ namespace Kudomion
         {
             try
             {
-                getPlayerRoom = null;
+               // getPlayerRoom = null;
                 firstPlayer = null;
                 secondPlayer = null;
                 getWinningPlayer = null;
