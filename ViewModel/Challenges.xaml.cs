@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Kudomion
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -18,7 +17,7 @@ namespace Kudomion
             InitializeComponent();
             ResetRoomValues();
             LoadDuelistsData();
-            
+            p1.IsEnabled = false;
            // DisplayAlert("Room ID!","Current Room ID is:" + roomID++ ,"OK!");
         }
 
@@ -63,11 +62,11 @@ namespace Kudomion
             
         }
 
-
         private Room getPlayerRoom = null;
         public User firstPlayer = null;
         public User secondPlayer = null;
         public User getWinningPlayer = null;
+
         private async void AdmitDefeat_Clicked(object sender, EventArgs e)
         {
             try {

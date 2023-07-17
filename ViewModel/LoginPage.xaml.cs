@@ -38,7 +38,7 @@ namespace Kudomion
             {
                 _deviceToken = Preferences.Get("DeviceToken", "");
             }
-            // LoadDuelistProfile();
+            LoadDuelistProfile();
             loggedInUsername.Text = _username;
             //loggedInUsername.Text = MainPage.currentUser.name;
            // currentLoggedInUserName = MainPage.currentLoggedInUser;
@@ -51,8 +51,6 @@ namespace Kudomion
         {
             try
             {
-
-
                 //Get Current Logged-In User/Duelist.
                 User getDuelist = MainPage.currentUser;
                // User getDuelist = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
@@ -61,6 +59,8 @@ namespace Kudomion
 
                 //Get & Assign The Name (New one if Updated).
                 loggedInUsername.Text = getDuelist.name;
+
+                
 
                 //Get & Assign The Number Of Points.
                 string numberOfPoints = getDuelist.points.ToString();
