@@ -61,7 +61,6 @@ namespace Kudomion
                 loggedInUsername.Text = getDuelist.name;
 
                 
-
                 //Get & Assign The Number Of Points.
                 string numberOfPoints = getDuelist.points.ToString();
                 noPoints.Text = numberOfPoints;
