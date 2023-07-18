@@ -17,9 +17,11 @@ namespace Kudomion
             InitializeComponent();
             ResetRoomValues();
             LoadDuelistsData();
-            p1.IsEnabled = false;
+           
+
            // DisplayAlert("Room ID!","Current Room ID is:" + roomID++ ,"OK!");
         }
+      
 
         private async void ProcessRoomCreation()
         {
@@ -69,6 +71,7 @@ namespace Kudomion
 
         private async void AdmitDefeat_Clicked(object sender, EventArgs e)
         {
+            
             try {
                 //The Following Code Is Needed To Get The Specific Room!
                 //1- Get Current Button (Clicked Button)
@@ -136,6 +139,8 @@ namespace Kudomion
 
                     //Update Rooms List.
                     UpdateRoomsList();
+
+                    
 
                     //Reseting Room Values:
                     ResetRoomValues();

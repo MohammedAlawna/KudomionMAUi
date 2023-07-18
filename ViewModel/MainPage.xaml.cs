@@ -41,6 +41,11 @@ public partial class MainPage : ContentPage
         Navigation.PushAsync(new UserProfile(username));
     }
 
+    public async void ToBeCalled()
+    {
+        await DisplayAlert("Warning!", "A New Alert Just Popped-Up!", "OK!");
+    }
+
     private async void SignInClicked(object sender, EventArgs e)
     {
         //Step (1): Check Credentials..
