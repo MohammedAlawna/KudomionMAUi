@@ -34,10 +34,10 @@ namespace Kudomion.ViewModel
             User getLoggedInUser = await FirebaseHelper.GetUsrFromName(name);
 
             //Assign Profile Values. :D 
-            noDuels.Text = "Duels: " + getLoggedInUser.duels.ToString();
+          /*  noDuels.Text = "Duels: " + getLoggedInUser.duels.ToString();
             noPoints.Text = "Points: " + getLoggedInUser.points.ToString();
             noPosts.Text = "Posts: " + getLoggedInUser.posts.ToString();
-            noRanking.Text = "Ranking: " + getLoggedInUser.ranking.ToString();
+            noRanking.Text = "Ranking: " + getLoggedInUser.ranking.ToString();*/
         } 
 
         private async void ShowUserDuels(string username)

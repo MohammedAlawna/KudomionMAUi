@@ -28,6 +28,8 @@ namespace Kudomion
             userRankingsToLoad.ItemsSource = rankedUsers;
         }
 
+        
+        
         private async void UsernameClicked(object sender, EventArgs e)
         {
             var parent = (Label)sender;
@@ -37,6 +39,11 @@ namespace Kudomion
 
             //Navigate to UserProfile Page with the clicked user card in ranking.
             await Navigation.PushAsync(new UserProfile(parent.Text));
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            DisplayAlert("Alert!", "Image Viewing isn't available!", "OK!");
         }
     }
     }

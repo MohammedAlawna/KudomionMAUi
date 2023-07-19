@@ -17,8 +17,12 @@
                         <CollectionView HeightRequest="330" x:Name="userRankingsToLoad">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
+                                   
                                     <Frame Margin="5" BorderColor="Black" HeightRequest="100" BackgroundColor="#7C0000">
                                         <StackLayout HorizontalOptions="Center">
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                            </StackLayout.GestureRecognizers>
                                             <Grid Padding="3">
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition/>

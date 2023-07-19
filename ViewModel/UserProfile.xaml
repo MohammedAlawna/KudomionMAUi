@@ -13,7 +13,7 @@
             </StackLayout>
             
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Image WidthRequest="75" HorizontalOptions="Center" x:Name="invDuel" Source="btlebtn">
+                <!--<Image WidthRequest="75" HorizontalOptions="Center" x:Name="invDuel" Source="btlebtn">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="InviteToDuelClicked"/>
                     </Image.GestureRecognizers>
@@ -23,21 +23,45 @@
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="SendChatRequest"/>
                     </Image.GestureRecognizers>
-                </Image>
+                </Image>-->
+                
+                
                 
             </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
 
-            <StackLayout Orientation="Vertical" Margin="5">
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="88"/>
+                    <ColumnDefinition Width="95"/>
+                    <ColumnDefinition Width="95"/>
+                </Grid.ColumnDefinitions>
+
+                <Label BackgroundColor="RoyalBlue" Text="Duels" Grid.Row="0" HorizontalTextAlignment="Center" Grid.Column="0" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label BackgroundColor="RoyalBlue" Text="Points" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label BackgroundColor="RoyalBlue" Text="Ranking" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label x:Name="noDuels" BackgroundColor="#2c2c2c" Text="0" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label x:Name="noPoints" Background="#2c2c2c" Text="0" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label x:Name="noRanking" BackgroundColor="#2c2c2c" Text="0" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="White"/>
+            </Grid>
+        </StackLayout>
+       
+
+        <StackLayout Orientation="Vertical" Margin="5">
                 <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="userStatPicker" TextColor="White" BackgroundColor="#323232"/>
             </StackLayout>
 
             <StackLayout x:Name="stats" IsVisible="false" Margin="5">
                 <Frame Margin="0" BackgroundColor="#323232" >
                     <StackLayout>
-                        <Label x:Name="noDuels" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Duels: 0"/>
+                        <!--<Label x:Name="noDuels" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Duels: 0"/>
                         <Label x:Name="noPoints" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Points: 0"/>
                         <Label x:Name="noPosts" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Posts: 0"/>
-                        <Label x:Name="noRanking" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Ranking: 0"/>
+                        <Label x:Name="noRanking" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Ranking: 0"/>-->
 
                     </StackLayout>
                 </Frame>
