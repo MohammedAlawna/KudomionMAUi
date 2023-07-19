@@ -8,18 +8,7 @@ namespace Kudomion
     {
         
         public int Id { get; set; }
-        public string name;
-        public string _Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
+        public string name { get; set; }
         
         public int posts { get; set; }
 
