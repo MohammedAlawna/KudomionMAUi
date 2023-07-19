@@ -22,10 +22,10 @@ namespace Kudomion.ViewModel
             LoadPickerItems();
 
             //Switch Visibility As Default.
-            stats.IsVisible = true;
+            stats.IsVisible = false;
             posts.IsVisible = false;
             signature.IsVisible = false;
-            duels.IsVisible = false;
+            duels.IsVisible = true;
         }
 
         private async void LoadUserProfile(string name)
@@ -42,6 +42,10 @@ namespace Kudomion.ViewModel
 
         private async void ShowUserDuels(string username)
         {
+            try
+            {
+
+          
             FirebaseHelper firebase = new FirebaseHelper();
             List<Room> allRooms = await firebase.GetAllRoomsInDB();
 
@@ -58,15 +62,20 @@ namespace Kudomion.ViewModel
                 //await DisplayAlert("Duels List!", "Username: " + roomsForSpecifiedUser[0].p1 + " , " + roomsForSpecifiedUser[0].p2,"OK!");
                 userDuels.ItemsSource = roomsForSpecifiedUser;
             }
-           
+            }
+            catch(Exception e)
+            {
+                await DisplayAlert("Error","An Unexpected Issue.." + e.Message, "OK!");
+            }
         }
 
         private void LoadPickerItems()
         {
-            userStatPicker.Items.Add("Stats");
+            userStatPicker.Items.Add("Comments");
             userStatPicker.Items.Add("Duels");
             userStatPicker.Items.Add("Posts");
             userStatPicker.Items.Add("Signature");
+            
 
             //Set To First One.
             userStatPicker.SelectedIndex = 0;
