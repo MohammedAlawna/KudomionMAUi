@@ -22,10 +22,10 @@ namespace Kudomion.ViewModel
             LoadPickerItems();
 
             //Switch Visibility As Default.
-            stats.IsVisible = false;
+            stats.IsVisible = true;
             posts.IsVisible = false;
             signature.IsVisible = false;
-            duels.IsVisible = true;
+            duels.IsVisible = false;
         }
 
         private async void LoadUserProfile(string name)
@@ -71,7 +71,7 @@ namespace Kudomion.ViewModel
 
         private void LoadPickerItems()
         {
-            userStatPicker.Items.Add("Comments");
+            userStatPicker.Items.Add("Connect");
             userStatPicker.Items.Add("Duels");
             userStatPicker.Items.Add("Posts");
             userStatPicker.Items.Add("Signature");

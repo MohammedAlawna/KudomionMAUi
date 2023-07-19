@@ -58,8 +58,9 @@
             <StackLayout x:Name="stats" IsVisible="false" Margin="5">
                 <Frame Margin="0" BackgroundColor="#323232" >
                     <StackLayout>
-                    <Label FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Comments Currently Not Available.."/>
-
+                    <Button BackgroundColor="DarkOrange" Margin="5" Text="Add as a Friend" />
+                    <Button BackgroundColor="RoyalBlue" Margin="5" Text="Invite to Duel"/>
+                    <Button BackgroundColor="LimeGreen" Margin="5" Text="Send message"/>
                 </StackLayout>
                 </Frame>
             </StackLayout>
@@ -67,9 +68,10 @@
             <StackLayout x:Name="duels" IsVisible="false" Margin="5">
                 <Frame Margin="0" BackgroundColor="#323232">
                     <StackLayout>
-                    <CollectionView HeightRequest="200" x:Name="userDuels">
+                    <CollectionView HeightRequest="220" x:Name="userDuels">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
+                                <StackLayout Margin="2">
                                     <Frame BorderColor="Black" BackgroundColor="RoyalBlue" HorizontalOptions="CenterAndExpand">
                                         <StackLayout HorizontalOptions="CenterAndExpand">
                                             <Grid Margin="5" >
@@ -89,7 +91,8 @@
                                             </Grid>
                                         </StackLayout>
                                     </Frame>
-                                </DataTemplate>
+                                </StackLayout>
+                            </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
                     </StackLayout>
