@@ -72,7 +72,7 @@
                                 <DataTemplate>
                                     <Frame BorderColor="Black" BackgroundColor="RoyalBlue" HorizontalOptions="CenterAndExpand">
                                         <StackLayout HorizontalOptions="CenterAndExpand">
-                                            <Grid Padding="5">
+                                            <Grid Margin="5" >
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition/>
                                                 </Grid.RowDefinitions>
