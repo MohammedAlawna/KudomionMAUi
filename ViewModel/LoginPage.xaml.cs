@@ -42,6 +42,26 @@ namespace Kudomion
         {
             List<EventsCarouselModel> eventsList = new List<EventsCarouselModel>()
             {
+                new EventsCarouselModel()
+                {
+                    title = "tourny",
+                    Url = "",
+                },
+                new EventsCarouselModel()
+                {
+                    title = "league",
+                    Url = "",
+                },
+                new EventsCarouselModel()
+                {
+                    title = "Discord",
+                    Url = "",
+                },
+                new EventsCarouselModel()
+                {
+                    title = "Facebook",
+                    Url = "",
+                },
 
             };
         }
