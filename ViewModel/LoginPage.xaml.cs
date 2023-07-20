@@ -33,8 +33,9 @@ namespace Kudomion
         public LoginPage(string _username)
         {
             InitializeComponent();
-            
-           
+
+            //Call: Load Carousel Items.
+            LoadCarouselItems();
         }
 
         //Process Loading of Carousel Items
@@ -45,25 +46,28 @@ namespace Kudomion
                 new EventsCarouselModel()
                 {
                     title = "tourny",
-                    Url = "",
+                    Url = "https://i.imgur.com/mJ6hm1M.jpg",
                 },
                 new EventsCarouselModel()
                 {
                     title = "league",
-                    Url = "",
+                    Url = "https://i.imgur.com/mJ6hm1M.jpg",
                 },
                 new EventsCarouselModel()
                 {
                     title = "Discord",
-                    Url = "",
+                    Url = "https://i.imgur.com/mJ6hm1M.jpg",
                 },
                 new EventsCarouselModel()
                 {
                     title = "Facebook",
-                    Url = "",
+                    Url = "https://i.imgur.com/mJ6hm1M.jpg",
                 },
 
             };
+
+            //Set ItemsSource of Carousel.
+            EventsCarousel.ItemsSource = eventsList;
         }
 
         
