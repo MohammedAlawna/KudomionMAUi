@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Kudomion.Model
 {
-    class EventsCarouselModel
+    public class EventsCarouselModel
     {
+        public string title;
+        public string Url;
     }
 }

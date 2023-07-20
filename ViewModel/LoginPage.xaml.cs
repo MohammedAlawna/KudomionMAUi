@@ -37,6 +37,15 @@ namespace Kudomion
            
         }
 
+        //Process Loading of Carousel Items
+        private void LoadCarouselItems()
+        {
+            List<EventsCarouselModel> eventsList = new List<EventsCarouselModel>()
+            {
+
+            };
+        }
+
         
         private async void Logout_Tapped(object sender, EventArgs e)
         {
