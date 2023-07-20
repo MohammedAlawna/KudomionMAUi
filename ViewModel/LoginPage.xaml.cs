@@ -49,23 +49,28 @@ namespace Kudomion
                 new EventsCarouselModel()
                 {
                     title = "tourny",
-                    Url = "https://i.imgur.com/mJ6hm1M.jpg",
+                    Url = "https://i.imgur.com/VDnzuYv.jpg",
                 },
                 new EventsCarouselModel()
                 {
                     title = "league",
-                    Url = "https://i.imgur.com/mJ6hm1M.jpg",
+                    Url = "https://i.imgur.com/AMtvonG.jpg",
                 },
                 new EventsCarouselModel()
                 {
                     title = "Discord",
-                    Url = "https://i.imgur.com/mJ6hm1M.jpg",
+                    Url = "https://i.imgur.com/SGPU988.jpeg",
                 },
-                new EventsCarouselModel()
+              /*  new EventsCarouselModel()
                 {
                     title = "Facebook",
                     Url = "https://i.imgur.com/mJ6hm1M.jpg",
                 },
+                new EventsCarouselModel()
+                {
+                    title = "YouTube",
+                    Url = "https://i.imgur.com/mJ6hm1M.jpg",
+                },*/
 
             };
 
