@@ -20,8 +20,8 @@
     <StackLayout>
         <Label TextColor="White" Margin="10" FontSize="25" Text="Welcome Kudo"/>
         <StackLayout Padding="13">
-            
-                <CarouselView ItemsSource="{Binding eventsList}"  x:Name="EventsCarousel" HeightRequest="200">
+
+            <CarouselView ItemsSource="{Binding eventsList}" IndicatorView="indicatorView" x:Name="EventsCarousel" HeightRequest="200">
                 <CarouselView.ItemTemplate>
                     <DataTemplate x:DataType="modl:EventsCarouselModel">
                        
@@ -30,7 +30,7 @@
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
-            <IndicatorView/>
+            <IndicatorView Margin="7" x:Name="indicatorView" IndicatorColor="RoyalBlue" SelectedIndicatorColor="White" HorizontalOptions="Center" />
 
         </StackLayout>
     </StackLayout>
