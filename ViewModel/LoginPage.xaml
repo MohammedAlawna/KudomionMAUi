@@ -19,11 +19,13 @@
     </Shell.SearchHandler>
     <StackLayout>
         <Label TextColor="White" Margin="10" FontSize="25" Text="Welcome Kudo"/>
-       
-        <Frame Margin="10" BorderColor="RoyalBlue" BackgroundColor="#1c1c1c" HeightRequest="210">
-            
-        </Frame>
-       
+        <CarouselView x:Name="EventsCarousel">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding Url}" Aspect="AspectFill" />
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
     </StackLayout>
     <!--<StackLayout>
         <RefreshView RefreshColor="RoyalBlue" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}" HorizontalOptions="Center">
