@@ -8,7 +8,7 @@ namespace Kudomion.Model
 {
     public class EventsCarouselModel
     {
-        public string title;
-        public string Url;
+        public string title { get; set; }
+        public string Url { get; set; }
     }
 }

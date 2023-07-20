@@ -19,14 +19,19 @@
     </Shell.SearchHandler>
     <StackLayout>
         <Label TextColor="White" Margin="10" FontSize="25" Text="Welcome Kudo"/>
-        <StackLayout>
-            <CarouselView x:Name="EventsCarousel" HeightRequest="200">
+        <StackLayout Padding="13">
+            
+                <CarouselView ItemsSource="{Binding eventsList}"  x:Name="EventsCarousel" HeightRequest="200">
                 <CarouselView.ItemTemplate>
-                    <DataTemplate>
-                        <Image Source="{Binding Url}" Aspect="AspectFill" />
+                    <DataTemplate x:DataType="modl:EventsCarouselModel">
+                       
+                        <Image Source="{Binding Url}" Aspect="AspectFill"/>
+                       
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
+            <IndicatorView/>
+
         </StackLayout>
     </StackLayout>
 

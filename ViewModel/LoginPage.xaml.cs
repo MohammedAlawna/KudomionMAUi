@@ -23,7 +23,10 @@ namespace Kudomion
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        
+
+        //Carousel List<View> (For Binding).
+        List<EventsCarouselModel> eventsList { get; set; } = new List<EventsCarouselModel>();
+
         //Firebase Plugin Parameters..
         private string _deviceToken;
         FirebaseHelper firebase;
@@ -41,7 +44,7 @@ namespace Kudomion
         //Process Loading of Carousel Items
         private void LoadCarouselItems()
         {
-            List<EventsCarouselModel> eventsList = new List<EventsCarouselModel>()
+            eventsList = new List<EventsCarouselModel>()
             {
                 new EventsCarouselModel()
                 {
