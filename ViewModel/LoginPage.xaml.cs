@@ -36,7 +36,7 @@ namespace Kudomion
         public LoginPage(string _username)
         {
             InitializeComponent();
-
+            this.BindingContext = new UsersSearchViewModel();
             //Call: Load Carousel Items.
             LoadCarouselItems();
         }
