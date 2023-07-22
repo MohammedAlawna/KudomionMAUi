@@ -16,7 +16,7 @@
     </Shell.BackButtonBehavior>
     <Shell.SearchHandler>
         <!--Users="{x:Static modl:UsersSearchViewModel.Users}"-->
-        <controls:SearchField IsSearchEnabled="True" ShowsResults="True"  DisplayMemberName="name" Placeholder="Search Users Here.." />
+        <controls:SearchField x:Name="searchUser" IsSearchEnabled="True" ShowsResults="True" DisplayMemberName="name" Placeholder="Search Users Here.." />
     </Shell.SearchHandler>
     <StackLayout>
         <Label TextColor="White" Margin="7" FontSize="25" Text="Welcome Kudo"/>

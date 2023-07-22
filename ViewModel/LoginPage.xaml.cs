@@ -35,10 +35,15 @@ namespace Kudomion
         public LoginPage(string _username)
         {
             InitializeComponent();
-          
+            LoadUsersIntoSearchBar();
             this.BindingContext = new UsersSearchViewModel();
            //Call: Load Carousel Items.
             LoadCarouselItems();
+        }
+
+        private async void LoadUsersIntoSearchBar()
+        {
+            searchUser.Users = await firebase.GetAllUsers();
         }
 
     
