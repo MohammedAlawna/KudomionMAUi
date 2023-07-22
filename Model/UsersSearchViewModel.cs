@@ -10,19 +10,31 @@ namespace Kudomion.Model
 {
     public class UsersSearchViewModel
     {
-        public static List<User> Users { get; private set; } = new List<User>();
-        FirebaseHelper firebase;
-        List<User> allUsersGetter = new List<User>();
+        public static List<User> Users { get; set; } = new List<User>();
+        FirebaseHelper firebase = new FirebaseHelper();
+      
 
         async void GetAllUsers()
         {
-            allUsersGetter = await firebase.GetAllUsers();
-            Users = await firebase.GetAllUsers();
+            try
+            {
+                var fullList = await firebase.GetAllUsers();
+                foreach(User u in fullList)
+                {
+                    Users.Add(u);
+                    Console.WriteLine($"Users are: {Users[0].name}, {Users[1].name}");
+                }
+                
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("HEY! Error" + e.Message);
+            }
         }
         public UsersSearchViewModel()
         {
-            GetAllUsers();
-            Users = allUsersGetter;
+           GetAllUsers();
+            
         }
 
 
