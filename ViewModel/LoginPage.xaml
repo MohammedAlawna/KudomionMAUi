@@ -18,22 +18,30 @@
         <!--Users="{x:Static modl:UsersSearchViewModel.Users}"-->
         <controls:SearchField x:Name="searchUser" IsSearchEnabled="True" ShowsResults="True" DisplayMemberName="name" Placeholder="Search Users Here.." />
     </Shell.SearchHandler>
+    <ScrollView Margin="10" VerticalOptions="FillAndExpand">
     <StackLayout>
         <Label TextColor="White" Margin="7" FontSize="25" Text="Welcome Kudo"/>
-        <StackLayout Padding="10">
+            <StackLayout Padding="10">
 
-            <CarouselView ItemsSource="{Binding eventsList}" IndicatorView="indicatorView" x:Name="EventsCarousel" HeightRequest="200">
-                <CarouselView.ItemTemplate>
-                    <DataTemplate x:DataType="modl:EventsCarouselModel">
-                       
-                        <Image Source="{Binding Url}" Aspect="AspectFill"/>
-                       
-                    </DataTemplate>
-                </CarouselView.ItemTemplate>
-            </CarouselView>
-            <IndicatorView Margin="7" x:Name="indicatorView" IndicatorColor="RoyalBlue" SelectedIndicatorColor="White" HorizontalOptions="Center" />
+                <CarouselView ItemsSource="{Binding eventsList}" IndicatorView="indicatorView" x:Name="EventsCarousel" HeightRequest="200">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate x:DataType="modl:EventsCarouselModel">
 
-        </StackLayout>
+                            <Image Source="{Binding Url}" Aspect="AspectFill"/>
+
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView Margin="7" x:Name="indicatorView" IndicatorColor="RoyalBlue" SelectedIndicatorColor="White" HorizontalOptions="Center" />
+
+            </StackLayout>
+        
+            <StackLayout Padding="10" x:Name="MenuGrid">
+                <Label TextColor="White" FontSize="20" Text="This Is Our Menu Section!" HorizontalOptions="Center"/>
+                <Frame HeightRequest="150" BackgroundColor="#1c1c1c">
+                    
+                </Frame>
+            </StackLayout>
 
         <StackLayout Padding="10">
 
@@ -52,8 +60,8 @@
 
         </StackLayout>
     </StackLayout>
+    </ScrollView>
 
-    
     <!--<StackLayout>
         <RefreshView RefreshColor="RoyalBlue" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}" HorizontalOptions="Center">
             <ScrollView>
