@@ -38,8 +38,28 @@
         
             <StackLayout Padding="10" x:Name="MenuGrid">
                 <Label TextColor="White" FontSize="20" Text="This Is Our Menu Section!" HorizontalOptions="Center"/>
-                <Frame HeightRequest="150" BackgroundColor="#1c1c1c">
-                    
+                <Frame HeightRequest="200" BackgroundColor="#1c1c1c">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Row="0" Grid.Column="0" BackgroundColor="RoyalBlue" TextColor="White" Text="Discord"/>
+                        <Button Grid.Row="0" Grid.Column="1" BackgroundColor="CornflowerBlue" TextColor="White" Text="Facebook" />
+                        <Button Grid.Row="0" Grid.Column="2" BackgroundColor="Red" TextColor="White" Text="YouTube"/>
+                        <Button Grid.Row="1" Grid.Column="0" BackgroundColor="DarkOrange" TextColor="White" Text="EDOPro"/>
+                        <Button Grid.Row="1" Grid.Column="1" BackgroundColor="CadetBlue" TextColor="White" Text="YGO Omega"/>
+                        <Button Grid.Row="1" Grid.Column="2" BackgroundColor="Brown" TextColor="White" Text="DuelingBook" />
+                        <Button Grid.Row="2" Grid.Column="0" BackgroundColor="DarkGoldenrod" TextColor="White" Text="League"/>
+                        <Button Grid.Row="2" Grid.Column="1" BackgroundColor="Orange" TextColor="White" Text="Tournaments"/>
+                        <Button Grid.Row="2" Grid.Column="2" BackgroundColor="Gray" TextColor="White" Text="About"/>
+                    </Grid>
                 </Frame>
             </StackLayout>
 
