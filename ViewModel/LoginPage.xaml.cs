@@ -49,13 +49,24 @@ namespace Kudomion
 
         private async void LoadUsersIntoSearchBar()
         {
+            try
+            { 
             searchUser.Users = await firebase.GetAllUsers();
+            }
+            catch(Exception e)
+            {
+               await DisplayAlert("Error", "An Unexpected error just happened, please contact the developer. " + e.Message, "OK!");
+            }
         }
 
     
         //Load User Info
         private async void LoadUsersInfo()
         {
+            try
+            {
+
+          
             //Get CurrentLoggedInUser Info.
             currentLoggedInUserName = MainPage.currentUser.name;
 
@@ -77,6 +88,11 @@ namespace Kudomion
             numberOfUsers.Text = "Number of Users: " + UsersCount.ToString();
             lastRegisteredUser.Text = "Last Registered User: " + lastRegistered;
             numberOfDuels.Text = "Number of Duels: " + NumberOfRooms.ToString();
+            }
+            catch(Exception e)
+            {
+                await DisplayAlert("Error", "An Unexpected error just happened, please contact the developer. " + e.Message, "OK!");
+            }
         }
 
         //Process Loading of Carousel Items
