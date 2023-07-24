@@ -32,6 +32,13 @@ namespace Kudomion.Controls
         protected override void OnItemSelected(object item)
         {
             base.OnItemSelected(item);
+
+            //Get The Name of Selected Item (onClick)
+            var getIt = (User)item;
+            var getName = getIt.name;
+            Console.WriteLine("Selected Item is:" + getName);
+
+
         }
     }
 }
