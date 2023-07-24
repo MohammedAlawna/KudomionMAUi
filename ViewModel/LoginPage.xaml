@@ -16,7 +16,13 @@
     </Shell.BackButtonBehavior>
     <Shell.SearchHandler>
         <!--Users="{x:Static modl:UsersSearchViewModel.Users}"-->
-        <controls:SearchField x:Name="searchUser" IsSearchEnabled="True" ShowsResults="True" DisplayMemberName="name" Placeholder="Search Users Here.." />
+        <controls:SearchField x:Name="searchUser"
+                              IsSearchEnabled="True"
+                              QueryIcon="https://i.imgur.com/U1PIUbW.png"
+                              ClearIcon="https://i.imgur.com/wFWB6px.png"
+                              ShowsResults="True"
+                              DisplayMemberName="name"
+                              Placeholder="Search Users Here.." />
     </Shell.SearchHandler>
     <ScrollView Margin="10" VerticalOptions="FillAndExpand">
     <StackLayout>
