@@ -47,6 +47,10 @@ namespace Kudomion
             LoadUsersInfo();
         }
 
+        
+
+      
+
         private async void LoadUsersIntoSearchBar()
         {
             try

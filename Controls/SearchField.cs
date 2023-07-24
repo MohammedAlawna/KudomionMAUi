@@ -1,7 +1,10 @@
 ﻿using Kudomion.FirebaseManager;
 using Kudomion.Model;
+using Kudomion.ViewModel;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,17 +32,27 @@ namespace Kudomion.Controls
 
         }
 
-        protected override void OnItemSelected(object item)
+        protected override async void OnItemSelected(object item)
         {
+            
             base.OnItemSelected(item);
 
-            //Get The Name of Selected Item (onClick)
-            var getIt = (User) item;
-            var getName = getIt.name;
-            Console.WriteLine("Selected Item is: " + getName);
+            try
+            {
+                //Get The Name of Selected Item (onClick)
+                var getIt = (User)item;
+                var getName = getIt.name;
+                Console.WriteLine("Selected Item is: " + getName);
 
 
+                //Navigate to Selected User Page.
+                await Shell.Current.Navigation.PushAsync(new UserProfile(getName));
+            }
 
+            catch(Exception ex)
+            {
+               Debug.WriteLine("An unexpected error just occured! " + ex.Message);
+            }
         }
     }
 }
