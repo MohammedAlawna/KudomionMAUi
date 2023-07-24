@@ -20,7 +20,7 @@
     </Shell.SearchHandler>
     <ScrollView Margin="10" VerticalOptions="FillAndExpand">
     <StackLayout>
-        <Label TextColor="White" Margin="7" FontSize="25" Text="Welcome Kudo"/>
+        <Label TextColor="White" Margin="7" x:Name="loggedInUser" FontSize="17" Text="You are logged in as: User"/>
             <StackLayout Padding="10">
 
                 <CarouselView ItemsSource="{Binding eventsList}" IndicatorView="indicatorView" x:Name="EventsCarousel" HeightRequest="200">
@@ -37,7 +37,6 @@
             </StackLayout>
         
             <StackLayout Padding="10" x:Name="MenuGrid">
-                <Label TextColor="White" FontSize="20" Text="This Is Our Menu Section!" HorizontalOptions="Center"/>
                 <Frame HeightRequest="200" BackgroundColor="#1c1c1c">
                     <Grid>
                         <Grid.RowDefinitions>

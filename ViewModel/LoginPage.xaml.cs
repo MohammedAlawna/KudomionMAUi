@@ -36,10 +36,15 @@ namespace Kudomion
         public LoginPage(string _username)
         {
             InitializeComponent();
+
+            //Load Users to SearchBar.
             LoadUsersIntoSearchBar();
-            this.BindingContext = new UsersSearchViewModel();
-           //Call: Load Carousel Items.
+            
+            //Call: Load Carousel Items.
             LoadCarouselItems();
+
+            //Load Duelist/User Profile.
+            LoadUserProfile();
         }
 
         private async void LoadUsersIntoSearchBar()
@@ -48,6 +53,12 @@ namespace Kudomion
         }
 
     
+        //Load User Info
+        private void LoadUserProfile()
+        {
+            currentLoggedInUserName = MainPage.currentUser.name;
+            loggedInUser.Text = "You are logged in as: " + currentLoggedInUserName;
+        }
 
         //Process Loading of Carousel Items
         private void LoadCarouselItems()
