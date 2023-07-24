@@ -44,7 +44,7 @@ namespace Kudomion
             LoadCarouselItems();
 
             //Load Duelist/User Profile.
-            LoadUserProfile();
+            LoadUsersInfo();
         }
 
         private async void LoadUsersIntoSearchBar()
@@ -54,10 +54,29 @@ namespace Kudomion
 
     
         //Load User Info
-        private void LoadUserProfile()
+        private async void LoadUsersInfo()
         {
+            //Get CurrentLoggedInUser Info.
             currentLoggedInUserName = MainPage.currentUser.name;
+
+            //Get User Stats.
+            var AllUsers = await firebase.GetAllUsers();
+            int UsersCount = AllUsers.Count;
+            
+
+            //Get Last Registered User.
+            var lastRegistered = AllUsers.LastOrDefault().name;
+            
+
+            //Get Number of Duels
+            var AllRooms = await firebase.GetAllRoomsInDB();
+            int NumberOfRooms = AllRooms.Count;
+
+            //Update Stat Text
             loggedInUser.Text = "You are logged in as: " + currentLoggedInUserName;
+            numberOfUsers.Text = "Number of Users: " + UsersCount.ToString();
+            lastRegisteredUser.Text = "Last Registered User: " + lastRegistered;
+            numberOfDuels.Text = "Number of Duels: " + NumberOfRooms.ToString();
         }
 
         //Process Loading of Carousel Items
