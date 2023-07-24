@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kudomion
+namespace Kudomion.Model
 {
     public class User
     {

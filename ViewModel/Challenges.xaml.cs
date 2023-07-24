@@ -1,4 +1,5 @@
 ﻿using Kudomion.FirebaseManager;
+using Kudomion.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Kudomion
     public partial class Challenges : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
-        static int roomID;
+        //static int roomID;
         public Challenges()
         {
             InitializeComponent();
@@ -46,7 +47,7 @@ namespace Kudomion
             }
             catch(Exception e)
             {
-                await DisplayAlert("Error!", "Unexpected error just occured!", "OK!");
+                await DisplayAlert("Error!", "Unexpected error just occured! " + e.Message, "OK!");
             }
         }
 
@@ -198,7 +199,7 @@ namespace Kudomion
             }
             catch(Exception e)
             {
-                DisplayAlert("Error!", "An UnExpected Error Just Occured!", "OK!");
+                DisplayAlert("Error!", "An UnExpected Error Just Occured! " + e.Message, "OK!");
             }
         }
 

@@ -28,7 +28,7 @@ namespace Kudomion
         List<EventsCarouselModel> eventsList { get; set; } = new List<EventsCarouselModel>();
 
         //Firebase Plugin Parameters..
-        private string _deviceToken;
+       // private string _deviceToken;
         FirebaseHelper firebase = new FirebaseHelper();
 
         public string currentLoggedInUserName;

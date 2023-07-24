@@ -5,6 +5,7 @@
              xmlns:local="clr-namespace:Kudomion"
              xmlns:controls="clr-namespace:Kudomion.Controls"
              xmlns:modl="clr-namespace:Kudomion.Model"
+             xmlns:mod="clr-namespace:Kudomion.Model"
              x:Class="Kudomion.LoginPage"
              BackgroundColor="#1c1c1c"
              >
@@ -22,7 +23,17 @@
                               ClearIcon="https://i.imgur.com/wFWB6px.png"
                               ShowsResults="True"
                               DisplayMemberName="name"
-                              Placeholder="Search Users Here.." />
+                              Placeholder="Search Users Here..">
+        <controls:SearchField.ItemTemplate>
+                <DataTemplate x:DataType="mod:User">
+                    <Grid Margin="5" Padding="5" RowDefinitions="Auto" ColumnDefinitions="40, Auto">
+                        <Image Source="yg" Grid.Column="0" HeightRequest="30" WidthRequest="30" />
+                        <Label Text="{Binding name}" Grid.Column="1" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        
+                    </Grid>
+                </DataTemplate>
+            </controls:SearchField.ItemTemplate>
+            </controls:SearchField>
     </Shell.SearchHandler>
     <ScrollView Margin="10" VerticalOptions="FillAndExpand">
     <StackLayout>

@@ -1,4 +1,5 @@
 ﻿using Kudomion.FirebaseManager;
+using Kudomion.Model;
 using Kudomion.ViewModel;
 using System;
 using System.Collections.Generic;

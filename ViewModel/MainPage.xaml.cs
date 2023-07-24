@@ -1,4 +1,5 @@
 ﻿using Kudomion.FirebaseManager;
+using Kudomion.Model;
 using Kudomion.ViewModel;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Storage;

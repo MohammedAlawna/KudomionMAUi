@@ -1,4 +1,5 @@
 ﻿using Kudomion.FirebaseManager;
+using Kudomion.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Kudomion.Controls
 {
     public class SearchField : SearchHandler
     {
-        FirebaseHelper firebase;
+        //FirebaseHelper firebase;
 
         public IList<User> Users { get; set; }
         protected override void OnQueryChanged(string oldValue, string newValue)

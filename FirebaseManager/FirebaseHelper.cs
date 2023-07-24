@@ -1,5 +1,6 @@
 ﻿using Firebase.Database;
 using Firebase.Database.Query;
+using Kudomion.Model;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
