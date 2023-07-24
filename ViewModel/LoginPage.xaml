@@ -50,15 +50,15 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="0" BackgroundColor="RoyalBlue" TextColor="White" Text="Discord"/>
-                        <Button Grid.Row="0" Grid.Column="1" BackgroundColor="CornflowerBlue" TextColor="White" Text="Facebook" />
-                        <Button Grid.Row="0" Grid.Column="2" BackgroundColor="Red" TextColor="White" Text="YouTube"/>
-                        <Button Grid.Row="1" Grid.Column="0" BackgroundColor="DarkOrange" TextColor="White" Text="EDOPro"/>
-                        <Button Grid.Row="1" Grid.Column="1" BackgroundColor="CadetBlue" TextColor="White" Text="YGO Omega"/>
-                        <Button Grid.Row="1" Grid.Column="2" BackgroundColor="Brown" TextColor="White" Text="DuelingBook" />
-                        <Button Grid.Row="2" Grid.Column="0" BackgroundColor="DarkGoldenrod" TextColor="White" Text="League"/>
-                        <Button Grid.Row="2" Grid.Column="1" BackgroundColor="Orange" TextColor="White" Text="Tournaments"/>
-                        <Button Grid.Row="2" Grid.Column="2" BackgroundColor="Gray" TextColor="White" Text="About"/>
+                        <Button Clicked="DiscordButton_Clicked" Grid.Row="0" Grid.Column="0" BackgroundColor="RoyalBlue" TextColor="White" Text="Discord"/>
+                        <Button Clicked="FacebookButton_Clicked" Grid.Row="0" Grid.Column="1" BackgroundColor="CornflowerBlue" TextColor="White" Text="Facebook" />
+                        <Button Clicked="YoutubeButton_Clicked" Grid.Row="0" Grid.Column="2" BackgroundColor="Red" TextColor="White" Text="YouTube"/>
+                        <Button Clicked="EdoProButton_Clicked" Grid.Row="1" Grid.Column="0" BackgroundColor="DarkOrange" TextColor="White" Text="EDOPro"/>
+                        <Button Clicked="YgoOmegaButton_Clicked" Grid.Row="1" Grid.Column="1" BackgroundColor="CadetBlue" TextColor="White" Text="YGO Omega"/>
+                        <Button Clicked="DuelingbookButton_Clicked" Grid.Row="1" Grid.Column="2" BackgroundColor="Brown" TextColor="White" Text="DuelingBook" />
+                        <Button Clicked="LeagueButton_Clicked" Grid.Row="2" Grid.Column="0" BackgroundColor="DarkGoldenrod" TextColor="White" Text="League"/>
+                        <Button Clicked="TournamentsButton_Clicked" Grid.Row="2" Grid.Column="1" BackgroundColor="Orange" TextColor="White" Text="Tournament"/>
+                        <Button Clicked="AboutButton_Clicked" Grid.Row="2" Grid.Column="2" BackgroundColor="Gray" TextColor="White" Text="About"/>
                     </Grid>
                 </Frame>
             </StackLayout>
@@ -72,7 +72,7 @@
                 <Label Margin="2" Text="Number of Duels: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
                 <Label Margin="2" Text="Number of Tournaments: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
                 <Label Margin="2" Text="Last Registered User: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
-                <Button Margin="2" Text="Log-Out" BackgroundColor="Red" HorizontalOptions="End"/>
+                <Button Clicked="Logout_Tapped" Margin="2" Text="Log-Out" BackgroundColor="Red" HorizontalOptions="End"/>
 
                 </StackLayout>
             </Frame>
