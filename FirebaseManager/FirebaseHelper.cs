@@ -15,9 +15,7 @@ namespace Kudomion.FirebaseManager
         //Follow this Article: https://www.c-sharpcorner.com/article/xamarin-forms-working-with-firebase-realtime-database-crud-operations/
         FirebaseClient firebaseClient = new FirebaseClient("https://kudo4-a32f8-default-rtdb.europe-west1.firebasedatabase.app/");
      
-
         //Start User-Related Functions.
-       
         public async Task<List<User>> GetAllUsers()
         {
             try
@@ -38,6 +36,33 @@ namespace Kudomion.FirebaseManager
             catch(Exception e)
             {
                 Debug.WriteLine($"Error: {e}");
+                return null;
+            }
+        }
+
+        //Get Ranked Users List.
+        public async Task<List<User>> ApplyDuelistsRanking()
+        {
+            try
+            {
+                List<User> allUsers = await GetAllUsers();
+                var rankedUsers = allUsers.OrderByDescending(p => p.points);
+                var rankedList = rankedUsers.ToList();
+
+                foreach(var user in rankedUsers)
+                {
+                    int getRankOfEachUser = rankedList.IndexOf(user) + 1;
+
+                    //Testing Purposes..
+                    Console.WriteLine("Rank List: " + getRankOfEachUser + " " + user.name + "\n");
+
+
+                }
+                return rankedList;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("An Unexpected error just occured. " + e.Message);
                 return null;
             }
         }

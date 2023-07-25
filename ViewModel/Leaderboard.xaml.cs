@@ -27,9 +27,9 @@ namespace Kudomion
             List<User> allUsers = await firebaseHelper.GetAllUsers();
             var rankedUsers = allUsers.OrderByDescending(p => p.points);
             var rankedList = rankedUsers.ToList();
-            foreach ( var user in rankedUsers)
+            foreach (var user in rankedUsers)
             {
-                int getRankOfEachUser = rankedList.IndexOf(user) + 1;
+               int getRankOfEachUser = rankedList.IndexOf(user) + 1;
                // rankedList.FindIndex(0,rankedList.Count ,user);
               await DisplayAlert("Await!" ,"Rank List: " + getRankOfEachUser + " "  + user.name +  "\n", "OK!");
             }
