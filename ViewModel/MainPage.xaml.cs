@@ -17,15 +17,11 @@ public partial class MainPage : ContentPage
     public static User currentUser = null;
     FirebaseHelper firebase = new FirebaseHelper();
     public static bool loggedIn = false;
-
-    
     
     public MainPage()
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
-
-        
 
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
     }
