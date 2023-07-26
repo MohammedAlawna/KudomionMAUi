@@ -26,6 +26,8 @@ public partial class MainPage : ContentPage
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
     }
 
+  
+
 
     private async void ForgetPasswordClicked(object sender, EventArgs e)
     {

@@ -41,7 +41,7 @@ namespace Kudomion.FirebaseManager
         }
 
         //Get Ranked Users List.
-        public async Task<List<User>> ApplyDuelistsRanking(string name, User usrToUpd)
+        public async Task<List<User>> ApplyDuelistsRanking(/*string name,*/ User usrToUpd)
         {
             try
             {
@@ -57,7 +57,17 @@ namespace Kudomion.FirebaseManager
                     Console.WriteLine("Rank List: " + getRankOfEachUser + " " + user.name + "\n");
 
                     //Update User Ranking
-                    await UpdateUserRanking(name, usrToUpd);
+                    //1- Find User By Name:: EDIT:: Redundant code.
+                  /*  var selectedUser = (await firebaseClient.Child("Users").OnceAsync<User>())
+                        .Where(a => a.Object.name == name).FirstOrDefault();*/
+
+                    // 2- Create an updated version of the selected user.
+                  /*  var updatedUsee = new User {
+                    ranking = getRankOfEachUser,
+                    };*/
+
+                    //3- Update User Ranking.
+                   // await firebaseClient.Child(selectedUser.Key).PutAsync(usrToUpd);
 
                 }
                 return rankedList;
@@ -76,8 +86,8 @@ namespace Kudomion.FirebaseManager
             {
                 var allUsers =await  GetAllUsers();
                 await firebaseClient.Child("Users").OnceAsync<User>();
-               var getName =  allUsers.Where(a => a.name == name).FirstOrDefault().name;
-              //  Home.getLoggedInUser() = getName;
+                var getName =  allUsers.Where(a => a.name == name).FirstOrDefault().name;
+             
                
             }
             catch (Exception e)

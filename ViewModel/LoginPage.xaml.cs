@@ -45,11 +45,34 @@ namespace Kudomion
 
             //Load Duelist/User Profile.
             LoadUsersInfo();
+
+            //Demo: Try Update Ranking of Specific User.
+            ApplyDuelistsRanking();
         }
+        async void ApplyDuelistsRanking()
+        {
+           try
+            {
+                List<User> allUsers = await GetAllUsers();
+                var rankedUsers = allUsers.OrderByDescending(p => p.points);
+                var rankedList = rankedUsers.ToList();
 
-        
+                foreach(var user in rankedList)
+                {
+                    int getRankOfEachUser = rankedList.IndexOf(user) + 1;
 
-      
+                    //Testing Purposes..
+                    Console.WriteLine("Rank List: " + getRankOfEachUser + " " + user.name + "\n");
+
+
+                }
+            }
+
+            catch(Exception ex)
+            {
+
+            }
+        }
 
         private async void LoadUsersIntoSearchBar()
         {
