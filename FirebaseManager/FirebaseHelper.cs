@@ -41,7 +41,7 @@ namespace Kudomion.FirebaseManager
         }
 
         //Get Ranked Users List.
-        public async Task<List<User>> ApplyDuelistsRanking()
+        public async Task<List<User>> ApplyDuelistsRanking(string name, User usrToUpd)
         {
             try
             {
@@ -56,6 +56,8 @@ namespace Kudomion.FirebaseManager
                     //Testing Purposes..
                     Console.WriteLine("Rank List: " + getRankOfEachUser + " " + user.name + "\n");
 
+                    //Update User Ranking
+                    await UpdateUserRanking(name, usrToUpd);
 
                 }
                 return rankedList;
@@ -138,6 +140,31 @@ namespace Kudomion.FirebaseManager
             catch(Exception e)
             {
                 Debug.WriteLine($"Error: {e}");
+                return false;
+            }
+        }
+
+        //Function To Update User Ranking (only rank)
+        public async Task<bool> UpdateUserRanking(string _username, User usrToUpdate)
+        {
+            try
+            {
+                //Find User By Name.
+                var selectedUser = (await firebaseClient.Child("Users").OnceAsync<User>())
+                    .Where(a => a.Object.name == _username).FirstOrDefault();
+
+                //Update User Ranking.
+                await firebaseClient.Child(selectedUser.Key).PutAsync(_username);
+
+                //Return statement.
+                return true;
+            }
+            catch(Exception ex)
+            {
+                //Debug Line aka Console.
+                Console.WriteLine("An Unexpected error just occured. " + ex.Message);
+
+                //Return statement.
                 return false;
             }
         }
@@ -319,11 +346,11 @@ namespace Kudomion.FirebaseManager
             }
         }
 
-        public async Task<bool> DeleteRoom(string p1, string p2)
+    /*    public async Task<bool> DeleteRoom(string p1, string p2)
         {
             //Delete Room.
             return false;
-        }
+        }*/
 
         
         public async Task<List<DeckItem>> GetAllDecks()

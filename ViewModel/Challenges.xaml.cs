@@ -65,7 +65,7 @@ namespace Kudomion
             
         }
 
-        private Room getPlayerRoom = null;
+        //private Room getPlayerRoom = null;
         public User firstPlayer = null;
         public User secondPlayer = null;
         public User getWinningPlayer = null;

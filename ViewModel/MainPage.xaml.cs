@@ -49,29 +49,6 @@ public partial class MainPage : ContentPage
 
     private async void SignInClicked(object sender, EventArgs e)
     {
-        //Step (1): Check Credentials..
-
-        //Step (2): if Login Success => A- Go To LoginPage, B- Assign loggedIn = true..
-
-        //await Navigation.PushAsync(new LoginPage());
-
-        /*
-                currentLoggedInUser = userNameText.Text;
-                User outPut = await firebase.GetUserByName(currentLoggedInUser);
-                if (outPut == null)
-                {
-                    await DisplayAlert("Empty!", "No Users Found!", "OK!");
-                }
-                else
-                {
-                    await DisplayAlert("Found!", $"User: {outPut.name}", "OK!");
-
-                    // await Navigation.PushAsync(new LoggedInPage());
-                }*/
-
-
-
-
         try
         {
             currentLoggedInUser = userNameText.Text;
@@ -117,10 +94,6 @@ public partial class MainPage : ContentPage
         }
 
     }
-
-
-
-
 
 
     private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
