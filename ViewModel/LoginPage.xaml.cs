@@ -53,7 +53,7 @@ namespace Kudomion
         {
            try
             {
-                List<User> allUsers = await GetAllUsers();
+                List<User> allUsers = await firebase.GetAllUsers();
                 var rankedUsers = allUsers.OrderByDescending(p => p.points);
                 var rankedList = rankedUsers.ToList();
 
@@ -64,13 +64,26 @@ namespace Kudomion
                     //Testing Purposes..
                     Console.WriteLine("Rank List: " + getRankOfEachUser + " " + user.name + "\n");
 
+                    //Retrieve info for the duelists Ranking (which need to be applied).
+                    User userToBeUpdated = new User
+                    {
+                        name = user.name,
+                        password = user.password,
+                        points = user.points,
+                        posts = user.posts,
+                        duels = user.duels,
+                        usertype = user.usertype,
+                        ranking = getRankOfEachUser,
+                    };
 
+                    //Update The Selected User Instance.
+                    await firebase.UpdateUserRanking(user.name, userToBeUpdated);
                 }
             }
 
             catch(Exception ex)
             {
-
+                DisplayAlert("Error!", "An unexpected error just occured. " + ex.Message, "OK!");
             }
         }
 
