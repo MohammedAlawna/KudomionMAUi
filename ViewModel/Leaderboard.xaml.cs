@@ -19,7 +19,7 @@ namespace Kudomion
         public Leaderboard()
         {
             InitializeComponent();
-            RankAllUsers();
+            //RankAllUsers();
         }
 
         public async void RankAllUsers()
