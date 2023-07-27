@@ -14,7 +14,7 @@ namespace Kudomion.ViewModel
         public NewsFeed()
         {
             InitializeComponent();
-           // AddPostTrial();
+            //AddPostTrial();
             LoadNewsData();
            
         }
@@ -29,7 +29,7 @@ namespace Kudomion.ViewModel
             Post _postToAdd = new Post
             {
                 content = "Welcome To Shadow Realm!",
-                imageSource = "",
+                imageSource = "https://w.forfun.com/fetch/7c/7c169eed84dd6ff0a46ac71a130814f8.jpeg",
                 YGOGoodReaction = 0
             };
 
