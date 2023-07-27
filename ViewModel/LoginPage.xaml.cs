@@ -77,7 +77,7 @@ namespace Kudomion
                     };
 
                     //Update The Selected User Instance.
-                    await firebase.UpdateUserRanking(user.name, userToBeUpdated);
+                    await firebase.UpdateUser(user.name, userToBeUpdated);
                 }
             }
 
