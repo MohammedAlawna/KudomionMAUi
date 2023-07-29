@@ -43,9 +43,7 @@ namespace Kudomion.ViewModel
         private async void ShowUserDuels(string username)
         {
             try
-            {
-
-          
+            {          
             FirebaseHelper firebase = new FirebaseHelper();
             List<Room> allRooms = await firebase.GetAllRoomsInDB();
 
