@@ -45,7 +45,13 @@
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
-    <!--<ShellContent
+        <ShellContent
+        Title="Decks"
+        Icon="Dcks"
+        ContentTemplate="{DataTemplate viewModel:DecksList}"
+        />
+
+        <!--<ShellContent
         Title="Settings"
         FlyoutIcon="notif"
         />

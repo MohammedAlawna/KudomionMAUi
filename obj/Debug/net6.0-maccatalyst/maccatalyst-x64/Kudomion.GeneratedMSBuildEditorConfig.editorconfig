@@ -53,6 +53,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Challen
 build_metadata.AdditionalFiles.TargetPath = ViewModel\Challenges.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewModel\Challenges.xaml
 
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/DecksList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.DecksList.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\DecksList.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\DecksList.xaml
+
 [D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/Leaderboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Leaderboard.xaml
