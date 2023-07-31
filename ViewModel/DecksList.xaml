@@ -4,8 +4,26 @@
              BackgroundColor="#1c1c1c"
              x:Class="Kudomion.ViewModel.DecksList">
     <ContentPage.Content>
-        <ScrollView>
-            
+        <ScrollView Margin="10" VerticalOptions="FillAndExpand">
+            <StackLayout x:Name="addDeckForm">
+                <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="220">
+                    <StackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
