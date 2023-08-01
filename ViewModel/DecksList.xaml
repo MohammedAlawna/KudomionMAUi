@@ -6,10 +6,10 @@
     <ContentPage.Content>
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout x:Name="addDeckForm">
-                <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="290">
+                <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
                     <StackLayout>
                         <Label x:Name="DeckTittle" Text="Blue-Eyes" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"/>
-                        <Image x:Name="DeckThumb" Margin="10" HeightRequest="150" Source="yg" />
+                        <Image x:Name="DeckThumb" Margin="10" Source="https://i.imgur.com/FhzdCp5.jpg" HeightRequest="200"/>
                         <StackLayout x:Name="DeckItemButtons" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                             <Button Text="Download YDK" BackgroundColor="RoyalBlue" WidthRequest="160" />
                             <Button Text="Open with EdoPro" BackgroundColor="DarkOrange" WidthRequest="160" />
