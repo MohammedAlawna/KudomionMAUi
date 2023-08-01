@@ -47,7 +47,7 @@
 
         <ShellContent
         Title="Decks"
-        Icon="Dcks"
+        Icon="dck"
         ContentTemplate="{DataTemplate viewModel:DecksList}"
         />
 
