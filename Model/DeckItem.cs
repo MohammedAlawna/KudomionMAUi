@@ -11,7 +11,7 @@ namespace Kudomion
     {
    
       
-        public int Id { get; set; }
+        //public int Id { get; set; }
         public string title { get; set; }
         public string thumbSrc { get; set; }
         public string ydkeCode { get; set; }

@@ -7,20 +7,24 @@
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <StackLayout Margin="5" x:Name="DeckItemCard">
-                    <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
-                        <StackLayout>
-                            <Label x:Name="DeckTittle" Text="Blue-Eyes" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"/>
-                            <Image x:Name="DeckThumb" Margin="10" Source="https://i.imgur.com/FhzdCp5.jpg" HeightRequest="200"/>
-                            <StackLayout x:Name="DeckItemButtons" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                <Button Text="Download YDK" BackgroundColor="RoyalBlue" WidthRequest="160" />
-                                <Button Text="Open with EdoPro" BackgroundColor="DarkOrange" WidthRequest="160" />
-
-                                <!--<Button Text="YDKe" BackgroundColor="DarkGoldenrod" WidthRequest="70" />-->
-
-
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>
+                    <CollectionView HeightRequest="340" x:Name="decksToLoad">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
+                                    <StackLayout>
+                                        <Label x:Name="DeckTittle" Text="Blue-Eyes" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"/>
+                                        <Image x:Name="DeckThumb" Margin="10" Source="https://i.imgur.com/FhzdCp5.jpg" HeightRequest="200"/>
+                                        <StackLayout x:Name="DeckItemButtons" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                        <Button Clicked="DownloadDeckBtn_Clicked" Text="Download YDK" BackgroundColor="RoyalBlue" WidthRequest="160" />
+                                        <Button Clicked="OpenWithEdoPro_Clicked" Text="Open with EdoPro" BackgroundColor="DarkOrange" WidthRequest="160" />
+                                        <!--<Button Text="YDKe" BackgroundColor="DarkGoldenrod" WidthRequest="70" />-->
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                   
                 </StackLayout>
 
                 <StackLayout>
