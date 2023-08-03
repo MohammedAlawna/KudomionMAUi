@@ -7,7 +7,7 @@
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <StackLayout Margin="5" x:Name="DeckItemCard">
-                    <CollectionView HeightRequest="340" x:Name="decksToLoad">
+                    <CollectionView VerticalOptions="FillAndExpand" x:Name="decksToLoad">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
