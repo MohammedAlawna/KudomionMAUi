@@ -185,7 +185,7 @@ namespace Kudomion
             await Browser.OpenAsync(groupUrl);
         }
 
-        private async void YoutubeButton_Clicked(object sendr, EventArgs e)
+        private async void YoutubeButton_Clicked(object sender, EventArgs e)
         {
             string channelUrl = "https://www.youtube.com/@kudomion.";
             await Browser.OpenAsync(channelUrl);
@@ -206,7 +206,7 @@ namespace Kudomion
             await DisplayAlert("Alert!", "DeulingBook Guide, to be added.", "OK!");
         }
 
-        private async void LeagueButton_Clicked(object sendrr, EventArgs e)
+        private async void LeagueButton_Clicked(object sender, EventArgs e)
         {
             await DisplayAlert("Alert", "League Guide, to be added.", "OK!");
         }

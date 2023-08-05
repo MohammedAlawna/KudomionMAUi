@@ -17,11 +17,13 @@ namespace Kudomion.ViewModel
             InitializeComponent();
             LoadAllDecks();
             //AddDeckTrial();
+          
         }
 
         async void LoadAllDecks()
         {
             decksToLoad.ItemsSource = await firebase.GetAllDecks();
+            
         }
 
         async void AddDeckTrial()
@@ -40,10 +42,16 @@ namespace Kudomion.ViewModel
 
         private void DownloadDeckBtn_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Alert!","Donwload Deck Button_Clicked!", "OK!");
+            var getThisButton = (Button) sender;
+            var getButtonParent = (StackLayout) getThisButton.Parent;
+            var getMainParent = (StackLayout) getButtonParent.Parent;
+            var getYDKSrc = (Label) getMainParent.Children[2];
+
+            //TODO: Search Specific Deck by its Title to get YDKe and YDKSrc. 
+            DisplayAlert("Alert!","Donwload Deck Button_Clicked!" + getYDKSrc.Text, "OK!");
         }
 
-        private async void OpenWithEdoPro_Clicked(object sender, EventArgs e)
+        private void OpenWithEdoPro_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Alert!", "EdoPro Button Clicked!", "OK!");
         }

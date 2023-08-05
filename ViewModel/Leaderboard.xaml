@@ -43,6 +43,7 @@
                                                         <TapGestureRecognizer Tapped="UsernameClicked" />
                                                     </Label.GestureRecognizers>
                                                 </Label>
+                                             
                                                 <Label Text="" HorizontalTextAlignment="Start" VerticalTextAlignment="End" TextColor="White" FontSize="16" FontAttributes="Bold" Grid.Column="1" Grid.Row="1"/>
                                                 <Label Text="{Binding points}" x:Name="rnk" TextColor="Gold" FontSize="24" FontAttributes="Bold" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Margin="8" HorizontalTextAlignment="End"/>
                                                
