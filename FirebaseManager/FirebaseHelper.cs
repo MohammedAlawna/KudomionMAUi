@@ -390,6 +390,20 @@ namespace Kudomion.FirebaseManager
 
         }
 
+        //Find Deck By Its name. Used for seaching, getting specific instance.
+        public async Task<DeckItem> GetDeckByName()
+        {
+            try
+            {
+
+            }
+            catch(Exception e)
+            {
+
+            }
+        } 
+
+
         //News Feed Related Functions.
         //1- GetAllPosts(): Retrieve all posts in the DB (to list then in news feed)
         public async Task<List<Post>> GetAllPosts()
