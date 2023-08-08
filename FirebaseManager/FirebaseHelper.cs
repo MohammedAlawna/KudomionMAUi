@@ -399,7 +399,8 @@ namespace Kudomion.FirebaseManager
             }
             catch(Exception e)
             {
-
+                Debug.WriteLine($"Error: {e}");
+                return null;
             }
         } 
 
