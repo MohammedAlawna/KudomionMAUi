@@ -13,8 +13,6 @@
                                 <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
                                     <StackLayout>
                                         <Label x:Name="DeckTittle" Text="{Binding title}" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"/>
-                                        <Label x:Name="ydkDownloadLink" Text="" IsVisible="false"/>
-                                        <Label x:Name="ydkeCodeSrc" Text="{Binding ydkeCode}" IsVisible="false" />
                                         <Image x:Name="DeckThumb" Margin="10" Source="{Binding thumbSrc}" HeightRequest="200"/>
                                         <StackLayout x:Name="DeckItemButtons" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                                         <Button Clicked="DownloadDeckBtn_Clicked" Text="Download YDK" BackgroundColor="RoyalBlue" WidthRequest="160" />
