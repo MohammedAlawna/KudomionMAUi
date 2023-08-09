@@ -391,11 +391,13 @@ namespace Kudomion.FirebaseManager
         }
 
         //Find Deck By Its name. Used for seaching, getting specific instance.
-        public async Task<DeckItem> GetDeckByName()
+        public async Task<DeckItem> GetDeckByName(string deckTitle)
         {
             try
             {
-
+                List<DeckItem> allDecksInDb = await GetAllDecks();
+                await firebaseClient.Child("Decks").OnceAsync<DeckItem>();
+                return allDecksInDb.Where(n => n.title == deckTitle).FirstOrDefault();
             }
             catch(Exception e)
             {
