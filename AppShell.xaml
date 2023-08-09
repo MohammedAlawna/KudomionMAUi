@@ -51,6 +51,12 @@
         ContentTemplate="{DataTemplate viewModel:DecksList}"
         />
 
+        <ShellContent
+        Title="Tournaments"
+        Icon="tour"
+        ContentTemplate="{DataTemplate viewModel:TournamentsDashboard}"
+        />
+
         <!--<ShellContent
         Title="Settings"
         FlyoutIcon="notif"

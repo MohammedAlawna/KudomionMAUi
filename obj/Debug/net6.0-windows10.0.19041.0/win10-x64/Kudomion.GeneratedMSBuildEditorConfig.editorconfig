@@ -95,6 +95,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.SignUpP
 build_metadata.AdditionalFiles.TargetPath = ViewModel\SignUpPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewModel\SignUpPage.xaml
 
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/TournamentsDashboard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.TournamentsDashboard.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\TournamentsDashboard.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\TournamentsDashboard.xaml
+
 [D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/UserProfile.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.UserProfile.xaml
