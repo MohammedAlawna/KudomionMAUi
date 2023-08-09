@@ -11,12 +11,13 @@ namespace Kudomion
     {
    
       
-        //public int Id { get; set; }
+     
         public string title { get; set; }
-        public string thumbSrc { get; set; }
-        public string ydkeCode { get; set; }
-        public string ydkSrc { get; set; }
+        public string link { get; set; }
+        public string code { get; set; }
 
+        public string thumbSrc { get; set; }
+        
 
        
     }

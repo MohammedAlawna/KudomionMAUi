@@ -32,23 +32,35 @@ namespace Kudomion.ViewModel
             {
                 title = "Blue-Eyes White Dragon",
                 thumbSrc = "https://i.imgur.com/ibaqv2S.png",
-                ydkeCode = "ydke://o6lXBaOpVwWjqVcFuvdbAem7SwLpu0sC2Y3SAdmN0gESbGYDNse1AqCTYwGvI94AryPeAK8j3gCf+zsEn/s7BJ/7OwRifLgCYny4AoPgwQSD4MEER7x9AEe8fQBHvH0AYnVCBWJ1QgVidUIF9x4EBCc+XgKKDHQBo7yRBWBoDQGTy10Ck8tdApPLXQLfFXsC3xV7ApAGIwAm6wAEffa/AH32vwCGkmgAr6HoAq+h6AKEqkUChKpFAoSqRQKo5S8FZ449BGeOPQRnjj0EYmqzA3YsTQF2LE0Bo2rUAqNq1AJvdu8Ab3bvALni3QX0iGQD!d5uTAtIjbgGBnV4D5n4gAN2drgDdna4Aj7z5A1M2cAJTNnACNdCQAzXQkAPHodUDoakKALTbgAKWunMB!n6bTA5+m0wNZpBMEdkLOBXxbsQF8W7EBrHpBBc4CzQPOAs0DL3D3Ay9w9wP68aIA7o1qAx/WZgEf1mYB!",
-                ydkSrc = "blob:https://ygoprodeck.com/8964fa93-7c62-4c8a-8dac-10cbd1175b5c"
+                code = "hellocode",
+                link = "hello"
             };
 
             await firebase.AddDeck(deckToAdd);
 
         }
 
-        private void DownloadDeckBtn_Clicked(object sender, EventArgs e)
+        private async void DownloadDeckBtn_Clicked(object sender, EventArgs e)
         {
-            var getThisButton = (Button) sender;
-            var getButtonParent = (StackLayout) getThisButton.Parent;
-            var getMainParent = (StackLayout) getButtonParent.Parent;
-            var getYDKSrc = (Label) getMainParent.Children[2];
+            try
+            {
+                var getThisButton = (Button)sender;
+                var getButtonParent = (StackLayout)getThisButton.Parent;
+                var getMainParent = (StackLayout)getButtonParent.Parent;
+                var getYDKSrc = (Label)getMainParent.Children[0];
 
-            //TODO: Search Specific Deck by its Title to get YDKe and YDKSrc. 
-            DisplayAlert("Alert!","Donwload Deck Button_Clicked!" + getYDKSrc.Text, "OK!");
+                //TODO Fix DeckItem Properties (YDKeCode and SrcYDK cuz its not showing):
+                DeckItem findSelectedDeck = await firebase.GetDeckByName(getYDKSrc.Text);
+
+                //TODO: Search Specific Deck by its Title to get YDKe and YDKSrc. 
+                await DisplayAlert("Alert!", "Donwload Deck Button_Clicked!" + findSelectedDeck.link, "OK!");
+            }
+
+            catch(Exception ex)
+            {
+               await DisplayAlert("Exception", "Error. System Can't retrieve deck information. " + ex.Message, "OK!");
+            }
+            
         }
 
         private void OpenWithEdoPro_Clicked(object sender, EventArgs e)
