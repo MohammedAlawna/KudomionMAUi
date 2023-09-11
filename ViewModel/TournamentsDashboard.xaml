@@ -4,13 +4,57 @@
              x:Class="Kudomion.ViewModel.TournamentsDashboard"
              BackgroundColor="#1c1c1c"
              Title="TournamentsDashboard">
-    <VerticalStackLayout>
-        <Label 
+    <ContentPage.Content>
+        <ScrollView Margin="10" VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <Label
             Text="Tournaments" FontSize="30"
             Margin="5"
             BackgroundColor="Transparent"
             TextColor="White"
-            VerticalOptions="Center" 
+            VerticalOptions="Start" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+                <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
+                    <StackLayout>
+                        <Label Text="YKJ Rapid Tournament"
+                        HorizontalOptions="Center"
+                        TextColor="Gold"
+                        FontAttributes="Bold"
+                        FontSize="22"
+                        />
+
+                        <Image x:Name="TournamentBanner" Source="https://i.imgur.com/7YZAM21.jpg" />
+
+                        <Label x:Name="RegStatus" Text="Registeration is available!" TextColor="White" FontSize="17" HorizontalOptions="Center" VerticalOptions="End"/>
+                        <StackLayout Spacing="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Button WidthRequest="170" Text="View Details" BackgroundColor="RoyalBlue"/>
+                        <Button WidthRequest="120" Text="Sign Up" BackgroundColor="Orange"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout>
+
+                    <StackLayout Margin="5" x:Name="TournamentItemCard">
+                        <StackLayout>
+                            <CollectionView VerticalOptions="FillAndExpand" x:Name="TournamentsToLoad">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
+                                            <StackLayout>
+                                                
+                                            </StackLayout>
+                                        </Frame>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
