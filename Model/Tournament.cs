@@ -9,5 +9,9 @@ namespace Kudomion.Model
     public class Tournament
     {
         public string title;
+        public User winner;
+        public User secondPlace;
+        public User thirdPlace;
+        //public TournamentRoom[] rooms;
     }
 }
