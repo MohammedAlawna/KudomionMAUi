@@ -1,9 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:Kudomion.ViewModel"
              x:Class="Kudomion.ViewModel.TournamentDetails">
-  <!--Pages can be added as references or inline-->
-  <ContentPage Title="Tab 1" />
-  <ContentPage Title="Tab 2" />
-  <ContentPage Title="Tab 3" />
-</TabbedPage>
+    <ContentPage.Content>
+        <StackLayout>
+            <Shell>
+                <TabBar>
+                    <Tab>
+                        <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentsDashboard}"/>
+                        <ShellContent Title="SignUp" ContentTemplate="{DataTemplate viewModel:TournamentInfo}" />
+                    </Tab>
+                </TabBar>
+            </Shell>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

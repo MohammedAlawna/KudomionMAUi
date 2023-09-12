@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Kudomion.ViewModel
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TournamentDetails : TabbedPage
+    public partial class TournamentDetails : ContentPage
     {
         public TournamentDetails()
         {

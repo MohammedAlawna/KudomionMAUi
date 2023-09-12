@@ -54,7 +54,7 @@
         <ShellContent
         Title="Tournaments"
         Icon="tour"
-        ContentTemplate="{DataTemplate viewModel:TournamentsDashboard}"
+        ContentTemplate="{DataTemplate viewModel:TournamentDetails}"
         />
 
         <!--<ShellContent
