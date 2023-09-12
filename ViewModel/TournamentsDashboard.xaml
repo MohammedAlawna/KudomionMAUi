@@ -15,7 +15,7 @@
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
 
-                <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
+                <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="350">
                     <StackLayout>
                         <Label Text="YKJ Rapid Tournament"
                         HorizontalOptions="Center"
@@ -24,9 +24,9 @@
                         FontSize="22"
                         />
 
-                        <Image x:Name="TournamentBanner" Source="https://i.imgur.com/7YZAM21.jpg" />
+                        <Image Margin="5" x:Name="TournamentBanner" Source="https://i.imgur.com/7YZAM21.jpg" />
 
-                        <Label x:Name="RegStatus" Text="Registeration is available!" TextColor="White" FontSize="17" HorizontalOptions="Center" VerticalOptions="End"/>
+                        <Label x:Name="RegStatus" Margin="5" Text="Registeration is available!" TextColor="White" FontSize="17" HorizontalOptions="Center" VerticalOptions="End"/>
                         <StackLayout Spacing="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                         <Button WidthRequest="170" Text="View Details" BackgroundColor="RoyalBlue"/>
                         <Button WidthRequest="120" Text="Sign Up" BackgroundColor="Orange"/>
