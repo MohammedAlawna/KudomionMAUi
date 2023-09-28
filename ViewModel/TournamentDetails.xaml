@@ -8,14 +8,18 @@
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <Label
-            Text="Tournaments" FontSize="30"
-            Margin="5"
+            Text="Tournament Name" FontSize="24"
+            Margin="3"
             BackgroundColor="Transparent"
             TextColor="White"
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
 
-            <Image Margin="5" x:Name="TournamentBanner" Source="https://i.imgur.com/7YZAM21.jpg" />
+            <Image Margin="3" x:Name="TournamentBanner" HeightRequest="250" Source="https://i.imgur.com/7YZAM21.jpg" />
+
+                <StackLayout Orientation="Vertical" Margin="3">
+                    <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="userStatPicker" TextColor="White" BackgroundColor="#323232"/>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
