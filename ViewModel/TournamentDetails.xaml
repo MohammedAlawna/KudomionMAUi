@@ -18,7 +18,7 @@
             <Image Margin="3" x:Name="TournamentBanner" HeightRequest="250" Source="https://i.imgur.com/7YZAM21.jpg" />
 
                 <StackLayout Orientation="Vertical" Margin="3">
-                    <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="userStatPicker" TextColor="White" BackgroundColor="#323232"/>
+                    <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="tournamentState" TextColor="White" BackgroundColor="#323232"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

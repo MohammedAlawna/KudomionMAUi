@@ -13,6 +13,15 @@ namespace Kudomion.ViewModel
         public TournamentDetails()
         {
             InitializeComponent();
+            LoadPickerItems();
+        }
+
+        void LoadPickerItems()
+        {
+            tournamentState.Items.Add("Info");
+            tournamentState.Items.Add("Sign-Up");
+            tournamentState.Items.Add("Brackets");
+            tournamentState.Items.Add("Results");
         }
     }
 }
