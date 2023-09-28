@@ -1,43 +1,22 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:viewModel="clr-namespace:Kudomion.ViewModel"
-       x:Class="Kudomion.ViewModel.TournamentDetails">
-    
-       <TabBar>
-           <Tab>
-           <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentInfo}"/>
-           <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentInfo}"/>
-           <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentInfo}"/>
-           <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentInfo}"/>
-           </Tab>    
-        </TabBar>
-</Shell>
-    
-    <!--<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewModel="clr-namespace:Kudomion.ViewModel"
-             
-             x:Class="Kudomion.ViewModel.TournamentDetails">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kudomion.ViewModel.TournamentDetails"
+             BackgroundColor="#1c1c1c"
+            >
     <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand">
-            
-            <Shell>
-                <TabBar>
-                    <Tab>
-                        <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentInfo}"/>
-                        <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentInfo}"/>
-                        <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentInfo}"/>
-                        <ShellContent Title="Info" ContentTemplate="{DataTemplate viewModel:TournamentInfo}"/>
-                    </Tab>
+        <ScrollView Margin="10" VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <Label
+            Text="Tournaments" FontSize="30"
+            Margin="5"
+            BackgroundColor="Transparent"
+            TextColor="White"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
 
-                 
-                </TabBar>
-            </Shell>
-        </StackLayout>
+            <Image Margin="5" x:Name="TournamentBanner" Source="https://i.imgur.com/7YZAM21.jpg" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
-</ContentPage>-->
-
-<!--<ShellContent Title="SignUp" ContentTemplate="{DataTemplate viewModel:TournamentSignUpPage}" />
-<ShellContent Title="Brackets" ContentTemplate="{DataTemplate viewModel:TournamentBracket}" />-->
+</ContentPage>

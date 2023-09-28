@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Kudomion.ViewModel
 {
-    /*[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TournamentDetails : ContentPage
     {
         public TournamentDetails()
         {
             InitializeComponent();
         }
-    }*/
+    }
 }
