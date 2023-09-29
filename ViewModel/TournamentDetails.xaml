@@ -8,19 +8,126 @@
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <Label
-            Text="Tournament Name" FontSize="24"
+            Text="YKJ Rapid Tournament" FontSize="24"
             Margin="3"
             BackgroundColor="Transparent"
             TextColor="White"
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
 
-            <Image Margin="3" x:Name="TournamentBanner" HeightRequest="250" Source="https://i.imgur.com/7YZAM21.jpg" />
+                <Image Margin="3" x:Name="TournamentBanner" HeightRequest="250" Source="https://i.imgur.com/7YZAM21.jpg" />
 
                 <StackLayout Orientation="Vertical" Margin="3">
                     <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="tournamentState" TextColor="White" BackgroundColor="#323232"/>
                 </StackLayout>
+
+                <StackLayout x:Name="info" IsVisible="false" Margin="5">
+                    <Label Text="Rules" HorizontalOptions="Center" FontSize="19" FontAttributes="Bold" TextColor="RoyalBlue"/>
+                    <Label Text="1- Duel Type: Match" FontSize="16" TextColor="White"/>
+                    <Label Text="2- Card Pool: TCG" FontSize="16" TextColor="White"/>
+                    <Label Text="3- Changing Decks isn't allowed" FontSize="16" TextColor="White"/>
+                    <Label Text="4- Game: EDOPro" FontSize="16" TextColor="White"/>
+                    <Label Text="5- Number of Participants: 8" FontSize="16" TextColor="White"/>
+                    <Label Text="6- Single Elimination." FontSize="16" TextColor="White"/>
+                    <Label Text="7- Automatic matchup" FontSize="16" TextColor="White"/>
+                    <Label Text="* Admit Defeat when you lose. Otherwise the admin will ban you from the system." FontSize="16" TextColor="White"/>
+                </StackLayout>
+
+                <StackLayout x:Name="SignUp" IsVisible="false" Margin="5">
+                    <Label Text="- Please read the rules that are listed in the 'Info' section before joining the tournament." FontSize="16" TextColor="White"/>
+                    <Label Text="- If the tournament slots were full, then the Join button will be disabled / give an error message when you try to click it." FontSize="16" TextColor="White"/>
+                    <Button Text="Join" BackgroundColor="RoyalBlue" Clicked="JoinBtn_Clicked"/>
+                    <Label Text="* You are allowed/not allowed to join this event." FontSize="16" TextColor="White"/>
+
+                </StackLayout>
+
+                <StackLayout x:Name="bracket" IsVisible="false" Margin="5">
+                    <StackLayout Margin="0">
+                        <Label HorizontalOptions="Center" Text="Round 1" FontSize="23" FontAttributes="Bold" TextColor="RoyalBlue"/>
+                        <Frame Margin="5" BorderColor="Orange" BackgroundColor="#333232">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                    <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                    <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
+                                    <Label Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                </StackLayout>
+                                <Button BackgroundColor="#ff9d00" TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <StackLayout>
+                            <Frame Margin="5" BorderColor="#ff9d00" BackgroundColor="#333232">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="Player 3" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                        <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                        <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
+                                        <Label Margin="13" Text="Player 4" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                    </StackLayout>
+                                    <Button BackgroundColor="#ff9d00" TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Frame Margin="5" BorderColor="#ff9d00" BackgroundColor="#333232">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="Player 5" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                        <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                        <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
+                                        <Label Margin="13" Text="Player 6" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                    </StackLayout>
+                                    <Button BackgroundColor="#ff9d00" TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Frame Margin="5" BorderColor="#ff9d00" BackgroundColor="#333232">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="Player 7" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                        <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                        <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
+                                        <Label Margin="13" Text="Player 8" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                    </StackLayout>
+                                    <Button BackgroundColor="#ff9d00" TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+
+                <StackLayout>
+                    <Label HorizontalOptions="Center" Text="Semi-Finals" FontSize="23" FontAttributes="Bold" TextColor="RoyalBlue"/>
+                    <Frame BackgroundColor="#333232">
+
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label HorizontalOptions="Center" Text="Final" FontSize="23" FontAttributes="Bold" TextColor="RoyalBlue"/>
+                    <Frame BackgroundColor="#333232">
+                        <StackLayout>
+                            <Label TextColor="White" HorizontalOptions="Center" Text="KUDO vs Nael" />
+                            <Button TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+           
+
+            <StackLayout x:Name="result" IsVisible="false" Margin="5">
+                <Label Text="Leaderboard" FontSize="19" HorizontalOptions="Center" TextColor="RoyalBlue"/>
+                <Label Text="Winner: KUDO" FontSize="16" HorizontalOptions="Start" TextColor="White"/>
+                <Label Text="Second Place: Kudomion" HorizontalOptions="Start" FontSize="16" TextColor="White"/>
+                <Label Text="Third Place: YKJ" HorizontalOptions="Start" FontSize="16" TextColor="White"/>
             </StackLayout>
+            </StackLayout>
+
         </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>
