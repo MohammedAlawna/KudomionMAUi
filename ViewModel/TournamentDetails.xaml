@@ -103,17 +103,47 @@
 
                 <StackLayout>
                     <Label HorizontalOptions="Center" Text="Semi-Finals" FontSize="23" FontAttributes="Bold" TextColor="RoyalBlue"/>
-                    <Frame BackgroundColor="#333232">
-
+                    <Frame Margin="5" BorderColor="RoyalBlue" BackgroundColor="#333232">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                <Label Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
+                                <Label Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                            </StackLayout>
+                            <Button BackgroundColor="#ff9d00" TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        
+                        
                     </Frame>
+                    
+                    
                 </StackLayout>
+                <Frame Margin="5" BorderColor="RoyalBlue" BackgroundColor="#333232">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Player 3" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                            <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                            <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
+                            <Label Margin="13" Text="Player 4" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                        </StackLayout>
+                        <Button BackgroundColor="#ff9d00" TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
+                    </StackLayout>
 
+
+                </Frame>
+                
                 <StackLayout>
                     <Label HorizontalOptions="Center" Text="Final" FontSize="23" FontAttributes="Bold" TextColor="RoyalBlue"/>
-                    <Frame BackgroundColor="#333232">
+                    <Frame Margin="5" BorderColor="Lime" BackgroundColor="#333232">
                         <StackLayout>
-                            <Label TextColor="White" HorizontalOptions="Center" Text="KUDO vs Nael" />
-                            <Button TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                <Label Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
+                                <Label Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                            </StackLayout>
+                            <Button BackgroundColor="#ff9d00" TextColor="White" FontSize="16" Text="Admit Defeat" HorizontalOptions="Center"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
