@@ -15,6 +15,66 @@ namespace Kudomion.FirebaseManager
         //Follow this Article: https://www.c-sharpcorner.com/article/xamarin-forms-working-with-firebase-realtime-database-crud-operations/
         FirebaseClient firebaseClient = new FirebaseClient("https://kudo6-42fe7-default-rtdb.firebaseio.com/");
      
+        //Get All Tournaments in DB.
+        public async Task<List<Tournament>> GetAllTournaments()
+        {
+            try
+            {
+                var tourniesList = (await firebaseClient.Child("Tournaments").OnceAsync<Tournament>()).Select(item => new Tournament
+                {
+                    n
+                });
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine($"Error: Exception: {e}");
+                return null;
+            }
+        }
+
+
+        //Get Tournament By Name.. 
+        public async Task<Tournament> GetTournamentByName(string tournyName)
+        {
+            try
+            {
+               
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine($"Error. Exception: {e}");
+                return null;
+            }
+        }
+
+        //Update Tournament Details (Edit, apply changes to brackets, and etc..)
+        public async Task<bool> UpdateTournament(string tournyName)
+        {
+            try
+            {
+                return true;
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine($"Error. Exception: {e}");
+                return false;
+            }
+        }
+
+        //Add Tournament Function
+        public async Task<bool> AddTournament(string tournyName)
+        {
+            try
+            {
+                
+            }
+            catch(Exception e)
+            {
+
+            }
+        }
+
+
         //Start User-Related Functions.
         public async Task<List<User>> GetAllUsers()
         {
@@ -100,9 +160,17 @@ namespace Kudomion.FirebaseManager
 
         public async Task<User> GetUserByName(string name)
         {
+            try {
                 var allUsers = await GetAllUsers();
                 await firebaseClient.Child("Users").OnceAsync<User>();
-                return allUsers.Where(a => a.name.ToLower() == name.ToLower()).FirstOrDefault();   
+                return allUsers.Where(a => a.name.ToLower() == name.ToLower()).FirstOrDefault();
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine($"Error. Exception: {e}");
+                return null;
+            }
+                
         }
 
         public static async Task<User> GetUsrFromName(string _name)
