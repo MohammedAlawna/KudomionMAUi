@@ -22,8 +22,17 @@ namespace Kudomion.FirebaseManager
             {
                 var tourniesList = (await firebaseClient.Child("Tournaments").OnceAsync<Tournament>()).Select(item => new Tournament
                 {
-                    n
-                });
+                    title = item.Object.title,
+                    signUpActive = item.Object.signUpActive,
+                    winner = item.Object.winner,
+                    secondPlace = item.Object.secondPlace,
+                    thirdPlace = item.Object.thirdPlace,
+                    tournyBannerSrc = item.Object.tournyBannerSrc,
+                    registeredUsers = item.Object.registeredUsers,
+                    roomsInTourny = item.Object.roomsInTourny,
+                }).ToList();
+                return tourniesList;
+
             }
             catch(Exception e)
             {
