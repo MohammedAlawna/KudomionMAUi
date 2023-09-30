@@ -47,7 +47,9 @@ namespace Kudomion.FirebaseManager
         {
             try
             {
-               
+                var allTournies = await GetAllTournaments();
+                await firebaseClient.Child("Tournaments").OnceAsync<Tournament>();
+                return allTournies.Where(t => t.title.ToLower() == tournyName.ToLower()).FirstOrDefault();
             }
             catch(Exception e)
             {
@@ -71,15 +73,23 @@ namespace Kudomion.FirebaseManager
         }
 
         //Add Tournament Function
-        public async Task<bool> AddTournament(string tournyName)
+        public async Task<bool> AddTournament(string tournyName, string bannerSrc)
         {
             try
             {
-                
+                Tournament userToAdd = new Tournament()
+                {
+                    title = tournyName,
+                    signUpActive = true,
+                    tournyBannerSrc = bannerSrc,
+                };
+                await firebaseClient.Child("Tournaments").PostAsync(userToAdd);
+                return true;
             }
             catch(Exception e)
             {
-
+                Debug.WriteLine($"Error. Exception: {e}");
+                return false;
             }
         }
 
