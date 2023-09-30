@@ -75,7 +75,7 @@ namespace Kudomion.FirebaseManager
         }
 
         //Add Tournament Function
-        public async Task<bool> AddTournament(string tournyName, string bannerSrc)
+        public async Task<bool> AddTournament(string tournyName)
         {
             try
             {
@@ -83,7 +83,7 @@ namespace Kudomion.FirebaseManager
                 {
                     title = tournyName,
                     signUpActive = true,
-                    tournyBannerSrc = bannerSrc,
+                   
                 };
                 await firebaseClient.Child("Tournaments").PostAsync(userToAdd);
                 return true;
