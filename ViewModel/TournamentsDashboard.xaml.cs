@@ -28,6 +28,6 @@ public partial class TournamentsDashboard : ContentPage
 			title = "YKJ Rapid Tournament #1",
 			tournyBannerSrc = "https://i.imgur.com/urYTQm3.png",
 		};
-		await firebaseHelper.AddTournament(newTourny.title);
+		await firebaseHelper.AddTournament(newTourny);
 	}
 }

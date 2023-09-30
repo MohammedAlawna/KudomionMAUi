@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.ViewModel.TournamentsDashboard"
-            
              BackgroundColor="#1c1c1c"
             >
     <ContentPage.Content>
@@ -16,24 +15,7 @@
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
 
-                <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="350">
-                    <StackLayout>
-                        <Label Text="{Binding title}"
-                        HorizontalOptions="Center"
-                        TextColor="Gold"
-                        FontAttributes="Bold"
-                        FontSize="22"
-                        />
-
-                        <Image Margin="5" x:Name="TournamentBanner" Source="{Binding tournyBannerSrc}" />
-
-                        <Label x:Name="RegStatus" Margin="5" Text="Registeration is available!" TextColor="White" FontSize="17" HorizontalOptions="Center" VerticalOptions="End"/>
-                        <StackLayout Spacing="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                        <Button WidthRequest="170" Text="View Details" BackgroundColor="RoyalBlue"/>
-                        <Button WidthRequest="120" Text="Sign Up" BackgroundColor="Orange"/>
-                        </StackLayout>
-                    </StackLayout>
-                </Frame>
+               
 
                 <StackLayout>
 
