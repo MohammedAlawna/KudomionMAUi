@@ -59,10 +59,12 @@ namespace Kudomion.FirebaseManager
         }
 
         //Update Tournament Details (Edit, apply changes to brackets, and etc..)
-        public async Task<bool> UpdateTournament(string tournyName)
+        public async Task<bool> UpdateTournament(string tournyName, Tournament tourToUpdate)
         {
             try
             {
+                var tournyToUpdate = (await firebaseClient.Child("Tournaments").OnceAsync<Tournament>()).Where(t => t.Object.title == tournyName).FirstOrDefault();
+                await firebaseClient.Child("Tournaments").Child(tournyToUpdate.Key).PutAsync(tournyToUpdate);
                 return true;
             }
             catch(Exception e)
