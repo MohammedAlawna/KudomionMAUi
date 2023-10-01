@@ -38,7 +38,7 @@
                                                 <Label x:Name="RegStatus" Margin="5" Text="Registeration is available!" TextColor="White" FontSize="17" HorizontalOptions="Center" VerticalOptions="End"/>
 
                                                 <StackLayout Spacing="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                                    <Button WidthRequest="170" Text="View Details" BackgroundColor="RoyalBlue"/>
+                                                    <Button WidthRequest="170" Text="View Details" Clicked="ViewDetailsButtonClicked" BackgroundColor="RoyalBlue"/>
                                                     <Button WidthRequest="120" Text="Sign Up" BackgroundColor="Orange"/>
                                                 </StackLayout>
                                             </StackLayout>

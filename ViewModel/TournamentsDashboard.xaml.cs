@@ -30,4 +30,13 @@ public partial class TournamentsDashboard : ContentPage
 		};
 		await firebaseHelper.AddTournament(newTourny);
 	}
+
+    private async void ViewDetailsButtonClicked(object sender, EventArgs e)
+    {
+		var getCurrent = (Button)sender;
+		var getStackLayout = (StackLayout)getCurrent.Parent;
+		var getMainStackLayout = (StackLayout)getStackLayout.Parent;
+		var getTextChild = (Label)getMainStackLayout.Children[0];
+		await DisplayAlert("Alert!", $"Tourny Details are being retrieved from server. {getTextChild.Text}", "OK!");
+    }
 }
