@@ -33,10 +33,15 @@ public partial class TournamentsDashboard : ContentPage
 
     private async void ViewDetailsButtonClicked(object sender, EventArgs e)
     {
+		//Access The Main Parent in the Stack. 
 		var getCurrent = (Button)sender;
 		var getStackLayout = (StackLayout)getCurrent.Parent;
 		var getMainStackLayout = (StackLayout)getStackLayout.Parent;
+
+		//Get The Tournament name/title.
 		var getTextChild = (Label)getMainStackLayout.Children[0];
-		await DisplayAlert("Alert!", $"Tourny Details are being retrieved from server. {getTextChild.Text}", "OK!");
+
+		//Pass Info to New Page, and Navigate to it!
+		await Navigation.PushAsync(new TournamentDetails(getTextChild.Text));
     }
 }

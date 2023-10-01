@@ -10,10 +10,20 @@ namespace Kudomion.ViewModel
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TournamentDetails : ContentPage
     {
-        public TournamentDetails()
+        public TournamentDetails(string tournamentName)
         {
             InitializeComponent();
             LoadPickerItems();
+        }
+
+        async void LoadTourmamentDetails()
+        {
+            //Assign TournyName to the Main Title.
+
+            //Get Tourny from DB using the passed name.
+
+            //Assign Rest of The Tourny Values (Brackets, info and etc..)
+
         }
 
         void LoadPickerItems()
