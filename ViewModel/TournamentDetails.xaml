@@ -10,6 +10,7 @@
                 <Label
             Text="YKJ Rapid Tournament" FontSize="24"
             Margin="3"
+            x:Name="tournamentTitle"
             BackgroundColor="Transparent"
             TextColor="White"
             VerticalOptions="Start" 
@@ -37,7 +38,7 @@
                     <Label Text="- Please read the rules that are listed in the 'Info' section before joining the tournament." FontSize="16" TextColor="White"/>
                     <Label Text="- If the tournament slots were full, then the Join button will be disabled / give an error message when you try to click it." FontSize="16" TextColor="White"/>
                     <Button Text="Join" BackgroundColor="RoyalBlue" Clicked="JoinBtn_Clicked"/>
-                    <Label Text="* You are allowed/not allowed to join this event." FontSize="16" TextColor="White"/>
+                    <Label Text="* You are allowed/not allowed to join this event." x:Name="SignupStatus" FontSize="16" TextColor="White"/>
 
                 </StackLayout>
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Kudomion.FirebaseManager;
+using Kudomion.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,19 +12,33 @@ namespace Kudomion.ViewModel
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TournamentDetails : ContentPage
     {
+        FirebaseHelper fbHelper = new FirebaseHelper();
         public TournamentDetails(string tournamentName)
         {
             InitializeComponent();
             LoadPickerItems();
+            LoadTourmamentDetails(tournamentName);
         }
 
-        async void LoadTourmamentDetails()
+        async void LoadTourmamentDetails(string name)
         {
             //Assign TournyName to the Main Title.
+            tournamentTitle.Text = name;
 
             //Get Tourny from DB using the passed name.
+            Tournament tournyInstance = await fbHelper.GetTournamentByName(name);
 
+            await DisplayAlert("Alert!", $"Name: {tournyInstance.title}", "OK!");
             //Assign Rest of The Tourny Values (Brackets, info and etc..)
+            TournamentBanner.Source = tournyInstance.tournyBannerSrc;
+            if(tournyInstance.signUpActive == false)
+            {
+                SignupStatus.Text = "* CLOSED! You are not allowed to join this event.";
+            }
+            if (tournyInstance.signUpActive)
+            {
+                SignupStatus.Text = "OPEN! You are allowed to join this event.";
+            } 
 
         }
 
