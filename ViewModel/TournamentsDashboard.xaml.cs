@@ -55,10 +55,20 @@ public partial class TournamentsDashboard : ContentPage
         //Get The Tournament name/title.
         var getTextChild = (Label)getMainStackLayout.Children[0];
 
-		//Debugging Line Only..
-		await DisplayAlert("Success!", $"You Joined The Tournament: {getTextChild.Text}", "OK!");
 
 		//Check and Register User To Tournament..
+		//1- Get Current LoggedInUser.
+		User currentLoggedInUser = await firebaseHelper.GetUserByName(MainPage.currentLoggedInUser);
 
-	}
+        //2- Get Tournament Instance (that was clicked - from tourny name).
+
+        //3- Get All RegisteredUsers/Participants in the tourny.
+
+        //4- Check if current loggedInUser exsits in the participants list.
+
+
+        //Debugging Line Only..
+        await DisplayAlert("Success!", $"You Joined The Tournament: {getTextChild.Text}, LoggedIn: {currentLoggedInUser.name}", "OK!");
+
+    }
 }
