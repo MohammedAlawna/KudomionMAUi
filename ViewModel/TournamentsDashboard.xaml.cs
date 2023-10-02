@@ -44,4 +44,21 @@ public partial class TournamentsDashboard : ContentPage
 		//Pass Info to New Page, and Navigate to it!
 		await Navigation.PushAsync(new TournamentDetails(getTextChild.Text));
     }
+
+    private async void SignUpButtonClicked(object sender, EventArgs e)
+    {
+        //Access The Main Parent in the Stack. 
+        var getCurrent = (Button)sender;
+        var getStackLayout = (StackLayout)getCurrent.Parent;
+        var getMainStackLayout = (StackLayout)getStackLayout.Parent;
+
+        //Get The Tournament name/title.
+        var getTextChild = (Label)getMainStackLayout.Children[0];
+
+		//Debugging Line Only..
+		await DisplayAlert("Success!", $"You Joined The Tournament: {getTextChild.Text}", "OK!");
+
+		//Check and Register User To Tournament..
+
+	}
 }

@@ -28,7 +28,7 @@ namespace Kudomion.ViewModel
             //Get Tourny from DB using the passed name.
             Tournament tournyInstance = await fbHelper.GetTournamentByName(name);
 
-            await DisplayAlert("Alert!", $"Name: {tournyInstance.title}", "OK!");
+            //Comment Out(Checking Details Status Only): await DisplayAlert("Alert!", $"Name: {tournyInstance.title}", "OK!");
             //Assign Rest of The Tourny Values (Brackets, info and etc..)
             TournamentBanner.Source = tournyInstance.tournyBannerSrc;
             if(tournyInstance.signUpActive == false)
