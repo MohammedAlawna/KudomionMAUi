@@ -1,5 +1,6 @@
 using Kudomion.FirebaseManager;
 using Kudomion.Model;
+using System.Diagnostics;
 
 namespace Kudomion.ViewModel;
 
@@ -47,28 +48,67 @@ public partial class TournamentsDashboard : ContentPage
 
     private async void SignUpButtonClicked(object sender, EventArgs e)
     {
-        //Access The Main Parent in the Stack. 
-        var getCurrent = (Button)sender;
-        var getStackLayout = (StackLayout)getCurrent.Parent;
-        var getMainStackLayout = (StackLayout)getStackLayout.Parent;
+		try
+		{
+			//Access The Main Parent in the Stack. 
+			var getCurrent = (Button)sender;
+			var getStackLayout = (StackLayout)getCurrent.Parent;
+			var getMainStackLayout = (StackLayout)getStackLayout.Parent;
 
-        //Get The Tournament name/title.
-        var getTextChild = (Label)getMainStackLayout.Children[0];
-
-
-		//Check and Register User To Tournament..
-		//1- Get Current LoggedInUser.
-		User currentLoggedInUser = await firebaseHelper.GetUserByName(MainPage.currentLoggedInUser);
-
-        //2- Get Tournament Instance (that was clicked - from tourny name).
-
-        //3- Get All RegisteredUsers/Participants in the tourny.
-
-        //4- Check if current loggedInUser exsits in the participants list.
+			//Get The Tournament name/title.
+			var getTextChild = (Label)getMainStackLayout.Children[0];
 
 
-        //Debugging Line Only..
-        await DisplayAlert("Success!", $"You Joined The Tournament: {getTextChild.Text}, LoggedIn: {currentLoggedInUser.name}", "OK!");
+			//Check and Register User To Tournament..
+			//1- Get Current LoggedInUser.
+			User currentLoggedInUser = await firebaseHelper.GetUserByName(MainPage.currentLoggedInUser);
 
+			//2- Get Tournament Instance (that was clicked - from tourny name).
+			Tournament selectedTournament = await firebaseHelper.GetTournamentByName(getTextChild.Text);
+
+			//3- Get All RegisteredUsers/Participants in the tourny.
+			List<User> allRegisteredDuelists = selectedTournament.registeredUsers;
+
+
+            //4- Check if current loggedInUser exsits in the participants list.
+            if (allRegisteredDuelists == null)
+            {
+                //Add User.
+                allRegisteredDuelists.Add(currentLoggedInUser);
+                await DisplayAlert("Alert!", $"All Registered is null, User was added! {allRegisteredDuelists[0].name}", "OK!");
+				
+                return;
+            }
+
+            if (allRegisteredDuelists != null)
+			{
+                bool isUserExist = allRegisteredDuelists.Contains(currentLoggedInUser);
+                if (isUserExist == false)
+                {
+					//Add The User to Participants List.
+
+                }
+
+                if (isUserExist == true)
+				{
+					//Prompt a message saying that user already exists.
+					await DisplayAlert("Alert!", "You already Registered in the tournament.", "OK!");
+					return;
+
+				}
+				
+            }
+
+      
+            //5- Disable The Join Button.
+
+
+            //Debugging Line Only..
+            await DisplayAlert("Success!", $"You Joined The Tournament: {selectedTournament.title}, LoggedIn: {currentLoggedInUser.name}, Bool:", "OK!");
+		}
+		catch(Exception ex)
+		{
+			await DisplayAlert("Error!", $"Exception: {ex}", "OK!");
+		}
     }
 }
