@@ -12,7 +12,7 @@ public partial class TournamentsDashboard : ContentPage
 		InitializeComponent();
 
 		//Create A Trial Tournament (Comment Out when stop testing)
-		//AddTournamentTrial();
+		AddTournamentTrial();
 
 		//Load All Tournaments.
 		LoadAllTournaments();
@@ -28,6 +28,8 @@ public partial class TournamentsDashboard : ContentPage
 		Tournament newTourny = new  Tournament{
 			title = "YKJ Rapid Tournament #1",
 			tournyBannerSrc = "https://i.imgur.com/urYTQm3.png",
+			registeredUsers = new List<User>(),
+			roomsInTourny = new List<TournamentRoom>(),
 		};
 		await firebaseHelper.AddTournament(newTourny);
 	}
@@ -67,22 +69,22 @@ public partial class TournamentsDashboard : ContentPage
 			Tournament selectedTournament = await firebaseHelper.GetTournamentByName(getTextChild.Text);
 
 			//3- Get All RegisteredUsers/Participants in the tourny.
-			List<User> allRegisteredDuelists = selectedTournament.registeredUsers;
+			//List<User> allRegisteredDuelists = selectedTournament.registeredUsers;
 
 
             //4- Check if current loggedInUser exsits in the participants list.
-            if (allRegisteredDuelists == null)
+            if (selectedTournament.registeredUsers == null)
             {
                 //Add User.
-                allRegisteredDuelists.Add(currentLoggedInUser);
-                await DisplayAlert("Alert!", $"All Registered is null, User was added! {allRegisteredDuelists[0].name}", "OK!");
+                selectedTournament.registeredUsers.Add(currentLoggedInUser);
+                await DisplayAlert("Alert!", $"All Registered is null, User was added! {selectedTournament.registeredUsers[0].name}", "OK!");
 				
                 return;
             }
 
-            if (allRegisteredDuelists != null)
+            if (selectedTournament.registeredUsers != null)
 			{
-                bool isUserExist = allRegisteredDuelists.Contains(currentLoggedInUser);
+                bool isUserExist = selectedTournament.registeredUsers.Contains(currentLoggedInUser);
                 if (isUserExist == false)
                 {
 					//Add The User to Participants List.
