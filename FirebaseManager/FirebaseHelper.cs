@@ -59,7 +59,7 @@ namespace Kudomion.FirebaseManager
         }
 
         //Update Tournament Details (Edit, apply changes to brackets, and etc..)
-        public async Task<bool> UpdateTournament(string tournyName, Tournament tourToUpdate)
+        /*public async Task<bool> UpdateTournament(string tournyName, Tournament tourToUpdate)
         {
             try
             {
@@ -72,7 +72,27 @@ namespace Kudomion.FirebaseManager
                 Debug.WriteLine($"Error. Exception: {e}");
                 return false;
             }
+        }*/
+
+        //Alternative Updating Method.
+        public async Task UpdateTournament(string tournyTitle, List<User> registeredDuelists)
+        {
+            try
+            {
+                registeredDuelists = new List<User>();
+                var tournyToUpdate = (await firebaseClient.Child("Tournaments").OnceAsync<Tournament>()).
+                    Where(t => t.Object.title == tournyTitle).FirstOrDefault();
+
+                await firebaseClient.Child("Tournaments").Child(tournyToUpdate.Key).
+                    PutAsync(new Tournament() { title = tournyTitle, registeredUsers = registeredDuelists});
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine($"Error: {e}");
+            }
         }
+
+        
 
         //Add Tournament Function
         public async Task<bool> AddTournament(Tournament tourny)

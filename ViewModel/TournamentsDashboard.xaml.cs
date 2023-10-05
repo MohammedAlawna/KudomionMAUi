@@ -12,7 +12,7 @@ public partial class TournamentsDashboard : ContentPage
 		InitializeComponent();
 
 		//Create A Trial Tournament (Comment Out when stop testing)
-		//AddTournamentTrial();
+		AddTournamentTrial();
 
 		//Load All Tournaments.
 		LoadAllTournaments();
@@ -28,7 +28,7 @@ public partial class TournamentsDashboard : ContentPage
 		Tournament newTourny = new  Tournament{
 			title = "YKJ Rapid Tournament #1",
 			tournyBannerSrc = "https://i.imgur.com/urYTQm3.png",
-			registeredUsers = {},
+			registeredUsers = new List<User>(),
 			
 		};
 		await firebaseHelper.AddTournament(newTourny);
@@ -65,22 +65,25 @@ public partial class TournamentsDashboard : ContentPage
 			//1- Get Current LoggedInUser.
 			User currentLoggedInUser = await firebaseHelper.GetUserByName(MainPage.currentLoggedInUser);
 
+
 			//2- Get Tournament Instance (that was clicked - from tourny name).
 			Tournament selectedTournament = await firebaseHelper.GetTournamentByName(getTextChild.Text);
+
 
 			//3- Get All RegisteredUsers/Participants in the tourny.
 			//List<User> allRegisteredDuelists = selectedTournament.registeredUsers;
 
-			//Debug Lines:!:
-			selectedTournament.registeredUsers.Append(currentLoggedInUser);
-			//await firebaseHelper.UpdateTournament(getTextChild.Text, selectedTournament);
+			//Debug Lines:!
+			selectedTournament.registeredUsers.Add(currentLoggedInUser);
+			await firebaseHelper.UpdateTournament(selectedTournament.title, selectedTournament.registeredUsers);
+            
 
             //4- Check if current loggedInUser exsits in the participants list.
             if (selectedTournament.registeredUsers == null)
             {
 				//Add User.
 			//	selectedTournament.registeredUsers[0];
-                await DisplayAlert("Alert!", $"All Registered is null, User was added! {selectedTournament.registeredUsers[0].name}", "OK!");
+                await DisplayAlert("Alert!", $"All Registered is null, User was added!", "OK!");
 				
                 return;
             }

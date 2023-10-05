@@ -26,7 +26,6 @@ namespace Kudomion.Model
             {
                 return posts.ToString();
             }
-           
         }
     }
 }
