@@ -29,7 +29,7 @@ namespace Kudomion.FirebaseManager
                     thirdPlace = item.Object.thirdPlace,
                     tournyBannerSrc = item.Object.tournyBannerSrc,
                     registeredUsers = item.Object.registeredUsers,
-                    roomsInTourny = item.Object.roomsInTourny,
+                    //roomsInTourny = item.Object.roomsInTourny,
                 }).ToList();
                 return tourniesList;
 
