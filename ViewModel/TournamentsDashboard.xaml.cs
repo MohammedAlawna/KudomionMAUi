@@ -74,9 +74,11 @@ public partial class TournamentsDashboard : ContentPage
 			//List<User> allRegisteredDuelists = selectedTournament.registeredUsers;
 
 			//Debug Lines:!
-			selectedTournament.registeredUsers.Add(currentLoggedInUser);
-			await firebaseHelper.UpdateTournament(selectedTournament.title, selectedTournament.registeredUsers);
-            
+			var usersInTourny = await selectedTournament.registeredUsers;
+			Tournament tournyToUpdate = new Tournament
+			{
+				registeredUsers = usersInTourny.Add(currentLoggedInUser),
+			};
 
             //4- Check if current loggedInUser exsits in the participants list.
             if (selectedTournament.registeredUsers == null)

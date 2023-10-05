@@ -59,7 +59,7 @@ namespace Kudomion.FirebaseManager
         }
 
         //Update Tournament Details (Edit, apply changes to brackets, and etc..)
-        /*public async Task<bool> UpdateTournament(string tournyName, Tournament tourToUpdate)
+        public async Task<bool> UpdateTournamentBasic(string tournyName, Tournament tourToUpdate)
         {
             try
             {
@@ -72,7 +72,7 @@ namespace Kudomion.FirebaseManager
                 Debug.WriteLine($"Error. Exception: {e}");
                 return false;
             }
-        }*/
+        }
 
         //Alternative Updating Method.
         public async Task UpdateTournament(string tournyTitle, List<User> registeredDuelists)
