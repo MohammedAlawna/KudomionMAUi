@@ -63,8 +63,18 @@ namespace Kudomion.FirebaseManager
         {
             try
             {
-                var tournyToUpdate = (await firebaseClient.Child("Tournaments").OnceAsync<Tournament>()).Where(t => t.Object.title == tournyName).FirstOrDefault();
-                await firebaseClient.Child("Tournaments").Child(tournyToUpdate.Key).PutAsync(tournyToUpdate);
+                var userToUpdate = (await firebaseClient.Child("Tournaments").OnceAsync<Tournament>()).Where(a => a.Object.title == tournyName).FirstOrDefault();
+                /*  var usrToUpdate = new User()
+                  {
+                      name = _name,
+                      password = _password,
+                      points = _points,
+                      posts = _posts,
+                      duels = _duels,
+                      ranking = _ranking,
+                      usertype = _usrtype
+                  };*/
+                await firebaseClient.Child("Tournaments").Child(userToUpdate.Key).PutAsync(tourToUpdate);
                 return true;
             }
             catch(Exception e)

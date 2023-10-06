@@ -8,6 +8,7 @@ namespace Kudomion.Model
 {
     public class Tournament
     {
+        
         public string title { get; set; }
         public User winner { get; set; }
         public User secondPlace { get; set; }
@@ -20,5 +21,10 @@ namespace Kudomion.Model
         public List<User> registeredUsers { get; set; }
         //public List<TournamentRoom> roomsInTourny { get; set; }
         //Logic implementation: here or in Tournament Details?! H/T
+
+        public Tournament()
+        {
+            registeredUsers = new List<User>();
+        }
     }
 }
