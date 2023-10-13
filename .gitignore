@@ -293,3 +293,5 @@ obj/Kudomion.csproj.nuget.g.props
 obj/Kudomion.csproj.nuget.g.targets
 obj/project.assets.json
 obj/project.nuget.cache
+.vs/Kudomion/FileContentIndex/6c9ab2d0-79ba-4667-833b-d3630e8e4d60.vsidx
+*.editorconfig
