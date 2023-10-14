@@ -125,4 +125,6 @@ public partial class TournamentsDashboard : ContentPage
 			await DisplayAlert("Error!", $"Exception: {ex}", "OK!");
 		}
     }
+
+	
 }

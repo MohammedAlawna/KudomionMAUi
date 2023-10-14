@@ -101,5 +101,10 @@ namespace Kudomion.ViewModel
             DisplayAlert("Success!", "You Successfuly Signed-Up to our tournament." ,"OK!");
             return;
         }
+
+        async void PrepareBrackets()
+        {
+            //Brackets should be shown here.
+        }
     }
 }
