@@ -105,6 +105,7 @@ namespace Kudomion.ViewModel
         async void PrepareBrackets()
         {
             //Brackets should be shown here.
+            //Follow The Algorithm you Just Prepared.
         }
     }
 }
