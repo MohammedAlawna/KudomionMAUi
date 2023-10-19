@@ -106,6 +106,31 @@ namespace Kudomion.ViewModel
         {
             //Brackets should be shown here.
             //Follow The Algorithm you Just Prepared.
+            //1- LoadAllPlayers in CurrentTournament.
+            //Shuffle Players all loaded.
+
+            //* Initialize a new List (QualifiedPlayers list), make it same as tourny players.
+            //* Remove any user who looses from the list.
+
+            //2- Create 3 Rounds
+            //Create Cards programmatically inside XAML Page.
+            //A- First Round: 4 matches
+            //Fill matches and players inside created cards in XAML.
+
+            //B- Second Round: 2 matches.
+            //Fill matches and players inside created cards in XAML (with blank)
+
+            //C- Third Round: Final match.
+            //Fill matches and players inside created cards in XAML. (with blank)
+
+
+            //3- 
+
+            //4- 
+
+            //5- 
+
+            //6- 
         }
     }
 }
