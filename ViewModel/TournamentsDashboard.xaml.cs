@@ -12,7 +12,7 @@ public partial class TournamentsDashboard : ContentPage
 		InitializeComponent();
 
 		//Create A Trial Tournament (Comment Out when stop testing)
-		AddTournamentTrial();
+		//AddTournamentTrial();
 
 		//Load All Tournaments.
 		LoadAllTournaments();

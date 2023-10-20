@@ -22,24 +22,30 @@ namespace Kudomion.ViewModel
 
         async void LoadTourmamentDetails(string name)
         {
-            //Assign TournyName to the Main Title.
-            tournamentTitle.Text = name;
-
-            //Get Tourny from DB using the passed name.
-            Tournament tournyInstance = await fbHelper.GetTournamentByName(name);
-
-            //Comment Out(Checking Details Status Only): await DisplayAlert("Alert!", $"Name: {tournyInstance.title}", "OK!");
-            //Assign Rest of The Tourny Values (Brackets, info and etc..)
-            TournamentBanner.Source = tournyInstance.tournyBannerSrc;
-            if(tournyInstance.signUpActive == false)
+            try
             {
-                SignupStatus.Text = "* CLOSED! You are not allowed to join this event.";
+                //Assign TournyName to the Main Title.
+                tournamentTitle.Text = name;
+
+                //Get Tourny from DB using the passed name.
+                Tournament tournyInstance = await fbHelper.GetTournamentByName(name);
+
+                //Comment Out(Checking Details Status Only): await DisplayAlert("Alert!", $"Name: {tournyInstance.title}", "OK!");
+                //Assign Rest of The Tourny Values (Brackets, info and etc..)
+                TournamentBanner.Source = tournyInstance.tournyBannerSrc;
+                if (tournyInstance.signUpActive == false)
+                {
+                    SignupStatus.Text = "* CLOSED! You are not allowed to join this event.";
+                }
+                if (tournyInstance.signUpActive)
+                {
+                    SignupStatus.Text = "OPEN! You are allowed to join this event.";
+                }
             }
-            if (tournyInstance.signUpActive)
+            catch(Exception e)
             {
-                SignupStatus.Text = "OPEN! You are allowed to join this event.";
-            } 
-
+                await DisplayAlert("Exception" ,$"Error: {e}", "OK!");
+            }
         }
 
         void LoadPickerItems()
