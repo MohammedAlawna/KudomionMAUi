@@ -12,7 +12,7 @@ public partial class TournamentsDashboard : ContentPage
 		InitializeComponent();
 
 		//Create A Trial Tournament (Comment Out when stop testing)
-		//AddTournamentTrial();
+		AddTournamentTrial();
 
 		//Load All Tournaments.
 		LoadAllTournaments();
@@ -77,7 +77,8 @@ public partial class TournamentsDashboard : ContentPage
 			//var usersInTourny = await selectedTournament.registeredUsers;
 			Tournament tournyToUpdate = new Tournament
 			{
-				tournyBannerSrc= "HODSFSDF",
+				title = selectedTournament.title,
+				tournyBannerSrc= selectedTournament.tournyBannerSrc,
 				registeredUsers = selectedTournament.registeredUsers.
 				Concat(new[] {currentLoggedInUser}).ToList(),
 			};
