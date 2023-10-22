@@ -75,6 +75,10 @@ public partial class TournamentsDashboard : ContentPage
 
 			//Debug Lines:!
 			//var usersInTourny = await selectedTournament.registeredUsers;
+
+			//Check if current user exist in registered users
+			//If Exist, return and throw an error that user already registered
+			//If not continure the block.
 			Tournament tournyToUpdate = new Tournament
 			{
 				title = selectedTournament.title,
