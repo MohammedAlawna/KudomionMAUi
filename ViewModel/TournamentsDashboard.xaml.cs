@@ -12,7 +12,7 @@ public partial class TournamentsDashboard : ContentPage
 		InitializeComponent();
 
 		//Create A Trial Tournament (Comment Out when stop testing)
-		AddTournamentTrial();
+		//AddTournamentTrial();
 
 		//Load All Tournaments.
 		LoadAllTournaments();
@@ -70,16 +70,34 @@ public partial class TournamentsDashboard : ContentPage
 			Tournament selectedTournament = await firebaseHelper.GetTournamentByName(getTextChild.Text);
 
 
-			//3- Get All RegisteredUsers/Participants in the tourny.
-			//List<User> allRegisteredDuelists = selectedTournament.registeredUsers;
-
-			//Debug Lines:!
-			//var usersInTourny = await selectedTournament.registeredUsers;
-
 			//Check if current user exist in registered users
 			//If Exist, return and throw an error that user already registered
-			//If not continure the block.
-			Tournament tournyToUpdate = new Tournament
+			var usersInTourny = selectedTournament.registeredUsers;
+			List<string> userStrings = new List<string>();
+            bool isUserExist;
+
+            foreach (User usr in usersInTourny)
+			{
+				userStrings.Add(usr.name.ToLower());
+			}
+			if(userStrings.Count == 0 || selectedTournament.registeredUsers == null || userStrings == null)
+			{
+				isUserExist = false;
+			}
+			isUserExist = userStrings.Contains(currentLoggedInUser.name.ToLower());
+
+			if (isUserExist)
+			{
+                await DisplayAlert("Error", "You already registered in this event!", "OK!");
+				return;
+            }
+            
+           
+           
+			
+
+            //If not continure the block.
+            Tournament tournyToUpdate = new Tournament
 			{
 				title = selectedTournament.title,
 				tournyBannerSrc= selectedTournament.tournyBannerSrc,
@@ -89,41 +107,12 @@ public partial class TournamentsDashboard : ContentPage
 
 			await firebaseHelper.UpdateTournamentBasic(selectedTournament.title, tournyToUpdate);
 
-            //4- Check if current loggedInUser exsits in the participants list.
-            if (selectedTournament.registeredUsers == null)
-            {
-				//Add User.
-			//	selectedTournament.registeredUsers[0];
-                await DisplayAlert("Alert!", $"All Registered is null, User was added!", "OK!");
-				
-                return;
-            }
 
-            if (selectedTournament.registeredUsers != null)
-			{
-                bool isUserExist = selectedTournament.registeredUsers.Contains(currentLoggedInUser);
-                if (isUserExist == false)
-                {
-					//Add The User to Participants List.
-
-                }
-
-                if (isUserExist == true)
-				{
-					//Prompt a message saying that user already exists.
-					await DisplayAlert("Alert!", "You already Registered in the tournament.", "OK!");
-					return;
-
-				}
-				
-            }
-
-      
-            //5- Disable The Join Button.
-
+			//5- Disable The Join/Sign-Up Button.
+			getCurrent.IsEnabled = false;
 
             //Debugging Line Only..
-            await DisplayAlert("Success!", $"You Joined The Tournament: {selectedTournament.title}, LoggedIn: {currentLoggedInUser.name}, Bool:", "OK!");
+            await DisplayAlert("Success!", $"You Joined The Tournament: ", "OK!");
 		}
 		catch(Exception ex)
 		{
