@@ -13,6 +13,8 @@ namespace Kudomion.ViewModel
     public partial class TournamentDetails : ContentPage
     {
         FirebaseHelper fbHelper = new FirebaseHelper();
+        Tournament tournyInstance;
+        readonly string currentTournyTitle;
         public TournamentDetails(string tournamentName)
         {
             InitializeComponent();
@@ -28,7 +30,7 @@ namespace Kudomion.ViewModel
                 tournamentTitle.Text = name;
 
                 //Get Tourny from DB using the passed name.
-                Tournament tournyInstance = await fbHelper.GetTournamentByName(name);
+                tournyInstance = await fbHelper.GetTournamentByName(name);
 
                 //Comment Out(Checking Details Status Only): await DisplayAlert("Alert!", $"Name: {tournyInstance.title}", "OK!");
                 //Assign Rest of The Tourny Values (Brackets, info and etc..)
@@ -108,35 +110,32 @@ namespace Kudomion.ViewModel
             return;
         }
 
+
+
         async void PrepareBrackets()
         {
             //Brackets should be shown here.
             //Follow The Algorithm you Just Prepared.
-            //1- LoadAllPlayers in CurrentTournament.
-            //Shuffle Players all loaded.
+            //1- ReInitialize TournyInstance to avoid any error.
+            tournyInstance = await fbHelper.GetTournamentByName(currentTournyTitle);
+            // TODO: Shuffle Players all loaded.
 
             //* Initialize a new List (QualifiedPlayers list), make it same as tourny players.
             //* Remove any user who looses from the list.
+            List<User> qualifiedPlayers = tournyInstance.registeredUsers;
 
             //2- Create 3 Rounds
-            //Create Cards programmatically inside XAML Page.
             //A- First Round: 4 matches
-            //Fill matches and players inside created cards in XAML.
+            //Matches are filled with P's(8) from qualifiedPlayers list.
 
             //B- Second Round: 2 matches.
-            //Fill matches and players inside created cards in XAML (with blank)
+            //Eliminate Players who lost.
+            //Matches are filled with P's(4) from qualifiedPlayers list.
 
             //C- Third Round: Final match.
-            //Fill matches and players inside created cards in XAML. (with blank)
+            //Eliminate players who lost.
+            //Final Match is filled with P's(2) from remaining of qualifiedPlayers list.
 
-
-            //3- 
-
-            //4- 
-
-            //5- 
-
-            //6- 
         }
     }
 }
