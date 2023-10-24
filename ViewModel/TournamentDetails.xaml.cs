@@ -23,7 +23,7 @@ namespace Kudomion.ViewModel
             InitializeComponent();
             LoadPickerItems();
             LoadTourmamentDetails(tournamentName);
-            PrepareBrackets();
+            //PrepareBrackets();
         }
 
         async void LoadTourmamentDetails(string name)
@@ -47,6 +47,11 @@ namespace Kudomion.ViewModel
                 {
                     SignupStatus.Text = "OPEN! You are allowed to join this event.";
                 }
+
+                //Load Brackets
+                var qualifiedPlayers = new List<User>(tournyInstance.registeredUsers);
+                await DisplayAlert("Alert!", $"Qualified: {qualifiedPlayers[0].name}", "OK!");
+
             }
             catch(Exception e)
             {
