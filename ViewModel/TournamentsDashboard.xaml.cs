@@ -69,6 +69,12 @@ public partial class TournamentsDashboard : ContentPage
 			//2- Get Tournament Instance (that was clicked - from tourny name).
 			Tournament selectedTournament = await firebaseHelper.GetTournamentByName(getTextChild.Text);
 
+			//Check if RegisteredUsers equal 8 (may be updated in upcoming releases)
+			if(selectedTournament.registeredUsers.Count == 8)
+			{
+				await DisplayAlert("Tournament System", "Reached Maximum number of participants.", "OK!");
+				return;
+			}
 
 			//Check if current user exist in registered users
 			//If Exist, return and throw an error that user already registered
