@@ -51,11 +51,37 @@ namespace Kudomion.ViewModel
                 //Load Brackets (Cloning all registered users)
                 var qualifiedPlayers = new List<User>(tournyInstance.registeredUsers);
                 
+                //Testing Line.
+                R1P1.Text = qualifiedPlayers[0].name;
+                return;
+
                 //Check if number of qualifiedPlayers equals 8
                 //if "YES" prepare brackets, if "NOT" do not
-                if(qualifiedPlayers.Count == 8)
+                if (qualifiedPlayers.Count == 8)
                 {
-                    //Prepare Brackets
+                    //Prepare Brackets, start round! => R1, R2, R3..
+                    //2- Create 3 Rounds
+                    //A- First Round: 4 matches
+                    //Matches are filled with P's(8) from qualifiedPlayers list.
+                     R1P1.Text = qualifiedPlayers[0].name;
+                    /* R1P2.Text = qualifiedPlayers[1].name;
+                     R1P3.Text = qualifiedPlayers[2].name;
+                     R1P4.Text = qualifiedPlayers[3].name;
+                     R1P5.Text = qualifiedPlayers[4].name;
+                     R1P6.Text = qualifiedPlayers[5].name;
+                     R1P7.Text = qualifiedPlayers[6].name;
+                     R1P8.Text = qualifiedPlayers[7].name;*/
+
+
+                    //B- Second Round: 2 matches.
+                    //Eliminate Players who lost.
+                    //Matches are filled with P's(4) from qualifiedPlayers list.
+
+
+                    //C- Third Round: Final match.
+                    //Eliminate players who lost.
+                    //Final Match is filled with P's(2) from remaining of qualifiedPlayers list.
+
                 }
                 else
                 {
