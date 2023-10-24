@@ -48,9 +48,21 @@ namespace Kudomion.ViewModel
                     SignupStatus.Text = "OPEN! You are allowed to join this event.";
                 }
 
-                //Load Brackets
+                //Load Brackets (Cloning all registered users)
                 var qualifiedPlayers = new List<User>(tournyInstance.registeredUsers);
-                await DisplayAlert("Alert!", $"Qualified: {qualifiedPlayers[0].name}", "OK!");
+                
+                //Check if number of qualifiedPlayers equals 8
+                //if "YES" prepare brackets, if "NOT" do not
+                if(qualifiedPlayers.Count == 8)
+                {
+                    //Prepare Brackets
+                }
+                else
+                {
+                    //Prompt indicator message.
+                    await DisplayAlert("Bracket Auto System", "Brackets will be available once the number of required participants satisfied", "OK!");
+                    return;
+                }
 
             }
             catch(Exception e)
