@@ -51,9 +51,9 @@ namespace Kudomion.ViewModel
                 //Load Brackets (Cloning all registered users)
                 var qualifiedPlayers = new List<User>(tournyInstance.registeredUsers);
                 
-                //Testing Line.
+                /* Testing Line. (Commented out)
                 R1P1.Text = qualifiedPlayers[0].name;
-                return;
+                return; */
 
                 //Check if number of qualifiedPlayers equals 8
                 //if "YES" prepare brackets, if "NOT" do not
@@ -64,13 +64,13 @@ namespace Kudomion.ViewModel
                     //A- First Round: 4 matches
                     //Matches are filled with P's(8) from qualifiedPlayers list.
                      R1P1.Text = qualifiedPlayers[0].name;
-                    /* R1P2.Text = qualifiedPlayers[1].name;
+                     R1P2.Text = qualifiedPlayers[1].name;
                      R1P3.Text = qualifiedPlayers[2].name;
                      R1P4.Text = qualifiedPlayers[3].name;
                      R1P5.Text = qualifiedPlayers[4].name;
                      R1P6.Text = qualifiedPlayers[5].name;
                      R1P7.Text = qualifiedPlayers[6].name;
-                     R1P8.Text = qualifiedPlayers[7].name;*/
+                     R1P8.Text = qualifiedPlayers[7].name;
 
 
                     //B- Second Round: 2 matches.
@@ -150,58 +150,10 @@ namespace Kudomion.ViewModel
           
         }
         
-        async void PrepareBrackets()
-        {
-            try
-            {
-                //Brackets should be shown here.
-                //Follow The Algorithm you Just Prepared.
-                //1- ReInitialize TournyInstance to avoid any error.
-                Tournament tournyInstance = await fbHelper.GetTournamentByName(currentTournyTitle);
-                // TODO: Shuffle Players all loaded.
-               
-                //* Initialize a new List (QualifiedPlayers list), make it same as tourny players.
-                //* Remove any user who looses from the list.
-             
-                var qualifiedPlayers = new List<User>();
-
-                await DisplayAlert("Hola!", $"Tourny Inst: {tournyInstance.title}", "OK!");
-                //2- Create 3 Rounds
-                //A- First Round: 4 matches
-                //Matches are filled with P's(8) from qualifiedPlayers list.
-               // R1P1.Text = qualifiedPlayers[0].name;
-               /* R1P2.Text = qualifiedPlayers[1].name;
-                R1P3.Text = qualifiedPlayers[2].name;
-                R1P4.Text = qualifiedPlayers[3].name;
-                R1P5.Text = qualifiedPlayers[4].name;
-                R1P6.Text = qualifiedPlayers[5].name;
-                R1P7.Text = qualifiedPlayers[6].name;
-                R1P8.Text = qualifiedPlayers[7].name;*/
-
-
-                //B- Second Round: 2 matches.
-                //Eliminate Players who lost.
-                //Matches are filled with P's(4) from qualifiedPlayers list.
-
-
-                //C- Third Round: Final match.
-                //Eliminate players who lost.
-                //Final Match is filled with P's(2) from remaining of qualifiedPlayers list.
-            }
-            catch (Exception e)
-            {
-                await DisplayAlert("Error", $"Exception: {e}", "OK!");
-            }
-        }
-        
         private void JoinBtn_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Success!", "You Successfuly Signed-Up to our tournament." ,"OK!");
             return;
         }
-
-
-
-        
     }
 }
