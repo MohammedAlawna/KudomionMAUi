@@ -97,6 +97,23 @@ namespace Kudomion.ViewModel
             }
         }
 
+        void SetUpSimpleAdminPanel()
+        {
+            //Create 2 Btns => (Second Round, Final Round)
+
+        }
+
+        async void SecondRound()
+        {
+
+        }
+
+        async void FinalRound()
+        {
+
+        }
+
+
         void LoadPickerItems()
         {
             tournamentState.Items.Add("Info");
