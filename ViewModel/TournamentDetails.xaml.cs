@@ -16,14 +16,14 @@ namespace Kudomion.ViewModel
         FirebaseHelper fbHelper = new FirebaseHelper();
        // Tournament tournyInstance;
         readonly string currentTournyTitle;
-
+        public static List<User> semiFinals = new List<User>();
         
         public TournamentDetails(string tournamentName)
         {
             InitializeComponent();
             LoadPickerItems();
             LoadTourmamentDetails(tournamentName);
-            //PrepareBrackets();
+            
         }
 
         async void LoadTourmamentDetails(string name)
@@ -48,8 +48,6 @@ namespace Kudomion.ViewModel
                     SignupStatus.Text = "OPEN! You are allowed to join this event.";
                 }
 
-                //Load Brackets (Cloning all registered users)
-                var qualifiedPlayers = new List<User>(tournyInstance.registeredUsers);
                 
                 /* Testing Line. (Commented out)
                 R1P1.Text = qualifiedPlayers[0].name;
@@ -57,20 +55,20 @@ namespace Kudomion.ViewModel
 
                 //Check if number of qualifiedPlayers equals 8
                 //if "YES" prepare brackets, if "NOT" do not
-                if (qualifiedPlayers.Count == 8)
+                if (tournyInstance.registeredUsers.Count == 8)
                 {
                     //Prepare Brackets, start round! => R1, R2, R3..
                     //2- Create 3 Rounds
                     //A- First Round: 4 matches
                     //Matches are filled with P's(8) from qualifiedPlayers list.
-                     R1P1.Text = qualifiedPlayers[0].name;
-                     R1P2.Text = qualifiedPlayers[1].name;
-                     R1P3.Text = qualifiedPlayers[2].name;
-                     R1P4.Text = qualifiedPlayers[3].name;
-                     R1P5.Text = qualifiedPlayers[4].name;
-                     R1P6.Text = qualifiedPlayers[5].name;
-                     R1P7.Text = qualifiedPlayers[6].name;
-                     R1P8.Text = qualifiedPlayers[7].name;
+                     R1P1.Text = tournyInstance.registeredUsers[0].name;
+                     R1P2.Text = tournyInstance.registeredUsers[1].name;
+                     R1P3.Text = tournyInstance.registeredUsers[2].name;
+                     R1P4.Text = tournyInstance.registeredUsers[3].name;
+                     R1P5.Text = tournyInstance.registeredUsers[4].name;
+                     R1P6.Text = tournyInstance.registeredUsers[5].name;
+                     R1P7.Text = tournyInstance.registeredUsers[6].name;
+                     R1P8.Text = tournyInstance.registeredUsers[7].name;
 
 
                     //B- Second Round: 2 matches.
@@ -105,7 +103,7 @@ namespace Kudomion.ViewModel
 
         async void SecondRound()
         {
-
+            //Eliminate Lost Duelists..
         }
 
         async void FinalRound()
