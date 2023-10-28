@@ -23,7 +23,7 @@ namespace Kudomion.ViewModel
             InitializeComponent();
             LoadPickerItems();
             LoadTourmamentDetails(tournamentName);
-            
+            SetUpSimpleAdminPanel();
         }
 
         async void LoadTourmamentDetails(string name)
@@ -98,7 +98,10 @@ namespace Kudomion.ViewModel
         void SetUpSimpleAdminPanel()
         {
             //Create 2 Btns => (Second Round, Final Round)
-
+            if(MainPage.currentUser.usertype == "ADMIN")
+            {
+                DisplayAlert("Alert!", $"Current Logged In User is Admin: {MainPage.currentUser.name}", "OK!");
+            }
         }
 
         async void SecondRound()
