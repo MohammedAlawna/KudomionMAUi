@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Google.Crypto.Tink.Proto;
 
 namespace Kudomion.ViewModel
 {
@@ -165,24 +165,38 @@ namespace Kudomion.ViewModel
 
         private async void ProcessSecondRound(object sender, EventArgs e)
         {
-            //Process Round (From SecondRound List)..
-            Tournament currentTourny = await fbHelper.GetTournamentByName(tournamentTitle.Text);
+            try
+            {
+                //Process Round (From SecondRound List)..
+                Tournament currentTourny = await fbHelper.GetTournamentByName(tournamentTitle.Text);
 
-            //Assign Duels
-            R2P1.Text = currentTourny.semiFinals[0].name;
-            R2P2.Text = currentTourny.semiFinals[1].name;
-            R2P3.Text = currentTourny.semiFinals[2].name;
-            R2P4.Text = currentTourny.semiFinals[3].name;
+                //Assign Duels
+                R2P1.Text = currentTourny.semiFinals[0].name;
+                R2P2.Text = currentTourny.semiFinals[1].name;
+                R2P3.Text = currentTourny.semiFinals[2].name;
+                R2P4.Text = currentTourny.semiFinals[3].name;
+            }
+            catch(Exception ex)
+            {
+                await DisplayAlert("Alert", $"An Exception: {ex}", "OK!");
+            }
         }
 
         private async void ProcessFinal(object sender, EventArgs e)
         {
-            //Process Final Round (From FinalRound List)..
-            Tournament currentTourny = await fbHelper.GetTournamentByName(tournamentTitle.Text);
+            try
+            {
+                //Process Final Round (From FinalRound List)..
+                Tournament currentTourny = await fbHelper.GetTournamentByName(tournamentTitle.Text);
 
-            //Assign Final Duels
-            R3P1.Text = currentTourny.final[0].name;
-            R3P2.Text = currentTourny.final[1].name;
+                //Assign Final Duels
+                R3P1.Text = currentTourny.final[0].name;
+                R3P2.Text = currentTourny.final[1].name;
+            }
+            catch(Exception ex)
+            {
+                await DisplayAlert("Alert", $"An Exception: {ex}", "OK!");
+            }
         }
     }
 }
