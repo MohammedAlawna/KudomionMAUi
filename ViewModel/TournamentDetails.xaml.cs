@@ -14,9 +14,6 @@ namespace Kudomion.ViewModel
     public partial class TournamentDetails : ContentPage
     {
         FirebaseHelper fbHelper = new FirebaseHelper();
-       // Tournament tournyInstance;
-        readonly string currentTournyTitle;
-        
         
         public TournamentDetails(string tournamentName)
         {

@@ -12,7 +12,7 @@ public partial class TournamentsDashboard : ContentPage
 		InitializeComponent();
 
 		//Create A Trial Tournament (Comment Out when stop testing)
-		//AddTournamentTrial();
+		AddTournamentTrial();
 
 		//Load All Tournaments.
 		LoadAllTournaments();
@@ -25,10 +25,14 @@ public partial class TournamentsDashboard : ContentPage
 
 	async void AddTournamentTrial()
 	{
+		var dummySemiFinals = new List<User>();
+		dummySemiFinals.Add(new User { name = "dummyUser"});
 		Tournament newTourny = new  Tournament{
-			title = "YKJ Rapid Tournament #1",
+			title = "YKJ Live Tournament #1",
 			tournyBannerSrc = "https://i.imgur.com/urYTQm3.png",
-			registeredUsers = new List<User>(),
+			registeredUsers = dummySemiFinals,
+			semiFinals = dummySemiFinals,
+			final = dummySemiFinals,
 			
 		};
 		await firebaseHelper.AddTournament(newTourny);
