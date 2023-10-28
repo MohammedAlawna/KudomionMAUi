@@ -18,6 +18,12 @@
 
                 <Image Margin="3" x:Name="TournamentBanner" HeightRequest="250" Source="https://i.imgur.com/7YZAM21.jpg" />
 
+                <StackLayout x:Name="TournamentSimpleCP" IsVisible="false" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Tournament Manager Beta" FontSize="17" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                    <Button Clicked="ProcessSecondRound" FontSize="15" WidthRequest="145" Text="Second Round" BackgroundColor="Orange" HorizontalOptions="CenterAndExpand" Margin="3"/>
+                    <Button Clicked="ProcessFinal" Text="Final Round" WidthRequest="145" BackgroundColor="#d95555" HorizontalOptions="CenterAndExpand" Margin="3"/>
+                </StackLayout>
+                
                 <StackLayout Orientation="Vertical" Margin="3">
                     <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="tournamentState" TextColor="White" BackgroundColor="#323232"/>
                 </StackLayout>
@@ -104,9 +110,7 @@
                                     <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
                                     <Label x:Name="R2P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
                                 </StackLayout>
-                                </StackLayout>
-
-
+                            </StackLayout>
                         </Frame>
 
 

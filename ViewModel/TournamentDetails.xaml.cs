@@ -16,7 +16,7 @@ namespace Kudomion.ViewModel
         FirebaseHelper fbHelper = new FirebaseHelper();
        // Tournament tournyInstance;
         readonly string currentTournyTitle;
-        public static List<User> semiFinals = new List<User>();
+        
         
         public TournamentDetails(string tournamentName)
         {
@@ -25,6 +25,8 @@ namespace Kudomion.ViewModel
             LoadTourmamentDetails(tournamentName);
             SetUpSimpleAdminPanel();
         }
+
+       
 
         async void LoadTourmamentDetails(string name)
         {
@@ -48,13 +50,9 @@ namespace Kudomion.ViewModel
                     SignupStatus.Text = "OPEN! You are allowed to join this event.";
                 }
 
-                
-                /* Testing Line. (Commented out)
-                R1P1.Text = qualifiedPlayers[0].name;
-                return; */
 
-                //Check if number of qualifiedPlayers equals 8
-                //if "YES" prepare brackets, if "NOT" do not
+                //Check if number of registeredPlayers equals to 8
+                //If "YES" prepare brackets, if "NOT" do not
                 if (tournyInstance.registeredUsers.Count == 8)
                 {
                     //Prepare Brackets, start round! => R1, R2, R3..
@@ -100,18 +98,9 @@ namespace Kudomion.ViewModel
             //Create 2 Btns => (Second Round, Final Round)
             if(MainPage.currentUser.usertype == "ADMIN")
             {
-                DisplayAlert("Alert!", $"Current Logged In User is Admin: {MainPage.currentUser.name}", "OK!");
+                //Show the hidden text and button in current XAML.
+                TournamentSimpleCP.IsVisible = true;
             }
-        }
-
-        async void SecondRound()
-        {
-            //Eliminate Lost Duelists..
-        }
-
-        async void FinalRound()
-        {
-
         }
 
 
@@ -172,6 +161,28 @@ namespace Kudomion.ViewModel
         {
             DisplayAlert("Success!", "You Successfuly Signed-Up to our tournament." ,"OK!");
             return;
+        }
+
+        private async void ProcessSecondRound(object sender, EventArgs e)
+        {
+            //Process Round (From SecondRound List)..
+            Tournament currentTourny = await fbHelper.GetTournamentByName(tournamentTitle.Text);
+
+            //Assign Duels
+            R2P1.Text = currentTourny.semiFinals[0].name;
+            R2P2.Text = currentTourny.semiFinals[1].name;
+            R2P3.Text = currentTourny.semiFinals[2].name;
+            R2P4.Text = currentTourny.semiFinals[3].name;
+        }
+
+        private async void ProcessFinal(object sender, EventArgs e)
+        {
+            //Process Final Round (From FinalRound List)..
+            Tournament currentTourny = await fbHelper.GetTournamentByName(tournamentTitle.Text);
+
+            //Assign Final Duels
+            R3P1.Text = currentTourny.final[0].name;
+            R3P2.Text = currentTourny.final[1].name;
         }
     }
 }
