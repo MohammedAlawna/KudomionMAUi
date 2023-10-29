@@ -25,14 +25,12 @@ public partial class TournamentsDashboard : ContentPage
 
 	async void AddTournamentTrial()
 	{
-		var dummySemiFinals = new List<User>();
-		dummySemiFinals.Add(new User { name = "dummyUser"});
+		
 		Tournament newTourny = new  Tournament{
 			title = "YKJ Live Tournament #1",
 			tournyBannerSrc = "https://i.imgur.com/urYTQm3.png",
-			registeredUsers = dummySemiFinals,
-			semiFinals = dummySemiFinals,
-			final = dummySemiFinals,
+			registeredUsers = new List<User>(),
+			
 			
 		};
 		await firebaseHelper.AddTournament(newTourny);
@@ -101,10 +99,9 @@ public partial class TournamentsDashboard : ContentPage
                 await DisplayAlert("Error", "You already registered in this event!", "OK!");
 				return;
             }
-            
-           
-           
-			
+
+            var dummySemiFinals = new List<User>();
+            dummySemiFinals.Add(new User { name = "dummyUser" });
 
             //If not continure the block.
             Tournament tournyToUpdate = new Tournament
@@ -113,6 +110,8 @@ public partial class TournamentsDashboard : ContentPage
 				tournyBannerSrc= selectedTournament.tournyBannerSrc,
 				registeredUsers = selectedTournament.registeredUsers.
 				Concat(new[] {currentLoggedInUser}).ToList(),
+				semiFinals = dummySemiFinals,
+				final = dummySemiFinals,
 			};
 
 			await firebaseHelper.UpdateTournamentBasic(selectedTournament.title, tournyToUpdate);
