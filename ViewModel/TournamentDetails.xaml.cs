@@ -34,6 +34,11 @@ namespace Kudomion.ViewModel
                 //Get Tourny from DB using the passed name.
                 Tournament tournyInstance = await fbHelper.GetTournamentByName(name);
 
+                //Testing Line
+                tournyInstance.semiFinals.Add(new User { name="Mo3taz"});
+                await fbHelper.UpdateTournamentBasic(name, tournyInstance);
+                Debug.WriteLine("Semi-Finals: "+ tournyInstance.semiFinals.Count);
+
                 //Comment Out(Checking Details Status Only): await DisplayAlert("Alert!", $"Name: {tournyInstance.title}", "OK!");
                 //Assign Rest of The Tourny Values (Brackets, info and etc..)
                 TournamentBanner.Source = tournyInstance.tournyBannerSrc;
@@ -63,7 +68,7 @@ namespace Kudomion.ViewModel
                      R1P6.Text = tournyInstance.registeredUsers[5].name;
                      R1P7.Text = tournyInstance.registeredUsers[6].name;
                      R1P8.Text = tournyInstance.registeredUsers[7].name;
-                    Console.WriteLine(tournyInstance.semiFinals.Count);
+                   
 
                     //B- Second Round: 2 matches.
                     //Eliminate Players who lost.

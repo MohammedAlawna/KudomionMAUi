@@ -33,6 +33,7 @@ public partial class TournamentsDashboard : ContentPage
 			final = new List<User>(),
 		};
 		await firebaseHelper.AddTournament(newTourny);
+		//await DisplayAlert("UI Debugger", $"SemiFinals: {newTourny.semiFinals.Count}", "OK!");
 	}
 
     private async void ViewDetailsButtonClicked(object sender, EventArgs e)
@@ -99,9 +100,7 @@ public partial class TournamentsDashboard : ContentPage
                 await DisplayAlert("Error", "You already registered in this event!", "OK!");
 				return;
             }
-
-            var dummySemiFinals = new List<User>();
-            dummySemiFinals.Add(new User { name = "dummyUser" });
+        
 
             //If not continure the block.
             Tournament tournyToUpdate = new Tournament
@@ -110,19 +109,13 @@ public partial class TournamentsDashboard : ContentPage
 				tournyBannerSrc= selectedTournament.tournyBannerSrc,
 				registeredUsers = selectedTournament.registeredUsers.
 				Concat(new[] {currentLoggedInUser}).ToList(),
-				semiFinals = selectedTournament.semiFinals.Concat(new[] {currentLoggedInUser}).ToList(),
-				final = selectedTournament.final.Concat(new[] {currentLoggedInUser}).ToList(),
+				
 			};
 
-			//Testing Line
-			Debug.WriteLine(selectedTournament.semiFinals.Count + ", " + selectedTournament.registeredUsers.Count);
-
-
             await firebaseHelper.UpdateTournamentBasic(selectedTournament.title, tournyToUpdate);
-
-
-			//5- Disable The Join/Sign-Up Button.
-			getCurrent.IsEnabled = false;
+           
+            //5- Disable The Join/Sign-Up Button.
+            getCurrent.IsEnabled = false;
 
             //Debugging Line Only..
             await DisplayAlert("Success!", $"You Joined The Tournament: ", "OK!");
