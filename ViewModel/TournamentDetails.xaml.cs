@@ -63,7 +63,7 @@ namespace Kudomion.ViewModel
                      R1P6.Text = tournyInstance.registeredUsers[5].name;
                      R1P7.Text = tournyInstance.registeredUsers[6].name;
                      R1P8.Text = tournyInstance.registeredUsers[7].name;
-
+                    Console.WriteLine(tournyInstance.semiFinals.Count);
 
                     //B- Second Round: 2 matches.
                     //Eliminate Players who lost.
@@ -165,7 +165,8 @@ namespace Kudomion.ViewModel
             {
                 //Process Round (From SecondRound List)..
                 Tournament currentTourny = await fbHelper.GetTournamentByName(tournamentTitle.Text);
-
+                Console.WriteLine(currentTourny.semiFinals.Count);
+                return;
                 //Assign Duels
                 R2P1.Text = currentTourny.semiFinals[0].name;
                 R2P2.Text = currentTourny.semiFinals[1].name;

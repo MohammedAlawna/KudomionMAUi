@@ -12,7 +12,7 @@ public partial class TournamentsDashboard : ContentPage
 		InitializeComponent();
 
 		//Create A Trial Tournament (Comment Out when stop testing)
-		AddTournamentTrial();
+		//AddTournamentTrial();
 
 		//Load All Tournaments.
 		LoadAllTournaments();
@@ -25,13 +25,12 @@ public partial class TournamentsDashboard : ContentPage
 
 	async void AddTournamentTrial()
 	{
-		
 		Tournament newTourny = new  Tournament{
 			title = "YKJ Live Tournament #1",
 			tournyBannerSrc = "https://i.imgur.com/urYTQm3.png",
-			registeredUsers = new List<User>(),
-			
-			
+			registeredUsers = new List<User>(),	
+			semiFinals = new List<User>(),
+			final = new List<User>(),
 		};
 		await firebaseHelper.AddTournament(newTourny);
 	}
@@ -74,6 +73,7 @@ public partial class TournamentsDashboard : ContentPage
 			//Check if RegisteredUsers equal 8 (may be updated in upcoming releases)
 			if(selectedTournament.registeredUsers.Count == 8)
 			{
+				
 				await DisplayAlert("Tournament System", "Reached Maximum number of participants.", "OK!");
 				return;
 			}
@@ -110,11 +110,15 @@ public partial class TournamentsDashboard : ContentPage
 				tournyBannerSrc= selectedTournament.tournyBannerSrc,
 				registeredUsers = selectedTournament.registeredUsers.
 				Concat(new[] {currentLoggedInUser}).ToList(),
-				semiFinals = dummySemiFinals,
-				final = dummySemiFinals,
+				semiFinals = selectedTournament.semiFinals.Concat(new[] {currentLoggedInUser}).ToList(),
+				final = selectedTournament.final.Concat(new[] {currentLoggedInUser}).ToList(),
 			};
 
-			await firebaseHelper.UpdateTournamentBasic(selectedTournament.title, tournyToUpdate);
+			//Testing Line
+			Debug.WriteLine(selectedTournament.semiFinals.Count + ", " + selectedTournament.registeredUsers.Count);
+
+
+            await firebaseHelper.UpdateTournamentBasic(selectedTournament.title, tournyToUpdate);
 
 
 			//5- Disable The Join/Sign-Up Button.
