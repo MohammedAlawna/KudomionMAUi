@@ -51,7 +51,13 @@
         ContentTemplate="{DataTemplate local:Challenges}"
         />
 
-       <!--<ShellContent
+        <ShellContent
+        Title="About"
+        FlyoutIcon="notif"
+        ContentTemplate="{DataTemplate local:About}"
+        />
+
+        <!--<ShellContent
         Icon="newss"        
         Title="News"
         ContentTemplate="{DataTemplate viewModel:NewsFeed}"
@@ -79,10 +85,7 @@
         FlyoutIcon="notif"
         />
 
-        <ShellContent
-        Title="About"
-        FlyoutIcon="notif"
-        />-->
+      -->
 
     </FlyoutItem>
 
