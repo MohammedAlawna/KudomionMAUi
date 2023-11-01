@@ -19,7 +19,6 @@ namespace Kudomion.ViewModel
             InitializeComponent();
             LoadPickerItems();
             LoadTourmamentDetails(tournamentName);
-            SetUpSimpleAdminPanel();
         }
 
        
@@ -76,10 +75,20 @@ namespace Kudomion.ViewModel
                     return;
                 }
 
-                // Semi-Finals Checker..
+                // Semi-Finals (Round-2) Checker..
                 if(tournyInstance.semiFinals.Count == 4)
                 {
-                    //
+                    R2P1.Text = tournyInstance.semiFinals[0].name;
+                    R2P2.Text = tournyInstance.semiFinals[1].name;
+                    R2P3.Text = tournyInstance.semiFinals[2].name;
+                    R2P4.Text = tournyInstance.semiFinals[3].name;
+                }
+
+                // Final (Round-3) Checker..
+                if(tournyInstance.final.Count == 2)
+                {
+                    R3P1.Text = tournyInstance.final[0].name;
+                    R3P2.Text = tournyInstance.final[1].name;
                 }
 
             }
@@ -89,15 +98,6 @@ namespace Kudomion.ViewModel
             }
         }
 
-        void SetUpSimpleAdminPanel()
-        {
-            //Create 2 Btns => (Second Round, Final Round)
-            if(MainPage.currentUser.usertype == "ADMIN")
-            {
-                //Show the hidden text and button in current XAML.
-                TournamentSimpleCP.IsVisible = true;
-            }
-        }
 
 
         void LoadPickerItems()

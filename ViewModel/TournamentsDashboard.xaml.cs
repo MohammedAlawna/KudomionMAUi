@@ -30,8 +30,8 @@ public partial class TournamentsDashboard : ContentPage
 			title = "YKJ Live Tournament #1",
 			tournyBannerSrc = "https://i.imgur.com/urYTQm3.png",
 			registeredUsers = new List<User>(),	
-			semiFinals = new List<User>(),
-			final = new List<User>(),
+			semiFinals = new List<User>() { new User { name = "KuDo" } },
+			final = new List<User>() { new User { name = "KuDo" } },
 		};
 		await firebaseHelper.AddTournament(newTourny);
 		//await DisplayAlert("UI Debugger", $"SemiFinals: {newTourny.semiFinals.Count}", "OK!");
@@ -110,7 +110,8 @@ public partial class TournamentsDashboard : ContentPage
 				tournyBannerSrc= selectedTournament.tournyBannerSrc,
 				registeredUsers = selectedTournament.registeredUsers.
 				Concat(new[] {currentLoggedInUser}).ToList(),
-				
+				semiFinals = selectedTournament.semiFinals,
+				final = selectedTournament.final,
 			};
 
             await firebaseHelper.UpdateTournamentBasic(selectedTournament.title, tournyToUpdate);
