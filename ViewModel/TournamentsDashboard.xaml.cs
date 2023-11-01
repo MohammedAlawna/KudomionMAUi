@@ -11,6 +11,7 @@ public partial class TournamentsDashboard : ContentPage
 	{
 		InitializeComponent();
 
+
 		//Create A Trial Tournament (Comment Out when stop testing)
 		//AddTournamentTrial();
 

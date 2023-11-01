@@ -35,9 +35,9 @@ namespace Kudomion.ViewModel
                 Tournament tournyInstance = await fbHelper.GetTournamentByName(name);
 
                 //Testing Line
-                tournyInstance.semiFinals.Add(new User { name="Mo3taz"});
-                await fbHelper.UpdateTournamentBasic(name, tournyInstance);
-                Debug.WriteLine("Semi-Finals: "+ tournyInstance.semiFinals.Count);
+                /*tournyInstance.semiFinals.Add(new User { name="Mo3taz"});
+                await fbHelper.UpdateTournamentBasic(name, tournyInstance);*/
+                Debug.WriteLine("Semi-Finals: " + tournyInstance.semiFinals.Count);
 
                 //Comment Out(Checking Details Status Only): await DisplayAlert("Alert!", $"Name: {tournyInstance.title}", "OK!");
                 //Assign Rest of The Tourny Values (Brackets, info and etc..)
