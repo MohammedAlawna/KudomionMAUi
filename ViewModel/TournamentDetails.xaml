@@ -15,11 +15,9 @@
             TextColor="White"
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
-
+                
                 <Image Margin="3" x:Name="TournamentBanner" HeightRequest="250" Source="https://i.imgur.com/7YZAM21.jpg" />
 
-              
-              
                 <StackLayout Orientation="Vertical" Margin="3">
                     <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="tournamentState" TextColor="White" BackgroundColor="#323232"/>
                 </StackLayout>
@@ -40,7 +38,6 @@
                     <Label Text="- If the tournament slots were full, then the Join button will be disabled / give an error message when you try to click it." FontSize="16" TextColor="White"/>
                     <Button Text="Join" BackgroundColor="RoyalBlue" Clicked="JoinBtn_Clicked"/>
                     <Label Text="* You are allowed/not allowed to join this event." x:Name="SignupStatus" FontSize="16" TextColor="White"/>
-
                 </StackLayout>
 
                 <StackLayout x:Name="bracket" IsVisible="false" Margin="5">
@@ -54,7 +51,7 @@
                                     <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
                                     <Label x:Name="R1P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
                                 </StackLayout>
-                                </StackLayout>
+                            </StackLayout>
                         </Frame>
 
                         <StackLayout>
@@ -66,7 +63,7 @@
                                         <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
                                         <Label x:Name="R1P4" Margin="13" Text="Player 4" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
                                     </StackLayout>
-                                      </StackLayout>
+                                </StackLayout>
                             </Frame>
                         </StackLayout>
 
@@ -79,7 +76,7 @@
                                         <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
                                         <Label x:Name="R1P6" Margin="13" Text="Player 6" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
                                     </StackLayout>
-                                 </StackLayout>
+                                </StackLayout>
                             </Frame>
                         </StackLayout>
 
@@ -92,7 +89,7 @@
                                         <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
                                         <Label x:Name="R1P8" Margin="13" Text="Player 8" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
                                     </StackLayout>
-                                    </StackLayout>
+                                </StackLayout>
                             </Frame>
                         </StackLayout>
                     </StackLayout>
@@ -119,7 +116,7 @@
                                 <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
                                 <Label x:Name="R2P4" Margin="13" Text="Player 4" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
                             </StackLayout>
-                                </StackLayout>
+                        </StackLayout>
 
 
                     </Frame>
@@ -134,20 +131,16 @@
                                     <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
                                     <Label x:Name="R3P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
                                 </StackLayout>
-                                  </StackLayout>
+                            </StackLayout>
                         </Frame>
                     </StackLayout>
                 </StackLayout>
 
-             
-           
-
-            <StackLayout x:Name="result" IsVisible="false" Margin="5">
-                <Label Text="Leaderboard" FontSize="19" HorizontalOptions="Center" TextColor="RoyalBlue"/>
-                <Label Text="Winner: KUDO" FontSize="16" HorizontalOptions="Start" TextColor="White"/>
-                <Label Text="Second Place: Kudomion" HorizontalOptions="Start" FontSize="16" TextColor="White"/>
-                <Label Text="Third Place: YKJ" HorizontalOptions="Start" FontSize="16" TextColor="White"/>
-            </StackLayout>
+                <StackLayout x:Name="result" IsVisible="false" Margin="5">
+                <Label Text="Leaderboard" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" TextColor="RoyalBlue"/>
+                <Label Text="Winner: KUDO" x:Name="winnerText" FontSize="17" HorizontalOptions="Start" TextColor="White"/>
+                <Label Text="Second Place: Kudomion" x:Name="secondPlaceText" HorizontalOptions="Start" FontSize="17" TextColor="White"/>
+                </StackLayout>
             </StackLayout>
 
         </ScrollView>

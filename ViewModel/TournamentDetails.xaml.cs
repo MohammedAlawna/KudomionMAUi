@@ -82,8 +82,6 @@ namespace Kudomion.ViewModel
                     R2P2.Text = tournyInstance.semiFinals[1].name;
                     R2P3.Text = tournyInstance.semiFinals[2].name;
                     R2P4.Text = tournyInstance.semiFinals[3].name;
-
-                    
                 }
 
                 // Final (Round-3) Checker..
@@ -93,9 +91,9 @@ namespace Kudomion.ViewModel
                     R3P2.Text = tournyInstance.final[1].name;
 
                     //Results Assigner (1st Place, 2nd Place).
-
+                    winnerText.Text = "Winner: " + tournyInstance.winner.name;
+                    secondPlaceText.Text = "Second Place: " + tournyInstance.secondPlace.name;
                 }
-
             }
             catch(Exception e)
             {

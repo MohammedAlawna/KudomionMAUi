@@ -26,9 +26,15 @@ public partial class TournamentsDashboard : ContentPage
 
 	async void AddTournamentTrial()
 	{
+		User firstPlaceMock = new User() { name = "winner" };
+		User secondPlaceMock = new User() { name = "secondPlace" };
+
 		Tournament newTourny = new  Tournament{
 			title = "YKJ Live Tournament #1",
 			tournyBannerSrc = "https://i.imgur.com/urYTQm3.png",
+			winner = firstPlaceMock,
+			secondPlace = secondPlaceMock,
+			signUpActive = true,
 			registeredUsers = new List<User>(),	
 			semiFinals = new List<User>() { new User { name = "KuDo" } },
 			final = new List<User>() { new User { name = "KuDo" } },
@@ -72,10 +78,20 @@ public partial class TournamentsDashboard : ContentPage
 			//2- Get Tournament Instance (that was clicked - from tourny name).
 			Tournament selectedTournament = await firebaseHelper.GetTournamentByName(getTextChild.Text);
 
+
+			if(selectedTournament.signUpActive == false)
+			{
+				await DisplayAlert("Sign Up Closed", "You cant Join thie event. Registeration is closed", "OK!");
+				return;
+			}
+
 			//Check if RegisteredUsers equal 8 (may be updated in upcoming releases)
 			if(selectedTournament.registeredUsers.Count == 8)
 			{
-				
+				//Update Tournament When Count = 8, Sign Up = false
+				selectedTournament.signUpActive = false;
+				await firebaseHelper.UpdateTournamentBasic(selectedTournament.title, selectedTournament);
+
 				await DisplayAlert("Tournament System", "Reached Maximum number of participants.", "OK!");
 				return;
 			}
@@ -112,6 +128,9 @@ public partial class TournamentsDashboard : ContentPage
 				Concat(new[] {currentLoggedInUser}).ToList(),
 				semiFinals = selectedTournament.semiFinals,
 				final = selectedTournament.final,
+				winner = selectedTournament.winner, 
+				secondPlace = selectedTournament.secondPlace,
+				signUpActive = selectedTournament.signUpActive,
 			};
 
             await firebaseHelper.UpdateTournamentBasic(selectedTournament.title, tournyToUpdate);
