@@ -53,8 +53,8 @@
 
         <ShellContent
         Title="About"
-        FlyoutIcon="notif"
-        ContentTemplate="{DataTemplate local:About}"
+        Icon="abt"
+        ContentTemplate="{DataTemplate viewModel:About}"
         />
 
         <!--<ShellContent
