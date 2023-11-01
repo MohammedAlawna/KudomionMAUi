@@ -68,23 +68,18 @@ namespace Kudomion.ViewModel
                      R1P6.Text = tournyInstance.registeredUsers[5].name;
                      R1P7.Text = tournyInstance.registeredUsers[6].name;
                      R1P8.Text = tournyInstance.registeredUsers[7].name;
-                   
-
-                    //B- Second Round: 2 matches.
-                    //Eliminate Players who lost.
-                    //Matches are filled with P's(4) from qualifiedPlayers list.
-
-
-                    //C- Third Round: Final match.
-                    //Eliminate players who lost.
-                    //Final Match is filled with P's(2) from remaining of qualifiedPlayers list.
-
                 }
                 else
                 {
                     //Prompt indicator message.
                     await DisplayAlert("Bracket Auto System", "Brackets will be available once the number of required participants satisfied", "OK!");
                     return;
+                }
+
+                // Semi-Finals Checker..
+                if(tournyInstance.semiFinals.Count == 4)
+                {
+                    //
                 }
 
             }
@@ -164,14 +159,14 @@ namespace Kudomion.ViewModel
             return;
         }
 
-        private async void ProcessSecondRound(object sender, EventArgs e)
+      /*  private async void ProcessSecondRound(object sender, EventArgs e)
         {
             try
             {
                 //Process Round (From SecondRound List)..
                 Tournament currentTourny = await fbHelper.GetTournamentByName(tournamentTitle.Text);
                 Console.WriteLine(currentTourny.semiFinals.Count);
-                return;
+                
                 //Assign Duels
                 R2P1.Text = currentTourny.semiFinals[0].name;
                 R2P2.Text = currentTourny.semiFinals[1].name;
@@ -182,9 +177,9 @@ namespace Kudomion.ViewModel
             {
                 await DisplayAlert("Alert", $"An Exception: {ex}", "OK!");
             }
-        }
+        }*/
 
-        private async void ProcessFinal(object sender, EventArgs e)
+      /*  private async void ProcessFinal(object sender, EventArgs e)
         {
             try
             {
@@ -199,6 +194,6 @@ namespace Kudomion.ViewModel
             {
                 await DisplayAlert("Alert", $"An Exception: {ex}", "OK!");
             }
-        }
+        }*/
     }
 }
