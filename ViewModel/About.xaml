@@ -6,8 +6,8 @@
     <ContentPage.Content>
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
-                
-                
+                <Label Text="About: Kudomion Singulairty. o3o" FontSize="20" HorizontalOptions="CenterAndExpand" TextColor="White" FontAttributes="Bold"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
