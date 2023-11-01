@@ -21,43 +21,60 @@
 
         <ShellContent
             Icon="hme"
-            
             Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
             />
 
-        <ShellContent
-        Icon="newss"
-        
-        Title="News"
-        ContentTemplate="{DataTemplate viewModel:NewsFeed}"
-        />
-
-    <ShellContent
-        Title="Challenges"
-        Icon="btlic"
-        ContentTemplate="{DataTemplate local:Challenges}"
-        />
-
-    <ShellContent
-        Title="Rankings"
-        Icon="rnke"
-        ContentTemplate="{DataTemplate local:Leaderboard}"
-        />
 
         <ShellContent
         Title="Decks"
         Icon="dck"
         ContentTemplate="{DataTemplate viewModel:DecksList}"
         />
-
+        
         <ShellContent
         Title="Tournaments"
         Icon="tour"
         ContentTemplate="{DataTemplate viewModel:TournamentsDashboard}"
         />
+       
 
-        <!--<ShellContent
+        <ShellContent
+        Title="Rankings"
+        Icon="rnke"
+        ContentTemplate="{DataTemplate local:Leaderboard}"
+        />
+
+        <ShellContent
+        Title="Challenges"
+        Icon="btlic"
+        ContentTemplate="{DataTemplate local:Challenges}"
+        />
+
+       <!--<ShellContent
+        Icon="newss"        
+        Title="News"
+        ContentTemplate="{DataTemplate viewModel:NewsFeed}"
+        />
+     
+
+        <ShellContent
+        Title="Meta"
+        Icon="mta"
+        />
+
+        <ShellContent
+        Title="Clips"
+        Icon="clps"
+        ContentTemplate="{}"
+        />
+
+        <ShellContent
+            Title="Chat"
+            Icon="cht"
+            ContentTemplate="{}"
+            />
+        <ShellContent
         Title="Settings"
         FlyoutIcon="notif"
         />
