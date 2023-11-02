@@ -87,6 +87,8 @@
 	  <None Remove="Resources\Images\btlic.png" />
 	  <None Remove="Resources\Images\dcks.png" />
 	  <None Remove="Resources\Images\discrd.png" />
+	  <None Remove="Resources\Images\dscrd.png" />
+	  <None Remove="Resources\Images\fbk.png" />
 	  <None Remove="Resources\Images\hme.png" />
 	  <None Remove="Resources\Images\lby.png" />
 	  <None Remove="Resources\Images\lgBg.jpg" />
@@ -102,6 +104,10 @@
 	  <None Remove="Resources\Images\splsh.jpg" />
 	  <None Remove="Resources\Images\tournies.png" />
 	  <None Remove="Resources\Images\ygo_guide.png" />
+	  <None Remove="Resources\Images\ykjblog.png" />
+	  <None Remove="Resources\Images\ykjoma.png" />
+	  <None Remove="Resources\Images\ykjptm.png" />
+	  <None Remove="Resources\Images\ytb.png" />
 	</ItemGroup>
 
 	<ItemGroup>
