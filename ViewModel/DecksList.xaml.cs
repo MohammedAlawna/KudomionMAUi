@@ -1,9 +1,11 @@
 ﻿using Kudomion.FirebaseManager;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 
 namespace Kudomion.ViewModel
@@ -12,6 +14,7 @@ namespace Kudomion.ViewModel
     public partial class DecksList : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
+        
         public DecksList()
         {
             InitializeComponent();
@@ -22,8 +25,13 @@ namespace Kudomion.ViewModel
 
         async void LoadAllDecks()
         {
-            decksToLoad.ItemsSource = await firebase.GetAllDecks();
-            
+            //decksToLoad.ItemsSource = await firebase.GetAllDecks();
+            var allDecks = await firebase.GetAllDecks();
+            decksToLoad.ItemsSource = allDecks;
+            /* Code Debug: Fixed~
+
+             Console.WriteLine("Decks: " + allDecks[0].link);
+            */
         }
 
         async void AddDeckTrial()
@@ -35,9 +43,8 @@ namespace Kudomion.ViewModel
                 code = "hellocode",
                 link = "hello"
             };
-
+            
             await firebase.AddDeck(deckToAdd);
-
         }
 
         private async void DownloadDeckBtn_Clicked(object sender, EventArgs e)
@@ -49,23 +56,49 @@ namespace Kudomion.ViewModel
                 var getMainParent = (StackLayout)getButtonParent.Parent;
                 var getYDKSrc = (Label)getMainParent.Children[0];
 
-                //TODO Fix DeckItem Properties (YDKeCode and SrcYDK cuz its not showing):
+                //Get DeckItem by It's Title.
                 DeckItem findSelectedDeck = await firebase.GetDeckByName(getYDKSrc.Text);
 
-                //TODO: Search Specific Deck by its Title to get YDKe and YDKSrc. 
-                await DisplayAlert("Alert!", "Donwload Deck Button_Clicked!" + findSelectedDeck.link, "OK!");
+                //Open in Browser to Download
+                string deckUrl = findSelectedDeck.link;
+                await Browser.OpenAsync(deckUrl);
             }
 
             catch(Exception ex)
             {
                await DisplayAlert("Exception", "Error. System Can't retrieve deck information. " + ex.Message, "OK!");
             }
-            
         }
 
-        private void OpenWithEdoPro_Clicked(object sender, EventArgs e)
+        private async void GetYDKE(object sender, EventArgs e)
         {
-            DisplayAlert("Alert!", "EdoPro Button Clicked!", "OK!");
+            try
+            {
+                var getThisButton = (Button)sender;
+                var getButtonParent = (StackLayout)getThisButton.Parent;
+                var getMainParent = (StackLayout)getButtonParent.Parent;
+                var getYDKSrc = (Label)getMainParent.Children[0];
+
+
+                //TODO Fix DeckItem Properties (YDKeCode and SrcYDK cuz its not showing):
+                DeckItem findSelectedDeck = await firebase.GetDeckByName(getYDKSrc.Text);
+
+                Console.WriteLine("YDKE: " + findSelectedDeck.code);
+
+                //Copy Text to Clipboard.
+                //Clipboard.SetTextAsync();
+
+                await DisplayAlert("Success!", "Deck YDKE Copied to Clipboard. Import it to your game (EDOPro, Omega etc.)", "OK!");
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Exception: {ex}");
+            }
+        }
+
+        private async void ViewDeckDetails(object sender, EventArgs e)
+        {
+            await DisplayAlert("Alert!", "View Details feature is not available in this release.", "OK!");
         }
     }
 }

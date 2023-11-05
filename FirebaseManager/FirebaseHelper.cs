@@ -419,11 +419,7 @@ namespace Kudomion.FirebaseManager
             return false;           
         }
 
-      /*  public async Task<List<Room>> GetActiveRoom(string nameOfUser)
-        {
-            return null;
-        }*/
-
+      
         //This function is used to get specific room (Player1, Player20)
         public async Task<Room> GetSpecificRoom(string _p1, string _p2)
         {
@@ -471,13 +467,6 @@ namespace Kudomion.FirebaseManager
                 return null;
             }
         }
-
-    /*    public async Task<bool> DeleteRoom(string p1, string p2)
-        {
-            //Delete Room.
-            return false;
-        }*/
-
         
         public async Task<List<DeckItem>> GetAllDecks()
         {
@@ -488,6 +477,8 @@ namespace Kudomion.FirebaseManager
               {
                   title = item.Object.title,
                   thumbSrc = item.Object.thumbSrc,
+                  code = item.Object.code, 
+                  link = item.Object.link,
               }).ToList();
         }
 
