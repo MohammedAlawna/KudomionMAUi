@@ -838,6 +838,9 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\newtonsoft.json\13.0.3\lib\net6.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\propertychanged.fody\4.1.0\lib\netstandard2.1\PropertyChanged.dll">
+      <PackagePath>PropertyChanged.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\system.reactive\4.0.0\lib\netstandard2.0\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
     </AppxPackagedFile>

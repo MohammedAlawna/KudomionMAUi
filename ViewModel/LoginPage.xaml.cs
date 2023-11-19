@@ -105,8 +105,6 @@ namespace Kudomion
         {
             try
             {
-
-          
             //Get CurrentLoggedInUser Info.
             currentLoggedInUserName = MainPage.currentUser.name;
 
@@ -131,7 +129,7 @@ namespace Kudomion
             }
             catch(Exception e)
             {
-                await DisplayAlert("Error", "An Unexpected error just happened, please contact the developer. " + e.Message, "OK!");
+                await DisplayAlert("Error", "An Unexpected error just happened, please contact the developer. " + e, "OK!");
             }
         }
 
