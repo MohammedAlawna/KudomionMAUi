@@ -47,6 +47,10 @@ namespace Kudomion.ViewModel
             await firebase.AddDeck(deckToAdd);
         }
 
+        private async void OpenTierList(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TierList());
+        }
         private async void DownloadDeckBtn_Clicked(object sender, EventArgs e)
         {
             try
@@ -99,6 +103,16 @@ namespace Kudomion.ViewModel
         private async void ViewDeckDetails(object sender, EventArgs e)
         {
             await DisplayAlert("Alert!", "View Details feature is not available in this release.", "OK!");
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

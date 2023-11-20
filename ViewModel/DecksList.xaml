@@ -6,6 +6,7 @@
     <ContentPage.Content>
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
+                <Button Margin="5" BackgroundColor="RoyalBlue" Text="Tier List" FontSize="17" Clicked="OpenTierList"/>
                 <StackLayout Margin="5" x:Name="DeckItemCard">
                     <CollectionView VerticalOptions="FillAndExpand" x:Name="decksToLoad">
                         <CollectionView.ItemTemplate>
