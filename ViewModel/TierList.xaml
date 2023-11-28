@@ -4,12 +4,31 @@
              BackgroundColor="#1c1c1c"
              x:Class="Kudomion.ViewModel.TierList">
     <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout>
         <StackLayout>
-            <Label Text="Welcome to Tier List!"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Tier List"
+                VerticalOptions="Start"
+                Margin="8"
                 TextColor="White"
-                FontSize="25"
+                FontSize="27"
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
+            <StackLayout Margin="5" x:Name="topTierList">
+                <CollectionView VerticalOptions="FillAndExpand" x:Name="topDecksToLoad">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                                <Frame BackgroundColor="#363636">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image x:Name="topDeckThumb" Source="{Binding topDeckThumb}" />
+                                    <Label x:Name="topDeckName" Text="{Binding topDeckName}" />
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

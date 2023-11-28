@@ -19,7 +19,7 @@
                                         <Button Clicked="DownloadDeckBtn_Clicked" Margin="3" FontSize="12" Text="Download YDK" BackgroundColor="RoyalBlue" WidthRequest="130" />
                                         <Button Clicked="GetYDKE" Text="YDKE" Margin="3" FontSize="12" BackgroundColor="DarkOrange" WidthRequest="70" />
                                         <Button Clicked="ViewDeckDetails" Text="View" Margin="3" FontSize="12" BackgroundColor="Gold" WidthRequest="70" />
-                                          
+                                        
                                         <!--<Button Text="YDKe" BackgroundColor="DarkGoldenrod" WidthRequest="70" />-->
                                         </StackLayout>
                                     </StackLayout>
