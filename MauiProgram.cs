@@ -15,8 +15,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		builder.Services.AddSingleton<TierList>();
-		builder.Services.AddSingleton<ViewModelTest>();
+		//Commented Out MVVM (Adding Singelton of both Tier and ViewModel).
+		/*builder.Services.AddSingleton<TierList>();
+		builder.Services.AddSingleton<ViewModelTest>();*/
 
 		return builder.Build();
 	}

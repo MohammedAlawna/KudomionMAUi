@@ -4,7 +4,7 @@
              BackgroundColor="#1c1c1c"
              x:Class="Kudomion.ViewModel.TierList"
              xmlns:viewmodel="clr-namespace:Kudomion"
-             x:DataType="viewmodel:ViewModelTest">
+            >
     <ContentPage.Content>
         <ScrollView VerticalOptions="FillAndExpand">
             <StackLayout>
@@ -16,20 +16,19 @@
                 FontSize="27"
                 HorizontalOptions="CenterAndExpand" />
             
-            <Entry Placeholder="Enter Text Trial" Text="{Binding Text}"/>
-            <Button Command="{Binding AddCommand}" />
+           
             </StackLayout>
             <StackLayout Margin="5" x:Name="topTierList">
-                <CollectionView ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" x:Name="topDecksToLoad">
+                <CollectionView VerticalOptions="FillAndExpand" x:Name="topDecksToLoad">
                     <CollectionView.ItemTemplate>
-                        <DataTemplate x:DataType="{x:Type x:String}">
-                                <!--<Frame BackgroundColor="#363636">
-                                <StackLayout Orientation="Horizontal">
-                                    <Image x:Name="topDeckThumb" Source="{Binding topDeckThumb}" />
-                                    <Label x:Name="topDeckName" Text="{Binding topDeckName}" />
-                                </StackLayout>
-                            </Frame>-->
-                        </DataTemplate>
+                        <DataTemplate>
+                                <Frame BackgroundColor="#363636">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image x:Name="topDeckThumb" Source="{Binding topDeckThumb}" />
+                                        <Label x:Name="topDeckName" Text="{Binding topDeckName}" />
+                                    </StackLayout>
+                                </Frame>
+                            </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </StackLayout>
@@ -37,3 +36,21 @@
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
+    
+    
+<!--Commented Out MVVM Implementation
+x:DataType="viewmodel:ViewModelTest"
+<Entry Placeholder="Enter Text Trial" Text="{Binding Text}"/>
+<Button Command="{Binding AddCommand}" />
+<CollectionView ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" x:Name="topDecksToLoad">
+    <CollectionView.ItemTemplate>
+        <DataTemplate x:DataType="{x:Type x:String}">
+            --><!--<Frame BackgroundColor="#363636">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image x:Name="topDeckThumb" Source="{Binding topDeckThumb}" />
+                                    <Label x:Name="topDeckName" Text="{Binding topDeckName}" />
+                                </StackLayout>
+                            </Frame>--><!--
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>-->
