@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#1c1c1c"
-             x:Class="Kudomion.ViewModel.TierList">
+             x:Class="Kudomion.ViewModel.TierList"
+             xmlns:viewmodel="clr-namespace:Kudomion"
+             x:DataType="viewmodel:ViewModelTest">
     <ContentPage.Content>
         <ScrollView VerticalOptions="FillAndExpand">
             <StackLayout>
@@ -13,17 +15,20 @@
                 TextColor="White"
                 FontSize="27"
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            
+            <Entry Placeholder="Enter Text Trial" Text="{Binding Text}"/>
+            <Button Command="{Binding AddCommand}" />
+            </StackLayout>
             <StackLayout Margin="5" x:Name="topTierList">
-                <CollectionView VerticalOptions="FillAndExpand" x:Name="topDecksToLoad">
+                <CollectionView ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" x:Name="topDecksToLoad">
                     <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                                <Frame BackgroundColor="#363636">
+                        <DataTemplate x:DataType="{x:Type x:String}">
+                                <!--<Frame BackgroundColor="#363636">
                                 <StackLayout Orientation="Horizontal">
                                     <Image x:Name="topDeckThumb" Source="{Binding topDeckThumb}" />
                                     <Label x:Name="topDeckName" Text="{Binding topDeckName}" />
                                 </StackLayout>
-                            </Frame>
+                            </Frame>-->
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
