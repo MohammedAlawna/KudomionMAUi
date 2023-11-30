@@ -47,110 +47,110 @@ build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.TabbedView.xaml
 build_metadata.AdditionalFiles.TargetPath = TabbedView.xaml
 build_metadata.AdditionalFiles.RelativePath = TabbedView.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/About.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/About.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.About.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\About.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\About.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.About.xaml
+build_metadata.AdditionalFiles.TargetPath = View\About.xaml
+build_metadata.AdditionalFiles.RelativePath = View\About.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/Challenges.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/Challenges.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Challenges.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\Challenges.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\Challenges.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.Challenges.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Challenges.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Challenges.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/DecksList.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/DecksList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.DecksList.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\DecksList.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\DecksList.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.DecksList.xaml
+build_metadata.AdditionalFiles.TargetPath = View\DecksList.xaml
+build_metadata.AdditionalFiles.RelativePath = View\DecksList.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/Leaderboard.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/Leaderboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.Leaderboard.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\Leaderboard.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\Leaderboard.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.Leaderboard.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Leaderboard.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Leaderboard.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/LoginPage.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.LoginPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\LoginPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\LoginPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\LoginPage.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/MainPage.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\MainPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MainPage.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/NewsFeed.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/NewsFeed.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.NewsFeed.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\NewsFeed.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\NewsFeed.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.NewsFeed.xaml
+build_metadata.AdditionalFiles.TargetPath = View\NewsFeed.xaml
+build_metadata.AdditionalFiles.RelativePath = View\NewsFeed.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/NotificationsPage.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/NotificationsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.NotificationsPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\NotificationsPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\NotificationsPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.NotificationsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\NotificationsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\NotificationsPage.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/SignUpPage.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/SignUpPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.SignUpPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\SignUpPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\SignUpPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.SignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SignUpPage.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/TierList.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/TierList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.TierList.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\TierList.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\TierList.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.TierList.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TierList.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TierList.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/TournamentBracket.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/TournamentBracket.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.TournamentBracket.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\TournamentBracket.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\TournamentBracket.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.TournamentBracket.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TournamentBracket.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TournamentBracket.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/TournamentDetails.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/TournamentDetails.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.TournamentDetails.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\TournamentDetails.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\TournamentDetails.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.TournamentDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TournamentDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TournamentDetails.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/TournamentInfo.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/TournamentInfo.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.TournamentInfo.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\TournamentInfo.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\TournamentInfo.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.TournamentInfo.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TournamentInfo.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TournamentInfo.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/TournamentsDashboard.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/TournamentsDashboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.TournamentsDashboard.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\TournamentsDashboard.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\TournamentsDashboard.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.TournamentsDashboard.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TournamentsDashboard.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TournamentsDashboard.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/TournamentSignUpPage.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/TournamentSignUpPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.TournamentSignUpPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\TournamentSignUpPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\TournamentSignUpPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.TournamentSignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TournamentSignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TournamentSignUpPage.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/UserProfile.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/UserProfile.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.UserProfile.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\UserProfile.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\UserProfile.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.UserProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UserProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UserProfile.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/UserSettings.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/UserSettings.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.UserSettings.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\UserSettings.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\UserSettings.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.UserSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UserSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UserSettings.xaml
 
-[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/UsersPage.xaml]
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/View/UsersPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.UsersPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModel\UsersPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModel\UsersPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.View.UsersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UsersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UsersPage.xaml
