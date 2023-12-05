@@ -13,8 +13,9 @@ namespace Kudomion.FirebaseManager
     public class FirebaseHelper
     {
         //Follow this Article: https://www.c-sharpcorner.com/article/xamarin-forms-working-with-firebase-realtime-database-crud-operations/
-        FirebaseClient firebaseClient = new FirebaseClient("https://kudo1-38995-default-rtdb.firebaseio.com/");
+        public FirebaseClient firebaseClient = new FirebaseClient("https://kudo1-38995-default-rtdb.firebaseio.com/");
      
+        //Tournament Manager:
         //Get All Tournaments in DB.
         public async Task<List<Tournament>> GetAllTournaments()
         {
@@ -104,8 +105,6 @@ namespace Kudomion.FirebaseManager
             }
         }
 
-        
-
         //Add Tournament Function
         public async Task<bool> AddTournament(Tournament tourny)
         {
@@ -122,7 +121,7 @@ namespace Kudomion.FirebaseManager
             }
         }
 
-
+        //User Manager:
         //Start User-Related Functions.
         public async Task<List<User>> GetAllUsers()
         {
@@ -187,7 +186,6 @@ namespace Kudomion.FirebaseManager
             }
         }
 
-
         public async void GetUserStringByName(string name)
         {
             try
@@ -204,7 +202,6 @@ namespace Kudomion.FirebaseManager
                 //return null;
             }
         }
-
 
         public async Task<User> GetUserByName(string name)
         {
@@ -336,6 +333,8 @@ namespace Kudomion.FirebaseManager
             }
         }
 
+
+        //Room Manager:
         public async Task<bool> CreateRoom(Room room)
         {
             try
@@ -400,12 +399,12 @@ namespace Kudomion.FirebaseManager
             }
         }
 
-
         public async Task<List<Room>> GetAllRMs()
         {
             return await GetAllRooms();
         }
 
+        //Check if user exists in a room.
         public async Task<bool> CheckIfUserExists()
         {
                List<Room> getAllActiveRooms =  await GetAllRMs();
@@ -419,7 +418,6 @@ namespace Kudomion.FirebaseManager
             return false;           
         }
 
-      
         //This function is used to get specific room (Player1, Player20)
         public async Task<Room> GetSpecificRoom(string _p1, string _p2)
         {
@@ -467,7 +465,8 @@ namespace Kudomion.FirebaseManager
                 return null;
             }
         }
-        
+ 
+        //Deck Manager:
         public async Task<List<DeckItem>> GetAllDecks()
         {
 
@@ -514,8 +513,8 @@ namespace Kudomion.FirebaseManager
         } 
 
 
+        //Posts Manager:
         //News Feed Related Functions.
-        //1- GetAllPosts(): Retrieve all posts in the DB (to list then in news feed)
         public async Task<List<Post>> GetAllPosts()
         {
             return (await firebaseClient.Child("Posts").OnceAsync<Post>()).Select(post => new Post
@@ -543,6 +542,22 @@ namespace Kudomion.FirebaseManager
 
         //TODOS: 3- Edit Post, 4- Delete Post.
 
+
+        //TierList Manager:
+        //1- Add Deck to TierList:
+        public async Task<bool> AddTopDeck(TopDeck topDeck)
+        {
+            try
+            {
+                await firebaseClient.Child("TierList").PostAsync(topDeck);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+                return false;
+            }
+        }
     
     }
 }
