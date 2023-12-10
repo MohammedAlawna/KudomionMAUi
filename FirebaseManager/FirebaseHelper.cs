@@ -469,7 +469,8 @@ namespace Kudomion.FirebaseManager
         //Deck Manager:
         public async Task<List<DeckItem>> GetAllDecks()
         {
-
+            try
+            {
             return (await firebaseClient
               .Child("Decks")
               .OnceAsync<DeckItem>()).Select(item => new DeckItem
@@ -479,6 +480,12 @@ namespace Kudomion.FirebaseManager
                   code = item.Object.code, 
                   link = item.Object.link,
               }).ToList();
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+                return null;
+            }
         }
 
         public async Task<bool> AddDeck(DeckItem deckToAdd)
@@ -517,12 +524,20 @@ namespace Kudomion.FirebaseManager
         //News Feed Related Functions.
         public async Task<List<Post>> GetAllPosts()
         {
-            return (await firebaseClient.Child("Posts").OnceAsync<Post>()).Select(post => new Post
+            try
             {
-                content = post.Object.content,
-                YGOGoodReaction = post.Object.YGOGoodReaction,
-                imageSource = post.Object.imageSource,
-            }).ToList();
+                return (await firebaseClient.Child("Posts").OnceAsync<Post>()).Select(post => new Post
+                {
+                    content = post.Object.content,
+                    YGOGoodReaction = post.Object.YGOGoodReaction,
+                    imageSource = post.Object.imageSource,
+                }).ToList();
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+                return null;
+            } 
         }
 
         // 2- Create Post:: Admin/Mods Privelleges Only!
@@ -558,6 +573,35 @@ namespace Kudomion.FirebaseManager
                 return false;
             }
         }
-    
+
+        //2- Get All TopDecks from TierList:
+        public async Task<List<TopDeck>> GetAllTopDecks()
+        {
+            try
+            {
+                return (await firebaseClient.Child("TierList").OnceAsync<TopDeck>()).Select(item => new TopDeck
+                {
+                    topDeckSrc = item.Object.topDeckSrc,
+                    topDeckName = item.Object.topDeckName,
+                }).ToList();
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+                return null;
+            }
+        }
+
+        //TODO
+        //3- Edit, Update TopDeck
+
+        //4- Delete Top Deck
+
+
+       /* //** DISCLAIMER 
+       Some of The QUERY functions are only used and accessed by high-privlege users,
+       so its most likely that they will be implemented for a CP, or a separate app that 
+       is made and develpoed for staff only.
+        */
     }
 }

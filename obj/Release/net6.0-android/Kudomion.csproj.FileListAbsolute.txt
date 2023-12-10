@@ -501,3 +501,14 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\st
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\stamp\_GenerateJavaStubs.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\abt.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\dck.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\dscrd.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\fbk.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\tour.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\ykjblog.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\ykjoma.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\ykjptm.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\resizetizer\r\drawable\ytb.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\Kudomion.csproj.Fody.CopyLocal.cache
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\Kudomion.csproj.Fody.RuntimeCopyLocal.cache

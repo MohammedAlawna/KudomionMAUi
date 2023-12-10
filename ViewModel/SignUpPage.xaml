@@ -16,30 +16,30 @@
                    Margin="15"
                 HorizontalOptions="CenterAndExpand" />
 
-        <Frame HorizontalOptions="Center" WidthRequest="330"  CornerRadius="30" Padding="3" BorderColor="RoyalBlue" BackgroundColor="Transparent">
-            <Entry x:Name="userName" HorizontalOptions="CenterAndExpand" WidthRequest="270" Placeholder="Enter Username.." ReturnType="Next" PlaceholderColor="White" TextColor="White" />
+        <Frame HorizontalOptions="Center" WidthRequest="250"  CornerRadius="30" Padding="3" BorderColor="Black" BackgroundColor="#2f3030">
+            <Entry x:Name="userName" HorizontalOptions="CenterAndExpand" WidthRequest="200" Placeholder="Enter Username.." ReturnType="Next" PlaceholderColor="White" TextColor="White" />
         </Frame>
 
-        <Frame HorizontalOptions="Center" WidthRequest="330"  CornerRadius="30" Padding="3" BackgroundColor="Transparent" BorderColor="RoyalBlue">
-            <Entry x:Name="password" HorizontalOptions="CenterAndExpand" WidthRequest="270" ReturnType="Next" MaxLength="17" IsPassword="True" TextColor="White" Placeholder="Enter Password.." PlaceholderColor="White" />
+        <Frame HorizontalOptions="Center" WidthRequest="250"  CornerRadius="30" Padding="3" BackgroundColor="#2f3030" BorderColor="Black">
+            <Entry x:Name="password" HorizontalOptions="CenterAndExpand" WidthRequest="200" ReturnType="Next" MaxLength="17" IsPassword="True" TextColor="White" Placeholder="Enter Password.." PlaceholderColor="White" />
         </Frame>
 
-        <Frame HorizontalOptions="Center" WidthRequest="330"  CornerRadius="30" Padding="3" BackgroundColor="Transparent" BorderColor="RoyalBlue">
-            <Entry x:Name="confirmPassword" HorizontalOptions="CenterAndExpand" WidthRequest="270" ReturnType="Next" IsPassword="True" TextColor="White" Placeholder="Confirm Password.." PlaceholderColor="White" />
+        <Frame HorizontalOptions="Center" WidthRequest="250"  CornerRadius="30" Padding="3" BackgroundColor="#2f3030" BorderColor="Black">
+            <Entry x:Name="confirmPassword" HorizontalOptions="CenterAndExpand" WidthRequest="200" ReturnType="Next" IsPassword="True" TextColor="White" Placeholder="Confirm Password.." PlaceholderColor="White" />
         </Frame>
 
         <Button
                 x:Name="SignUpButton"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                WidthRequest="200"
-                HeightRequest="50"
-                Text="Submit"
+                WidthRequest="150"
+                HeightRequest="40"
+                Text="Sign-Up"
                 Padding="5"
                 FontSize="20"
                 TextColor="White"
                 Clicked="SignUpButton_Clicked"
-                BackgroundColor="RoyalBlue" 
+                BackgroundColor="#2f3030" 
                 CornerRadius="50"></Button>
     </StackLayout>
 </ContentPage>

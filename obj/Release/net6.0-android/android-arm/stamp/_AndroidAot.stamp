@@ -23,6 +23,7 @@ obj\Release\net6.0-android\android-arm\aot\Microsoft.Extensions.Options.dll.so
 obj\Release\net6.0-android\android-arm\aot\Microsoft.Extensions.Primitives.dll.so
 obj\Release\net6.0-android\android-arm\aot\Microsoft.Maui.Graphics.dll.so
 obj\Release\net6.0-android\android-arm\aot\Newtonsoft.Json.dll.so
+obj\Release\net6.0-android\android-arm\aot\PropertyChanged.dll.so
 obj\Release\net6.0-android\android-arm\aot\System.Reactive.dll.so
 obj\Release\net6.0-android\android-arm\aot\Xamarin.AndroidX.Activity.dll.so
 obj\Release\net6.0-android\android-arm\aot\Xamarin.AndroidX.AppCompat.dll.so

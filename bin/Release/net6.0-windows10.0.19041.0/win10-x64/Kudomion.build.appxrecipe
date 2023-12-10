@@ -838,6 +838,9 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\newtonsoft.json\13.0.3\lib\net6.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\propertychanged.fody\4.1.0\lib\netstandard2.1\PropertyChanged.dll">
+      <PackagePath>PropertyChanged.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\system.reactive\4.0.0\lib\netstandard2.0\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
     </AppxPackagedFile>
@@ -885,6 +888,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\abt.scale-100.png">
+      <PackagePath>abt.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
@@ -1168,149 +1174,14 @@
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlebtn.scale-100.png">
       <PackagePath>btlebtn.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlic.ico">
-      <PackagePath>btlic.ico</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlic.scale-100.png">
       <PackagePath>btlic.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLargeTile.scale-100.png">
-      <PackagePath>btlicLargeTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLargeTile.scale-125.png">
-      <PackagePath>btlicLargeTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLargeTile.scale-150.png">
-      <PackagePath>btlicLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLargeTile.scale-200.png">
-      <PackagePath>btlicLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLargeTile.scale-400.png">
-      <PackagePath>btlicLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>btlicLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>btlicLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>btlicLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>btlicLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>btlicLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>btlicLogo.altform-unplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>btlicLogo.altform-unplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>btlicLogo.altform-unplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>btlicLogo.altform-unplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>btlicLogo.altform-unplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.scale-100.png">
-      <PackagePath>btlicLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.scale-125.png">
-      <PackagePath>btlicLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.scale-150.png">
-      <PackagePath>btlicLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.scale-200.png">
-      <PackagePath>btlicLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.scale-400.png">
-      <PackagePath>btlicLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.targetsize-16.png">
-      <PackagePath>btlicLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.targetsize-24.png">
-      <PackagePath>btlicLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.targetsize-256.png">
-      <PackagePath>btlicLogo.targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.targetsize-32.png">
-      <PackagePath>btlicLogo.targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicLogo.targetsize-48.png">
-      <PackagePath>btlicLogo.targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicMediumTile.scale-100.png">
-      <PackagePath>btlicMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicMediumTile.scale-125.png">
-      <PackagePath>btlicMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicMediumTile.scale-150.png">
-      <PackagePath>btlicMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicMediumTile.scale-200.png">
-      <PackagePath>btlicMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicMediumTile.scale-400.png">
-      <PackagePath>btlicMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicSmallTile.scale-100.png">
-      <PackagePath>btlicSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicSmallTile.scale-125.png">
-      <PackagePath>btlicSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicSmallTile.scale-150.png">
-      <PackagePath>btlicSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicSmallTile.scale-200.png">
-      <PackagePath>btlicSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicSmallTile.scale-400.png">
-      <PackagePath>btlicSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicStoreLogo.scale-100.png">
-      <PackagePath>btlicStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicStoreLogo.scale-125.png">
-      <PackagePath>btlicStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicStoreLogo.scale-150.png">
-      <PackagePath>btlicStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicStoreLogo.scale-200.png">
-      <PackagePath>btlicStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicStoreLogo.scale-400.png">
-      <PackagePath>btlicStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicWideTile.scale-100.png">
-      <PackagePath>btlicWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicWideTile.scale-125.png">
-      <PackagePath>btlicWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicWideTile.scale-150.png">
-      <PackagePath>btlicWideTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicWideTile.scale-200.png">
-      <PackagePath>btlicWideTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlicWideTile.scale-400.png">
-      <PackagePath>btlicWideTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\chtbtn.scale-100.png">
       <PackagePath>chtbtn.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dck.scale-100.png">
+      <PackagePath>dck.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dcks.scale-100.png">
       <PackagePath>dcks.scale-100.png</PackagePath>
@@ -1456,149 +1327,17 @@
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_botWideTile.scale-400.png">
       <PackagePath>dotnet_botWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dscrd.scale-100.png">
+      <PackagePath>dscrd.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\emj.scale-100.png">
       <PackagePath>emj.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hme.ico">
-      <PackagePath>hme.ico</PackagePath>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\fbk.scale-100.png">
+      <PackagePath>fbk.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hme.scale-100.png">
       <PackagePath>hme.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLargeTile.scale-100.png">
-      <PackagePath>hmeLargeTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLargeTile.scale-125.png">
-      <PackagePath>hmeLargeTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLargeTile.scale-150.png">
-      <PackagePath>hmeLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLargeTile.scale-200.png">
-      <PackagePath>hmeLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLargeTile.scale-400.png">
-      <PackagePath>hmeLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>hmeLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>hmeLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>hmeLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>hmeLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>hmeLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>hmeLogo.altform-unplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>hmeLogo.altform-unplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>hmeLogo.altform-unplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>hmeLogo.altform-unplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>hmeLogo.altform-unplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.scale-100.png">
-      <PackagePath>hmeLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.scale-125.png">
-      <PackagePath>hmeLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.scale-150.png">
-      <PackagePath>hmeLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.scale-200.png">
-      <PackagePath>hmeLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.scale-400.png">
-      <PackagePath>hmeLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.targetsize-16.png">
-      <PackagePath>hmeLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.targetsize-24.png">
-      <PackagePath>hmeLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.targetsize-256.png">
-      <PackagePath>hmeLogo.targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.targetsize-32.png">
-      <PackagePath>hmeLogo.targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeLogo.targetsize-48.png">
-      <PackagePath>hmeLogo.targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeMediumTile.scale-100.png">
-      <PackagePath>hmeMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeMediumTile.scale-125.png">
-      <PackagePath>hmeMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeMediumTile.scale-150.png">
-      <PackagePath>hmeMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeMediumTile.scale-200.png">
-      <PackagePath>hmeMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeMediumTile.scale-400.png">
-      <PackagePath>hmeMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeSmallTile.scale-100.png">
-      <PackagePath>hmeSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeSmallTile.scale-125.png">
-      <PackagePath>hmeSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeSmallTile.scale-150.png">
-      <PackagePath>hmeSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeSmallTile.scale-200.png">
-      <PackagePath>hmeSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeSmallTile.scale-400.png">
-      <PackagePath>hmeSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeStoreLogo.scale-100.png">
-      <PackagePath>hmeStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeStoreLogo.scale-125.png">
-      <PackagePath>hmeStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeStoreLogo.scale-150.png">
-      <PackagePath>hmeStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeStoreLogo.scale-200.png">
-      <PackagePath>hmeStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeStoreLogo.scale-400.png">
-      <PackagePath>hmeStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeWideTile.scale-100.png">
-      <PackagePath>hmeWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeWideTile.scale-125.png">
-      <PackagePath>hmeWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeWideTile.scale-150.png">
-      <PackagePath>hmeWideTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeWideTile.scale-200.png">
-      <PackagePath>hmeWideTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hmeWideTile.scale-400.png">
-      <PackagePath>hmeWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\lby.scale-100.png">
       <PackagePath>lby.scale-100.png</PackagePath>
@@ -1609,146 +1348,8 @@
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\lgout.scale-100.png">
       <PackagePath>lgout.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newss.ico">
-      <PackagePath>newss.ico</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newss.scale-100.png">
       <PackagePath>newss.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLargeTile.scale-100.png">
-      <PackagePath>newssLargeTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLargeTile.scale-125.png">
-      <PackagePath>newssLargeTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLargeTile.scale-150.png">
-      <PackagePath>newssLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLargeTile.scale-200.png">
-      <PackagePath>newssLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLargeTile.scale-400.png">
-      <PackagePath>newssLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>newssLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>newssLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>newssLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>newssLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>newssLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>newssLogo.altform-unplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>newssLogo.altform-unplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>newssLogo.altform-unplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>newssLogo.altform-unplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>newssLogo.altform-unplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.scale-100.png">
-      <PackagePath>newssLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.scale-125.png">
-      <PackagePath>newssLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.scale-150.png">
-      <PackagePath>newssLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.scale-200.png">
-      <PackagePath>newssLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.scale-400.png">
-      <PackagePath>newssLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.targetsize-16.png">
-      <PackagePath>newssLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.targetsize-24.png">
-      <PackagePath>newssLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.targetsize-256.png">
-      <PackagePath>newssLogo.targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.targetsize-32.png">
-      <PackagePath>newssLogo.targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssLogo.targetsize-48.png">
-      <PackagePath>newssLogo.targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssMediumTile.scale-100.png">
-      <PackagePath>newssMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssMediumTile.scale-125.png">
-      <PackagePath>newssMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssMediumTile.scale-150.png">
-      <PackagePath>newssMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssMediumTile.scale-200.png">
-      <PackagePath>newssMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssMediumTile.scale-400.png">
-      <PackagePath>newssMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssSmallTile.scale-100.png">
-      <PackagePath>newssSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssSmallTile.scale-125.png">
-      <PackagePath>newssSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssSmallTile.scale-150.png">
-      <PackagePath>newssSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssSmallTile.scale-200.png">
-      <PackagePath>newssSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssSmallTile.scale-400.png">
-      <PackagePath>newssSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssStoreLogo.scale-100.png">
-      <PackagePath>newssStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssStoreLogo.scale-125.png">
-      <PackagePath>newssStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssStoreLogo.scale-150.png">
-      <PackagePath>newssStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssStoreLogo.scale-200.png">
-      <PackagePath>newssStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssStoreLogo.scale-400.png">
-      <PackagePath>newssStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssWideTile.scale-100.png">
-      <PackagePath>newssWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssWideTile.scale-125.png">
-      <PackagePath>newssWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssWideTile.scale-150.png">
-      <PackagePath>newssWideTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssWideTile.scale-200.png">
-      <PackagePath>newssWideTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\newssWideTile.scale-400.png">
-      <PackagePath>newssWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\notif.ico">
       <PackagePath>notif.ico</PackagePath>
@@ -1906,152 +1507,17 @@
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnk.scale-100.png">
       <PackagePath>rnk.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnke.ico">
-      <PackagePath>rnke.ico</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnke.scale-100.png">
       <PackagePath>rnke.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLargeTile.scale-100.png">
-      <PackagePath>rnkeLargeTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLargeTile.scale-125.png">
-      <PackagePath>rnkeLargeTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLargeTile.scale-150.png">
-      <PackagePath>rnkeLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLargeTile.scale-200.png">
-      <PackagePath>rnkeLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLargeTile.scale-400.png">
-      <PackagePath>rnkeLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>rnkeLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>rnkeLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>rnkeLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>rnkeLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>rnkeLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>rnkeLogo.altform-unplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>rnkeLogo.altform-unplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>rnkeLogo.altform-unplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>rnkeLogo.altform-unplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>rnkeLogo.altform-unplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.scale-100.png">
-      <PackagePath>rnkeLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.scale-125.png">
-      <PackagePath>rnkeLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.scale-150.png">
-      <PackagePath>rnkeLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.scale-200.png">
-      <PackagePath>rnkeLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.scale-400.png">
-      <PackagePath>rnkeLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.targetsize-16.png">
-      <PackagePath>rnkeLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.targetsize-24.png">
-      <PackagePath>rnkeLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.targetsize-256.png">
-      <PackagePath>rnkeLogo.targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.targetsize-32.png">
-      <PackagePath>rnkeLogo.targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeLogo.targetsize-48.png">
-      <PackagePath>rnkeLogo.targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeMediumTile.scale-100.png">
-      <PackagePath>rnkeMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeMediumTile.scale-125.png">
-      <PackagePath>rnkeMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeMediumTile.scale-150.png">
-      <PackagePath>rnkeMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeMediumTile.scale-200.png">
-      <PackagePath>rnkeMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeMediumTile.scale-400.png">
-      <PackagePath>rnkeMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeSmallTile.scale-100.png">
-      <PackagePath>rnkeSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeSmallTile.scale-125.png">
-      <PackagePath>rnkeSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeSmallTile.scale-150.png">
-      <PackagePath>rnkeSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeSmallTile.scale-200.png">
-      <PackagePath>rnkeSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeSmallTile.scale-400.png">
-      <PackagePath>rnkeSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeStoreLogo.scale-100.png">
-      <PackagePath>rnkeStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeStoreLogo.scale-125.png">
-      <PackagePath>rnkeStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeStoreLogo.scale-150.png">
-      <PackagePath>rnkeStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeStoreLogo.scale-200.png">
-      <PackagePath>rnkeStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeStoreLogo.scale-400.png">
-      <PackagePath>rnkeStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeWideTile.scale-100.png">
-      <PackagePath>rnkeWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeWideTile.scale-125.png">
-      <PackagePath>rnkeWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeWideTile.scale-150.png">
-      <PackagePath>rnkeWideTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeWideTile.scale-200.png">
-      <PackagePath>rnkeWideTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\rnkeWideTile.scale-400.png">
-      <PackagePath>rnkeWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-100.png">
       <PackagePath>settings.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\splsh.scale-100.jpg">
       <PackagePath>splsh.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\tour.scale-100.png">
+      <PackagePath>tour.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\tournies.scale-100.png">
       <PackagePath>tournies.scale-100.png</PackagePath>
@@ -2064,6 +1530,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ygo_guide.scale-100.png">
       <PackagePath>ygo_guide.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjblog.scale-100.png">
+      <PackagePath>ykjblog.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjoma.scale-100.png">
+      <PackagePath>ykjoma.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjptm.scale-100.png">
+      <PackagePath>ykjptm.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ytb.scale-100.png">
+      <PackagePath>ytb.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -11,34 +11,42 @@
     <!--Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"-->
     
-    <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+    <StackLayout Padding="80" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
         <Image Source="AppLogo.png" WidthRequest="180" HeightRequest="180" ></Image>
-        <Entry x:Name="userNameText" ReturnType="Next" Placeholder="Username" TextColor="White" PlaceholderColor="White"/>
-        <Entry x:Name="passwordText" Placeholder="Password" IsPassword="True" ReturnType="Done" TextColor="White" PlaceholderColor="White"></Entry>
+        <Frame WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Opacity="0.65" Margin="3">
+            <Entry x:Name="userNameText" HorizontalOptions="CenterAndExpand" ReturnType="Next" Placeholder="Username" TextColor="White" PlaceholderColor="White"/>
+        </Frame>
 
+        <Frame WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Opacity="0.65" Margin="3">
+            <Entry x:Name="passwordText" Placeholder="Password" IsPassword="True" HorizontalOptions="CenterAndExpand" ReturnType="Done" TextColor="White" PlaceholderColor="White"></Entry>
+        </Frame>
+        
         <Button
                 VerticalOptions="Center"
                 Text="Login"
+                WidthRequest="180"
                 TextColor="White"
                 Clicked="SignInClicked"
+                Margin="5"
                 BackgroundColor="RoyalBlue" 
                 BorderWidth="1.5"
                 CornerRadius="50"></Button>
 
         <Button
+            WidthRequest="180"
                 VerticalOptions="Center"
-                Text="Forget Password?"
+                Text="Reset Password"
                 TextColor="White"
                 Clicked="ForgetPasswordClicked"
-                BackgroundColor="Orange" 
+                BackgroundColor="#212121" 
                 BorderWidth="1.5"
                 CornerRadius="50"></Button>
 
       <Label HorizontalOptions="Center">
             <Label.FormattedText>
                 <FormattedString>
-                    <Span FontSize="24" Text="Not Registered?" TextColor="White"/>
-                    <Span FontSize="24" Text="Sign-Up" TextColor="RoyalBlue" FontAttributes="Bold" TextDecorations="Underline"/>
+                    <Span FontSize="13" Text="Not Registered? " TextColor="White"/>
+                    <Span FontSize="16" Text="Sign-Up" TextColor="RoyalBlue" FontAttributes="Bold" TextDecorations="Underline"/>
 
                 </FormattedString>
             </Label.FormattedText>

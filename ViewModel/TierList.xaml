@@ -6,9 +6,9 @@
              xmlns:viewmodel="clr-namespace:Kudomion"
             >
     <ContentPage.Content>
-        <ScrollView VerticalOptions="FillAndExpand">
+        <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
-        <StackLayout>
+       
             <Label Text="Tier List"
                 VerticalOptions="Start"
                 Margin="8"
@@ -17,15 +17,15 @@
                 HorizontalOptions="CenterAndExpand" />
             
            
-            </StackLayout>
-            <StackLayout Margin="5" x:Name="topTierList">
+          
+            <StackLayout HorizontalOptions="Center" Margin="5" x:Name="topTierList">
                 <CollectionView VerticalOptions="FillAndExpand" x:Name="topDecksToLoad">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                                <Frame BackgroundColor="#363636">
+                                <Frame BackgroundColor="#363636" BorderColor="Black">
                                     <StackLayout Orientation="Horizontal">
-                                        <Image x:Name="topDeckThumb" Source="{Binding topDeckThumb}" />
-                                        <Label x:Name="topDeckName" Text="{Binding topDeckName}" />
+                                        <Image HeightRequest="100" HorizontalOptions="Start" x:Name="topDeckThumb" Source="{Binding topDeckSrc}" />
+                                        <Label Margin="12, 27, 0, 0" TextColor="White" FontSize="20"  HorizontalTextAlignment="Center" HorizontalOptions="Start" x:Name="topDeckName" Text="{Binding topDeckName}" />
                                     </StackLayout>
                                 </Frame>
                             </DataTemplate>
