@@ -8,7 +8,7 @@
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <Label
-            Text="YKJ Rapid Tournament" FontSize="24"
+            Text="YKJ Rapid Tournament" FontSize="20"
             Margin="3"
             x:Name="tournamentTitle"
             BackgroundColor="Transparent"
@@ -16,7 +16,7 @@
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
                 
-                <Image Margin="3" x:Name="TournamentBanner" HeightRequest="250" Source="https://i.imgur.com/7YZAM21.jpg" />
+                <Image Margin="3" x:Name="TournamentBanner" HeightRequest="195" Source="https://i.imgur.com/7YZAM21.jpg" />
 
                 <StackLayout Orientation="Vertical" Margin="3">
                     <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="tournamentState" TextColor="White" BackgroundColor="#323232"/>
@@ -42,14 +42,14 @@
 
                 <StackLayout x:Name="bracket" IsVisible="false" Margin="5">
                     <StackLayout Margin="0">
-                        <Label HorizontalOptions="Center" Text="Round 1" FontSize="23" FontAttributes="Bold" TextColor="RoyalBlue"/>
-                        <Frame Margin="5" BorderColor="Orange" BackgroundColor="#333232">
+                        <Label HorizontalOptions="Center" Text="Round 1" FontSize="23" FontAttributes="Bold" TextColor="#f2c305"/>
+                        <Frame Margin="5" BorderColor="#f2c305" BackgroundColor="#333232">
                             <StackLayout>
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                    <Label x:Name="R1P1" Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-                                    <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                    <Label x:Name="R1P1" Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                    <Image Source="btle" WidthRequest="35" HeightRequest="35"/>
                                     <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
-                                    <Label x:Name="R1P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                    <Label x:Name="R1P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White"/>
                                 </StackLayout>
                             </StackLayout>
                         </Frame>
@@ -58,10 +58,10 @@
                             <Frame Margin="5" BorderColor="#ff9d00" BackgroundColor="#333232">
                                 <StackLayout>
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                        <Label x:Name="R1P3" Text="Player 3" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-                                        <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                        <Label x:Name="R1P3" Text="Player 3" Margin="13" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                        <Image Source="btle" WidthRequest="30" HeightRequest="50"/>
                                         <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
-                                        <Label x:Name="R1P4" Margin="13" Text="Player 4" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                        <Label x:Name="R1P4" Margin="13" Text="Player 4" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White"/>
                                     </StackLayout>
                                 </StackLayout>
                             </Frame>
@@ -71,10 +71,10 @@
                             <Frame Margin="5" BorderColor="#ff9d00" BackgroundColor="#333232">
                                 <StackLayout>
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                        <Label x:Name="R1P5" Text="Player 5" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-                                        <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                        <Label x:Name="R1P5" Text="Player 5" Margin="13" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                        <Image Source="btle" WidthRequest="30" HeightRequest="30"/>
                                         <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
-                                        <Label x:Name="R1P6" Margin="13" Text="Player 6" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                        <Label x:Name="R1P6" Margin="13" Text="Player 6" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White"/>
                                     </StackLayout>
                                 </StackLayout>
                             </Frame>
@@ -84,10 +84,10 @@
                             <Frame Margin="5" BorderColor="#ff9d00" BackgroundColor="#333232">
                                 <StackLayout>
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                        <Label x:Name="R1P7" Text="Player 7" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-                                        <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                        <Label x:Name="R1P7" Text="Player 7" Margin="13" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                        <Image Source="btle" WidthRequest="30" HeightRequest="30"/>
                                         <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
-                                        <Label x:Name="R1P8" Margin="13" Text="Player 8" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                        <Label x:Name="R1P8" Margin="13" Text="Player 8" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White"/>
                                     </StackLayout>
                                 </StackLayout>
                             </Frame>
@@ -98,10 +98,10 @@
                         <Frame Margin="5" BorderColor="RoyalBlue" BackgroundColor="#333232">
                             <StackLayout>
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                    <Label x:Name="R2P1" Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-                                    <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                    <Label x:Name="R2P1" Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                    <Image Source="btle" WidthRequest="30" HeightRequest="30"/>
                                     <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
-                                    <Label x:Name="R2P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                    <Label x:Name="R2P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White"/>
                                 </StackLayout>
                             </StackLayout>
                         </Frame>
@@ -111,10 +111,10 @@
                     <Frame Margin="5" BorderColor="RoyalBlue" BackgroundColor="#333232">
                         <StackLayout>
                             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                <Label x:Name="R2P3" Text="Player 3" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-                                <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                <Label x:Name="R2P3" Text="Player 3" Margin="13" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                <Image Source="btle" WidthRequest="30" HeightRequest="30"/>
                                 <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
-                                <Label x:Name="R2P4" Margin="13" Text="Player 4" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                <Label x:Name="R2P4" Margin="13" Text="Player 4" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White"/>
                             </StackLayout>
                         </StackLayout>
 
@@ -122,14 +122,14 @@
                     </Frame>
 
                     <StackLayout>
-                        <Label HorizontalOptions="Center" Text="Final" FontSize="23" FontAttributes="Bold" TextColor="RoyalBlue"/>
-                        <Frame Margin="5" BorderColor="Lime" BackgroundColor="#333232">
+                        <Label HorizontalOptions="Center" Text="Final" FontSize="23" FontAttributes="Bold" TextColor="#37ff00"/>
+                        <Frame Margin="5" BorderColor="#37ff00" BackgroundColor="#333232">
                             <StackLayout>
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                    <Label x:Name="R3P1" Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-                                    <Image Source="btle" WidthRequest="55" HeightRequest="55"/>
+                                    <Label x:Name="R3P1" Text="Player 1" Margin="13" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+                                    <Image Source="btle" WidthRequest="30" HeightRequest="30"/>
                                     <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
-                                    <Label x:Name="R3P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="19" HorizontalTextAlignment="Center" TextColor="White"/>
+                                    <Label x:Name="R3P2" Margin="13" Text="Player 2" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White"/>
                                 </StackLayout>
                             </StackLayout>
                         </Frame>
@@ -138,8 +138,8 @@
 
                 <StackLayout x:Name="result" IsVisible="false" Margin="5">
                 <Label Text="Leaderboard" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" TextColor="RoyalBlue"/>
-                <Label Text="Winner: KUDO" x:Name="winnerText" FontSize="17" HorizontalOptions="Start" TextColor="White"/>
-                <Label Text="Second Place: Kudomion" x:Name="secondPlaceText" HorizontalOptions="Start" FontSize="17" TextColor="White"/>
+                <Label Text="Winner: ??" x:Name="winnerText" FontSize="17" HorizontalOptions="Start" TextColor="White"/>
+                <Label Text="Second Place: ??" x:Name="secondPlaceText" HorizontalOptions="Start" FontSize="17" TextColor="White"/>
                 </StackLayout>
             </StackLayout>
 

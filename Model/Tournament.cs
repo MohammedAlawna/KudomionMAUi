@@ -8,7 +8,6 @@ namespace Kudomion.Model
 {
     public class Tournament
     {
-
         public string title { get; set; }
         public User winner { get; set; }
         public User secondPlace { get; set; }

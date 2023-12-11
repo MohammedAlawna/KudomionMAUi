@@ -17,30 +17,30 @@
 
                
 
-                <StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand">
 
                     <StackLayout Margin="5" x:Name="TournamentItemCard">
                         <StackLayout>
                             <CollectionView VerticalOptions="FillAndExpand" x:Name="TournamentsToLoad">
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
-                                        <Frame BackgroundColor="#363636" BorderColor="Black" HeightRequest="340">
+                                        <Frame BackgroundColor="#363636" BorderColor="Black" WidthRequest="300" HeightRequest="345">
                                             <StackLayout>
                                                 <Label Text="{Binding title}"
                                                  HorizontalOptions="Center"
                                                  TextColor="Gold"
                                                  FontAttributes="Bold"
-                                                 FontSize="22"
+                                                 FontSize="17"
                                                  />
 
-                                                <Image Margin="5" x:Name="TournamentBanner" Source="{Binding tournyBannerSrc}" />
+                                                <Image Margin="5" WidthRequest="160" x:Name="TournamentBanner" Source="{Binding tournyBannerSrc}" />
 
-                                                <Label x:Name="RegStatus" Margin="5" Text="Registeration is available!" TextColor="White" FontSize="17" HorizontalOptions="Center" VerticalOptions="End"/>
-
-                                                <StackLayout Spacing="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                                    <Button WidthRequest="170" Text="View Details" Clicked="ViewDetailsButtonClicked" BackgroundColor="RoyalBlue"/>
-                                                    <Button WidthRequest="120" Text="Sign Up" Clicked="SignUpButtonClicked" BackgroundColor="Orange"/>
+           
+                                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                                <Button WidthRequest="150" Margin="5" Text="View Details" Clicked="ViewDetailsButtonClicked" BackgroundColor="RoyalBlue"/>
+                                                <Button WidthRequest="150" Text="Sign Up" Clicked="SignUpButtonClicked" BackgroundColor="Orange"/>
                                                 </StackLayout>
+                                            
                                             </StackLayout>
                                         </Frame>
                                     </DataTemplate>
