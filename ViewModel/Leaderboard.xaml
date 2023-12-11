@@ -5,14 +5,14 @@
              BackgroundColor="#202024">
     <StackLayout>
         <StackLayout>
-            <StackLayout>
-                <Frame BackgroundColor="#2c2c2c" Margin="10">
-                <Image Source="ranking"/>
+            <StackLayout WidthRequest="350">
+                <Frame BorderColor="Black" BackgroundColor="#2c2c2c" Margin="10">
+                <Image WidthRequest="270" Source="ranking"/>
                 </Frame>
             </StackLayout>
 
-            <StackLayout x:Name="allUsersRank">
-                <Frame Margin="10" BackgroundColor="#2c2c2c" x:Name="leaderboardCard">
+            <StackLayout x:Name="allUsersRank" WidthRequest="330">
+                <Frame WidthRequest="330" BorderColor="#7C0000" Margin="10" BackgroundColor="#2c2c2c" x:Name="leaderboardCard">
                     <StackLayout>
                         <CollectionView HeightRequest="330" x:Name="userRankingsToLoad">
                             <CollectionView.ItemTemplate>
@@ -38,7 +38,7 @@
 
                                                
                                                 <Image Source="yg" HeightRequest="55" HorizontalOptions="Start" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" />
-                                                <Label Text="{Binding name}" HorizontalTextAlignment="Start" TextColor="White" FontSize="16" FontAttributes="Bold" Grid.Column="1" Grid.Row="0">
+                                                <Label Text="{Binding name}" Margin="0,16,0,0" HorizontalTextAlignment="Start" TextColor="White" FontSize="16" FontAttributes="Bold" Grid.Column="1" Grid.Row="0">
                                                     <Label.GestureRecognizers>
                                                         <TapGestureRecognizer Tapped="UsernameClicked" />
                                                     </Label.GestureRecognizers>

@@ -10,14 +10,14 @@
              >
     <!--Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"-->
-    
-    <StackLayout Padding="80" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+    <StackLayout Padding="80" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
         <Image Source="AppLogo.png" WidthRequest="180" HeightRequest="180" ></Image>
-        <Frame WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Opacity="0.60" Margin="3">
+        <Frame x:Name="usernameFrame" WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Margin="3">
             <Entry x:Name="userNameText" WidthRequest="220" HorizontalOptions="CenterAndExpand" FontSize="13" ReturnType="Next" Placeholder="Enter your username..." TextColor="White" PlaceholderColor="White"/>
         </Frame>
 
-        <Frame WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Opacity="0.60" Margin="3">
+        <Frame WidthRequest="250" x:Name="passwordFrame" BackgroundColor="#2f3030" Padding="2" BorderColor="Black"  Margin="3">
             <Entry x:Name="passwordText" WidthRequest="220" Placeholder="Enter your password..." FontSize="13" IsPassword="True" HorizontalOptions="CenterAndExpand" ReturnType="Done" TextColor="White" PlaceholderColor="White"></Entry>
         </Frame>
         
