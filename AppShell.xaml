@@ -45,6 +45,13 @@
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
+
+        <ShellContent
+        Title="Chat"
+        Icon="cht"
+        ContentTemplate="{DataTemplate viewModel:SimpleChat}"
+        />
+
         <ShellContent
         Title="Challenges"
         Icon="btlic"
@@ -57,6 +64,7 @@
         ContentTemplate="{DataTemplate viewModel:About}"
         />
 
+
         <!--<ShellContent
         Icon="newss"        
         Title="News"
@@ -65,21 +73,12 @@
      
 
         <ShellContent
-        Title="Meta"
-        Icon="mta"
-        />
-
-        <ShellContent
         Title="Clips"
         Icon="clps"
         ContentTemplate="{}"
         />
 
-        <ShellContent
-            Title="Chat"
-            Icon="cht"
-            ContentTemplate="{}"
-            />
+        
         <ShellContent
         Title="Settings"
         FlyoutIcon="notif"

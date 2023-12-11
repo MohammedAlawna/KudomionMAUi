@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.Leaderboard"
              BackgroundColor="#202024">
-    <StackLayout>
+    <ScrollView Margin="10" VerticalOptions="FillAndExpand">
         <StackLayout>
             <StackLayout WidthRequest="350">
                 <Frame BorderColor="Black" BackgroundColor="#2c2c2c" Margin="10">
@@ -13,7 +13,7 @@
 
             <StackLayout x:Name="allUsersRank" WidthRequest="330">
                 <Frame WidthRequest="330" BorderColor="#7C0000" Margin="10" BackgroundColor="#2c2c2c" x:Name="leaderboardCard">
-                    <StackLayout>
+                    <ScrollView>
                         <CollectionView HeightRequest="330" x:Name="userRankingsToLoad">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
@@ -54,10 +54,10 @@
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
-                    </StackLayout>
+                    </ScrollView>
                     
                 </Frame>
             </StackLayout>
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>
