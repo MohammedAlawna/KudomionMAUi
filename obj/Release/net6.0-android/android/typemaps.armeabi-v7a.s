@@ -215,22 +215,22 @@ map_modules:
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
 
-	.byte	0x77, 0xe7, 0xaf, 0x78, 0x47, 0x5c, 0x98, 0x49, 0xb6, 0x18, 0x24, 0xcc, 0x78, 0x57, 0x46, 0xc8	@ module_uuid: 78afe777-5c47-4998-b618-24cc785746c8
-	.long	0x11	@ entry_count
-	.long	0x6	@ duplicate_count
+	.byte	0x77, 0x52, 0xcf, 0x5, 0x5, 0x0, 0x74, 0x4e, 0xb5, 0xd9, 0xcd, 0xb, 0xec, 0xf1, 0xb5, 0x63	@ module_uuid: 05cf5277-0005-4e74-b5d9-cd0becf1b563
+	.long	0x3	@ entry_count
+	.long	0x0	@ duplicate_count
 	.long	.L.module15_managed_to_java	@ map
-	.long	.L.module15_managed_to_java_duplicates	@ duplicate_map
-	.long	map_aname.15	@ assembly_name: Xamarin.AndroidX.Navigation.Common
+	.long	0	@ duplicate_map
+	.long	map_aname.15	@ assembly_name: Kudomion
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
 
-	.byte	0x79, 0xd8, 0x3a, 0xdb, 0x9a, 0x63, 0xc0, 0x4e, 0xb0, 0x1d, 0xe8, 0xff, 0x9e, 0xe2, 0x7, 0x72	@ module_uuid: db3ad879-639a-4ec0-b01d-e8ff9ee20772
-	.long	0x3	@ entry_count
-	.long	0x0	@ duplicate_count
+	.byte	0x77, 0xe7, 0xaf, 0x78, 0x47, 0x5c, 0x98, 0x49, 0xb6, 0x18, 0x24, 0xcc, 0x78, 0x57, 0x46, 0xc8	@ module_uuid: 78afe777-5c47-4998-b618-24cc785746c8
+	.long	0x11	@ entry_count
+	.long	0x6	@ duplicate_count
 	.long	.L.module16_managed_to_java	@ map
-	.long	0	@ duplicate_map
-	.long	map_aname.16	@ assembly_name: Kudomion
+	.long	.L.module16_managed_to_java_duplicates	@ duplicate_map
+	.long	map_aname.16	@ assembly_name: Xamarin.AndroidX.Navigation.Common
 	.long	0x0	@ image
 	.long	0x0	@ java_name_width
 	.long	0x0	@ java_map
@@ -3544,19 +3544,19 @@ map_java:
 	.zero	50	@ byteCount == 53; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000011	@ type_token_id
 	.ascii	"androidx/navigation/NavAction"	@ java_name
 	.zero	74	@ byteCount == 29; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000012	@ type_token_id
 	.ascii	"androidx/navigation/NavArgument"	@ java_name
 	.zero	72	@ byteCount == 31; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000013	@ type_token_id
 	.ascii	"androidx/navigation/NavBackStackEntry"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
@@ -3574,7 +3574,7 @@ map_java:
 	.zero	41	@ byteCount == 62; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000014	@ type_token_id
 	.ascii	"androidx/navigation/NavDeepLink"	@ java_name
 	.zero	72	@ byteCount == 31; fixedWidth == 103; returned size == 103
@@ -3586,37 +3586,37 @@ map_java:
 	.zero	65	@ byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000015	@ type_token_id
 	.ascii	"androidx/navigation/NavDeepLinkRequest"	@ java_name
 	.zero	65	@ byteCount == 38; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000016	@ type_token_id
 	.ascii	"androidx/navigation/NavDestination"	@ java_name
 	.zero	69	@ byteCount == 34; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000017	@ type_token_id
 	.ascii	"androidx/navigation/NavDestination$DeepLinkMatch"	@ java_name
 	.zero	55	@ byteCount == 48; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/navigation/NavDirections"	@ java_name
 	.zero	70	@ byteCount == 33; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000018	@ type_token_id
 	.ascii	"androidx/navigation/NavGraph"	@ java_name
 	.zero	75	@ byteCount == 28; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000019	@ type_token_id
 	.ascii	"androidx/navigation/NavGraphNavigator"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
@@ -3634,43 +3634,43 @@ map_java:
 	.zero	72	@ byteCount == 31; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000021	@ type_token_id
 	.ascii	"androidx/navigation/NavOptions"	@ java_name
 	.zero	73	@ byteCount == 30; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x2000022	@ type_token_id
 	.ascii	"androidx/navigation/NavType"	@ java_name
 	.zero	76	@ byteCount == 27; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/navigation/NavViewModelStoreProvider"	@ java_name
 	.zero	58	@ byteCount == 45; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x200001a	@ type_token_id
 	.ascii	"androidx/navigation/Navigator"	@ java_name
 	.zero	74	@ byteCount == 29; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x0	@ type_token_id
 	.ascii	"androidx/navigation/Navigator$Extras"	@ java_name
 	.zero	67	@ byteCount == 36; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x200001e	@ type_token_id
 	.ascii	"androidx/navigation/NavigatorProvider"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0xf	@ module_index
+	.long	0x10	@ module_index
 	.long	0x200001f	@ type_token_id
 	.ascii	"androidx/navigation/NavigatorState"	@ java_name
 	.zero	69	@ byteCount == 34; fixedWidth == 103; returned size == 103
@@ -5230,8 +5230,8 @@ map_java:
 	.zero	55	@ byteCount == 48; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
-	.long	0x2000075	@ type_token_id
+	.long	0xf	@ module_index
+	.long	0x2000076	@ type_token_id
 	.ascii	"crc64b0f1f70064186880/FirebaseService"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103
 	.zero	1
@@ -5410,13 +5410,13 @@ map_java:
 	.zero	58	@ byteCount == 45; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0xf	@ module_index
 	.long	0x200000f	@ type_token_id
 	.ascii	"crc64ed1a5dc4ae00162a/MainActivity"	@ java_name
 	.zero	69	@ byteCount == 34; fixedWidth == 103; returned size == 103
 	.zero	1
 
-	.long	0x10	@ module_index
+	.long	0xf	@ module_index
 	.long	0x2000010	@ type_token_id
 	.ascii	"crc64ed1a5dc4ae00162a/MainApplication"	@ java_name
 	.zero	66	@ byteCount == 37; fixedWidth == 103; returned size == 103

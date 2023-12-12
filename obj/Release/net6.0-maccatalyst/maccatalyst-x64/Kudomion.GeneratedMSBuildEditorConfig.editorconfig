@@ -101,6 +101,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.SignUpP
 build_metadata.AdditionalFiles.TargetPath = ViewModel\SignUpPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ViewModel\SignUpPage.xaml
 
+[D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/SimpleChat.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.SimpleChat.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewModel\SimpleChat.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewModel\SimpleChat.xaml
+
 [D:/OGRE Tech CO/KudomionUpgraded/Kudomion/Kudomion/ViewModel/TierList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Kudomion.ViewModel.TierList.xaml

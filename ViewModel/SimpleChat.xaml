@@ -5,9 +5,9 @@
              x:Class="Kudomion.ViewModel.SimpleChat">
     <ContentPage.Content>
         <ScrollView VerticalOptions="FillAndExpand" Margin="10">
-            <StackLayout VerticalOptions="CenterAndExpand" Margin="20" >
-                <Frame BorderColor="#2c2c2e" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" WidthRequest="320" BackgroundColor="#1c1c1c">
-            <Label Text="Connect system is not available in this release. An improved connect, chat and community system is under development."
+            <StackLayout WidthRequest="300" VerticalOptions="CenterAndExpand" Margin="20" >
+                <Frame WidthRequest="275" BorderColor="Black" BackgroundColor="#2c2c2e" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                    <Label Text="Connect system is not available in this release. An improved connect, chat and community system is under development."
                 FontSize="18"
                 TextColor="White"
                 Margin="5" 

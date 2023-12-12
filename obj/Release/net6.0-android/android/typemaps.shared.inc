@@ -77,13 +77,13 @@ map_aname.14:
 
 	.type	map_aname.15, @object
 map_aname.15:
-	.asciz	"Xamarin.AndroidX.Navigation.Common"
-	.size	map_aname.15, 35
+	.asciz	"Kudomion"
+	.size	map_aname.15, 9
 
 	.type	map_aname.16, @object
 map_aname.16:
-	.asciz	"Kudomion"
-	.size	map_aname.16, 9
+	.asciz	"Xamarin.AndroidX.Navigation.Common"
+	.size	map_aname.16, 35
 
 	.type	map_aname.17, @object
 map_aname.17:

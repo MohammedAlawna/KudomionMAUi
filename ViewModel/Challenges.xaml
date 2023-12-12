@@ -68,7 +68,7 @@
                                                     <ColumnDefinition/>
                                                 </Grid.ColumnDefinitions>
                                             
-                                                 
+                                                
                                                 <Label Text="{Binding p1}" FontAttributes="Bold" Grid.Column="0" FontSize="15" HorizontalTextAlignment="Center" TextColor="White"/>
                                                 <Image Source="btle" WidthRequest="25" HeightRequest="25" Grid.Column="1" Grid.Row="0"/>
                                                 <!--<Label Text="V.S" TextColor="Gold" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>-->
