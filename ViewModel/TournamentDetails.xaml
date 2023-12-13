@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.ViewModel.TournamentDetails"
              BackgroundColor="#1c1c1c"
+             FlowDirection="LeftToRight"
             >
     <ContentPage.Content>
-        <ScrollView Margin="10" VerticalOptions="FillAndExpand">
+        <ScrollView FlowDirection="LeftToRight" Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <Label
             Text="YKJ Rapid Tournament" FontSize="20"

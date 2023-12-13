@@ -9,6 +9,7 @@
     Shell.BackgroundColor="RoyalBlue"
     Shell.FlyoutBehavior="Flyout"
     Shell.TabBarBackgroundColor="#2e2e2e"
+    FlowDirection="LeftToRight"
     Shell.TabBarUnselectedColor="White"
     FlyoutBackgroundColor="RoyalBlue"
     >

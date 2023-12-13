@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#1c1c1c"
              x:Class="Kudomion.ViewModel.TierList"
+             FlowDirection="LeftToRight"
              xmlns:viewmodel="clr-namespace:Kudomion"
             >
     <ContentPage.Content>
-        <ScrollView Margin="10" VerticalOptions="FillAndExpand">
+        <ScrollView FlowDirection="LeftToRight" Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
 
                 <Label Text="Tier List"

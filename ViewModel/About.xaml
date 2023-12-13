@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#1c1c1c"
+             FlowDirection="LeftToRight"
              x:Class="Kudomion.ViewModel.About">
     <ContentPage.Content>
-        <ScrollView Margin="10" VerticalOptions="FillAndExpand">
+        <ScrollView FlowDirection="LeftToRight" Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <Label Text="Kudomion Beta" FontSize="27" HorizontalOptions="CenterAndExpand" TextColor="Gold" FontAttributes="Bold"/>
                 <Label Text="Developed by KUDO" HorizontalOptions="Start" FontSize="18" TextColor="White"/>

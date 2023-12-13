@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title=""
              Shell.NavBarIsVisible="False"
-             
+             FlowDirection="LeftToRight"
              BackgroundColor="#1c1c1c"
              x:Class="Kudomion.ViewModel.TournamentInfo">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout FlowDirection="LeftToRight">
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

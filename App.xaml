@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:Kudomion"
              xmlns:controls="clr-namespace:Kudomion.Controls"
              x:Class="Kudomion.App"
+             
              Shell.NavBarIsVisible="False"
              >
 

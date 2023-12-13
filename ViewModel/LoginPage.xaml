@@ -7,6 +7,7 @@
              xmlns:modl="clr-namespace:Kudomion.Model"
              xmlns:mod="clr-namespace:Kudomion.Model"
              x:Class="Kudomion.LoginPage"
+             FlowDirection="LeftToRight"
              BackgroundColor="#1c1c1c"
              >
     <!--<ContentPage.BindingContext>
@@ -35,7 +36,7 @@
             </controls:SearchField.ItemTemplate>
             </controls:SearchField>
     </Shell.SearchHandler>
-    <ScrollView Margin="10" VerticalOptions="FillAndExpand">
+    <ScrollView FlowDirection="LeftToRight" Margin="10" VerticalOptions="FillAndExpand">
     <StackLayout>
         <Label TextColor="White" Margin="7" x:Name="loggedInUser" FontSize="17" Text="You are logged in as: User"/>
             <StackLayout Padding="10">

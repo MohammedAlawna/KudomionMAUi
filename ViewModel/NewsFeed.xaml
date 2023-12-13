@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.ViewModel.NewsFeed"
+             FlowDirection="LeftToRight"
              BackgroundColor="#1c1c1c"
              >
-    <StackLayout>
+    <StackLayout FlowDirection="LeftToRight">
 
         <StackLayout HorizontalOptions="Center" Spacing="5" Orientation="Horizontal" Margin="10">
             <Button Clicked="CreatePostClicked" FontAttributes="Bold" Text="Create Post" BackgroundColor="RoyalBlue" WidthRequest="150"/>
