@@ -7,7 +7,7 @@
         <StackLayout>
             <StackLayout WidthRequest="350">
                 <Frame BorderColor="Black" BackgroundColor="#2c2c2c" Margin="10">
-                <Image WidthRequest="270" Source="ranking"/>
+                    <Image WidthRequest="270" Source="https://i.imgur.com/HlJrwqy.png"/>
                 </Frame>
             </StackLayout>
 

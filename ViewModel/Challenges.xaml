@@ -5,7 +5,7 @@
              FlowDirection="LeftToRight"
              BackgroundColor="#202024"
              >
-   
+    <ScrollView Margin="10" VerticalOptions="CenterAndExpand" FlowDirection="LeftToRight">
         <StackLayout FlowDirection="LeftToRight">
             <StackLayout>
             <Frame Margin="15" BorderColor="Black" BackgroundColor="#2c2c2c" HeightRequest="240" WidthRequest="340">
@@ -89,7 +89,7 @@
                 </Frame>
             </StackLayout>
         </StackLayout>
+    </ScrollView>
 
-        
-  
+
 </ContentPage>

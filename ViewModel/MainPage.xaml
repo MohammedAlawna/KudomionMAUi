@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.MainPage"
              BackgroundColor="#1c1c1c"
-             BackgroundImageSource="lgbg"
+             BackgroundImageSource="https://i.imgur.com/ykZMn6g.jpg"
              Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"
              FlowDirection="LeftToRight"

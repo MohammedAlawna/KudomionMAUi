@@ -21,7 +21,7 @@
     <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
 
         <ShellContent
-            Icon="hme"
+            Icon="https://i.imgur.com/HuxgwMX.png"
             Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
             />
@@ -29,39 +29,39 @@
 
         <ShellContent
         Title="Decks"
-        Icon="dck"
+        Icon="https://i.imgur.com/mzYdzL2.png"
         ContentTemplate="{DataTemplate viewModel:DecksList}"
         />
         
         <ShellContent
         Title="Tournaments"
-        Icon="tour"
+        Icon="https://i.imgur.com/VnCaPwv.png"
         ContentTemplate="{DataTemplate viewModel:TournamentsDashboard}"
         />
        
 
         <ShellContent
         Title="Rankings"
-        Icon="rnke"
+        Icon="https://i.imgur.com/xMlb9UQ.png"
         ContentTemplate="{DataTemplate local:Leaderboard}"
         />
 
 
         <ShellContent
         Title="Chat"
-        Icon="cht"
+        Icon="https://i.imgur.com/0czlZpX.png"
         ContentTemplate="{DataTemplate viewModel:SimpleChat}"
         />
 
         <ShellContent
         Title="Challenges"
-        Icon="btlic"
+        Icon="https://i.imgur.com/oZTRnhQ.png"
         ContentTemplate="{DataTemplate local:Challenges}"
         />
 
         <ShellContent
         Title="About"
-        Icon="abt"
+        Icon="https://i.imgur.com/o9sH5W9.png"
         ContentTemplate="{DataTemplate viewModel:About}"
         />
 

@@ -34,10 +34,10 @@ namespace Kudomion.Platforms.Android.Services
 
             var notification = message.GetNotification();
 
-            SendNotification(notification.Body, notification.Title, message.Data);
+            //SendNotification(notification.Body, notification.Title, message.Data);
         }
 
-        public void SendNotification(string messageBody, string title, IDictionary<string, string> data)
+     /*   public void SendNotification(string messageBody, string title, IDictionary<string, string> data)
         {
             var notificationBuilder = new NotificationCompat.Builder(this, MainActivity.Channel_ID)
                 .SetContentTitle(title)
@@ -49,6 +49,6 @@ namespace Kudomion.Platforms.Android.Services
             var notificationManager = NotificationManagerCompat.From(this);
             notificationManager.Notify(MainActivity.NotificationID, notificationBuilder.Build());
 
-        }
+        }*/
     }
 }
