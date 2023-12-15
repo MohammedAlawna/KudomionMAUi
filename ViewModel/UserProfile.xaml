@@ -5,11 +5,11 @@
              BackgroundColor="#1c1c1c"
              FlowDirection="LeftToRight"
              >
-   
+    <ScrollView VerticalOptions="FillAndExpand" Margin="10">
         <StackLayout>
             
             <StackLayout>
-            <Image Source="prfle" Margin="10" HeightRequest="110"/>
+            <Image Source="https://i.imgur.com/Z6jG6BH.png" Margin="10" HeightRequest="110"/>
             <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="Kudo Shinichi" x:Name="loggedInUsername" FontSize="20"/>
             </StackLayout>
             
@@ -57,7 +57,7 @@
             </StackLayout>
 
             <StackLayout x:Name="stats" IsVisible="false" Margin="5">
-                <Frame Margin="0" BackgroundColor="#323232" >
+                <Frame Margin="0" BackgroundColor="#323232" BorderColor="Black" >
                     <StackLayout>
                     <Button BackgroundColor="DarkOrange" Margin="5" Text="Add as a Friend" />
                     <Button BackgroundColor="RoyalBlue" Margin="5" Text="Invite to Duel"/>
@@ -67,7 +67,7 @@
             </StackLayout>
 
             <StackLayout x:Name="duels" IsVisible="false" Margin="5">
-                <Frame Margin="0" BackgroundColor="#323232">
+                <Frame BorderColor="Black" Margin="0" BackgroundColor="#323232">
                     <StackLayout>
                     <CollectionView HeightRequest="220" x:Name="userDuels">
                             <CollectionView.ItemTemplate>
@@ -88,7 +88,7 @@
 
                                                 <Label Text="{Binding p1}" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
                                                 <Label Text="{Binding p2}" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="2" Grid.Row="0"/>
-                                                <Image Source="btle" WidthRequest="35" HeightRequest="35" Grid.Column="1" Grid.Row="0"/>
+                                                <Image Source="https://i.imgur.com/ErsPGOj.png" WidthRequest="35" HeightRequest="35" Grid.Column="1" Grid.Row="0"/>
                                             </Grid>
                                         </StackLayout>
                                     </Frame>
@@ -101,7 +101,7 @@
             </StackLayout>
 
             <StackLayout x:Name="posts" IsVisible="false" Margin="5">
-                <Frame Margin="0" BackgroundColor="#323232">
+                <Frame BorderColor="Black" Margin="0" BackgroundColor="#323232">
                     <StackLayout>
                         <Label FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Posts Currently Not Available.."/>
 
@@ -110,7 +110,7 @@
             </StackLayout>
 
             <StackLayout x:Name="signature" IsVisible="false" Margin="5">
-                <Frame Margin="0" BackgroundColor="#323232">
+                <Frame BorderColor="Black" Margin="0" BackgroundColor="#323232">
                     <StackLayout>
                         <Label FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Signature Currently Not Available."/>
 
@@ -120,5 +120,5 @@
 
         </StackLayout>
 
-  
+    </ScrollView>
 </ContentPage>
