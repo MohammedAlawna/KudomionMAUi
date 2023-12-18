@@ -251,12 +251,12 @@ namespace Kudomion.FirebaseManager
             }
         }
 
-        public async Task<bool> UpdateRoom(string _p1, string _p2, Room romToUpdate)
+        public async Task<bool> UpdateRoom(string _p1, string _p2, Room romToUpdate, bool _isDone)
         {
             try
             {
                 var roomToUpdate = (await firebaseClient.Child("Rooms").OnceAsync<Room>()).Where(
-                r => r.Object.p1 == _p1 && r.Object.p2 == _p2).FirstOrDefault();
+                r => r.Object.isDone == false && r.Object.p1 == _p1 && r.Object.p2 == _p2).FirstOrDefault();
                 await firebaseClient.Child("Rooms").Child(roomToUpdate.Key).PutAsync(romToUpdate);
                 return true;
             }
@@ -439,9 +439,9 @@ namespace Kudomion.FirebaseManager
         {
             try
             {
-                List<Room> allRooms = await GetAllRooms();
+                List<Room> allRooms = await GetAllRoomsInDB();
                 await firebaseClient.Child("Rooms").OnceAsync<Room>();
-                return allRooms.Where(r => r.p1 == p1 && r.p2 == p2).FirstOrDefault();
+                return allRooms.Where(r => r.isDone == false && r.p1 == p1 && r.p2 == p2 && r.winner == "").FirstOrDefault();
             }
             catch(Exception e)
             {
