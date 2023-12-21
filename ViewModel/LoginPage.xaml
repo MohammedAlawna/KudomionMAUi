@@ -67,6 +67,8 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
+                        <ScrollView Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                         <Button Clicked="DiscordButton_Clicked" Grid.Row="0" Grid.Column="0" BackgroundColor="RoyalBlue" TextColor="White" Text="Discord"/>
                         <Button Clicked="FacebookButton_Clicked" Grid.Row="0" Grid.Column="1" BackgroundColor="CornflowerBlue" TextColor="White" Text="Facebook" />
                         <Button Clicked="YoutubeButton_Clicked" Grid.Row="0" Grid.Column="2" BackgroundColor="Red" TextColor="White" Text="YouTube"/>
@@ -76,6 +78,8 @@
                         <Button Clicked="LeagueButton_Clicked" Grid.Row="2" Grid.Column="0" BackgroundColor="DarkGoldenrod" TextColor="White" Text="League"/>
                         <Button Clicked="TournamentsButton_Clicked" Grid.Row="2" Grid.Column="1" BackgroundColor="Orange" TextColor="White" Text="Tournament"/>
                         <Button Clicked="AboutButton_Clicked" Grid.Row="2" Grid.Column="2" BackgroundColor="Gray" TextColor="White" Text="About"/>
+                            </StackLayout>
+                        </ScrollView>
                     </Grid>
                 </Frame>
             </StackLayout>

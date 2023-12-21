@@ -2,6 +2,16 @@
 @string/appbar_scrolling_view_behavior;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\177\jl\res\layout\navigationlayout.xml
 {urn:oasis:names:tc:xliff:document:1.2}g;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\values\values.xml
 {urn:oasis:names:tc:xliff:document:1.2}g;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\198\jl\res\values\values.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg_round.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr_round.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot_round.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\notif.xml
+adaptive-icon;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\notif_round.xml
 alpha;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\174\jl\res\anim\enterfromleft.xml
 alpha;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\174\jl\res\anim\exittoleft.xml
 alpha;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\177\jl\res\anim\nav_default_enter_anim.xml
@@ -16,6 +26,16 @@ androidx.fragment.app.FragmentContainerView;D:\OGRE Tech CO\KudomionUpgraded\Kud
 attr;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\175\jl\res\values\attrs.xml
 attr;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\177\jl\res\values\attr.xml
 attr;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\values\values.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg_round.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr_round.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot_round.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\notif.xml
+background;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\notif_round.xml
 bitmap;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\drawable\common_google_signin_btn_icon_dark_normal.xml
 bitmap;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\drawable\common_google_signin_btn_icon_disabled.xml
 bitmap;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\drawable\common_google_signin_btn_icon_light_normal.xml
@@ -201,6 +221,16 @@ eat-comment;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-
 enum;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\197\jl\res\values\values.xml
 external-cache-path;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\178\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 external-path;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\178\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg_round.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr_round.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot_round.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\notif.xml
+foreground;obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\notif_round.xml
 integer;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\198\jl\res\values\values.xml
 item;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\175\jl\res\values\styles.xml
 item;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\lp\177\jl\res\drawable\maui_splash.xml
