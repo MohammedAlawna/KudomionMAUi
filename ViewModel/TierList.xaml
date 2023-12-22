@@ -26,10 +26,16 @@
                             <CollectionView x:Name="topDecksToLoad">
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
-                                        <Frame BackgroundColor="#363636" BorderColor="Black" WidthRequest="290">
+                                        <Frame BackgroundColor="#363636" BorderColor="Black" WidthRequest="290" HeightRequest="215">
+                                            <StackLayout>
                                             <StackLayout Orientation="Horizontal">
                                                 <Image HeightRequest="67" HorizontalOptions="Start" x:Name="topDeckThumb" Source="{Binding topDeckSrc}" />
                                                 <Label Margin="20, 25, 0, 0" TextColor="White" FontSize="13"  HorizontalTextAlignment="Center" HorizontalOptions="Start" x:Name="topDeckName" Text="{Binding topDeckName}" />
+                                            </StackLayout>
+                                                <StackLayout Margin="5" Orientation="Vertical">
+                                                    <Button Clicked="ViewDeckButtonClicked" BackgroundColor="#49494a" Text="View" Margin="5" FontSize="14" TextColor="White" />
+                                                    <Button Clicked="DownloadDeckButtonClicked" BackgroundColor="RoyalBlue" Text="Download .YDK" Margin="5" TextColor="White" />
+                                                </StackLayout>
                                             </StackLayout>
                                         </Frame>
                                     </DataTemplate>
