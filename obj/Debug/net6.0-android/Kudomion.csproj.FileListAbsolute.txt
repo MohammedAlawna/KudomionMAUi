@@ -14,7 +14,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\Kudo
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\mauiimage.inputs
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\mauifont.inputs
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\mauisplash.inputs
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\mauisplash.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\mauifont.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\mauiimage.stamp
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\stamp\_BuildLibraryImportsCache.stamp
@@ -150,13 +149,11 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.pdb
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Mono.Android.pdb
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\netstandard.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\Newtonsoft.Json.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\PropertyChanged.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.AppContext.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Buffers.dll
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Collections.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Collections.Immutable.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Collections.NonGeneric.dll
@@ -172,7 +169,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Core.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Data.Common.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Data.DataSetExtensions.dll
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Data.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Contracts.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Debug.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Diagnostics.DiagnosticSource.dll
@@ -183,7 +179,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tools.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Diagnostics.TraceSource.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tracing.dll
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Drawing.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Drawing.Primitives.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Dynamic.Runtime.dll
@@ -233,9 +228,7 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Numerics.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Numerics.Vectors.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.ObjectModel.dll
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.DataContractSerialization.dll
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.Xml.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.Xml.Linq.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Reactive.dll
@@ -303,7 +296,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\andr
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Web.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Web.HttpUtility.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Windows.dll
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Xml.Linq.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Xml.ReaderWriter.dll
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Xml.Serialization.dll
@@ -1128,3 +1120,17 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resi
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\notif_background.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\mipmap-xxxhdpi\notif_foreground.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\46DA734BA488A62A-files.cache
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\splsh.psd
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\r\drawable\splsh.png
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Data.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\android\assets\System.Xml.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\sp\drawable\maui_splash_image.xml
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\sp\values\maui_colors.xml
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\mauisplash.stamp
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-android\resizetizer\F7B9BBA4792A9F04-files.cache
