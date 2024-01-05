@@ -53,40 +53,42 @@
                 <IndicatorView Margin="7" x:Name="indicatorView" IndicatorColor="RoyalBlue" SelectedIndicatorColor="White" HorizontalOptions="Center" />
 
             </StackLayout>
-        
-            <StackLayout Padding="10" x:Name="MenuGrid">
-                <Frame HeightRequest="200" BackgroundColor="#1c1c1c">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition />
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <ScrollView Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                        <Button Clicked="DiscordButton_Clicked" Grid.Row="0" Grid.Column="0" BackgroundColor="RoyalBlue" TextColor="White" Text="Discord"/>
-                        <Button Clicked="FacebookButton_Clicked" Grid.Row="0" Grid.Column="1" BackgroundColor="CornflowerBlue" TextColor="White" Text="Facebook" />
-                        <Button Clicked="YoutubeButton_Clicked" Grid.Row="0" Grid.Column="2" BackgroundColor="Red" TextColor="White" Text="YouTube"/>
-                        <Button Clicked="EdoProButton_Clicked" Grid.Row="1" Grid.Column="0" BackgroundColor="DarkOrange" TextColor="White" Text="EDOPro"/>
-                        <Button Clicked="YgoOmegaButton_Clicked" Grid.Row="1" Grid.Column="1" BackgroundColor="CadetBlue" TextColor="White" Text="YGO Omega"/>
-                        <Button Clicked="DuelingbookButton_Clicked" Grid.Row="1" Grid.Column="2" BackgroundColor="Brown" TextColor="White" Text="DuelingBook" />
-                        <Button Clicked="LeagueButton_Clicked" Grid.Row="2" Grid.Column="0" BackgroundColor="DarkGoldenrod" TextColor="White" Text="League"/>
-                        <Button Clicked="TournamentsButton_Clicked" Grid.Row="2" Grid.Column="1" BackgroundColor="Orange" TextColor="White" Text="Tournament"/>
-                        <Button Clicked="AboutButton_Clicked" Grid.Row="2" Grid.Column="2" BackgroundColor="Gray" TextColor="White" Text="About"/>
-                            </StackLayout>
-                        </ScrollView>
-                    </Grid>
+
+           
+                <StackLayout Padding="10" x:Name="MenuGrid">
+               
+                    <Frame HeightRequest="200" BorderColor="RoyalBlue" BackgroundColor="#1c1c1c">
+                    <StackLayout Orientation="Horizontal">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+
+                        
+                        <ScrollView HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" FontSize="50" Text="Hello" Grid.Column="0" Grid.Row="0"/>
+                            <Label TextColor="White" FontSize="50" Text="Hello" Grid.Column="1" Grid.Row="0"/>
+                            <Label TextColor="White" FontSize="50" Text="Hello" Grid.Column="2" Grid.Row="0"/>
+                        </StackLayout>
+                       </ScrollView>
+                        
+
+                    </StackLayout>
                 </Frame>
+                
             </StackLayout>
+    
+        
+    <StackLayout Padding="10">
 
-        <StackLayout Padding="10">
-
-             <Frame BackgroundColor="#1c1c1c" HeightRequest="205">
+             <Frame BackgroundColor="#1c1c1c" BorderColor="RoyalBlue" HeightRequest="205">
                 <StackLayout>
                 <Label Text="Statistics" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Gold" FontSize="25"/>
                 <Label x:Name="numberOfUsers" Margin="2" Text="Number of Users: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
