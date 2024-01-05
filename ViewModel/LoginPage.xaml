@@ -54,35 +54,40 @@
 
             </StackLayout>
 
-           
-                <StackLayout Padding="10" x:Name="MenuGrid">
-               
-                    <Frame HeightRequest="200" BorderColor="RoyalBlue" BackgroundColor="#1c1c1c">
-                    <StackLayout Orientation="Horizontal">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                            </Grid.ColumnDefinitions>
-                        </Grid>
 
-                        
-                        <ScrollView HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-                            <StackLayout Orientation="Horizontal">
-                            <Label TextColor="White" FontSize="50" Text="Hello" Grid.Column="0" Grid.Row="0"/>
-                            <Label TextColor="White" FontSize="50" Text="Hello" Grid.Column="1" Grid.Row="0"/>
-                            <Label TextColor="White" FontSize="50" Text="Hello" Grid.Column="2" Grid.Row="0"/>
+            <StackLayout Padding="10" x:Name="MenuGrid">
+                <Frame HeightRequest="200" BorderColor="RoyalBlue" BackgroundColor="#1c1c1c">
+                    <ScrollView  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout Margin="5" x:Name="TournamentCard">
+                                <Frame CornerRadius="10" BorderColor="Red" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout Orientation="Vertical">
+                                        <Image Source="https://i.imgur.com/RrXXaPy.png" HeightRequest="70"/>
+                                        <Label FontSize="11" FontAttributes="Bold" TextColor="White" Text="Tournaments" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout Margin="5" x:Name="RankingCard">
+                                <Frame CornerRadius="10" BackgroundColor="#3E3E3E" BorderColor="DarkOrange" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout>
+                                        <Image HeightRequest="70" Source="https://i.imgur.com/IjEApTZ.png"/>
+                                        <Label Text="Ranking" FontSize="11" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout Margin="5" x:Name="LeagueCard">
+                                <Frame BorderColor="SeaGreen" BackgroundColor="#3E3E3E" CornerRadius="10" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout>
+                                        <Image Source="https://i.imgur.com/152X4BY.png" HeightRequest="70" />
+                                        <Label FontSize="11" Text="Decks Library" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="White" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
                         </StackLayout>
-                       </ScrollView>
-                        
-
-                    </StackLayout>
+                    </ScrollView>
                 </Frame>
-                
             </StackLayout>
     
         
