@@ -11905,18 +11905,22 @@ public final class R {
     public static final int appicon_background=0x7f0c0001;
     public static final int appicon_foreground=0x7f0c0002;
     public static final int appicon_round=0x7f0c0003;
-    public static final int bluestr=0x7f0c0004;
-    public static final int bluestr_background=0x7f0c0005;
-    public static final int bluestr_foreground=0x7f0c0006;
-    public static final int bluestr_round=0x7f0c0007;
-    public static final int dotnet_bot=0x7f0c0008;
-    public static final int dotnet_bot_background=0x7f0c0009;
-    public static final int dotnet_bot_foreground=0x7f0c000a;
-    public static final int dotnet_bot_round=0x7f0c000b;
-    public static final int notif=0x7f0c000c;
-    public static final int notif_background=0x7f0c000d;
-    public static final int notif_foreground=0x7f0c000e;
-    public static final int notif_round=0x7f0c000f;
+    public static final int appiconfg=0x7f0c0004;
+    public static final int appiconfg_background=0x7f0c0005;
+    public static final int appiconfg_foreground=0x7f0c0006;
+    public static final int appiconfg_round=0x7f0c0007;
+    public static final int bluestr=0x7f0c0008;
+    public static final int bluestr_background=0x7f0c0009;
+    public static final int bluestr_foreground=0x7f0c000a;
+    public static final int bluestr_round=0x7f0c000b;
+    public static final int dotnet_bot=0x7f0c000c;
+    public static final int dotnet_bot_background=0x7f0c000d;
+    public static final int dotnet_bot_foreground=0x7f0c000e;
+    public static final int dotnet_bot_round=0x7f0c000f;
+    public static final int notif=0x7f0c0010;
+    public static final int notif_background=0x7f0c0011;
+    public static final int notif_foreground=0x7f0c0012;
+    public static final int notif_round=0x7f0c0013;
   }
   public static final class plurals {
     public static final int mtrl_badge_content_description=0x7f0d0000;

@@ -57,7 +57,6 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.RecyclerView.dll",
 		"Xamarin.AndroidX.SavedState.dll",
 		"Xamarin.AndroidX.SwipeRefreshLayout.dll",
-		"Xamarin.AndroidX.VersionedParcelable.dll",
 		"Xamarin.AndroidX.ViewPager.dll",
 		"Xamarin.AndroidX.ViewPager2.dll",
 		"Xamarin.Firebase.Messaging.dll",

@@ -4,6 +4,8 @@
 {urn:oasis:names:tc:xliff:document:1.2}g;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\lp\198\jl\res\values\values.xml
 adaptive-icon;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 adaptive-icon;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+adaptive-icon;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg.xml
+adaptive-icon;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg_round.xml
 adaptive-icon;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr.xml
 adaptive-icon;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr_round.xml
 adaptive-icon;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot.xml
@@ -26,6 +28,8 @@ attr;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-andro
 attr;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\lp\197\jl\res\values\values.xml
 background;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 background;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+background;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg.xml
+background;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg_round.xml
 background;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr.xml
 background;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr_round.xml
 background;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot.xml
@@ -222,6 +226,8 @@ external-cache-path;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Relea
 external-path;D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-android\lp\178\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 foreground;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 foreground;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+foreground;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg.xml
+foreground;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appiconfg_round.xml
 foreground;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr.xml
 foreground;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\bluestr_round.xml
 foreground;obj\Release\net6.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_bot.xml

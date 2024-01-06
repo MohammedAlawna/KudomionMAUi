@@ -72,7 +72,7 @@
                                 <Frame CornerRadius="10" BackgroundColor="#3E3E3E" BorderColor="DarkOrange" HeightRequest="130" WidthRequest="170">
                                     <StackLayout>
                                         <Image HeightRequest="70" Source="https://i.imgur.com/IjEApTZ.png"/>
-                                        <Label Text="Ranking" FontSize="11" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="League" FontSize="11" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand"/>
                                     </StackLayout>
                                 </Frame>
                             </StackLayout>

@@ -10315,6 +10315,18 @@ namespace Kudomion
 			// aapt resource value: 0x7F0C0000
 			public const int appicon = 2131492864;
 			
+			// aapt resource value: 0x7F0C0004
+			public const int appiconfg = 2131492868;
+			
+			// aapt resource value: 0x7F0C0005
+			public const int appiconfg_background = 2131492869;
+			
+			// aapt resource value: 0x7F0C0006
+			public const int appiconfg_foreground = 2131492870;
+			
+			// aapt resource value: 0x7F0C0007
+			public const int appiconfg_round = 2131492871;
+			
 			// aapt resource value: 0x7F0C0001
 			public const int appicon_background = 2131492865;
 			
@@ -10324,41 +10336,41 @@ namespace Kudomion
 			// aapt resource value: 0x7F0C0003
 			public const int appicon_round = 2131492867;
 			
-			// aapt resource value: 0x7F0C0004
-			public const int bluestr = 2131492868;
-			
-			// aapt resource value: 0x7F0C0005
-			public const int bluestr_background = 2131492869;
-			
-			// aapt resource value: 0x7F0C0006
-			public const int bluestr_foreground = 2131492870;
-			
-			// aapt resource value: 0x7F0C0007
-			public const int bluestr_round = 2131492871;
-			
 			// aapt resource value: 0x7F0C0008
-			public const int dotnet_bot = 2131492872;
+			public const int bluestr = 2131492872;
 			
 			// aapt resource value: 0x7F0C0009
-			public const int dotnet_bot_background = 2131492873;
+			public const int bluestr_background = 2131492873;
 			
 			// aapt resource value: 0x7F0C000A
-			public const int dotnet_bot_foreground = 2131492874;
+			public const int bluestr_foreground = 2131492874;
 			
 			// aapt resource value: 0x7F0C000B
-			public const int dotnet_bot_round = 2131492875;
+			public const int bluestr_round = 2131492875;
 			
 			// aapt resource value: 0x7F0C000C
-			public const int notif = 2131492876;
+			public const int dotnet_bot = 2131492876;
 			
 			// aapt resource value: 0x7F0C000D
-			public const int notif_background = 2131492877;
+			public const int dotnet_bot_background = 2131492877;
 			
 			// aapt resource value: 0x7F0C000E
-			public const int notif_foreground = 2131492878;
+			public const int dotnet_bot_foreground = 2131492878;
 			
 			// aapt resource value: 0x7F0C000F
-			public const int notif_round = 2131492879;
+			public const int dotnet_bot_round = 2131492879;
+			
+			// aapt resource value: 0x7F0C0010
+			public const int notif = 2131492880;
+			
+			// aapt resource value: 0x7F0C0011
+			public const int notif_background = 2131492881;
+			
+			// aapt resource value: 0x7F0C0012
+			public const int notif_foreground = 2131492882;
+			
+			// aapt resource value: 0x7F0C0013
+			public const int notif_round = 2131492883;
 			
 			static Mipmap()
 			{
