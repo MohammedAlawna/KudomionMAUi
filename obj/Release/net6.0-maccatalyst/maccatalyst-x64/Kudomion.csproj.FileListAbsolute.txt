@@ -345,4 +345,3 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalys
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appiconfg.appiconset\appiconfgItunesArtwork.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\splsh.png
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\splsh.psd
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Release\net6.0-maccatalyst\maccatalyst-x64\PropertyChanged.dll
