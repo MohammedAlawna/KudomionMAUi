@@ -1,0 +1,6 @@
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-windows10.0.19041.0\Kudomion.csproj.AssemblyReference.cache
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-windows10.0.19041.0\Kudomion.GeneratedMSBuildEditorConfig.editorconfig
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-windows10.0.19041.0\Kudomion.AssemblyInfoInputs.cache
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-windows10.0.19041.0\Kudomion.AssemblyInfo.cs
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-windows10.0.19041.0\Kudomion.csproj.CoreCompileInputs.cache
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net6.0-windows10.0.19041.0\Kudomion.sourcelink.json
