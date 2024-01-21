@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#1c1c1c"
+             FlowDirection="LeftToRight"
+             x:Class="Kudomion.ViewModel.DecksList">
+    <ContentPage.Content>
+        <ScrollView FlowDirection="LeftToRight" Margin="20" VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <Button Margin="5" BackgroundColor="RoyalBlue" WidthRequest="270" Text="Tier List" FontSize="17" Clicked="OpenTierList"/>
+                <StackLayout>
+                    <StackLayout>
+                        <StackLayout x:Name="DeckItemCard">
+                            <CollectionView VerticalOptions="FillAndExpand" x:Name="decksToLoad">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Frame BackgroundColor="#363636" BorderColor="Black" WidthRequest="270" HeightRequest="350">
+                                            <StackLayout>
+                                                <Label x:Name="DeckTittle" Text="{Binding title}" FontSize="14" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"/>
+                                                <Image x:Name="DeckThumb" Margin="10" Source="{Binding thumbSrc}" HeightRequest="130"/>
+                                                <StackLayout x:Name="DeckItemButtons" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                                    <Button Clicked="DownloadDeckBtn_Clicked" Margin="3" FontSize="12" Text="Download .YDK" BackgroundColor="RoyalBlue" WidthRequest="130" />
+                                                    <Button Clicked="GetYDKE" Text="YDKE" Margin="3" FontSize="12" BackgroundColor="DarkOrange" WidthRequest="130" />
+                                                    <Button Clicked="ViewDeckDetails" Text="View" Margin="3" FontSize="12" BackgroundColor="Gold" WidthRequest="130" />
+
+                                                    <!--<Button Text="YDKe" BackgroundColor="DarkGoldenrod" WidthRequest="70" />-->
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </Frame>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Kudomion"
+             xmlns:controls="clr-namespace:Kudomion.Controls"
+             xmlns:modl="clr-namespace:Kudomion.Model"
+             xmlns:mod="clr-namespace:Kudomion.Model"
+             x:Class="Kudomion.LoginPage"
+             FlowDirection="LeftToRight"
+             BackgroundColor="#1c1c1c"
+             >
+    <!--<ContentPage.BindingContext>
+        <modl:RefreshModel/>
+    </ContentPage.BindingContext>-->
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
+    </Shell.BackButtonBehavior>
+    <Shell.SearchHandler>
+        <!--Users="{x:Static modl:UsersSearchViewModel.Users}"-->
+        <controls:SearchField x:Name="searchUser"
+                              IsSearchEnabled="True"
+                              QueryIcon="https://i.imgur.com/U1PIUbW.png"
+                              ClearIcon="https://i.imgur.com/wFWB6px.png"
+                              ShowsResults="True"
+                              DisplayMemberName="name"
+                              Placeholder="Search Users Here..">
+        <controls:SearchField.ItemTemplate>
+                <DataTemplate x:DataType="mod:User">
+                    <Grid Margin="5" Padding="5" RowDefinitions="Auto" ColumnDefinitions="40, Auto">
+                        <Image Source="https://i.imgur.com/9owQTM3.png" Grid.Column="0" HeightRequest="30" WidthRequest="30" />
+                        <Label Text="{Binding name}" Grid.Column="1" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        
+                    </Grid>
+                </DataTemplate>
+            </controls:SearchField.ItemTemplate>
+            </controls:SearchField>
+    </Shell.SearchHandler>
+    <ScrollView FlowDirection="LeftToRight" Margin="10" VerticalOptions="FillAndExpand">
+    <StackLayout>
+        <Label TextColor="White" Margin="7" x:Name="loggedInUser" FontSize="17" Text="You are logged in as: User"/>
+            <StackLayout Padding="10">
+
+                <CarouselView ItemsSource="{Binding eventsList}" IndicatorView="indicatorView" x:Name="EventsCarousel" HeightRequest="200">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate x:DataType="modl:EventsCarouselModel">
+
+                            <Image Source="{Binding Url}" Aspect="AspectFill"/>
+
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView Margin="7" x:Name="indicatorView" IndicatorColor="RoyalBlue" SelectedIndicatorColor="White" HorizontalOptions="Center" />
+
+            </StackLayout>
+
+
+            <StackLayout Padding="10" x:Name="MenuGrid">
+                <Frame HeightRequest="200" BorderColor="RoyalBlue" BackgroundColor="#1c1c1c">
+                    <ScrollView  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout Margin="5" x:Name="TournamentCard">
+                                <Frame CornerRadius="10" BorderColor="Red" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout Orientation="Vertical">
+                                        <Image Source="https://i.imgur.com/RrXXaPy.png" HeightRequest="70"/>
+                                        <Label FontSize="11" FontAttributes="Bold" TextColor="White" Text="Tournaments" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout Margin="5" x:Name="RankingCard">
+                                <Frame CornerRadius="10" BackgroundColor="#3E3E3E" BorderColor="DarkOrange" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout>
+                                        <Image HeightRequest="70" Source="https://i.imgur.com/IjEApTZ.png"/>
+                                        <Label Text="League" FontSize="11" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout Margin="5" x:Name="LeagueCard">
+                                <Frame BorderColor="SeaGreen" BackgroundColor="#3E3E3E" CornerRadius="10" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout>
+                                        <Image Source="https://i.imgur.com/152X4BY.png" HeightRequest="70" />
+                                        <Label FontSize="11" Text="Decks Library" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="White" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+    
+        
+    <StackLayout Padding="10">
+
+             <Frame BackgroundColor="#1c1c1c" BorderColor="RoyalBlue" HeightRequest="205">
+                <StackLayout>
+                <Label Text="Statistics" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Gold" FontSize="25"/>
+                <Label x:Name="numberOfUsers" Margin="2" Text="Number of Users: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
+                <Label x:Name="numberOfDuels" Margin="2" Text="Number of Duels: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
+                <Label x:Name="numberOfTournaments" Margin="2" Text="Number of Tournaments: 0" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
+                <Label x:Name="lastRegisteredUser" Margin="2" Text="Last Registered User: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
+                <Button Clicked="Logout_Tapped" Margin="2" Text="Log-Out" BackgroundColor="Red" HorizontalOptions="End"/>
+
+                </StackLayout>
+            </Frame>
+
+
+        </StackLayout>
+    </StackLayout>
+    </ScrollView>
+
+    <!--<StackLayout>
+        <RefreshView RefreshColor="RoyalBlue" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}" HorizontalOptions="Center">
+            <ScrollView>
+        <StackLayout HorizontalOptions="Center">
+            <Image Source="prfle" Margin="10" HeightRequest="85"/>
+            
+                    <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="{Binding currentLoggedInUser}" x:Name="loggedInUsername" FontSize="20"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="88"/>
+                    <ColumnDefinition Width="95"/>
+                    <ColumnDefinition Width="95"/>
+                </Grid.ColumnDefinitions>
+
+                <Label BackgroundColor="RoyalBlue" Text="Duels" Grid.Row="0" HorizontalTextAlignment="Center" Grid.Column="0" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label BackgroundColor="RoyalBlue" Text="Points" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label BackgroundColor="RoyalBlue" Text="Ranking" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label x:Name="noDuels" BackgroundColor="#2c2c2c" Text="0" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label x:Name="noPoints" Background="#2c2c2c" Text="0" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label x:Name="noRanking" BackgroundColor="#2c2c2c" Text="0" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="White"/>
+            </Grid>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="95"/>
+                    <ColumnDefinition Width="95"/>
+                    <ColumnDefinition Width="95"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="prof" Source="prof"  Grid.Column="0" Grid.Row="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Profile_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="pst" Source="pst" Grid.Column="1" Grid.Row="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Post_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="lobby" Source="lby" Grid.Column="2" Grid.Row="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Lobby_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="leader" Source="rnk" Grid.Column="0" Grid.Row="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Leaderboard_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="discord" Source="discrd" Grid.Column="1" Grid.Row="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Discord_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="decks" Source="dcks" Grid.Column="2" Grid.Row="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnClickDecks"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="guide" Source="ygo_guide" Grid.Column="0" Grid.Row="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnClickYGOGuide"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="tournies" Source="tournies" Grid.Column="1" Grid.Row="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnClickTournies"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image x:Name="logout" Source="lgout" Grid.Column="2" Grid.Row="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Logout_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </StackLayout>
+            </ScrollView>
+        </RefreshView>
+       
+    </StackLayout>-->
+</ContentPage>
