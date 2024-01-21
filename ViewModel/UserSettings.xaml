@@ -23,15 +23,15 @@
         </StackLayout>
 
     <StackLayout Margin="10">
-        <Frame Margin="5" BackgroundColor="#414141" HeightRequest="250">
-                <StackLayout>
+        <Border Margin="5" BackgroundColor="#414141" HeightRequest="250">
+                <StackLayout Margin="10">
                 <Entry x:Name="nUser" Placeholder="Enter New Username.." TextColor="White" PlaceholderColor="White"/>
                 <Entry x:Name="nPass" IsPassword="True" Placeholder="Enter New Password.." TextColor="White" PlaceholderColor="White"/>
                 <Entry x:Name="nPassConfirm" IsPassword="True" Placeholder="Enter New Password Again.." TextColor="White" PlaceholderColor="White"/>
                 <Entry x:Name="nEmail" Placeholder="Enter New Email.." TextColor="White" PlaceholderColor="White" IsEnabled="False"/>
                 <Button BackgroundColor="Orange" Text="Submit" Clicked="SubmitButton" TextColor="White"/>
                 </StackLayout>
-            </Frame>
+            </Border>
         </StackLayout>
 
     </StackLayout>

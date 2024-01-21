@@ -6,24 +6,24 @@
     <ScrollView Margin="10" VerticalOptions="FillAndExpand">
         <StackLayout>
             <StackLayout WidthRequest="350">
-                <Frame BorderColor="Black" BackgroundColor="#2c2c2c" Margin="10">
+                <Border Stroke="Black" BackgroundColor="#2c2c2c" HeightRequest="85" Margin="10">
                     <Image WidthRequest="270" HeightRequest="55" Source="https://i.imgur.com/1CGc4Nw.png"/>
-                </Frame>
+                </Border>
             </StackLayout>
 
             <StackLayout x:Name="allUsersRank" WidthRequest="330">
-                <Frame WidthRequest="330" BorderColor="#7C0000" Margin="10" BackgroundColor="#2c2c2c" x:Name="leaderboardCard">
-                    <ScrollView>
+                <Border WidthRequest="330" Stroke="Black" Margin="10" BackgroundColor="#2c2c2c" x:Name="leaderboardCard">
+                    <ScrollView Margin="10">
                         <CollectionView HeightRequest="330" x:Name="userRankingsToLoad">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                    
-                                    <Frame Margin="5" BorderColor="Black" HeightRequest="100" BackgroundColor="#7C0000">
-                                        <StackLayout HorizontalOptions="Center">
+                                    <Border Margin="5" Stroke="Black" HeightRequest="100" BackgroundColor="#7C0000">
+                                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30" Orientation="Horizontal">
                                             <StackLayout.GestureRecognizers>
                                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                                             </StackLayout.GestureRecognizers>
-                                            <Grid Padding="3">
+                                            <!--<Grid Padding="3">
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition/>
                                                     <RowDefinition/>
@@ -34,7 +34,7 @@
                                                     <ColumnDefinition/>
                                                     <ColumnDefinition/>
                                                     
-                                                </Grid.ColumnDefinitions>
+                                                </Grid.ColumnDefinitions>-->
 
 
                                                 <Image Source="https://i.imgur.com/V6qInWz.png" HeightRequest="55" HorizontalOptions="Start" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" />
@@ -48,15 +48,18 @@
                                                 <Label Text="{Binding points}" x:Name="rnk" TextColor="Gold" FontSize="24" FontAttributes="Bold" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Margin="8" HorizontalTextAlignment="End"/>
                                                
 
-                                            </Grid>
+                                            <!--</Grid>-->
                                         </StackLayout>
-                                    </Frame>
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="25" />
+                                        </Border.StrokeShape>
+                                    </Border>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
                     </ScrollView>
                     
-                </Frame>
+                </Border>
             </StackLayout>
         </StackLayout>
     </ScrollView>

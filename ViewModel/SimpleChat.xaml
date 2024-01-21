@@ -7,13 +7,13 @@
     <ContentPage.Content>
         <ScrollView FlowDirection="LeftToRight" VerticalOptions="FillAndExpand" Margin="10">
             <StackLayout WidthRequest="300" VerticalOptions="CenterAndExpand" Margin="20" >
-                <Frame WidthRequest="275" BorderColor="Black" BackgroundColor="#2c2c2e" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                <Border WidthRequest="275" Stroke="Black" BackgroundColor="#2c2c2e" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
                     <Label Text="Connect system is not available in this release. An improved connect, chat and community system is under development."
                 FontSize="18"
                 TextColor="White"
-                Margin="5" 
+                Margin="10" 
                 HorizontalTextAlignment="Center" />
-                </Frame>
+                </Border>
            
             </StackLayout>
         </ScrollView>

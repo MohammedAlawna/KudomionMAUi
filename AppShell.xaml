@@ -60,6 +60,12 @@
         />
 
         <ShellContent
+        Title="Settings"
+        Icon=""
+        ContentTemplate="{DataTemplate viewModel:UserSettings}"
+            />
+
+        <ShellContent
         Title="About"
         Icon="https://i.imgur.com/o9sH5W9.png"
         ContentTemplate="{DataTemplate viewModel:About}"

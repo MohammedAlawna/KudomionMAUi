@@ -56,54 +56,63 @@
 
 
             <StackLayout Padding="10" x:Name="MenuGrid">
-                <Frame HeightRequest="200" BorderColor="RoyalBlue" BackgroundColor="#1c1c1c">
-                    <ScrollView  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                <Border HeightRequest="190" Stroke="RoyalBlue" BackgroundColor="#1c1c1c">
+                    <ScrollView HorizontalOptions="FillAndExpand" Margin="5" Orientation="Horizontal" VerticalOptions="Center">
                         <StackLayout Orientation="Horizontal">
                             <StackLayout Margin="5" x:Name="TournamentCard">
-                                <Frame CornerRadius="10" BorderColor="Red" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
-                                    <StackLayout Orientation="Vertical">
+                                <Border Stroke="Red" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
                                         <Image Source="https://i.imgur.com/RrXXaPy.png" HeightRequest="70"/>
                                         <Label FontSize="11" FontAttributes="Bold" TextColor="White" Text="Tournaments" HorizontalOptions="CenterAndExpand"/>
                                     </StackLayout>
-                                </Frame>
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="40" />
+                                    </Border.StrokeShape>
+                                </Border>
                             </StackLayout>
 
                             <StackLayout Margin="5" x:Name="RankingCard">
-                                <Frame CornerRadius="10" BackgroundColor="#3E3E3E" BorderColor="DarkOrange" HeightRequest="130" WidthRequest="170">
-                                    <StackLayout>
+                                <Border Stroke="DarkOrange" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
                                         <Image HeightRequest="70" Source="https://i.imgur.com/IjEApTZ.png"/>
                                         <Label Text="League" FontSize="11" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand"/>
                                     </StackLayout>
-                                </Frame>
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="40" />
+                                    </Border.StrokeShape>
+                                </Border>
                             </StackLayout>
 
                             <StackLayout Margin="5" x:Name="LeagueCard">
-                                <Frame BorderColor="SeaGreen" BackgroundColor="#3E3E3E" CornerRadius="10" HeightRequest="130" WidthRequest="170">
-                                    <StackLayout>
+                                <Border Stroke="SeaGreen" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
+                                    <StackLayout Orientation="Vertical" VerticalOptions="Center"> 
                                         <Image Source="https://i.imgur.com/152X4BY.png" HeightRequest="70" />
                                         <Label FontSize="11" Text="Decks Library" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="White" />
                                     </StackLayout>
-                                </Frame>
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="40" />
+                                    </Border.StrokeShape>
+                                </Border>
                             </StackLayout>
                         </StackLayout>
                     </ScrollView>
-                </Frame>
+                </Border>
             </StackLayout>
     
         
     <StackLayout Padding="10">
 
-             <Frame BackgroundColor="#1c1c1c" BorderColor="RoyalBlue" HeightRequest="205">
-                <StackLayout>
+             <Border BackgroundColor="#1c1c1c" Stroke="RoyalBlue" HeightRequest="205">
+                <StackLayout Margin="8">
                 <Label Text="Statistics" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Gold" FontSize="25"/>
                 <Label x:Name="numberOfUsers" Margin="2" Text="Number of Users: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
                 <Label x:Name="numberOfDuels" Margin="2" Text="Number of Duels: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
                 <Label x:Name="numberOfTournaments" Margin="2" Text="Number of Tournaments: 0" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
                 <Label x:Name="lastRegisteredUser" Margin="2" Text="Last Registered User: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
-                <Button Clicked="Logout_Tapped" Margin="2" Text="Log-Out" BackgroundColor="Red" HorizontalOptions="End"/>
+                <Button Clicked="Logout_Tapped" Margin="2" Text="Log-Out" BackgroundColor="RoyalBlue" HorizontalOptions="End"/>
 
                 </StackLayout>
-            </Frame>
+            </Border>
 
 
         </StackLayout>

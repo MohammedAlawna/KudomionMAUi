@@ -25,8 +25,8 @@
                             <CollectionView VerticalOptions="FillAndExpand" x:Name="TournamentsToLoad">
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
-                                        <Frame BackgroundColor="#363636" BorderColor="Black" WidthRequest="300" HeightRequest="345">
-                                            <StackLayout>
+                                        <Border BackgroundColor="#363636" Stroke="Black" WidthRequest="300" HeightRequest="345">
+                                            <StackLayout VerticalOptions="Center">
                                                 <Label Text="{Binding title}"
                                                  HorizontalOptions="Center"
                                                  TextColor="Gold"
@@ -43,7 +43,10 @@
                                                 </StackLayout>
                                             
                                             </StackLayout>
-                                        </Frame>
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="25" />
+                                            </Border.StrokeShape>
+                                        </Border>
                                     </DataTemplate>
                                 </CollectionView.ItemTemplate>
                             </CollectionView>

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.SignUpPage"
              FlowDirection="LeftToRight"
-             BackgroundImageSource="lgBg"
+             BackgroundImageSource="https://i.imgur.com/ykZMn6g.jpg"
              Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarIsVisible="True"
@@ -17,18 +17,27 @@
                    Margin="15"
                 HorizontalOptions="CenterAndExpand" />
 
-        <Frame HorizontalOptions="Center" WidthRequest="250"  CornerRadius="30" Padding="3" BorderColor="Black" BackgroundColor="#2f3030">
+        <Border HorizontalOptions="Center" WidthRequest="250" Padding="3" Stroke="Black" BackgroundColor="#2f3030">
             <Entry x:Name="userName" HorizontalOptions="CenterAndExpand" WidthRequest="200" Placeholder="Enter Username.." ReturnType="Next" PlaceholderColor="White" TextColor="White" />
-        </Frame>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="25" />
+            </Border.StrokeShape>
+        </Border>
 
-        <Frame HorizontalOptions="Center" WidthRequest="250"  CornerRadius="30" Padding="3" BackgroundColor="#2f3030" BorderColor="Black">
+        <Border HorizontalOptions="Center" WidthRequest="250" Padding="3" BackgroundColor="#2f3030" Stroke="Black">
             <Entry x:Name="password" HorizontalOptions="CenterAndExpand" WidthRequest="200" ReturnType="Next" MaxLength="17" IsPassword="True" TextColor="White" Placeholder="Enter Password.." PlaceholderColor="White" />
-        </Frame>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="25" />
+            </Border.StrokeShape>
+        </Border>
 
-        <Frame HorizontalOptions="Center" WidthRequest="250"  CornerRadius="30" Padding="3" BackgroundColor="#2f3030" BorderColor="Black">
+        <Border HorizontalOptions="Center" WidthRequest="250" Padding="3" BackgroundColor="#2f3030" Stroke="Black">
             <Entry x:Name="confirmPassword" HorizontalOptions="CenterAndExpand" WidthRequest="200" ReturnType="Next" IsPassword="True" TextColor="White" Placeholder="Confirm Password.." PlaceholderColor="White" />
-        </Frame>
-
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="25" />
+            </Border.StrokeShape>
+        </Border>
+        
         <Button
                 x:Name="SignUpButton"
                 VerticalOptions="Center"
