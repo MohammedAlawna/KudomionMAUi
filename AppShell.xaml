@@ -61,7 +61,7 @@
 
         <ShellContent
         Title="Settings"
-        Icon=""
+        Icon="https://i.imgur.com/iQj5zh8.png"
         ContentTemplate="{DataTemplate viewModel:UserSettings}"
             />
 
