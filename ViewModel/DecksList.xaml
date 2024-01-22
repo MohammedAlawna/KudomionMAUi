@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <ScrollView FlowDirection="LeftToRight" Margin="20" VerticalOptions="FillAndExpand">
             <StackLayout>
-                <Button Margin="5" BackgroundColor="RoyalBlue" WidthRequest="270" Text="Tier List" FontSize="17" Clicked="OpenTierList"/>
+                <Button Margin="5" TextColor="White" BackgroundColor="RoyalBlue" WidthRequest="270" Text="Tier List" FontSize="17" Clicked="OpenTierList"/>
                 <StackLayout>
                     <StackLayout>
                         <StackLayout x:Name="DeckItemCard">

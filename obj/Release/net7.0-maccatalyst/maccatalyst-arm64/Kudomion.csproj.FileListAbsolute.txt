@@ -273,3 +273,4 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net7.0-maccatalys
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net7.0-maccatalyst\maccatalyst-arm64\Kudomion.pdb
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net7.0-maccatalyst\maccatalyst-arm64\Kudomion.genruntimeconfig.cache
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net7.0-maccatalyst\maccatalyst-arm64\ref\Kudomion.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Release\net7.0-maccatalyst\maccatalyst-arm64\PropertyChanged.dll
