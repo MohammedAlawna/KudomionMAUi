@@ -53,29 +53,29 @@
        
 
         <StackLayout Orientation="Vertical" Margin="5">
-                <Picker HorizontalTextAlignment="Center" Margin="0" SelectedIndex="1" x:Name="userStatPicker" TextColor="White" BackgroundColor="#323232"/>
+                <Picker HorizontalTextAlignment="Center" Margin="3" SelectedIndex="1" x:Name="userStatPicker" TextColor="White" BackgroundColor="#323232"/>
             </StackLayout>
 
             <StackLayout x:Name="stats" IsVisible="false" Margin="5">
-                <Frame Margin="0" BackgroundColor="#323232" BorderColor="Black" >
-                    <StackLayout>
-                    <Button BackgroundColor="DarkOrange" Margin="5" Text="Add as a Friend" />
-                    <Button BackgroundColor="RoyalBlue" Margin="5" Text="Invite to Duel"/>
-                    <Button BackgroundColor="LimeGreen" Margin="5" Text="Send message"/>
+                <Border Margin="0" BackgroundColor="#323232" Stroke="Black" >
+                    <StackLayout Margin="5">
+                    <Button BackgroundColor="DarkOrange" Margin="5" TextColor="White" Text="Add as a Friend" />
+                    <Button BackgroundColor="RoyalBlue" Margin="5" Text="Invite to Duel" TextColor="White"/>
+                    <Button BackgroundColor="LimeGreen" Margin="5" Text="Send message" TextColor="White"/>
                 </StackLayout>
-                </Frame>
+                </Border>
             </StackLayout>
 
             <StackLayout x:Name="duels" IsVisible="false" Margin="5">
-                <Frame BorderColor="Black" Margin="0" BackgroundColor="#323232">
+                <Border Stroke="Black" Margin="0" BackgroundColor="#323232">
                     <StackLayout>
                     <CollectionView HeightRequest="220" x:Name="userDuels">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
-                                <StackLayout Margin="2">
-                                    <Frame BorderColor="Black" BackgroundColor="RoyalBlue" HorizontalOptions="CenterAndExpand">
-                                        <StackLayout HorizontalOptions="CenterAndExpand">
-                                            <Grid Margin="5" >
+                                <StackLayout Margin="10">
+                                    <Border Stroke="Black" BackgroundColor="RoyalBlue" HorizontalOptions="CenterAndExpand" WidthRequest="260">
+                                        <StackLayout HorizontalOptions="CenterAndExpand" Margin="5" VerticalOptions="Center">
+                                            <!--<Grid Margin="5" >
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition/>
                                                 </Grid.RowDefinitions>
@@ -84,38 +84,39 @@
                                                     <ColumnDefinition/>
                                                     <ColumnDefinition/>
                                                     <ColumnDefinition/>
-                                                </Grid.ColumnDefinitions>
+                                                </Grid.ColumnDefinitions>-->
 
-                                                <Label Text="{Binding p1}" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-                                                <Label Text="{Binding p2}" FontAttributes="Bold" FontSize="16" HorizontalTextAlignment="Center" TextColor="White" Grid.Column="2" Grid.Row="0"/>
-                                                <Image Source="https://i.imgur.com/ErsPGOj.png" WidthRequest="35" HeightRequest="35" Grid.Column="1" Grid.Row="0"/>
-                                            </Grid>
+                                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="25" VerticalOptions="Center">
+                                                <Label Text="{Binding p1}" FontAttributes="Bold" FontSize="16" VerticalOptions="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" TextColor="White"/>
+                                                <Image Source="https://i.imgur.com/ErsPGOj.png" VerticalOptions="Center" WidthRequest="35" HeightRequest="35" HorizontalOptions="Center"/>
+                                                <Label Text="{Binding p2}" FontAttributes="Bold" FontSize="16" VerticalOptions="Center" HorizontalTextAlignment="End" HorizontalOptions="End" TextColor="White"/>
+                                                 </StackLayout>
+                                                <!--</Grid>-->
                                         </StackLayout>
-                                    </Frame>
+                                    </Border>
                                 </StackLayout>
                             </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
                     </StackLayout>
-                </Frame>
+                </Border>
             </StackLayout>
 
             <StackLayout x:Name="posts" IsVisible="false" Margin="5">
-                <Frame BorderColor="Black" Margin="0" BackgroundColor="#323232">
-                    <StackLayout>
-                        <Label FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Posts Currently Not Available.."/>
+                <Border Stroke="Black" Margin="0" BackgroundColor="#323232">
+                    <StackLayout Margin="5">
+                        <Label FontSize="16" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Posts Currently Not Available.."/>
 
                     </StackLayout>
-                </Frame>
+                </Border>
             </StackLayout>
 
             <StackLayout x:Name="signature" IsVisible="false" Margin="5">
-                <Frame BorderColor="Black" Margin="0" BackgroundColor="#323232">
-                    <StackLayout>
-                        <Label FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Signature Currently Not Available."/>
-
+                <Border Stroke="Black" Margin="0" BackgroundColor="#323232">
+                    <StackLayout Margin="5">
+                        <Label FontSize="16" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="RoyalBlue" Text="Signature Currently Not Available."/>
                     </StackLayout>
-                </Frame>
+                </Border>
             </StackLayout>
 
         </StackLayout>

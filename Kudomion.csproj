@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
@@ -30,7 +30,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|AnyCPU'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
 	  <AndroidPackageFormat>aab</AndroidPackageFormat>
 	  <AndroidKeyStore>False</AndroidKeyStore>
 	  <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
@@ -38,7 +38,7 @@
 	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
 	  <AndroidKeyStore>False</AndroidKeyStore>
 	</PropertyGroup>
 
@@ -52,7 +52,7 @@
 		<MauiIcon Include="Resources\Images\notif.png" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Images\splsh.jpg" Color="#512BD4" />
+		<MauiSplashScreen Include="Resources\Images\splsh.jpg" Color="#512BD4" BaseSize="512, 512" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -64,7 +64,7 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
 	  <PackageReference Include="Xamarin.Firebase.Messaging">
 	    <Version>123.1.1.1</Version>
 	  </PackageReference>

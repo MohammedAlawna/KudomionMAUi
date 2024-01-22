@@ -25,10 +25,10 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows10.0.19041.0",
           "net7.0-android",
           "net7.0-ios",
-          "net7.0-maccatalyst"
+          "net7.0-maccatalyst",
+          "net7.0-windows10.0.19041.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -36,10 +36,6 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-windows10.0.19041": {
-            "targetAlias": "net6.0-windows10.0.19041.0",
-            "projectReferences": {}
-          },
           "net7.0-android33.0": {
             "targetAlias": "net7.0-android",
             "projectReferences": {}
@@ -51,6 +47,10 @@
           "net7.0-maccatalyst16.1": {
             "targetAlias": "net7.0-maccatalyst",
             "projectReferences": {}
+          },
+          "net7.0-windows10.0.19041": {
+            "targetAlias": "net7.0-windows10.0.19041.0",
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -60,61 +60,6 @@
         }
       },
       "frameworks": {
-        "net6.0-windows10.0.19041": {
-          "targetAlias": "net6.0-windows10.0.19041.0",
-          "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
-            "FirebaseAdmin": {
-              "target": "Package",
-              "version": "[2.3.0, )"
-            },
-            "FirebaseDatabase.net": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "PropertyChanged.Fody": {
-              "target": "Package",
-              "version": "[4.1.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.31, 10.0.19041.31]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Windows.SDK.NET.Ref": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
-        },
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "dependencies": {
@@ -219,6 +164,10 @@
               "version": "[1.1.0-alpha03, )",
               "autoReferenced": true
             },
+            "Xamarin.Firebase.Messaging": {
+              "target": "Package",
+              "version": "[123.1.1.1, )"
+            },
             "Xamarin.Google.Android.Material": {
               "target": "Package",
               "version": "[1.7.0, )",
@@ -228,6 +177,14 @@
               "target": "Package",
               "version": "[1.7.0.1, )",
               "autoReferenced": true
+            },
+            "Xamarin.Google.Dagger": {
+              "target": "Package",
+              "version": "[2.46.1.1, )"
+            },
+            "Xamarin.GooglePlayServices.Base": {
+              "target": "Package",
+              "version": "[118.1.0.1, )"
             }
           },
           "imports": [
@@ -554,6 +511,136 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        },
+        "net7.0-windows10.0.19041": {
+          "targetAlias": "net7.0-windows10.0.19041.0",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Maui.Graphics": {
+              "target": "Package",
+              "version": "[7.0.101, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
+              "target": "Package",
+              "version": "[7.0.101, )",
+              "autoReferenced": true
+            },
+            "Microsoft.WindowsAppSDK": {
+              "target": "Package",
+              "version": "[1.2.221209.1, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Ref.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Runtime.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Ref.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Runtime.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Ref.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Runtime.win",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.31, 10.0.19041.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[7.0.15, 7.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.Maui.Controls": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Core": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Essentials": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -573,6 +660,9 @@
           "#import": []
         },
         "maccatalyst-x64": {
+          "#import": []
+        },
+        "win10-x64": {
           "#import": []
         }
       }
