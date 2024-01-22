@@ -38,8 +38,8 @@
 
            
                                                 <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
-                                                <Button WidthRequest="150" Margin="5" Text="View Details" Clicked="ViewDetailsButtonClicked" BackgroundColor="RoyalBlue"/>
-                                                <Button WidthRequest="150" Text="Sign Up" Clicked="SignUpButtonClicked" BackgroundColor="Orange"/>
+                                                <Button WidthRequest="150" Margin="5" Text="View Details" Clicked="ViewDetailsButtonClicked" TextColor="White" BackgroundColor="RoyalBlue"/>
+                                                <Button WidthRequest="150" Text="Sign Up" Clicked="SignUpButtonClicked" TextColor="White" BackgroundColor="Orange"/>
                                                 </StackLayout>
                                             
                                             </StackLayout>
