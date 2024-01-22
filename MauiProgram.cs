@@ -15,10 +15,17 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		//Commented Out MVVM (Adding Singelton of both Tier and ViewModel).
-		/*builder.Services.AddSingleton<TierList>();
+        //Commented Out MVVM (Adding Singelton of both Tier and ViewModel).
+        /*builder.Services.AddSingleton<TierList>();
 		builder.Services.AddSingleton<ViewModelTest>();*/
 
-		return builder.Build();
+        Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
+        {
+        #if ANDROID
+            handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
+        #endif
+        });
+
+        return builder.Build();
 	}
 }

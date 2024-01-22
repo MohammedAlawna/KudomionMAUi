@@ -6,3 +6,8 @@
     xmlns:local="using:Kudomion.WinUI">
 
 </maui:MauiWinUIApplication>
+
+    <!--Remove Line Under Entry ..
+<Thickness x:Key="TextControlBorderThemeThickness">0
+</Thickness>
+<Thickness x:Key="TextControlBorderThemeThicknessFocused">0</Thickness>-->
