@@ -201,7 +201,6 @@
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\Services\" />
 	  <Folder Include="MVVM\Models\" />
-	  <Folder Include="MVVM\ViewModels\" />
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionKudomionHideInfoBar="True" /></VisualStudio></ProjectExtensions>
