@@ -10,6 +10,11 @@
                 FontSize="17"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Entry Placeholder="Test Binding"/>
+            <Entry Placeholder="Last Test Binding"/>
+
+            <Button />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
