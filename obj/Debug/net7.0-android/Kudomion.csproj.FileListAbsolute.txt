@@ -1,3 +1,11 @@
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\Kudomion.runtimeconfig.json
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\Kudomion.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\Kudomion.pdb
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion.apk
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion.aab
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion-Signed.aab
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion-Signed.apk
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion-Signed.apk.idsig
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\googsvcsjson\values\goog_svcs_json.xml
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\build.props
@@ -186,14 +194,6 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\Kudo
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\Kudomion.AssemblyInfo.cs
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\Kudomion.csproj.CoreCompileInputs.cache
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\Kudomion.sourcelink.json
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\Kudomion.runtimeconfig.json
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\Kudomion.dll
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\Kudomion.pdb
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion.apk
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion.aab
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion-Signed.aab
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion-Signed.apk
-D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Debug\net7.0-android\com.blouza.kudomion-Signed.apk.idsig
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\Kudomion.csproj.Fody.CopyLocal.cache
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\Kudomion.csproj.Fody.RuntimeCopyLocal.cache
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net7.0-android\XamlC.stamp

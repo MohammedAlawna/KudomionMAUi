@@ -7,10 +7,11 @@
              x:Class="Kudomion.ViewModel.MVVM.Views.News">
     <ContentPage.Content>
         <ScrollView VerticalOptions="FillAndExpand">
-            <StackLayout x:Name="NewsFeedContainer" VerticalOptions="FillAndExpand" Margin="10" Orientation="Vertical">
-                <StackLayout x:Name="NewsCard" HeightRequest="250" Orientation="Vertical">
-                    <Border BackgroundColor="#363636" Stroke="Black" HeightRequest="200">
-                        <StackLayout x:Name="NewsTopSection" Orientation="Horizontal" Spacing="80">
+            <StackLayout x:Name="NewsFeedContainer" VerticalOptions="FillAndExpand" Margin="13" Orientation="Vertical">
+                <StackLayout x:Name="NewsCard" HeightRequest="395" Orientation="Vertical">
+                    <Border BackgroundColor="#363636" Stroke="Black" HeightRequest="395">
+                        <StackLayout>
+                        <StackLayout x:Name="NewsTopSection" Orientation="Horizontal" Spacing="77">
                             <StackLayout x:Name="AuthorCollection" Orientation="Horizontal" Spacing="0" HorizontalOptions="Start">
                                 <Image HorizontalOptions="Start" VerticalOptions="Start" Margin="5" HeightRequest="35" Source="https://i.imgur.com/z6HDkT2.png" />
                                 <Label HorizontalOptions="End" VerticalOptions="Start" Margin="0,14,0,0" VerticalTextAlignment="End" Text="Kudomion" TextColor="White" FontAttributes="Bold" FontSize="12"/>
@@ -34,16 +35,25 @@
                                 <Border x:Name="LaughReactionContainer" Margin="0, 5, 0, 0" WidthRequest="65" HeightRequest="31" BackgroundColor="#1c1c1c" Stroke="Transparent" HorizontalOptions="Start">
                                     <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Start">
                                         <Image x:Name="LaughReactionImg" Source="https://i.imgur.com/mb0GUoj.png" HeightRequest="28" WidthRequest="28" HorizontalOptions="Start"/>
-                                        <Label x:Name="NumberOfLoveReactions" Text="0" FontAttributes="Bold" FontSize="11" TextColor="White" HorizontalOptions="End" Margin="0, 6,8 ,0" HorizontalTextAlignment="End"/>
+                                        <Label x:Name="NumberOfLaughReactions" Text="0" FontAttributes="Bold" FontSize="11" TextColor="White" HorizontalOptions="End" Margin="0, 6,8 ,0" HorizontalTextAlignment="End"/>
                                         <!--<StackLayout.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="{Binding LoveReact}"/>
                                         </StackLayout.GestureRecognizers>-->
                                     </StackLayout>
-
+                                    
+                                    
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="20"/>
                                     </Border.StrokeShape>
                                 </Border>
+                            </StackLayout>
+                            
+                            
+                        </StackLayout>
+
+                            <StackLayout Spacing="0" x:Name="PostContent" Orientation="Vertical">
+                                <Label x:Name="PostText" FontAutoScalingEnabled="True" Text="This is the first post. YGO is the best game ever. Jehad Loves Nael, Nael Loves Jehad, We Love Them, Jehad and Nael Are Loved By The Whole BBC Society. More text Are Needed, Just In Case We Can Say How Much We Love Our Selves, You know how much does it cost to be a man, It costs a lot, now how we can start upgrading our old system into a new fucking new one. More Text Please, We Are Good Men With Great Attitude, Loren Ipsum, Hello World, Hello Jabali, Hello Nael, We Are The People Of Jabali, We Love Girls" Margin="6" TextColor="White" FontSize="11"/>
+                                <Image Margin="6" Source="https://i.imgur.com/0Ay3h8R.jpg" HeightRequest="200" />
                             </StackLayout>
                         </StackLayout>
                     </Border>
