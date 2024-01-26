@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\ytb.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\yg.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\splsh.jpg" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\prfle.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\dscrd.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\btlebtn.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\ykjblog.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\ygb.jpg" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\ranking.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\emj.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\chtbtn.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\ykjptm.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\ykjoma.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\prf.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\fbk.png" />
+    <BundleResource Include="D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\btle.png" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\OpenSans-Regular.ttf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\OpenSans-Semibold.ttf" />
+  </ItemGroup>
+</Project>
