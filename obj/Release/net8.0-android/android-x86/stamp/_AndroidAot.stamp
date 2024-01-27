@@ -1,5 +1,7 @@
 obj\Release\net8.0-android\android-x86\aot\_Microsoft.Android.Resource.Designer.dll.so
 obj\Release\net8.0-android\android-x86\aot\Kudomion.dll.so
+obj\Release\net8.0-android\android-x86\aot\CommunityToolkit.Maui.dll.so
+obj\Release\net8.0-android\android-x86\aot\CommunityToolkit.Maui.Core.dll.so
 obj\Release\net8.0-android\android-x86\aot\CommunityToolkit.Mvvm.dll.so
 obj\Release\net8.0-android\android-x86\aot\FirebaseAdmin.dll.so
 obj\Release\net8.0-android\android-x86\aot\Firebase.dll.so
@@ -23,6 +25,7 @@ obj\Release\net8.0-android\android-x86\aot\Microsoft.Extensions.Logging.dll.so
 obj\Release\net8.0-android\android-x86\aot\Microsoft.Extensions.Logging.Abstractions.dll.so
 obj\Release\net8.0-android\android-x86\aot\Microsoft.Extensions.Options.dll.so
 obj\Release\net8.0-android\android-x86\aot\Microsoft.Extensions.Primitives.dll.so
+obj\Release\net8.0-android\android-x86\aot\Microsoft.Maui.Controls.Compatibility.dll.so
 obj\Release\net8.0-android\android-x86\aot\Microsoft.Maui.Controls.dll.so
 obj\Release\net8.0-android\android-x86\aot\Microsoft.Maui.Controls.Xaml.dll.so
 obj\Release\net8.0-android\android-x86\aot\Microsoft.Maui.dll.so
@@ -88,6 +91,7 @@ obj\Release\net8.0-android\android-x86\aot\System.Linq.dll.so
 obj\Release\net8.0-android\android-x86\aot\System.Memory.dll.so
 obj\Release\net8.0-android\android-x86\aot\System.Net.Http.dll.so
 obj\Release\net8.0-android\android-x86\aot\System.Net.HttpListener.dll.so
+obj\Release\net8.0-android\android-x86\aot\System.Net.Mail.dll.so
 obj\Release\net8.0-android\android-x86\aot\System.Net.NameResolution.dll.so
 obj\Release\net8.0-android\android-x86\aot\System.Net.NetworkInformation.dll.so
 obj\Release\net8.0-android\android-x86\aot\System.Net.Primitives.dll.so

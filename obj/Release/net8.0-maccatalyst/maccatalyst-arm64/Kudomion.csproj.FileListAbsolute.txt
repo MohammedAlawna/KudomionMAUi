@@ -312,3 +312,5 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalys
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\maccatalyst-arm64\Kudomion.pdb
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\maccatalyst-arm64\Kudomion.genruntimeconfig.cache
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Release\net8.0-maccatalyst\maccatalyst-arm64\ref\Kudomion.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Release\net8.0-maccatalyst\maccatalyst-arm64\CommunityToolkit.Maui.dll
+D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\bin\Release\net8.0-maccatalyst\maccatalyst-arm64\CommunityToolkit.Maui.Core.dll
