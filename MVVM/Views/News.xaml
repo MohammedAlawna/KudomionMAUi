@@ -24,7 +24,7 @@
                                         <Image x:Name="LoveReactionImg" Source="https://i.imgur.com/kxrhydb.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Start"/>
                                         <Label x:Name="NumberOfLoveReactions" Text="0" FontAttributes="Bold" FontSize="11" TextColor="White" HorizontalOptions="End" Margin="0, 6,8 ,0" HorizontalTextAlignment="End"/>
                                             <StackLayout.GestureRecognizers>
-                                                <TapGestureRecognizer Command="{Binding LoveCommand}"/>
+                                                <TapGestureRecognizer Command="{Binding ReactCommand}" CommandParameter="{Binding LoveReaction}"/>
                                             </StackLayout.GestureRecognizers>
                                         </StackLayout>
                                     
@@ -37,10 +37,10 @@
                                     <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Start">
                                         <Image x:Name="LaughReactionImg" Source="https://i.imgur.com/mb0GUoj.png" HeightRequest="28" WidthRequest="28" HorizontalOptions="Start"/>
                                         <Label x:Name="NumberOfLaughReactions" Text="0" FontAttributes="Bold" FontSize="11" TextColor="White" HorizontalOptions="End" Margin="0, 6,8 ,0" HorizontalTextAlignment="End"/>
-                                        <!--<StackLayout.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="{Binding LoveReact}"/>
-                                        </StackLayout.GestureRecognizers>-->
-                                    </StackLayout>
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer Command="{Binding ReactCommand}" CommandParameter="{Binding LaughReaction}"/>
+                                            </StackLayout.GestureRecognizers>
+                                        </StackLayout>
                                     
                                     
                                     <Border.StrokeShape>
