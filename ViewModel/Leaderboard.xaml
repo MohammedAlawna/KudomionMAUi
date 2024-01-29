@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kudomion.Leaderboard"
+             FlowDirection="LeftToRight"
              BackgroundColor="#202024">
     <ScrollView Margin="10" VerticalOptions="FillAndExpand">
         <StackLayout>

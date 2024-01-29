@@ -38,7 +38,7 @@
     </Shell.SearchHandler>
     <ScrollView FlowDirection="LeftToRight" Margin="10" VerticalOptions="FillAndExpand">
     <StackLayout>
-        <Label TextColor="White" Margin="7" x:Name="loggedInUser" FontSize="17" Text="You are logged in as: User"/>
+        <Label TextColor="White" Margin="7" x:Name="loggedInUser" FontSize="12" Text="You are logged in as: User"/>
             <StackLayout Padding="10">
 
                 <CarouselView ItemsSource="{Binding eventsList}" IndicatorView="indicatorView" x:Name="EventsCarousel" HeightRequest="200">
@@ -104,12 +104,12 @@
 
              <Border BackgroundColor="#1c1c1c" Stroke="RoyalBlue" HeightRequest="205">
                 <StackLayout Margin="8">
-                <Label Text="Statistics" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Gold" FontSize="25"/>
-                <Label x:Name="numberOfUsers" Margin="2" Text="Number of Users: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
-                <Label x:Name="numberOfDuels" Margin="2" Text="Number of Duels: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
-                <Label x:Name="numberOfTournaments" Margin="2" Text="Number of Tournaments: 0" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
-                <Label x:Name="lastRegisteredUser" Margin="2" Text="Last Registered User: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="14" TextColor="White"/>
-                <Button Clicked="Logout_Tapped" Margin="2" Text="Log-Out" TextColor="White" BackgroundColor="RoyalBlue" HorizontalOptions="End"/>
+                <Label Text="Statistics" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Gold" FontSize="19"/>
+                <Label x:Name="numberOfUsers" Margin="2" Text="Number of Users: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="13" TextColor="White"/>
+                <Label x:Name="numberOfDuels" Margin="2" Text="Number of Duels: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="13" TextColor="White"/>
+                <Label x:Name="numberOfTournaments" Margin="2" Text="Number of Tournaments: 0" FontAttributes="None" HorizontalOptions="Start" FontSize="13" TextColor="White"/>
+                <Label x:Name="lastRegisteredUser" Margin="2" Text="Last Registered User: ?" FontAttributes="None" HorizontalOptions="Start" FontSize="13" TextColor="White"/>
+                <Button Clicked="Logout_Tapped" Margin="2" Text="Log-Out" TextColor="White" BackgroundColor="RoyalBlue" HorizontalOptions="End" HeightRequest="35" FontSize="10"/>
 
                 </StackLayout>
             </Border>

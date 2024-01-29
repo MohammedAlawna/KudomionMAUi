@@ -31,7 +31,7 @@
                                                  HorizontalOptions="Center"
                                                  TextColor="Gold"
                                                  FontAttributes="Bold"
-                                                 FontSize="17"
+                                                 FontSize="15"
                                                  />
 
                                                 <Image Margin="5" WidthRequest="160" x:Name="TournamentBanner" Source="{Binding tournyBannerSrc}" />
