@@ -13,7 +13,7 @@
                 <StackLayout x:Name="NewsCard" HeightRequest="395" Orientation="Vertical">
                     <Border BackgroundColor="#363636" Stroke="Black" HeightRequest="395">
                         <StackLayout>
-                        <StackLayout x:Name="NewsTopSection" Orientation="Horizontal" Spacing="90">
+                        <StackLayout x:Name="NewsTopSection" Orientation="Horizontal" Spacing="107">
                             <StackLayout x:Name="AuthorCollection" Orientation="Horizontal" Spacing="0" HorizontalOptions="Start">
                                 <Image HorizontalOptions="Start" VerticalOptions="Start" Margin="5" HeightRequest="35" Source="https://i.imgur.com/z6HDkT2.png" />
                                 <Label HorizontalOptions="End" VerticalOptions="Start" Margin="0,14,0,0" VerticalTextAlignment="End" Text="Kudomion" TextColor="White" FontAttributes="Bold" FontSize="12"/>
@@ -54,8 +54,8 @@
                         </StackLayout>
 
                             <StackLayout Spacing="8" x:Name="PostContent" Orientation="Vertical">
-                                <Label x:Name="PostText" FontAutoScalingEnabled="True" Text="This is the first post. YGO is the best game ever. Jehad Loves Nael, Nael Loves Jehad, We Love Them, Jehad and Nael Are Loved By The Whole BBC Society. More text Are Needed, Just In Case We Can Say How Much We Love Our Selves, You know how much does it cost to be a man, It costs a lot, now how we can start upgrading our old system into a new fucking new one. More Text Please, We Are Good Men With Great Attitude, Loren Ipsum, Hello World, Hello Jabali, Hello Nael, We Are The People Of Jabali, We Love Girls" Margin="6" TextColor="White" FontSize="9.6" />
-                                <Image Source="https://i.imgur.com/0Ay3h8R.jpg" WidthRequest="337"/>
+                                <Label x:Name="PostText" FontAutoScalingEnabled="True" Text="This is the first post. YGO is the best game ever. Jehad Loves Nael, Nael Loves Jehad, We Love Them, Jehad and Nael Are Loved By The Whole BBC Society. More text Are Needed, Just In Case We Can Say How Much We Love Our Selves, You know how much does it cost to be a man, It costs a lot, now how we can start upgrading our old system into a new fucking new one. More Text Please, We Are Good Men With Great Attitude, Loren Ipsum, Hello World, Hello Jabali, Hello Nael, We Are The People Of Jabali, We Love Girls" Margin="3" TextColor="White" FontSize="10.3" />
+                                <Image Source="https://i.imgur.com/0Ay3h8R.jpg" WidthRequest="360"/>
                             </StackLayout>
                         </StackLayout>
                     </Border>

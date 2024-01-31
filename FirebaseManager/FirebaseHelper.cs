@@ -14,7 +14,8 @@ namespace Kudomion.FirebaseManager
     {
         //Follow this Article: https://www.c-sharpcorner.com/article/xamarin-forms-working-with-firebase-realtime-database-crud-operations/
         public FirebaseClient firebaseClient = new FirebaseClient("https://kudo1-38995-default-rtdb.firebaseio.com/");
-     
+       // public static string GlobalAPi = "https://kudo1-38995-default-rtdb.firebaseio.com/";
+        public static FirebaseClient GlobalFBClient = new FirebaseClient("https://kudo1-38995-default-rtdb.firebaseio.com/");
         //Tournament Manager:
         //Get All Tournaments in DB.
         public async Task<List<Tournament>> GetAllTournaments()
