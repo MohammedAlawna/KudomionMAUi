@@ -52,7 +52,7 @@
 		<MauiIcon Include="Resources\Images\notif.png" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Images\splsh.jpg" Color="#512BD4" BaseSize="512, 512" />
+		<MauiSplashScreen Include="Resources\Images\splsh.jpg" Color="#512BD4" BaseSize="2500, 2500" Resize="false"/>
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
