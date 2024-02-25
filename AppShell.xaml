@@ -77,6 +77,11 @@
         ContentTemplate="{DataTemplate viewModel:About}"
         />
 
+        <ShellContent
+           Title="Sandbox"
+           ContentTemplate="{DataTemplate viewModel:NotificationsPage}"
+        />
+
 
         <!--<ShellContent
         Icon="newss"        

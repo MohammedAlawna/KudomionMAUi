@@ -9,55 +9,88 @@
              x:Class="Kudomion.ViewModel.MVVM.Views.News">
     <ContentPage.Content>
         <ScrollView VerticalOptions="FillAndExpand">
-            <StackLayout x:Name="NewsFeedContainer" VerticalOptions="FillAndExpand" Margin="13" Orientation="Vertical">
-                <StackLayout x:Name="NewsCard" HeightRequest="395" Orientation="Vertical">
-                    <Border BackgroundColor="#363636" Stroke="Black" HeightRequest="395">
-                        <StackLayout>
-                        <StackLayout x:Name="NewsTopSection" Orientation="Horizontal" Spacing="107">
-                            <StackLayout x:Name="AuthorCollection" Orientation="Horizontal" Spacing="0" HorizontalOptions="Start">
-                                <Image HorizontalOptions="Start" VerticalOptions="Start" Margin="5" HeightRequest="35" Source="https://i.imgur.com/z6HDkT2.png" />
-                                <Label HorizontalOptions="End" VerticalOptions="Start" Margin="0,14,0,0" VerticalTextAlignment="End" Text="Kudomion" TextColor="White" FontAttributes="Bold" FontSize="12"/>
-                            </StackLayout>
 
-                                <StackLayout x:Name="ReactionBtnsCollection" Spacing="4" Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Start">
-                                    <Border x:Name="LoveReactionContainer" Margin="0, 5, 0, 0" WidthRequest="65" HeightRequest="31" BackgroundColor="#1c1c1c" Stroke="Transparent" HorizontalOptions="End">
-                                        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
-                                            <Image x:Name="LoveReactionImg" Source="https://i.imgur.com/kxrhydb.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Start"/>
-                                            <Label x:Name="NumberOfLoveReactions" Text="{Binding LoveReactionsCount}" FontAttributes="Bold" FontSize="11" TextColor="White" HorizontalOptions="End" Margin="0, 6,8 ,0" HorizontalTextAlignment="End"/>
-                                            <StackLayout.GestureRecognizers>
-                                                <TapGestureRecognizer Command="{Binding ReactCommand}" CommandParameter="{Binding LoveReaction}"/>
-                                            </StackLayout.GestureRecognizers>
-                                        </StackLayout>
-
-                                        <Border.StrokeShape>
-                                            <RoundRectangle CornerRadius="20"/>
-                                        </Border.StrokeShape>
-                                    </Border>
-
-                                    <Border x:Name="LaughReactionContainer" Margin="0, 5, 0, 0" WidthRequest="65" HeightRequest="31" BackgroundColor="#1c1c1c" Stroke="Transparent" HorizontalOptions="Start">
-                                        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Start">
-                                            <Image x:Name="LaughReactionImg" Source="https://i.imgur.com/mb0GUoj.png" HeightRequest="28" WidthRequest="28" HorizontalOptions="Start"/>
-                                            <Label x:Name="NumberOfLaughReactions" Text="{Binding LaughReactionsCount}" FontAttributes="Bold" FontSize="11" TextColor="White" HorizontalOptions="End" Margin="0, 6,8 ,0" HorizontalTextAlignment="End"/>
-                                            <StackLayout.GestureRecognizers>
-                                                <TapGestureRecognizer Command="{Binding ReactCommand}" CommandParameter="{Binding LaughReaction}"/>
-                                            </StackLayout.GestureRecognizers>
-                                        </StackLayout>
-                                        
-                                        <Border.StrokeShape>
-                                            <RoundRectangle CornerRadius="20"/>
-                                        </Border.StrokeShape>
-                                    </Border>
+            <CollectionView>
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Nael 1</x:String>
+                        <x:String>Nael 2</x:String>
+                        <x:String>Nael 3</x:String>
+                        <x:String>Nael 4</x:String>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout Padding="7" Margin="3">
+                            <Border BackgroundColor="#363636" HeightRequest="220" StrokeShape="RoundRectangle 40, 0, 0, 40" Stroke="Black" StrokeThickness="2">
+                                <StackLayout>
+                                <Label Text="{Binding .}" Margin="5"  HorizontalOptions="Center" TextColor="White" />
+                                    <ImageButton Source="https://i.imgur.com/kxrhydb.png" HeightRequest="30"/>
                                 </StackLayout>
-                            </StackLayout>
+                            </Border>
+                           
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <!--<CollectionView VerticalOptions="FillAndExpand" x:Name="NewsCollectionItems" SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                    <StackLayout x:Name="NewsFeedContainer" VerticalOptions="FillAndExpand" Margin="13" Orientation="Vertical">
+                        <StackLayout x:Name="NewsCard" Orientation="Vertical">
+                            <Border BackgroundColor="#363636" Stroke="Black" HeightRequest="395">
+                                <StackLayout>
+                                    <StackLayout x:Name="NewsTopSection" Orientation="Horizontal" Spacing="85">
+                                        <StackLayout x:Name="AuthorCollection" Orientation="Horizontal" Spacing="0" HorizontalOptions="Start">
+                                            <Image HorizontalOptions="Start" VerticalOptions="Start" Margin="5" HeightRequest="35" Source="https://i.imgur.com/z6HDkT2.png" />
+                                            <Label HorizontalOptions="End" VerticalOptions="Start" Margin="0,14,0,0" VerticalTextAlignment="End" Text="Kudomion" TextColor="White" FontAttributes="Bold" FontSize="12"/>
+                                        </StackLayout>
 
-                            <StackLayout Spacing="8" x:Name="PostContent" Orientation="Vertical">
-                                <Label x:Name="PostText" FontAutoScalingEnabled="True" Text="This is the first post. YGO is the best game ever. Jehad Loves Nael, Nael Loves Jehad, We Love Them, Jehad and Nael Are Loved By The Whole BBC Society. More text Are Needed, Just In Case We Can Say How Much We Love Our Selves, You know how much does it cost to be a man, It costs a lot, now how we can start upgrading our old system into a new fucking new one. More Text Please, We Are Good Men With Great Attitude, Loren Ipsum, Hello World, Hello Jabali, Hello Nael, We Are The People Of Jabali, We Love Girls" Margin="3" TextColor="White" FontSize="10.3" />
-                                <Image Source="https://i.imgur.com/0Ay3h8R.jpg" WidthRequest="360"/>
-                            </StackLayout>
+                                        <StackLayout x:Name="ReactionBtnsCollection" Spacing="4" Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Start" Margin="0, 0, 0, 0">
+                                            <Border x:Name="LoveReactionContainer" Margin="0, 5, 0, 0" WidthRequest="65" HeightRequest="31" BackgroundColor="#1c1c1c" Stroke="Transparent" HorizontalOptions="End">
+                                                <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+                                                    <Image x:Name="LoveReactionImg" Source="https://i.imgur.com/kxrhydb.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Start"/>
+                                                        <Label x:Name="NumberOfLoveReactions" Text="{Binding LoveReactionsCount}" FontAttributes="Bold" FontSize="11" TextColor="White" HorizontalOptions="End" Margin="0, 6,8 ,0" HorizontalTextAlignment="End"/>
+                                                    <StackLayout.GestureRecognizers>
+                                                        <TapGestureRecognizer Command="{Binding ReactCommand}" CommandParameter="{Binding LoveReaction}"/>
+                                                    </StackLayout.GestureRecognizers>   
+                                                </StackLayout>
+
+                                                <Border.StrokeShape>
+                                                    <RoundRectangle CornerRadius="20"/>
+                                                </Border.StrokeShape>
+                                            </Border>
+
+                                            <Border x:Name="LaughReactionContainer" Margin="0, 5, 0, 0" WidthRequest="65" HeightRequest="31" BackgroundColor="#1c1c1c" Stroke="Transparent" HorizontalOptions="Start">
+                                                <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Start">
+                                                    <Image x:Name="LaughReactionImg" Source="https://i.imgur.com/mb0GUoj.png" HeightRequest="28" WidthRequest="28" HorizontalOptions="Start"/>
+                                              
+                                           <Label x:Name="NumberOfLaughReactions" Text="{Binding LaughReactionsCount}" FontAttributes="Bold" FontSize="11" TextColor="White" HorizontalOptions="End" Margin="0, 6,8 ,0" HorizontalTextAlignment="End"/>
+                                                    <StackLayout.GestureRecognizers>
+                                                            <TapGestureRecognizer Command="{Binding ReactCommand}" CommandParameter="{Binding LaughReaction}"/>
+                                                    </StackLayout.GestureRecognizers>
+                                                </StackLayout>
+
+                                                <Border.StrokeShape>
+                                                    <RoundRectangle CornerRadius="20"/>
+                                                </Border.StrokeShape>
+                                            </Border>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                    <StackLayout Spacing="8" x:Name="PostContent" Orientation="Vertical">
+                                        <Label x:Name="PostText" FontAutoScalingEnabled="True" Text="This is the first post. YGO is the best game ever." Margin="3" TextColor="White" FontSize="10.3" />
+                                        <Image Source="https://i.imgur.com/0Ay3h8R.jpg" WidthRequest="360"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Border>
                         </StackLayout>
-                    </Border>
-                </StackLayout>
-            </StackLayout>
+                    </StackLayout>
+                    </DataTemplate>                
+                </CollectionView.ItemTemplate>
+              
+            </CollectionView>-->
+           
         <!--<StackLayout Margin="15">
             <Label
                 TextColor="White"

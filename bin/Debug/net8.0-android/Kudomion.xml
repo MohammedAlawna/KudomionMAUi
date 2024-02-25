@@ -8,6 +8,9 @@
             <inheritdoc/>
             <inheritdoc/>
         </member>
+        <member name="P:Kudomion.MVVM.ViewModels.NewsViewModel.NewsList">
+            <inheritdoc cref="F:Kudomion.MVVM.ViewModels.NewsViewModel.newsList"/>
+        </member>
         <member name="P:Kudomion.MVVM.ViewModels.NewsViewModel.LoveReactionsCount">
             <inheritdoc cref="F:Kudomion.MVVM.ViewModels.NewsViewModel.loveReactionsCount"/>
         </member>
@@ -152,6 +155,9 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewsList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewsList" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.LoveReactionsCount">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "LoveReactionsCount" generated properties.</summary>
         </member>
@@ -169,6 +175,9 @@
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewsList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewsList" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.LoveReactionsCount">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "LoveReactionsCount" generated properties.</summary>

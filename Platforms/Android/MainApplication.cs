@@ -20,6 +20,7 @@ public class MainApplication : MauiApplication
             h.PlatformView.BackgroundTintList =
                 Android.Content.Res.ColorStateList.ValueOf(Colors.Transparent.ToAndroid());
         });
+
         return MauiProgram.CreateMauiApp();
     } 
 
