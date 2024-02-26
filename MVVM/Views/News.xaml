@@ -10,15 +10,15 @@
     <ContentPage.Content>
         <ScrollView VerticalOptions="FillAndExpand">
 
-            <CollectionView>
-                <CollectionView.ItemsSource>
+            <CollectionView ItemsSource="{Binding NewsList}">
+                <!--<CollectionView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Kudomion</x:String>
                         <x:String>Kudomion</x:String>
                         <x:String>Kudomion</x:String>
                         <x:String>Kudomion</x:String>
                     </x:Array>
-                </CollectionView.ItemsSource>
+                </CollectionView.ItemsSource>-->
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <VerticalStackLayout Padding="7" Margin="3">
@@ -29,7 +29,7 @@
                                     
                                     <StackLayout Orientation="Horizontal">
                                     <Image Margin="5, 7, 0, 0" Source="https://i.imgur.com/z6HDkT2.png" HeightRequest="20" VerticalOptions="Start" HorizontalOptions="Start" />
-                                    <Label Margin="5, 7, 0, 0" Text="{Binding .}" HorizontalOptions="Start" VerticalOptions="Start" TextColor="White" />
+                                    <Label Margin="5, 7, 0, 0" Text="Kudomion" HorizontalOptions="Start" VerticalOptions="Start" TextColor="White" />
                                     </StackLayout>
                                     <StackLayout Spacing="5" Margin="0, 3, 0, 0" Orientation="Horizontal">
                                         <Border BackgroundColor="#1c1c1c" Stroke="Transparent" StrokeShape="RoundRectangle 10, 10, 10, 10" WidthRequest="65" HeightRequest="40">
