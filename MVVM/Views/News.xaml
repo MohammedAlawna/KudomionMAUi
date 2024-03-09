@@ -61,7 +61,7 @@
 
                                     <StackLayout Spacing="2">
                                         <Label Text="{Binding Content}" Margin="3, 0, 0, 0" TextColor="White" />
-                                        <Image Source="{Binding Author}" HeightRequest="280" Margin="5"/>
+                                        <Image Source="{Binding Psrc}" HeightRequest="280" Margin="5"/>
                                     </StackLayout>
 
 
