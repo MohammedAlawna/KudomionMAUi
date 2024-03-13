@@ -187,6 +187,25 @@ namespace Kudomion.FirebaseManager
             }
         }
 
+        public async Task<List<string>> GetAllUserStrings()
+        {
+            try
+            {
+                List<string> stringsList = new List<string>();
+                var usersList = await GetAllUsers();
+                foreach(var i in usersList)
+                {
+                    stringsList.Add(i.name);
+                }
+                return stringsList;
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine($"Error: {e.Message}");
+                return null;
+            }
+        }
+
         public async void GetUserStringByName(string name)
         {
             try
