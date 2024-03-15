@@ -61,7 +61,7 @@ namespace Kudomion
             try
             {
                 NewsLinq linq = new NewsLinq();
-                var currentUser = await FirebaseHelper.GetUsrFromName(currentLoggedInUserName);
+                var currentUser = await FirebaseHelper.GetUsrFromName("UKITAKE");
                 List<Reactions> reactions = new List<Reactions>();
                 reactions.Add(new Reactions{ userThatReacted = currentUser, typeOfReaction="LOVE"});
                 var trialItem = new NewsItem { Content = "This is a trial post by Jehad", NoLoveReactions = 120, NoLaughReactions = 30, Psrc = "https://i.imgur.com/l6mfkDk.jpeg", ListOfReactions = reactions};
