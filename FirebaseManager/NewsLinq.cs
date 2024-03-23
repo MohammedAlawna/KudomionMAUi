@@ -8,6 +8,7 @@ using Firebase.Database.Query;
 using Kudomion.MVVM.Models;
 using System.Diagnostics;
 using Kudomion.MVVM.ViewModels;
+using Kudomion.Model;
 
 namespace Kudomion.FirebaseManager
 {
@@ -80,6 +81,22 @@ namespace Kudomion.FirebaseManager
         //3- Modify/Edit
 
         //4- Delete Single News Instance (Selected)
+        public async Task<bool> DeleteNewsItem(string newsContent)
+        {
+            try
+            {
+                var itemToDelete = (await FirebaseHelper.GlobalFBClient.Child("News").OnceAsync<NewsItem>()).
+                    Where(c => c.Object.Content.ToLower() == newsContent.ToLower()).FirstOrDefault();
+                await FirebaseHelper.GlobalFBClient.Child("News").Child(itemToDelete.Key).DeleteAsync();
+                return true;
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"An Excpetion: {ex}");
+                return false;
+            }
+        }
+
 
         //5- Delete all news in db
 
@@ -95,7 +112,8 @@ namespace Kudomion.FirebaseManager
                     .FirstOrDefault();
 
                 //Update found room:
-                await FirebaseHelper.GlobalFBClient.Child(selectedItem.Key).PutAsync(newsToUpdate);
+                //await FirebaseHelper.GlobalFBClient.Child(selectedItem.Key).PutAsync(newsToUpdate);
+                await FirebaseHelper.GlobalFBClient.Child("News").Child(selectedItem.Key).PutAsync(newsToUpdate);
 
                 //return
                 return true;
