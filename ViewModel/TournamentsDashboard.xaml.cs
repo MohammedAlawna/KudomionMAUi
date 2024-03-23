@@ -55,9 +55,24 @@ public partial class TournamentsDashboard : ContentPage
 			//Get The Tournament name/title.
 			var getTextChild = (Label)getMainStackLayout.Children[0];
 
-			//Pass Info to New Page, and Navigate to it!
-			await Navigation.PushAsync(new TournamentDetails(getTextChild.Text));
-		}
+			//Check If Tournament Started or Not:
+			//If Not, Display Alert and Return, 
+			var getTournament = await firebaseHelper.GetTournamentByName(getTextChild.Text);
+			bool isSignUpActive = getTournament.signUpActive;
+
+
+            if (isSignUpActive == true) //SignUpActive: true => Tourny Starts: false. 
+            {
+                await DisplayAlert("Sign Up Pending", "You can't view tournament, viewing tournament will be available when tournament starts.", "OK!");
+            }
+
+            if (isSignUpActive == false) //SignUpActive: false => Tourny Starts: true.
+			{
+                //If Started, Pass Info to New Page, and Navigate to it!
+                await Navigation.PushAsync(new TournamentDetails(getTextChild.Text));
+            }
+
+        }
 		catch(Exception ex)
 		{
 			Debug.WriteLine($"Error: {ex.Message}");

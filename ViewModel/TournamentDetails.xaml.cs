@@ -77,7 +77,7 @@ namespace Kudomion.ViewModel
                 else
                 {
                     //Prompt indicator message.
-                    await DisplayAlert("Bracket Auto System", "Brackets will be available once the number of required participants satisfied", "OK!");
+                   // await DisplayAlert("Bracket Auto System", "Brackets will be available once the number of required participants satisfied", "OK!");
                     return;
                 }
 
