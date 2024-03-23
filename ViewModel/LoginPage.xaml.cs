@@ -145,11 +145,16 @@ namespace Kudomion
             var AllRooms = await firebase.GetAllRoomsInDB();
             int NumberOfRooms = AllRooms.Count;
 
+            //Get Tournaments and Their Number
+            var AllTournaments = await firebase.GetAllTournaments();
+            int NumberOfTournaments = AllTournaments.Count;
+
             //Update Stat Text
             loggedInUser.Text = "You are logged in as: " + currentLoggedInUserName;
             numberOfUsers.Text = "Number of Users: " + UsersCount.ToString();
             lastRegisteredUser.Text = "Last Registered User: " + lastRegistered;
             numberOfDuels.Text = "Number of Duels: " + NumberOfRooms.ToString();
+            numberOfTournaments.Text = "Number of Tournaments: " + NumberOfTournaments.ToString();
 
             }
             catch(Exception e)
