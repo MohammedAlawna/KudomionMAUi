@@ -53,7 +53,7 @@ namespace Kudomion
             ApplyDuelistsRanking();
 
             //Debugging Global APi
-            CreateTrialNewsItem();
+            //CreateTrialNewsItem();
         }
 
         private async void CreateTrialNewsItem()
