@@ -72,22 +72,30 @@ namespace Kudomion.ViewModel.MVVM.Views
             bool DidUserReact = CheckIfUserReacted(MainPage.currentLoggedInUser, "LOVE", queryPost);
             if (DidUserReact == true)
             {
-                //1- Un-React
-                UnreactToNewsItem(queryPost, "LOVE", getDesiredText.Text);
-
-                //2- Change BG color to 1c1c1c
+                //1- Change BG color to 1c1c1c
                 //FromHex is obsolete: no longer recommended to be used. Its deprecated.
                 getThisBorder.BackgroundColor = Color.FromHex("#1c1c1c");
+
+                //2- Visaul redcution of Reactions number:
+
+
+                //3- Un-React, new c
+                UnreactToNewsItem(queryPost, "LOVE", getDesiredText.Text);
+
+                
             }
             if(DidUserReact == false)
             {
                 //If User Did Not React, Then:
-                //1- Call React Method:
-                ReactToNewsItem(queryPost, "LOVE", getDesiredText.Text);
-
-
                 //2- Change Button's BG to RoyalBlue Temp:
                 getThisBorder.BackgroundColor = Colors.RoyalBlue;
+
+                //2- Visaul redcution of Reactions number:
+
+
+                //3- Call React Method:
+                ReactToNewsItem(queryPost, "LOVE", getDesiredText.Text);
+
             }
 
 
