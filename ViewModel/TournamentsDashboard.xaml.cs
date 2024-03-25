@@ -63,7 +63,7 @@ public partial class TournamentsDashboard : ContentPage
 
             if (isSignUpActive == true) //SignUpActive: true => Tourny Starts: false. 
             {
-                await DisplayAlert("Sign Up Pending", "You can't view tournament, viewing tournament will be available when tournament starts.", "OK!");
+                await DisplayAlert("Sign Up Pending", "You can't view tournament. Viewing will be available when it starts.", "OK!");
             }
 
             if (isSignUpActive == false) //SignUpActive: false => Tourny Starts: true.
