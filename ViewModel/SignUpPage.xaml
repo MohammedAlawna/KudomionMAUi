@@ -7,9 +7,11 @@
              Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarIsVisible="True"
+             xmlns:signUpFeature="clr-namespace:Kudomion.Features.SignUp"
              >
 
     <StackLayout FlowDirection="LeftToRight" Spacing="20">
+        <signUpFeature:SignUpFormView BindingContext="{Binding SignUpFormViewModel}" />
         <Label Text="Sign Up"
                    FontAttributes="Bold"
                    FontSize="25"
