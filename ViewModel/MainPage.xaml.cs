@@ -90,7 +90,7 @@ public partial class MainPage : ContentPage
 
     private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new SignUpPage(this));
+        //Navigation.PushAsync(new SignUpPage());
     }
 }
 
