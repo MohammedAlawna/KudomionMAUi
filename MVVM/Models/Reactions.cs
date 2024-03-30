@@ -9,7 +9,7 @@ namespace Kudomion.MVVM.Models
 {
     public class Reactions
     {
-        public User userThatReacted { get; set; }
+        public UserModel userThatReacted { get; set; }
 
         //Values KeyMap: {(Love => "LOVE"), (Laugh => "LAUGH")}
         public string typeOfReaction { get; set; }

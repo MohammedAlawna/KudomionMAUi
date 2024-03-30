@@ -26,8 +26,8 @@ public partial class TournamentsDashboard : ContentPage
 
 	async void AddTournamentTrial()
 	{
-		User firstPlaceMock = new User() { name = "winner" };
-		User secondPlaceMock = new User() { name = "secondPlace" };
+		UserModel firstPlaceMock = new UserModel() { name = "winner" };
+		UserModel secondPlaceMock = new UserModel() { name = "secondPlace" };
 
 		Tournament newTourny = new  Tournament{
 			title = "YKJ Live Tournament #2",
@@ -35,9 +35,9 @@ public partial class TournamentsDashboard : ContentPage
 			winner = firstPlaceMock,
 			secondPlace = secondPlaceMock,
 			signUpActive = true,
-			registeredUsers = new List<User>(),	
-			semiFinals = new List<User>() { new User { name = "KuDo" } },
-			final = new List<User>() { new User { name = "KuDo" } },
+			registeredUsers = new List<UserModel>(),	
+			semiFinals = new List<UserModel>() { new UserModel { name = "KuDo" } },
+			final = new List<UserModel>() { new UserModel { name = "KuDo" } },
 		};
 		await firebaseHelper.AddTournament(newTourny);
 		//await DisplayAlert("UI Debugger", $"SemiFinals: {newTourny.semiFinals.Count}", "OK!");
@@ -94,7 +94,7 @@ public partial class TournamentsDashboard : ContentPage
 
 			//Check and Register User To Tournament..
 			//1- Get Current LoggedInUser.
-			User currentLoggedInUser = await firebaseHelper.GetUserByName(MainPage.currentLoggedInUser);
+			UserModel currentLoggedInUser = await firebaseHelper.GetUserByName(MainPage.currentLoggedInUser);
 
 
 			//2- Get Tournament Instance (that was clicked - from tourny name).
@@ -124,7 +124,7 @@ public partial class TournamentsDashboard : ContentPage
 			List<string> userStrings = new List<string>();
             bool isUserExist;
 
-            foreach (User usr in usersInTourny)
+            foreach (UserModel usr in usersInTourny)
 			{
 				userStrings.Add(usr.name.ToLower());
 			}

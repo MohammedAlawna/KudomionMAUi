@@ -89,11 +89,11 @@ namespace Kudomion.FirebaseManager
         }
 
         //Alternative Updating Method.
-        public async Task UpdateTournament(string tournyTitle, List<User> registeredDuelists)
+        public async Task UpdateTournament(string tournyTitle, List<UserModel> registeredDuelists)
         {
             try
             {
-                registeredDuelists = new List<User>();
+                registeredDuelists = new List<UserModel>();
                 var tournyToUpdate = (await firebaseClient.Child("Tournaments").OnceAsync<Tournament>()).
                     Where(t => t.Object.title == tournyTitle).FirstOrDefault();
 
@@ -124,12 +124,12 @@ namespace Kudomion.FirebaseManager
 
         //User Manager:
         //Start User-Related Functions.
-        public async Task<List<User>> GetAllUsers()
+        public async Task<List<UserModel>> GetAllUsers()
         {
             try
             {
-                var usersList = (await firebaseClient.Child("Users").OnceAsync<User>()).Select(item =>
-                new User
+                var usersList = (await firebaseClient.Child("Users").OnceAsync<UserModel>()).Select(item =>
+                new UserModel
                 {
                     name = item.Object.name,
                     password = item.Object.password,
@@ -149,11 +149,11 @@ namespace Kudomion.FirebaseManager
         }
 
         //Get Ranked Users List.
-        public async Task<List<User>> ApplyDuelistsRanking(/*string name,*/ User usrToUpd)
+        public async Task<List<UserModel>> ApplyDuelistsRanking(/*string name,*/ UserModel usrToUpd)
         {
             try
             {
-                List<User> allUsers = await GetAllUsers();
+                List<UserModel> allUsers = await GetAllUsers();
                 var rankedUsers = allUsers.OrderByDescending(p => p.points);
                 var rankedList = rankedUsers.ToList();
 
@@ -211,7 +211,7 @@ namespace Kudomion.FirebaseManager
             try
             {
                 var allUsers =await  GetAllUsers();
-                await firebaseClient.Child("Users").OnceAsync<User>();
+                await firebaseClient.Child("Users").OnceAsync<UserModel>();
                 var getName =  allUsers.Where(a => a.name == name).FirstOrDefault().name;
              
                
@@ -223,11 +223,11 @@ namespace Kudomion.FirebaseManager
             }
         }
 
-        public async Task<User> GetUserByName(string name)
+        public async Task<UserModel> GetUserByName(string name)
         {
             try {
                 var allUsers = await GetAllUsers();
-                await firebaseClient.Child("Users").OnceAsync<User>();
+                await firebaseClient.Child("Users").OnceAsync<UserModel>();
                 return allUsers.Where(a => a.name.ToLower() == name.ToLower()).FirstOrDefault();
             }
             catch(Exception e)
@@ -238,14 +238,14 @@ namespace Kudomion.FirebaseManager
                 
         }
 
-        public static async Task<User> GetUsrFromName(string _name)
+        public static async Task<UserModel> GetUsrFromName(string _name)
         {
             try
             {          
             FirebaseClient cl = new FirebaseClient("https://kudo1-38995-default-rtdb.firebaseio.com/");
             FirebaseHelper fb = new FirebaseHelper();
             var allUsers = await fb.GetAllUsers();
-            await cl.Child("Users").OnceAsync<User>();
+            await cl.Child("Users").OnceAsync<UserModel>();
             return allUsers.Where(a => a.name == _name).FirstOrDefault();
             }
             catch(Exception e)
@@ -261,7 +261,7 @@ namespace Kudomion.FirebaseManager
         {
             try
             {
-                await firebaseClient.Child("Users").PostAsync(new User() { name = _name, password = _password, points = 0, posts = 0, ranking = 0, usertype = "USER" });
+                await firebaseClient.Child("Users").PostAsync(new UserModel() { name = _name, password = _password, points = 0, posts = 0, ranking = 0, usertype = "USER" });
                 return true;
             }
             catch (Exception e)
@@ -288,12 +288,12 @@ namespace Kudomion.FirebaseManager
         }
 
         //Function To Update User Ranking (only rank)
-        public async Task<bool> UpdateUserRanking(string _username, User usrToUpdate)
+        public async Task<bool> UpdateUserRanking(string _username, UserModel usrToUpdate)
         {
             try
             {
                 //Find User By Name.
-                var selectedUser = (await firebaseClient.Child("Users").OnceAsync<User>())
+                var selectedUser = (await firebaseClient.Child("Users").OnceAsync<UserModel>())
                     .Where(a => a.Object.name == _username).FirstOrDefault();
 
                 //Update User Ranking.
@@ -313,11 +313,11 @@ namespace Kudomion.FirebaseManager
         }
 
         //Admin Priveleges To Fully-Control User Info From His/Her CP.
-        public async Task<bool> UpdateUser(string _name, User usrToUpdate)
+        public async Task<bool> UpdateUser(string _name, UserModel usrToUpdate)
         {
             try
             {
-                var userToUpdate = (await firebaseClient.Child("Users").OnceAsync<User>()).Where(a => a.Object.name == _name).FirstOrDefault();
+                var userToUpdate = (await firebaseClient.Child("Users").OnceAsync<UserModel>()).Where(a => a.Object.name == _name).FirstOrDefault();
               /*  var usrToUpdate = new User()
                 {
                     name = _name,
@@ -342,7 +342,7 @@ namespace Kudomion.FirebaseManager
         {
             try
             {
-                var toDeletePerson = (await firebaseClient.Child("Users").OnceAsync<User>()).Where(a => a.Object.name == _name).FirstOrDefault();
+                var toDeletePerson = (await firebaseClient.Child("Users").OnceAsync<UserModel>()).Where(a => a.Object.name == _name).FirstOrDefault();
                 await firebaseClient.Child("Users").Child(toDeletePerson.Key).DeleteAsync();
                 return true;
             }

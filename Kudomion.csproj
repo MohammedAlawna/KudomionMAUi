@@ -124,6 +124,7 @@
 	  <PackageReference Include="CommunityToolkit.Maui" Version="7.0.1" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
 	  <PackageReference Include="FirebaseAdmin" Version="2.3.0" />
+	  <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
 	  <PackageReference Include="FirebaseDatabase.net" Version="4.2.0" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
@@ -131,6 +132,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Features\SignIn\SignInFormView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Features\SignUp\SignUpFormView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="SamplePage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </MauiXaml>
@@ -202,6 +209,7 @@
 	<ItemGroup>
 	  <Folder Include="MVVM\Models\NewsContainer\" />
 	  <Folder Include="Platforms\Android\Services\" />
+	  <Folder Include="Shared\Link\" />
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionKudomionHideInfoBar="True" /></VisualStudio></ProjectExtensions>

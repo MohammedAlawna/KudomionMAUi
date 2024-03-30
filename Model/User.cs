@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Kudomion.Model
 {
-    public class User
+    public class UserModel
     {
         
         public int Id { get; set; }

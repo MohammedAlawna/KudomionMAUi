@@ -32,7 +32,7 @@ namespace Kudomion.ViewModel
         private async void LoadUserProfile(string name)
         {
             loggedInUsername.Text = name;
-            User getLoggedInUser = await FirebaseHelper.GetUsrFromName(name);
+            UserModel getLoggedInUser = await FirebaseHelper.GetUsrFromName(name);
 
             //Assign Profile Values. :D 
             noDuels.Text = getLoggedInUser.duels.ToString();

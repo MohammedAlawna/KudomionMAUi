@@ -10,8 +10,8 @@ namespace Kudomion.Model
 {
     public class UsersSearchViewModel
     {
-        public static List<User> Users { get; set; } = new List<User>();
-        public static List<User> usrz;
+        public static List<UserModel> Users { get; set; } = new List<UserModel>();
+        public static List<UserModel> usrz;
         FirebaseHelper firebase = new FirebaseHelper();
 
         async void GetAllUsers()
@@ -20,7 +20,7 @@ namespace Kudomion.Model
             {
                 var fullList = await firebase.GetAllUsers();
                 //fullList.CopyTo(usrz, 0);
-                foreach(User u in fullList)
+                foreach(UserModel u in fullList)
                 {
                    Console.WriteLine($"Userzzz are: {fullList[0].name}");
                    // Users.Add(u);

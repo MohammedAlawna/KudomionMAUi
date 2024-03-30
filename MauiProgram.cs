@@ -1,5 +1,10 @@
 ﻿using Kudomion.ViewModel;
 using CommunityToolkit.Maui;
+using Firebase.Auth;
+using Firebase.Auth.Providers;
+using Kudomion.MVVM.Models;
+using Kudomion.Features.SignUp;
+using Kudomion.Features.SignIn;
 
 namespace Kudomion;
 
@@ -27,6 +32,24 @@ public static class MauiProgram
             handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
         #endif
         });
+
+        builder.Services.AddTransient<SignUpFormViewModel>();
+        builder.Services.AddTransient<SignUpViewModel>();
+        builder.Services.AddTransient<SignInFormViewModel>();
+        builder.Services.AddTransient<SignUpPage>(
+            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));
+
+        //Register Firebase AuthClient:
+        builder.Services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig()
+        {
+            ApiKey = "AIzaSyAaahksGmC2M1IpC2gKmIY0DBIQcBqZInA",
+            AuthDomain = "kudo1-38995.firebaseapp.com",
+            //Defines Different ways to sign in (PW UM, or google or fb, etc..)
+            Providers = new FirebaseAuthProvider[]
+            {
+                new EmailProvider()
+            }
+        }));
 
         return builder.Build();
 	}

@@ -8,9 +8,9 @@ namespace Kudomion.Model
 {
     public class TournamentRoom
     {
-        public User p1 { get; set; }
-        public User p2 { get; set; }
-        public User winner { get; set; }
+        public UserModel p1 { get; set; }
+        public UserModel p2 { get; set; }
+        public UserModel winner { get; set; }
         public bool isDone { get; set; }
     }
 }

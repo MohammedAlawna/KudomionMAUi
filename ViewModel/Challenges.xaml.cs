@@ -50,12 +50,12 @@ namespace Kudomion
 
                 //Load LoggedInUser Name.
                 // var loggedInUserName = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
-                User loggedInUserName = MainPage.currentUser;
+                UserModel loggedInUserName = MainPage.currentUser;
                 p1.Text = MainPage.currentLoggedInUser;
                 p1.IsEnabled = false;
 
                 //Load AllUsersIntoSelector.
-                List<User> listOfUsers = await firebase.GetAllUsers();
+                List<UserModel> listOfUsers = await firebase.GetAllUsers();
                 p2.ItemsSource = listOfUsers;
 
                 //Load All Rooms In The Lobby.
@@ -89,9 +89,9 @@ namespace Kudomion
         }
 
         //private Room getPlayerRoom = null;
-        public User firstPlayer = null;
-        public User secondPlayer = null;
-        public User getWinningPlayer = null;
+        public UserModel firstPlayer = null;
+        public UserModel secondPlayer = null;
+        public UserModel getWinningPlayer = null;
 
         private async void AdmitDefeat_Clicked(object sender, EventArgs e)
         {
@@ -125,7 +125,7 @@ namespace Kudomion
                 //Second:: Get Selected User From That Room.
                 string getSelectedPlayer = getPlayerRoom[0].p1;
 
-                User getLoggedInPlayer = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+                UserModel getLoggedInPlayer = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
 
               
                 getWinningPlayer = null;
@@ -158,7 +158,7 @@ namespace Kudomion
                     await firebase.UpdateRoom(getPlayerRoom[0].p1, getPlayerRoom[0].p2, getPlayerRoom[0], getPlayerRoom[0].isDone);
 
                     //Update User Profile In Home Page.
-                    User currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentUser.name);
+                    UserModel currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentUser.name);
 
                   
                     //Prompt Admit Defeat!
@@ -192,7 +192,7 @@ namespace Kudomion
                     await firebase.UpdateRoom(getPlayerRoom[0].p2, getPlayerRoom[0].p1, getPlayerRoom[0], getPlayerRoom[0].isDone);
 
                     //Update User Profile In Home Page.
-                    User currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentUser.name);
+                    UserModel currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentUser.name);
                  
                     //Prompt Admit Defeat.
                     await DisplayAlert("You Lost!", $"You just admit defeated! Duel Records Will be changed!" + getWinningPlayer.name, "OK");

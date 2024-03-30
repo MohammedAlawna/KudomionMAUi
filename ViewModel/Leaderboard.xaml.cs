@@ -25,7 +25,7 @@ namespace Kudomion
 
         public async void RankAllUsers()
         {
-            List<User> allUsers = await firebaseHelper.GetAllUsers();
+            List<UserModel> allUsers = await firebaseHelper.GetAllUsers();
             var rankedUsers = allUsers.OrderByDescending(p => p.points);
             var rankedList = rankedUsers.ToList();
 

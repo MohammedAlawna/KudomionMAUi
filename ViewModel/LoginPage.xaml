@@ -26,7 +26,7 @@
                               DisplayMemberName="name"
                               Placeholder="Search Users Here..">
         <controls:SearchField.ItemTemplate>
-                <DataTemplate x:DataType="mod:User">
+                <DataTemplate x:DataType="mod:UserModel">
                     <Grid Margin="5" Padding="5" RowDefinitions="Auto" ColumnDefinitions="40, Auto">
                         <Image Source="https://i.imgur.com/9owQTM3.png" Grid.Column="0" HeightRequest="30" WidthRequest="30" />
                         <Label Text="{Binding name}" Grid.Column="1" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>

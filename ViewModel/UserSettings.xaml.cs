@@ -26,7 +26,7 @@ namespace Kudomion.ViewModel
            try
             {
                 //Get All Users.
-                List<User> GetAllUsers = await firebase.GetAllUsers();
+                List<UserModel> GetAllUsers = await firebase.GetAllUsers();
 
 
                 if (AreEntriesEmpty() == true)
@@ -43,10 +43,10 @@ namespace Kudomion.ViewModel
 
 
                 //   User getCurrentUser = await firebase.GetUserByName(log.GetOriginalUserName());
-                User getCurrentUser = MainPage.currentUser;
+                UserModel getCurrentUser = MainPage.currentUser;
 
                 //Assign New Values To The Current Logged In User.
-                User userToBeUpdated = new User
+                UserModel userToBeUpdated = new UserModel
                 {
                     name = nUser.Text,
                     password = nPass.Text,
@@ -95,16 +95,16 @@ namespace Kudomion.ViewModel
         }
 
         //Check If The New User (Name) already used..
-        private bool UserExist(List<User> allUsrs)
+        private bool UserExist(List<UserModel> allUsrs)
         {
             try
             {
                 //Variables (array, users list)..
                 List<string> userStrings = new List<string>();
-                List<User> AllUsersDB = allUsrs;
+                List<UserModel> AllUsersDB = allUsrs;
                 //bool isUserExist;
 
-                foreach (User usr in AllUsersDB)
+                foreach (UserModel usr in AllUsersDB)
                 {
                     userStrings.Add(usr.name.ToLower());
                 }

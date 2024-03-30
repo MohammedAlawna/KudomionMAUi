@@ -15,7 +15,7 @@ namespace Kudomion.Controls
     {
         //FirebaseHelper firebase;
 
-        public IList<User> Users { get; set; }
+        public IList<UserModel> Users { get; set; }
         protected override void OnQueryChanged(string oldValue, string newValue)
         {
             base.OnQueryChanged(oldValue, newValue);
@@ -40,7 +40,7 @@ namespace Kudomion.Controls
             try
             {
                 //Get The Name of Selected Item (onClick)
-                var getIt = (User)item;
+                var getIt = (UserModel)item;
                 var getName = getIt.name;
                 Console.WriteLine("Selected Item is: " + getName);
 

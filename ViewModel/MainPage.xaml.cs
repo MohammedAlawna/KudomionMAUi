@@ -1,4 +1,6 @@
-﻿using Kudomion.FirebaseManager;
+﻿using Firebase.Auth;
+using Kudomion.Features.SignIn;
+using Kudomion.FirebaseManager;
 using Kudomion.Model;
 using Kudomion.ViewModel;
 using Microsoft.Maui.Controls;
@@ -14,17 +16,21 @@ namespace Kudomion;
 public partial class MainPage : ContentPage
 {
     public static string currentLoggedInUser;
-    public static User currentUser = null;
+    public static UserModel currentUser = null;
     FirebaseHelper firebase = new FirebaseHelper();
     public static bool loggedIn = false;
-    
+
+    //FirebaseAuthClient _authClient;
     public MainPage()
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
-       
+
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
+        //BindingContext = new SignInFormViewModel(_authClient);
     }
+
+   
 
 
     private async void ForgetPasswordClicked(object sender, EventArgs e)
@@ -44,7 +50,7 @@ public partial class MainPage : ContentPage
         try
         {
             currentLoggedInUser = userNameText.Text;
-            User outPut = await firebase.GetUserByName(currentLoggedInUser);
+            UserModel outPut = await firebase.GetUserByName(currentLoggedInUser);
             //Console.WriteLine("This OUTPUT!!" + outPut.name + " -- Lowered Case: " + outPut.name.ToLower() + ",  --" + userNameText.Text.ToLower());
             currentUser = outPut;
             //Case Insensitive Strings

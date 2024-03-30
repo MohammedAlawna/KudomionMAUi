@@ -30,10 +30,10 @@ namespace Kudomion
         {
             //Variables (array, list<user>, bool)
             List<string> userStrings = new List<string>();
-            List<User> AllUsersDB = await firebase.GetAllUsers();
+            List<UserModel> AllUsersDB = await firebase.GetAllUsers();
             bool isUserExist;
             
-            foreach(User user in AllUsersDB)
+            foreach(UserModel user in AllUsersDB)
             {
                 userStrings.Add(user.name.ToLower());
             }
@@ -96,11 +96,11 @@ namespace Kudomion
                 confirmPassword.Text = string.Empty;
                 return;
             }
-            foreach (User item in listAllUsers)
+            foreach (UserModel item in listAllUsers)
             {
                 userStrings.Add(item.name);
             }
-            User enteredUser = await FirebaseHelper.GetUsrFromName(userName.Text);
+            UserModel enteredUser = await FirebaseHelper.GetUsrFromName(userName.Text);
             string enteredUserString = enteredUser.name;
             bool userExits = userStrings.Contains(enteredUserString);
             Console.WriteLine("User Status: " + userExits);

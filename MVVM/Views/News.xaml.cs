@@ -19,7 +19,7 @@ namespace Kudomion.ViewModel.MVVM.Views
         NewsLinq newsLinq = new NewsLinq();
 
         //Data to load:
-        User currentUser;
+        UserModel currentUser;
         public News()
         {
             InitializeComponent();
@@ -32,9 +32,16 @@ namespace Kudomion.ViewModel.MVVM.Views
         //Load Data:
         private async void LoadRequiredInfo()
         {
-            currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
-            //List<NewsItem> AllNews = await newsLinq.ViewAllNews();
-            //NewsCollectionItems.ItemsSource = AllNews;
+            try
+            {
+                currentUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+                //List<NewsItem> AllNews = await newsLinq.ViewAllNews();
+                //NewsCollectionItems.ItemsSource = AllNews;
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex}");
+            }
         }
 
         [Obsolete]

@@ -76,7 +76,7 @@ namespace Kudomion
         {
            try
             {
-                List<User> allUsers = await firebase.GetAllUsers();
+                List<UserModel> allUsers = await firebase.GetAllUsers();
                 var rankedUsers = allUsers.OrderByDescending(p => p.points);
                 var rankedList = rankedUsers.ToList();
 
@@ -88,7 +88,7 @@ namespace Kudomion
                     //Console.WriteLine("Rank List: " + getRankOfEachUser + " " + user.name + "\n");
 
                     //Retrieve info for the duelists Ranking (which need to be applied).
-                    User userToBeUpdated = new User
+                    UserModel userToBeUpdated = new UserModel
                     {
                         name = user.name,
                         password = user.password,
@@ -216,7 +216,7 @@ namespace Kudomion
             MainPage.currentLoggedInUser = string.Empty;
             MainPage.loggedIn = false;
             MainPage.currentUser = null;
-            await Navigation.PushAsync(new MainPage());
+           // await Navigation.PushAsync(new MainPage());
         }
 
     }
