@@ -9,13 +9,24 @@
              xmlns:signInFeature="clr-namespace:Kudomion.Features.SignIn"
              FlowDirection="LeftToRight"
              xmlns:modl="clr-namespace:Kudomion.Features.SignIn"
+             xmlns:controls="clr-namespace:Plugin.MauiMTAdmob.Controls;assembly=Plugin.MauiMtAdmob"
              Shell.NavBarIsVisible="False"
              >
     <!--Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled"-->
     
     <StackLayout Padding="80" VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
-       
+
+        <controls:MTAdView x:Name="AdmobBanner">
+            <controls:MTAdView.HeightRequest>
+                <x:OnIdiom>
+                    <x:OnIdiom.Phone>50</x:OnIdiom.Phone>
+                    <x:OnIdiom.Tablet>90</x:OnIdiom.Tablet>
+                    <x:OnIdiom.Desktop>90</x:OnIdiom.Desktop>
+                </x:OnIdiom>
+            </controls:MTAdView.HeightRequest>
+        </controls:MTAdView>
+
         <Image Source="AppLogo.png" WidthRequest="180" HeightRequest="180" ></Image>
         <Frame x:Name="usernameFrame" WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Margin="3">
             <Entry x:Name="userNameText" WidthRequest="220" HorizontalOptions="CenterAndExpand" FontSize="13" ReturnType="Next" Placeholder="Enter your username..." TextColor="White" PlaceholderColor="White"/>
