@@ -5,7 +5,6 @@ using Kudomion.Model;
 using Kudomion.ViewModel;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Storage;
-using Newtonsoft.Json.Bson;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,24 +25,12 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
-        SetBannerId();
 
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
         //BindingContext = new SignInFormViewModel(_authClient);
     }
 
-    private void SetBannerId()
-    {
-         
-#if __ANDROID__
-       //Android Code
-      
-       AdmobBanner.Id = "ca-app-pub-3607119283713822/8568248324";
-#elif __IOS__
-       //iOS Code
-       //AdmobBanner.AdsId = ;
-#endif
-    }
+   
 
 
     private async void ForgetPasswordClicked(object sender, EventArgs e)
