@@ -15,14 +15,14 @@ namespace Kudomion
     public partial class SignUpPage : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
-        public SignUpPage(object bindingContext)
+        public SignUpPage(/*object bindingContext*/)
         {
             InitializeComponent();
             userName.ReturnCommand = new Command(() => userName.Focus());
             password.ReturnCommand = new Command(() => password.Focus());
             confirmPassword.ReturnCommand = new Command(() => confirmPassword.Focus());
 
-            BindingContext = bindingContext;
+            //BindingContext = bindingContext;
         }
 
         

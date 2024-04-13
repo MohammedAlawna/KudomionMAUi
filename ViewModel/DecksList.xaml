@@ -5,6 +5,7 @@
              FlowDirection="LeftToRight"
              x:Class="Kudomion.ViewModel.DecksList">
     <ContentPage.Content>
+        <RefreshView x:Name="RefreshIndicator" Command="{Binding RefreshCommand}" RefreshColor="RoyalBlue" VerticalOptions="FillAndExpand">
         <ScrollView FlowDirection="LeftToRight" Margin="20" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <Button Margin="5" TextColor="White" BackgroundColor="RoyalBlue" WidthRequest="270" Text="Tier List" FontSize="17" Clicked="OpenTierList"/>
@@ -40,5 +41,6 @@
                 </StackLayout>
             </StackLayout>
         </ScrollView>
+        </RefreshView>
     </ContentPage.Content>
 </ContentPage>

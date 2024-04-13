@@ -36,9 +36,12 @@ namespace Kudomion
 
         public string currentLoggedInUserName;
 
+        const int RefreshDuration = 1;
+
         public LoginPage(string _username)
         {
             InitializeComponent();
+            BindingContext = this;
 
             //Load Users to SearchBar.
             LoadUsersIntoSearchBar();
@@ -55,6 +58,33 @@ namespace Kudomion
             //Debugging Global APi
             //CreateTrialNewsItem();
         }
+
+        public ICommand RefreshCommand => new Command(async () => await RefreshLoggedInPageAsync());
+
+        async Task RefreshLoggedInPageAsync()
+        {
+            //Process Refresh:
+            RefreshIndicator.IsRefreshing = true;
+
+            //Apply Rankings Updates;
+            ApplyDuelistsRanking();
+
+            //Load Users to SearchBar.
+            LoadUsersIntoSearchBar();
+
+            //Call: Load Carousel Items.
+            LoadCarouselItems();
+
+            //Load Duelist/User Profile.
+            LoadUsersInfo();
+
+            //Delay 1 sec.
+            await Task.Delay(TimeSpan.FromSeconds(RefreshDuration));
+
+            //Disable Refreshing Indicator:
+            RefreshIndicator.IsRefreshing = false;
+        }
+
 
         private async void CreateTrialNewsItem()
         {
@@ -216,7 +246,7 @@ namespace Kudomion
             MainPage.currentLoggedInUser = string.Empty;
             MainPage.loggedIn = false;
             MainPage.currentUser = null;
-           // await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new MainPage());
         }
 
     }

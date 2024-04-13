@@ -6,6 +6,7 @@
              FlowDirection="LeftToRight"
             >
     <ContentPage.Content>
+		<RefreshView x:Name="RefreshIndicator" Command="{Binding RefreshCommand}" RefreshColor="RoyalBlue" VerticalOptions="FillAndExpand">
         <ScrollView FlowDirection="LeftToRight" Margin="10" VerticalOptions="FillAndExpand">
             <StackLayout>
                 <Label
@@ -57,5 +58,6 @@
             </StackLayout>
 
         </ScrollView>
+		</RefreshView>
     </ContentPage.Content>
 </ContentPage>

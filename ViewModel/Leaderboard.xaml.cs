@@ -7,6 +7,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Kudomion.MVVM.ViewModels;
+using System.Windows.Input;
 
 
 namespace Kudomion
@@ -16,20 +18,50 @@ namespace Kudomion
     {
         FirebaseHelper firebaseHelper = new FirebaseHelper();
 
-        
+        const int RefreshDuration = 1;
+       // bool isRefreshing = false;
+
+
         public Leaderboard()
         {
             InitializeComponent();
             RankAllUsers();
+            BindingContext = this;
+        }
+
+        public ICommand RefreshCommand => new Command(async () => await RefreshLeaderboardAsync());
+
+
+        async Task RefreshLeaderboardAsync()
+        {  
+            //Process Refresh Indicator:
+            RefreshIndicator.IsRefreshing = true;
+            RankAllUsers();
+            await Task.Delay(TimeSpan.FromSeconds(RefreshDuration));
+            RefreshIndicator.IsRefreshing = false;
         }
 
         public async void RankAllUsers()
         {
-            List<UserModel> allUsers = await firebaseHelper.GetAllUsers();
-            var rankedUsers = allUsers.OrderByDescending(p => p.points);
-            var rankedList = rankedUsers.ToList();
+            try
+            {
+                List<UserModel> allUsers = await firebaseHelper.GetAllUsers();
+                var rankedUsers = allUsers.OrderByDescending(p => p.points);
+                var rankedList = rankedUsers.ToList();
 
-            userRankingsToLoad.ItemsSource = rankedUsers;
+                userRankingsToLoad.ItemsSource = rankedUsers;
+
+                
+            }
+            catch(Exception ex)
+            {
+                await DisplayAlert("Error!", $"Unexpected problem occured: {ex.Message}", "OK!");
+            }
+        }
+
+        public void DisableRefreshIndicator()
+        {
+            RefreshIndicator.IsEnabled = false;
         }
         
         private async void UsernameClicked(object sender, EventArgs e)

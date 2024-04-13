@@ -22,21 +22,21 @@ public partial class MainPage : ContentPage
 
     //FirebaseAuthClient _authClient;
     public MainPage()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
 
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
         //BindingContext = new SignInFormViewModel(_authClient);
     }
 
-   
+
 
 
     private async void ForgetPasswordClicked(object sender, EventArgs e)
     {
         await DisplayAlert("Password Recovery System!", "Password Recovery System is Still Under Development! Please Contact Developer..", "OK!");
-     //  await Navigation.PushAsync(new SignUpPage());
+        //  await Navigation.PushAsync(new SignUpPage());
     }
 
     public void ViewUserProfile(string username)
@@ -44,7 +44,7 @@ public partial class MainPage : ContentPage
         Navigation.PushAsync(new UserProfile(username));
     }
 
- 
+
     private async void SignInClicked(object sender, EventArgs e)
     {
         try
@@ -96,7 +96,32 @@ public partial class MainPage : ContentPage
 
     private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
     {
-        //Navigation.PushAsync(new SignUpPage());
+        Navigation.PushAsync(new SignUpPage());
     }
+
+
+    //Providers:
+    //1- Google:
+    private void GoogleAuthTapped(object sender, EventArgs e)
+    {
+        DisplayAlert("Google Auth System!", "Google Authnetication is not available in this current closed-beta release.", "OK!");
+    }
+
+
+    //2- Facebook:
+    private void FacebookAuthTapped(object sender, EventArgs e)
+    {
+        DisplayAlert("Facebook Auth System!", "Facebook Authnetication is not available in this current closed-beta release.", "OK!");
+
+    }
+
+
+    //3- GitHub:
+    private void DiscordAuthTapped(object sender, EventArgs e)
+    {
+        DisplayAlert("Discord Auth System!", "Discord Authnetication is not available in this current closed-beta release.", "OK!");
+
+    }
+
 }
 

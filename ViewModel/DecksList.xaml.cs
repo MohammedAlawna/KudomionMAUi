@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Kudomion.ViewModel
 {
@@ -12,13 +13,26 @@ namespace Kudomion.ViewModel
     public partial class DecksList : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
+        const int RefreshDuration = 1;
    
         public DecksList()
         {
             InitializeComponent();
             LoadAllDecks();
             //AddDeckTrial();
+            BindingContext = this; 
           
+        }
+
+        public ICommand RefreshCommand => new Command(async () => await RefreshDecksAsync());
+
+        async Task RefreshDecksAsync()
+        {
+            //Process Refresh:
+            RefreshIndicator.IsRefreshing = true;
+            LoadAllDecks();
+            await Task.Delay(TimeSpan.FromSeconds(RefreshDuration));
+            RefreshIndicator.IsRefreshing = false;
         }
 
         async void LoadAllDecks()

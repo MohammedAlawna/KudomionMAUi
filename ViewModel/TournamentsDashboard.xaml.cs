@@ -1,12 +1,15 @@
 using Kudomion.FirebaseManager;
 using Kudomion.Model;
 using System.Diagnostics;
+using System.Windows.Input;
 
 namespace Kudomion.ViewModel;
 
 public partial class TournamentsDashboard : ContentPage
 {
 	FirebaseHelper firebaseHelper = new FirebaseHelper();
+	const int RefreshDuration = 2;
+
 	public TournamentsDashboard()
 	{
 		InitializeComponent();
@@ -17,11 +20,29 @@ public partial class TournamentsDashboard : ContentPage
 
 		//Load All Tournaments.
 		LoadAllTournaments();
+		BindingContext = this;
 	}
 
-	async void LoadAllTournaments()
+    public ICommand RefreshCommand => new Command(async () => await RefreshTournamentsAsync());
+
+	async Task RefreshTournamentsAsync()
 	{
-		TournamentsToLoad.ItemsSource = await firebaseHelper.GetAllTournaments();
+		RefreshIndicator.IsRefreshing = true;
+		LoadAllTournaments();
+		await Task.Delay(TimeSpan.FromSeconds(RefreshDuration));
+		RefreshIndicator.IsRefreshing = false;
+	}
+
+    async void LoadAllTournaments()
+	{
+		try
+		{
+			TournamentsToLoad.ItemsSource = await firebaseHelper.GetAllTournaments();
+		}
+		catch(Exception ex)
+		{
+			await DisplayAlert("Error!" ,$"An excpetion just occured! {ex.Message}" ,"OK!");
+		}
 	}
 
 	async void AddTournamentTrial()

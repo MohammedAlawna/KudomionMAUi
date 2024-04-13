@@ -36,6 +36,7 @@
             </controls:SearchField.ItemTemplate>
             </controls:SearchField>
     </Shell.SearchHandler>
+    <RefreshView x:Name="RefreshIndicator" Command="{Binding RefreshCommand}" RefreshColor="RoyalBlue" VerticalOptions="FillAndExpand">
     <ScrollView FlowDirection="LeftToRight" Margin="10" VerticalOptions="FillAndExpand">
     <StackLayout>
         <Label TextColor="White" Margin="7" x:Name="loggedInUser" FontSize="12" Text="You are logged in as: User"/>
@@ -118,6 +119,7 @@
         </StackLayout>
     </StackLayout>
     </ScrollView>
+    </RefreshView>
 
     <!--<StackLayout>
         <RefreshView RefreshColor="RoyalBlue" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}" HorizontalOptions="Center">
