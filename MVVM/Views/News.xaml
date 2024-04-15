@@ -8,9 +8,10 @@
             
              x:Class="Kudomion.ViewModel.MVVM.Views.News">
     <ContentPage.Content>
+        <RefreshView RefreshColor="RoyalBlue" Command="{Binding RefreshCommand}" VerticalOptions="FillAndExpand" x:Name="RefreshIndicator">
         <ScrollView VerticalOptions="FillAndExpand">
-
-            <CollectionView ItemsSource="{Binding NewsList}">
+                <!--ItemsSource="{Binding NewsList}"-->
+                <CollectionView  x:Name="NewsItems">
                 <!--<CollectionView.ItemsSource>
                  x:DataType="viewModel:NewsViewModel"
                     <x:Array Type="{x:Type x:String}">
@@ -145,5 +146,6 @@
             <Button Text="Click Me" Command="{Binding TapCommand}" IsEnabled="{Binding IsNotBusy}"/>
         </StackLayout>-->
         </ScrollView>
+        </RefreshView>
     </ContentPage.Content>
 </ContentPage>

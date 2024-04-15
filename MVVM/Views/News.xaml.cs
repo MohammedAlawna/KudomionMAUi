@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 
 namespace Kudomion.ViewModel.MVVM.Views
@@ -17,16 +18,43 @@ namespace Kudomion.ViewModel.MVVM.Views
     public partial class News : ContentPage
     {
         NewsLinq newsLinq = new NewsLinq();
+        const int RefreshDuration = 1;
 
         //Data to load:
         UserModel currentUser;
         public News()
         {
             InitializeComponent();
-         
-            BindingContext = new NewsViewModel(this);
+
+            //BindingContext = new NewsViewModel(this);
+            BindingContext = this;
             LoadRequiredInfo();
+            LoadAllNews();
             
+        }
+
+        public ICommand RefreshCommand => new Command(async () => await RefreshNewsAsync());
+
+        async Task RefreshNewsAsync()
+        {
+            //Process Refresh Indicator:
+            RefreshIndicator.IsRefreshing = true;
+            LoadAllNews();
+            await Task.Delay(TimeSpan.FromSeconds(RefreshDuration));
+            RefreshIndicator.IsRefreshing = false;
+        }
+
+        async void LoadAllNews()
+        {
+            try
+            {
+                NewsItems.ItemsSource = await newsLinq.ViewAllNews();
+                //Console.WriteLine("News: " + NewsList[0].Content);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Error: " + ex);
+            }
         }
 
         //Load Data:

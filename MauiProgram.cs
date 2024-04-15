@@ -7,7 +7,6 @@ using Kudomion.Features.SignUp;
 using Kudomion.Features.SignIn;
 
 namespace Kudomion;
-
 public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
@@ -15,6 +14,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
             .UseMauiApp<App>()
+           
 			.UseMauiCommunityToolkit()
             .ConfigureFonts(fonts =>
 			{
@@ -36,8 +36,10 @@ public static class MauiProgram
         builder.Services.AddTransient<SignUpFormViewModel>();
         builder.Services.AddTransient<SignUpViewModel>();
         builder.Services.AddTransient<SignInFormViewModel>();
-        builder.Services.AddTransient<SignUpPage>(
-            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));
+
+        //Commented-out, will be back after prod.
+        /*builder.Services.AddTransient<SignUpPage>(
+            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));*/
 
         //Register Firebase AuthClient:
         builder.Services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig()
