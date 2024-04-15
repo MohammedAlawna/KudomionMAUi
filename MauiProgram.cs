@@ -7,20 +7,20 @@ using Kudomion.Features.SignUp;
 using Kudomion.Features.SignIn;
 
 namespace Kudomion;
+
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
-		builder
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
+        builder
             .UseMauiApp<App>()
-           
-			.UseMauiCommunityToolkit()
+            .UseMauiCommunityToolkit()
             .ConfigureFonts(fonts =>
-			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+            });
 
         //Commented Out MVVM (Adding Singelton of both Tier and ViewModel).
         /*builder.Services.AddSingleton<TierList>();
@@ -28,18 +28,21 @@ public static class MauiProgram
 
         Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
         {
-        #if ANDROID
+#if ANDROID
             handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
-        #endif
+#endif
         });
 
         builder.Services.AddTransient<SignUpFormViewModel>();
         builder.Services.AddTransient<SignUpViewModel>();
         builder.Services.AddTransient<SignInFormViewModel>();
+        builder.Services.AddTransient<SignInViewModel>();
+        builder.Services.AddTransient<SignUpPage>(
+            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));
 
-        //Commented-out, will be back after prod.
-        /*builder.Services.AddTransient<SignUpPage>(
-            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));*/
+        //Register LoginPage: 
+        builder.Services.AddTransient<MainPage>
+            (s => new MainPage(s.GetRequiredService<SignInViewModel>()));
 
         //Register Firebase AuthClient:
         builder.Services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig()
@@ -54,5 +57,5 @@ public static class MauiProgram
         }));
 
         return builder.Build();
-	}
+    }
 }
