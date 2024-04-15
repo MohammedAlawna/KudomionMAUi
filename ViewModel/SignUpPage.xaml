@@ -12,7 +12,7 @@
              >
 
     <StackLayout FlowDirection="LeftToRight" Spacing="20">
-        <!--<signInFeature:SignInFormView BindingContext="{Binding SignInFormViewModel}" />-->
+      <signInFeature:SignInFormView BindingContext="{Binding SignInFormViewModel}" />
         <!--<signUpFeature:SignUpFormView BindingContext="{Binding SignUpFormViewModel}" />-->
         <Label Text="Sign Up"
                    FontAttributes="Bold"

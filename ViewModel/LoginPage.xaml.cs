@@ -246,7 +246,7 @@ namespace Kudomion
             MainPage.currentLoggedInUser = string.Empty;
             MainPage.loggedIn = false;
             MainPage.currentUser = null;
-            await Navigation.PushAsync(new MainPage());
+            //await Navigation.PushAsync(new MainPage());
         }
 
     }

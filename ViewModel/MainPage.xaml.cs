@@ -21,13 +21,13 @@ public partial class MainPage : ContentPage
     public static bool loggedIn = false;
 
     //FirebaseAuthClient _authClient;
-    public MainPage()
+    public MainPage(object bindingContext)
     {
         InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
 
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
-        //BindingContext = new SignInFormViewModel(_authClient);
+        BindingContext = bindingContext;
     }
 
 
@@ -45,7 +45,7 @@ public partial class MainPage : ContentPage
     }
 
 
-    private async void SignInClicked(object sender, EventArgs e)
+   /* private async void SignInClicked(object sender, EventArgs e)
     {
         try
         {
@@ -91,12 +91,12 @@ public partial class MainPage : ContentPage
             return;
         }
 
-    }
+    }*/
 
 
     private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new SignUpPage());
+        //Navigation.PushAsync(new SignUpPage());
     }
 
 
