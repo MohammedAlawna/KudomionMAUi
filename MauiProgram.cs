@@ -36,9 +36,14 @@ public static class MauiProgram
         builder.Services.AddTransient<SignUpFormViewModel>();
         builder.Services.AddTransient<SignUpViewModel>();
         builder.Services.AddTransient<SignInFormViewModel>();
-        builder.Services.AddTransient<SignUpPage>(
-            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));
+        builder.Services.AddTransient<SignInViewModel>();
+       /* builder.Services.AddTransient<SignUpPage>(
+            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));*/
 
+        //Trial Registeration for login auth: 
+        builder.Services.AddTransient<SignUpPage>
+            (s => new SignUpPage(s.GetRequiredService<SignInViewModel>()));
+        
         //Register Firebase AuthClient:
         builder.Services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig()
         {
