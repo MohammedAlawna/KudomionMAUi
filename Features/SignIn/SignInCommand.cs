@@ -15,28 +15,29 @@ namespace Kudomion.Features.SignIn
         private readonly FirebaseAuthClient _authClient;
         //private readonly CurrentUserStore -currentUserStore;
 
-        public SignInCommand(SignInFormViewModel viewModel, FirebaseAuthClient authClient
-        /*CurrentUserStore currentUserStore*/)
+        public SignInCommand(
+           SignInFormViewModel viewModel,
+           FirebaseAuthClient authClient)
         {
             _viewModel = viewModel;
             _authClient = authClient;
-           // _currentUserStore = currentUserStore;
         }
 
         protected override async Task ExecuteAsync(object parameter)
         {
             try
             {
-                 await _authClient.SignInWithEmailAndPasswordAsync(
-                    _viewModel.Email, _viewModel.Password);
-               // Debug.WriteLine("User Credential Debug Line: " + x.User.Info.Email);
-                //_currentUserStore.CurrentUser = userCredential.User;
+                UserCredential userCredential = await _authClient.SignInWithEmailAndPasswordAsync(
+                    _viewModel.Email,
+                    _viewModel.Password);
 
-                await Shell.Current.DisplayAlert("Success", "You Just Logged-In to Our System!", "OK!");
+
+                await Application.Current.MainPage.DisplayAlert("Success", "Successfully signed in!", "Ok");
+
             }
-            catch(Exception ex)
+            catch (Exception)
             {
-                await Shell.Current.DisplayAlert("Error", $"Failed to sign in. Please Try Again Later.{ex}", "OK!");
+                await Application.Current.MainPage.DisplayAlert("Error", "Failed to sign in. Please try again later.", "Ok");
             }
         }
 

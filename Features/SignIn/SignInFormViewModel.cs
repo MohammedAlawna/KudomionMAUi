@@ -40,12 +40,11 @@ namespace Kudomion.Features.SignIn
         }
 
         public ICommand SignInCommand { get; }
-        public SignInFormViewModel(FirebaseAuthClient authClient /*, CurrentUserStore currentUserStore*/)
-        {
-            SignInCommand = new SignInCommand(this, authClient/*, currentUserStore*/);
-        }
 
-        public SignInFormViewModel() { }
+        public SignInFormViewModel(FirebaseAuthClient authClient)
+        {
+            SignInCommand = new SignInCommand(this, authClient);
+        }
 
     }
 }

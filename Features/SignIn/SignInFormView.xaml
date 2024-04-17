@@ -4,22 +4,48 @@
              x:Class="Kudomion.Features.SignIn.SignInFormView">
     <VerticalStackLayout>
         <VerticalStackLayout>
-            <Label FontAttributes="Bold" Text="Email" />
-            <Entry Margin="0,2,0,0" Text="{Binding Email}" />
+            
+            <Frame x:Name="usernameFrame" WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Margin="3">
+                <Entry x:Name="userNameText" WidthRequest="220" Text="{Binding Email}" HorizontalOptions="CenterAndExpand" FontSize="13" ReturnType="Next" Placeholder="Enter your email..." TextColor="White" PlaceholderColor="White"/>
+            </Frame>
+            
         </VerticalStackLayout>
 
         <VerticalStackLayout Margin="0,10,0,0">
-            <Label FontAttributes="Bold" Text="Password" />
-            <Entry
-                Margin="0,2,0,0"
-                IsPassword="True"
-                Text="{Binding Password}" />
+            <Frame WidthRequest="250" x:Name="passwordFrame" BackgroundColor="#2f3030" Padding="2" BorderColor="Black"  Margin="3">
+                <Entry x:Name="passwordText" Text="{Binding Password}" WidthRequest="220" Placeholder="Enter your password..." FontSize="13" IsPassword="True" HorizontalOptions="CenterAndExpand" ReturnType="Done" TextColor="White" PlaceholderColor="White"></Entry>
+            </Frame>
+            
         </VerticalStackLayout>
 
-        <Button BackgroundColor="RoyalBlue" Command="{Binding SignInCommand}" Text="Sign Me In"/>
-        <Button
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button
+        VerticalOptions="Center"
+        Text="Login"
+        WidthRequest="90"
+        TextColor="White"
+        Command="{Binding SignInCommand}"
+       
+        Margin="5"
+        BackgroundColor="RoyalBlue" 
+        BorderWidth="1.5"
+        CornerRadius="50"></Button>
+
+            <Button
+    WidthRequest="110"
+        VerticalOptions="Center"
+        Text="Register"
+        TextColor="White"
+        Clicked="TapGestureRecognizer_Tapped"
+        BackgroundColor="#212121" 
+        BorderWidth="1.5"
+        CornerRadius="50"></Button>
+
+        </StackLayout>
+
+        <!--<Button
             Margin="0,25,0,0"
             Command="{Binding SignInCommand}"
-            Text="Sign In" />
+            Text="Sign In" />-->
     </VerticalStackLayout>
 </ContentView>
