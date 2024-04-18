@@ -29,6 +29,11 @@ namespace Kudomion
 
         }
 
+        public SignUpPage()
+        {
+
+        }
+
         
         private async void SignUpButton_Clicked(object sender, EventArgs e)
         {

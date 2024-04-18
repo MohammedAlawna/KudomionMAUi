@@ -40,6 +40,7 @@ namespace Kudomion.Features.SignIn
         }
 
         public ICommand SignInCommand { get; }
+       
 
         public SignInFormViewModel(FirebaseAuthClient authClient)
         {
