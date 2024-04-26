@@ -17,25 +17,22 @@ namespace Kudomion
     public partial class SignUpPage : ContentPage
     {
         FirebaseHelper firebase = new FirebaseHelper();
-        public SignUpPage(object bindingContext)
+        public SignUpPage(/*object bindingContext*/)
         {
             InitializeComponent();
-            userName.ReturnCommand = new Command(() => userName.Focus());
+           /* urName.ReturnCommand = new Command(() => userName.Focus());
             password.ReturnCommand = new Command(() => password.Focus());
-            confirmPassword.ReturnCommand = new Command(() => confirmPassword.Focus());
+            confirmPassword.ReturnCommand = new Command(() => confirmPassword.Focus());*/
 
-            BindingContext = bindingContext;
+          //  BindingContext = bindingContext;
            
 
         }
 
-        public SignUpPage()
-        {
-
-        }
+      
 
         
-        private async void SignUpButton_Clicked(object sender, EventArgs e)
+   /*     private async void SignUpButton_Clicked(object sender, EventArgs e)
         {
             //Variables (array, list<user>, bool)
             List<string> userStrings = new List<string>();
@@ -89,9 +86,9 @@ namespace Kudomion
                 RegisterNewUser();
             }
 
-        }
+        }*/
 
-        private async void CheckIfUserExist()
+  /*      private async void CheckIfUserExist()
         {
             //Check if user already exists.
             List<string> userStrings = new List<string>();
@@ -119,9 +116,9 @@ namespace Kudomion
                 await DisplayAlert("User Exists!", "Sorry. This Name Already Registered, Choose another name..", "OK!");
                 return;
             }
-        }
+        }*/
 
-        private async void RegisterNewUser()
+    /*    private async void RegisterNewUser()
         {
             //Add User To DB.
             await firebase.AddUser(userName.Text, password.Text);
@@ -131,7 +128,7 @@ namespace Kudomion
             userName.Text = string.Empty;
             password.Text = string.Empty;
             confirmPassword.Text = string.Empty;
-        }
+        }*/
 
 
     }
