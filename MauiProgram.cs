@@ -37,8 +37,8 @@ public static class MauiProgram
         builder.Services.AddTransient<SignUpViewModel>();
         builder.Services.AddTransient<SignInFormViewModel>();
         builder.Services.AddTransient<SignInViewModel>();
-        builder.Services.AddTransient<SignUpPage>(
-            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));
+       /* builder.Services.AddTransient<SignUpPage>(
+            s => new SignUpPage(s.GetRequiredService<SignUpViewModel>()));*/
 
         //Register LoginPage: 
         builder.Services.AddTransient<MainPage>

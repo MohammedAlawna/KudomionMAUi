@@ -13,7 +13,7 @@ public partial class SignInFormView : ContentView
 
 	private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 	{
-
-		Shell.Current.DisplayAlert("Alert!", "Go To SignYp Page MVVM with Firebase Auth (TODO)", "OK!");
+		Navigation.PushAsync(new SignUpPage());
+		//Shell.Current.DisplayAlert("Alert!", "Go To SignYp Page MVVM with Firebase Auth (TODO)", "OK!");
 	}
 }
