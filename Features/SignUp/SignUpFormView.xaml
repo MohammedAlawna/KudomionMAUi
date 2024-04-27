@@ -17,14 +17,14 @@
     
     <VerticalStackLayout Margin="0, 10, 0, 0">
             <Frame x:Name="passFrame" WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Margin="3">
-                <Entry x:Name="urPass" WidthRequest="220" Text="{Binding Password}" HorizontalOptions="CenterAndExpand" FontSize="13" ReturnType="Next" Placeholder="Enter your password..." TextColor="White" PlaceholderColor="White"/>
+                <Entry x:Name="urPass" WidthRequest="220" Text="{Binding Password}" IsPassword="True" HorizontalOptions="CenterAndExpand" FontSize="13" ReturnType="Next" Placeholder="Enter your password..." TextColor="White" PlaceholderColor="White"/>
             </Frame>
             
     </VerticalStackLayout>
 
         <VerticalStackLayout Margin="0, 10, 0, 0">
             <Frame x:Name="confirmPassFrame" WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Margin="3">
-                <Entry x:Name="urConfirmPass" WidthRequest="220" Text="{Binding ConfirmPassword}" HorizontalOptions="CenterAndExpand" FontSize="13" ReturnType="Next" Placeholder="Confirm your password..." TextColor="White" PlaceholderColor="White"/>
+                <Entry x:Name="urConfirmPass" WidthRequest="220" Text="{Binding ConfirmPassword}" IsPassword="True" HorizontalOptions="CenterAndExpand" FontSize="13" ReturnType="Next" Placeholder="Confirm your password..." TextColor="White" PlaceholderColor="White"/>
             </Frame>
             <Entry Margin="0, 0, 0, 0" Text="{Binding ConfirmPassword}"/>
         </VerticalStackLayout>
@@ -36,6 +36,7 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Command="{Binding SignUpCommand}"
+                BindingContext="{Binding SignUpFormViewModel}"
                 BackgroundColor="#2f3030" 
                 CornerRadius="50" />
 
