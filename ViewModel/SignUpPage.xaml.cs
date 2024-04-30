@@ -1,4 +1,5 @@
 ﻿using Firebase.Auth;
+using Firebase.Auth.Requests;
 using Kudomion.Features.SignIn;
 using Kudomion.FirebaseManager;
 using Kudomion.Model;
@@ -16,7 +17,8 @@ namespace Kudomion
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SignUpPage : ContentPage
     {
-        FirebaseHelper firebase = new FirebaseHelper();
+        //FirebaseHelper firebase = new FirebaseHelper();
+        private readonly FirebaseAuthClient authClient;
         public SignUpPage(/*object bindingContext*/)
         {
             InitializeComponent();
@@ -29,10 +31,32 @@ namespace Kudomion
 
         }
 
-      
+        //Firebase Auth Code-Behind Implementation (MVVM delayed):
+        //1- SignUp 
+        private async Task SignUpNewUser()
+        {
+            //Check If Passwords Matched
+            if (urPass.Text != urConfirmPass.Text)
+            {
+                await DisplayAlert("Matching Error!", "Password and Confirm Password are not the same. Please check you spelling!", "OK!");
+                return;
+            }
+            try
+            {
+                //Create User:
+                await authClient.CreateUserWithEmailAndPasswordAsync(urEmail.Text, urPass.Text);
+                return;
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"Exception: {ex.Message}");
+            }
+        }
 
-        
-   /*     private async void SignUpButton_Clicked(object sender, EventArgs e)
+        //2- SignIn
+
+
+    /*     private async void SignUpButton_Clicked(object sender, EventArgs e)
         {
             //Variables (array, list<user>, bool)
             List<string> userStrings = new List<string>();
@@ -88,7 +112,7 @@ namespace Kudomion
 
         }*/
 
-  /*      private async void CheckIfUserExist()
+    /*      private async void CheckIfUserExist()
         {
             //Check if user already exists.
             List<string> userStrings = new List<string>();

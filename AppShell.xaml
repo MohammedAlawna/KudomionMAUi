@@ -22,10 +22,10 @@
     <FlyoutItem Shell.BackgroundColor="RoyalBlue" FlyoutDisplayOptions="AsMultipleItems">
 
         <!--<ShellContent
-          Icon="https://i.imgur.com/HuxgwMX.png"
-          Title="SignUpD"
-          ContentTemplate="{DataTemplate local:SignUpPage}"
-        />-->
+     Icon="https://i.imgur.com/HuxgwMX.png"
+     Title="SignUpD"
+     ContentTemplate="{DataTemplate local:SignUpPage}"
+   />-->
 
         <ShellContent
             Icon="https://i.imgur.com/HuxgwMX.png"
