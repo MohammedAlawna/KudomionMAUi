@@ -32,8 +32,8 @@ namespace Kudomion
         }
 
         //Firebase Auth Code-Behind Implementation (MVVM delayed):
-        //1- SignUp 
-        private async Task SignUpNewUser()
+        //1- SignUp
+        private async void SignUpButtonClicked(object sender, EventArgs e)
         {
             //Check If Passwords Matched
             if (urPass.Text != urConfirmPass.Text)
@@ -47,11 +47,18 @@ namespace Kudomion
                 await authClient.CreateUserWithEmailAndPasswordAsync(urEmail.Text, urPass.Text);
                 return;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine($"Exception: {ex.Message}");
             }
         }
+
+
+
+      /*  private async Task SignUpNewUser()
+        {
+            
+        }*/
 
         //2- SignIn
 

@@ -45,8 +45,8 @@
             FontSize="20"
             HorizontalOptions="Center"
             TextColor="White"
-            Command="{Binding SignUpCommand}"
-            BindingContext="{Binding SignUpFormViewModel}"
+            
+            Clicked="SignUpButtonClicked"
             BackgroundColor="#2f3030" 
             CornerRadius="50" />
         <!--<signUpFeature:SignUpFormView BindingContext="{Binding SignUpFormViewModel}" />-->
