@@ -28,10 +28,12 @@
    />-->
 
         <ShellContent
-            Icon="https://i.imgur.com/HuxgwMX.png"
-            Title="Home"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            />
+Icon="https://i.imgur.com/HuxgwMX.png"
+Route="DecksList"
+Title="Home"
+
+ContentTemplate="{DataTemplate local:MainPage}"
+/>
 
         <ShellContent
         Title="News"
@@ -39,8 +41,11 @@
         ContentTemplate="{DataTemplate mvvm:News}"
         />
 
+       
+        
         <ShellContent
         Title="Decks"
+        
         Icon="https://i.imgur.com/mzYdzL2.png"
         ContentTemplate="{DataTemplate viewModel:DecksList}"
         />

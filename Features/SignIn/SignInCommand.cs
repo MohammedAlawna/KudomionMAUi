@@ -28,12 +28,15 @@ namespace Kudomion.Features.SignIn
             try
             {
                 UserCredential userCredential = await _authClient.SignInWithEmailAndPasswordAsync(
-                    _viewModel.Email,
-                    _viewModel.Password);
+                    _viewModel.Email, _viewModel.Password);
 
 
-                await Application.Current.MainPage.DisplayAlert("Success", "Successfully signed in!", "Ok");
+                await Application.Current.MainPage.Navigation.PushAsync(new LoginPage(/*currentLogin Should be passed*/ MainPage.currentLoggedInUser));
+               /* await Shell.Current.GoToAsync("//DecksList");
+                
 
+                await Application.Current.MainPage.DisplayAlert("Success", "Successfully signed in!", "Ok");*/
+               
             }
             catch (Exception)
             {
