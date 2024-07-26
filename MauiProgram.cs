@@ -5,6 +5,7 @@ using Firebase.Auth.Providers;
 using Kudomion.MVVM.Models;
 using Kudomion.Features.SignUp;
 using Kudomion.Features.SignIn;
+using Kudomion.Entities.Users;
 
 namespace Kudomion;
 
@@ -57,6 +58,7 @@ public static class MauiProgram
                 new EmailProvider()
             }
         }));
+        builder.Services.AddSingleton<CurrentUserStore>();
 
         return builder.Build();
     }

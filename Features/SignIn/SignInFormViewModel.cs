@@ -1,4 +1,5 @@
 ﻿using Firebase.Auth;
+using Kudomion.Entities.Users;
 using Kudomion.Shared.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -42,9 +43,9 @@ namespace Kudomion.Features.SignIn
         public ICommand SignInCommand { get; }
        
 
-        public SignInFormViewModel(FirebaseAuthClient authClient)
+        public SignInFormViewModel(FirebaseAuthClient authClient, CurrentUserStore currentUserStore)
         {
-            SignInCommand = new SignInCommand(this, authClient);
+            SignInCommand = new SignInCommand(this, authClient, currentUserStore);
         }
 
     }

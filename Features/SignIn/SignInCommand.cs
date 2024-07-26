@@ -1,4 +1,5 @@
 ﻿using Firebase.Auth;
+using Kudomion.Entities.Users;
 using Kudomion.Shared.Commands;
 using System;
 using System.Collections.Generic;
@@ -13,14 +14,16 @@ namespace Kudomion.Features.SignIn
     {
         private readonly SignInFormViewModel _viewModel;
         private readonly FirebaseAuthClient _authClient;
-        //private readonly CurrentUserStore -currentUserStore;
+        private readonly CurrentUserStore _currentUserStore;
 
         public SignInCommand(
            SignInFormViewModel viewModel,
-           FirebaseAuthClient authClient)
+           FirebaseAuthClient authClient,
+           CurrentUserStore currentUserStore)
         {
             _viewModel = viewModel;
             _authClient = authClient;
+            _currentUserStore = currentUserStore;
         }
 
         protected override async Task ExecuteAsync(object parameter)
@@ -30,6 +33,7 @@ namespace Kudomion.Features.SignIn
                 UserCredential userCredential = await _authClient.SignInWithEmailAndPasswordAsync(
                     _viewModel.Email, _viewModel.Password);
 
+                _currentUserStore.CurrentUser = userCredential.User;
 
                 await Application.Current.MainPage.Navigation.PushAsync(new LoginPage(/*currentLogin Should be passed*/ MainPage.currentLoggedInUser));
                /* await Shell.Current.GoToAsync("//DecksList");
