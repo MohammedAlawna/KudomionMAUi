@@ -35,7 +35,7 @@ namespace Kudomion.Features.SignIn
 
                 _currentUserStore.CurrentUser = userCredential.User;
 
-                await Application.Current.MainPage.Navigation.PushAsync(new LoginPage(/*currentLogin Should be passed*/ MainPage.currentLoggedInUser));
+                await Application.Current.MainPage.Navigation.PushAsync(new LoginPage(/*currentLogin Should be passed*/ _currentUserStore.CurrentUser.Info.DisplayName));
                /* await Shell.Current.GoToAsync("//DecksList");
                 
 

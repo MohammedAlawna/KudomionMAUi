@@ -21,13 +21,13 @@ public partial class MainPage : ContentPage
     public static bool loggedIn = false;
 
     //FirebaseAuthClient _authClient;
-    public MainPage(object bindingContext)
+    public MainPage(/*object bindingContext*/)
     {
         InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
 
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
-        BindingContext = bindingContext;
+       // BindingContext = bindingContext;
     }
 
 
@@ -45,10 +45,11 @@ public partial class MainPage : ContentPage
     }
 
 
-   /* private async void SignInClicked(object sender, EventArgs e)
+    private async void SignInClicked(object sender, EventArgs e)
     {
         try
         {
+            
             currentLoggedInUser = userNameText.Text;
             UserModel outPut = await firebase.GetUserByName(currentLoggedInUser);
             //Console.WriteLine("This OUTPUT!!" + outPut.name + " -- Lowered Case: " + outPut.name.ToLower() + ",  --" + userNameText.Text.ToLower());
@@ -91,7 +92,7 @@ public partial class MainPage : ContentPage
             return;
         }
 
-    }*/
+    }
 
 
     private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
@@ -120,7 +121,6 @@ public partial class MainPage : ContentPage
     private void DiscordAuthTapped(object sender, EventArgs e)
     {
         DisplayAlert("Discord Auth System!", "Discord Authnetication is not available in this current closed-beta release.", "OK!");
-
     }
 
 }

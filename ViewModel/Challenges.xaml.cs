@@ -248,7 +248,7 @@ namespace Kudomion
                     return;
                 }
 
-                if (p1.Text == p2.Items[p2.SelectedIndex])
+                if (p1.Text.ToLower() == p2.Items[p2.SelectedIndex].ToLower())
                 {
                     await DisplayAlert("Same User!", "You can't duel yourself! C'mon! Please Specify Another Opponent..", "OK!");
                     return;

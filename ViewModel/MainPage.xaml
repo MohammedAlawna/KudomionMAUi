@@ -17,21 +17,22 @@
     <StackLayout Padding="80" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
        
         <Image Source="AppLogo.png" WidthRequest="180" HeightRequest="180" ></Image>
-        <signInFeature:SignInFormView BindingContext="{Binding SignInFormViewModel}" />
-        <!--<Frame x:Name="usernameFrame" WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Margin="3">
+        <!--<signInFeature:SignInFormView BindingContext="{Binding SignInFormViewModel}" />-->
+
+        <Frame x:Name="usernameFrame" WidthRequest="250" BackgroundColor="#2f3030" Padding="2" BorderColor="Black" Margin="3">
             <Entry x:Name="userNameText" WidthRequest="220" HorizontalOptions="CenterAndExpand" FontSize="13" ReturnType="Next" Placeholder="Enter your username..." TextColor="White" PlaceholderColor="White"/>
         </Frame>
 
         <Frame WidthRequest="250" x:Name="passwordFrame" BackgroundColor="#2f3030" Padding="2" BorderColor="Black"  Margin="3">
             <Entry x:Name="passwordText" WidthRequest="220" Placeholder="Enter your password..." FontSize="13" IsPassword="True" HorizontalOptions="CenterAndExpand" ReturnType="Done" TextColor="White" PlaceholderColor="White"></Entry>
-        </Frame>-->
-        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        </Frame>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Button
                 VerticalOptions="Center"
                 Text="Login"
                 WidthRequest="90"
                 TextColor="White"
-                Command="{Binding SignInCommand}"
+                Clicked="SignInClicked"
                
                 Margin="5"
                 BackgroundColor="RoyalBlue" 
@@ -48,7 +49,7 @@
                 BorderWidth="1.5"
                 CornerRadius="50"></Button>
 
-        </StackLayout>-->
+        </StackLayout>
 
         <Label HorizontalOptions="Center">
             <Label.FormattedText>
