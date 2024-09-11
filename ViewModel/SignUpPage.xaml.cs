@@ -65,7 +65,10 @@ namespace Kudomion
 
         private async void SignUpButtonClicked(object sender, EventArgs e)
         {
-            try { 
+            try {
+            //Disable SignUp Button Temp to prevent multi-reg:
+            SignUpBtn.IsEnabled = false;
+
             //Variables (array, list<user>, bool)
             List<string> userStrings = new List<string>();
             List<UserModel> AllUsersDB = await firebase.GetAllUsers();

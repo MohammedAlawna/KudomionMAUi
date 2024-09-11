@@ -243,10 +243,39 @@ namespace Kudomion
 
         private async void Logout_Tapped(object sender, EventArgs e)
         {
-            MainPage.currentLoggedInUser = string.Empty;
+            try {
+                //1- Change currentLoggedIn User status to Offline:
+                var tempUsrRef = MainPage.currentUser;
+                tempUsrRef = new UserModel {
+                    name = MainPage.currentUser.name,
+                    duels = MainPage.currentUser.duels,
+                    /*NumberOfPosts = currentUser.NumberOfPosts,*/
+                    Id = MainPage.currentUser.Id,
+                    password = MainPage.currentUser.password,
+                    points = MainPage.currentUser.points,
+                    posts = MainPage.currentUser.posts,
+                    ranking = MainPage.currentUser.ranking,
+                    usertype = MainPage.currentUser.usertype,
+                    status = "OFFLINE"
+                    /*TODO: Last Seen and other info*/
+                };
+
+                
+                await firebase.UpdateUser(MainPage.currentLoggedInUser, tempUsrRef);
+                /*NOTICE:: For a more advanced system of Online/Offline System
+                please refer to the AppLifeCycle in .NET MAUI official documentation.*/
+
+                //2- Clear Login Credentiatals:
+                MainPage.currentLoggedInUser = string.Empty;
             MainPage.loggedIn = false;
             MainPage.currentUser = null;
-            //await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new MainPage());
+            }
+            catch (Exception ex)
+            {
+               await DisplayAlert("Unexpected Error", $"Error, please contact developer.{ex}", "OK!");
+            }
+            
         }
 
     }

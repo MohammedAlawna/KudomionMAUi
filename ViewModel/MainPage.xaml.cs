@@ -64,8 +64,29 @@ public partial class MainPage : ContentPage
 
             if (caseInsensitiveCheck == true && passwordText.Text == outPut.password)
             {
+                //Navigate to loggedIn (LoginPage):
                 await Navigation.PushAsync(new LoginPage(userNameText.Text));
+                
+                //Store CurrentLoggedIn User:
                 currentLoggedInUser = userNameText.Text;
+
+                //Disable SignIn temp to deny multi-clicking:
+                SignInBtn.IsEnabled = false;
+
+                //Change LoggedInUser status to Online:
+                currentUser = new UserModel() {
+                    name = currentUser.name,
+                    duels = currentUser.duels,
+                    /*NumberOfPosts = currentUser.NumberOfPosts,*/
+                    Id = currentUser.Id,
+                    password = currentUser.password,
+                    points = currentUser.points,
+                    posts = currentUser.posts,
+                    ranking = currentUser.ranking,
+                    usertype = currentUser.usertype,
+                    status = "ONLINE"
+                };
+                await firebase.UpdateUser(currentLoggedInUser, currentUser);
                 return;
 
             }

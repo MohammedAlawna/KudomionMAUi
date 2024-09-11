@@ -33,7 +33,7 @@
                 WidthRequest="90"
                 TextColor="White"
                 Clicked="SignInClicked"
-               
+                x:Name="SignInBtn"
                 Margin="5"
                 BackgroundColor="RoyalBlue" 
                 BorderWidth="1.5"

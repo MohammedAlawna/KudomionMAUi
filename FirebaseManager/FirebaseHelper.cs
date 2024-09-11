@@ -261,7 +261,7 @@ namespace Kudomion.FirebaseManager
         {
             try
             {
-                await firebaseClient.Child("Users").PostAsync(new UserModel() { name = _name, password = _password, points = 0, posts = 0, ranking = 0, usertype = "USER" });
+                await firebaseClient.Child("Users").PostAsync(new UserModel() { name = _name, password = _password, points = 0, posts = 0, ranking = 0, usertype = "USER", status = "OFFLINE" });
                 return true;
             }
             catch (Exception e)

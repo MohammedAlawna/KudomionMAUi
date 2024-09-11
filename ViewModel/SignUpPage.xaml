@@ -51,7 +51,7 @@
             FontSize="20"
             HorizontalOptions="Center"
             TextColor="White"
-            
+            x:Name="SignUpBtn"
             Clicked="SignUpButtonClicked"
             BackgroundColor="#2f3030" 
             CornerRadius="50" />

@@ -9,6 +9,7 @@ namespace Kudomion.Model
         
         public int Id { get; set; }
         public string name { get; set; }
+        public string status { get; set; }
         
         public int posts { get; set; }
 
