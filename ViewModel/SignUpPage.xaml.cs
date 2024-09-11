@@ -17,8 +17,8 @@ namespace Kudomion
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SignUpPage : ContentPage
     {
-        //FirebaseHelper firebase = new FirebaseHelper();
-        private readonly FirebaseAuthClient authClient;
+        FirebaseHelper firebase = new FirebaseHelper();
+        //private readonly FirebaseAuthClient authClient;
         public SignUpPage(/*object bindingContext*/)
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace Kudomion
         }
 
         //Firebase Auth Code-Behind Implementation (MVVM delayed):
-        //1- SignUp
+        /*1- SignUp:: Auth implementation is delayed: TODO: V1.5 release of the app.
         private async void SignUpButtonClicked(object sender, EventArgs e)
         {
             //Check If Passwords Matched
@@ -43,15 +43,15 @@ namespace Kudomion
             }
             try
             {
-                //Create User:
-                await authClient.CreateUserWithEmailAndPasswordAsync(urEmail.Text, urPass.Text);
+                //Create User: ** NOTE:: FirebaseAuth Implementation is delayed to a later period.
+                //await authClient.CreateUserWithEmailAndPasswordAsync(urEmail.Text, urPass.Text);
                 return;
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"Exception: {ex.Message}");
             }
-        }
+        }*/
 
 
 
@@ -63,7 +63,7 @@ namespace Kudomion
         //2- SignIn
 
 
-    /*     private async void SignUpButton_Clicked(object sender, EventArgs e)
+        private async void SignUpButtonClicked(object sender, EventArgs e)
         {
             //Variables (array, list<user>, bool)
             List<string> userStrings = new List<string>();
@@ -117,7 +117,7 @@ namespace Kudomion
                 RegisterNewUser();
             }
 
-        }*/
+        }
 
     /*      private async void CheckIfUserExist()
         {
@@ -149,7 +149,7 @@ namespace Kudomion
             }
         }*/
 
-    /*    private async void RegisterNewUser()
+        private async void RegisterNewUser()
         {
             //Add User To DB.
             await firebase.AddUser(userName.Text, password.Text);
@@ -159,7 +159,7 @@ namespace Kudomion
             userName.Text = string.Empty;
             password.Text = string.Empty;
             confirmPassword.Text = string.Empty;
-        }*/
+        }
 
 
     }

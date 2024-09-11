@@ -27,7 +27,7 @@ namespace Kudomion.FirebaseManager
             {
                 //Getting Users Info:
                var allUserStrings = await firebaseHelper.GetAllUserStrings();
-                
+                 
                var currentUser = await firebaseHelper.GetUserByName(MainPage.currentLoggedInUser);
                var checkBool = allUserStrings.Contains(currentUser.name);
 
