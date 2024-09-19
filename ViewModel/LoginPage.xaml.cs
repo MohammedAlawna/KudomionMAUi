@@ -256,6 +256,10 @@ namespace Kudomion
                     posts = MainPage.currentUser.posts,
                     ranking = MainPage.currentUser.ranking,
                     usertype = MainPage.currentUser.usertype,
+                    friendRequests = MainPage.currentUser.friendRequests,
+                    blockedList = MainPage.currentUser.blockedList,
+                    friendsList = MainPage.currentUser.friendsList,
+                    JoinedAt = MainPage.currentUser.JoinedAt,
                     status = "OFFLINE"
                     /*TODO: Last Seen and other info*/
                 };
