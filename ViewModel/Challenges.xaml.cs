@@ -260,6 +260,13 @@ namespace Kudomion
                     return;
                 }
 
+                //Check If P1 and P2 Dueled Today (24 hours Timer):
+                //TODO 24 hr countdown timer for 2 duelists:
+                //LimitedDuels and LimitedRooms => Models.
+                /*For Same room of p1 and p2, if less than 12 hours
+                 * since its time, then deny the duel.
+                  */
+
                 Room roomToCreate = new Room();
                 roomToCreate.p1 = p1.Text;
                 // roomToCreate.p2 = "opp";

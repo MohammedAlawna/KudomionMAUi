@@ -11,6 +11,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace Kudomion;
 public partial class MainPage : ContentPage
@@ -20,16 +21,31 @@ public partial class MainPage : ContentPage
     FirebaseHelper firebase = new FirebaseHelper();
     public static bool loggedIn = false;
 
+    //Testing Timer
+    System.Timers.Timer oneDayTimer = new System.Timers.Timer(
+                TimeSpan.FromHours(24).TotalMilliseconds);
+
+
     //FirebaseAuthClient _authClient;
     public MainPage(/*object bindingContext*/)
     {
         InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
 
+       
+        oneDayTimer.Start();
+        oneDayTimer.Elapsed += OnTimedEvent;
+        oneDayTimer.AutoReset = false;
+        oneDayTimer.Enabled = true;
+        
         // firebase.GetUserByName(Home.GetLoggedInUser().Result.name);
-       // BindingContext = bindingContext;
+        // BindingContext = bindingContext;
     }
 
+    private void OnTimedEvent(Object source, ElapsedEventArgs e)
+    {
+        Console.WriteLine("Time Elapsed: ", e.SignalTime);
+    }
 
 
 

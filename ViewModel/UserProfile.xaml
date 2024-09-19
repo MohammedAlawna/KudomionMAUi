@@ -10,7 +10,7 @@
             
             <StackLayout>
             <Image Source="https://i.imgur.com/Z6jG6BH.png" Margin="10" HeightRequest="110"/>
-            <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="Kudo Shinichi" x:Name="loggedInUsername" FontSize="20"/>
+            <Label FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White" Text="Kudo Shinichi" x:Name="UserProfileName" FontSize="20"/>
             </StackLayout>
             
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
@@ -60,7 +60,7 @@
                 <Border Margin="0" BackgroundColor="#323232" Stroke="Black" >
                     <StackLayout Margin="5">
                     <Button BackgroundColor="DarkOrange" Margin="5" TextColor="White" Text="Add as a Friend" />
-                    <Button BackgroundColor="RoyalBlue" Margin="5" Text="Invite to Duel" TextColor="White"/>
+                    <Button BackgroundColor="RoyalBlue" Margin="5" x:Name="InviteToDuelBtn" Text="Invite to Duel" Clicked="InviteToDuelClicked" TextColor="White"/>
                     <Button BackgroundColor="LimeGreen" Margin="5" Text="Send message" TextColor="White"/>
                 </StackLayout>
                 </Border>

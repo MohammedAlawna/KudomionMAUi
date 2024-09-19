@@ -11,14 +11,24 @@ namespace Kudomion.ViewModel
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserProfile : ContentPage
     {
-         
+        FirebaseHelper firebase = new FirebaseHelper();
+        //Target you'll be viewing:
+        UserModel targetUser;
+        string profiledUser;
+
+        //Your Username as viewer to this page:
+        UserModel getLoggedInUser;
+
+
         public UserProfile(string username)
         {
             InitializeComponent();
 
             //Load User Profile.
             LoadUserProfile(username);
-
+            profiledUser = username;
+            //DisplayAlert("User: ", $"You Are Viewing: {profiledUser}, Original: {username}", "OK!");
+            
             //Load Picker Items.
             LoadPickerItems();
 
@@ -27,17 +37,32 @@ namespace Kudomion.ViewModel
             posts.IsVisible = false;
             signature.IsVisible = false;
             duels.IsVisible = false;
+
+            
         }
 
+       
+
+       
         private async void LoadUserProfile(string name)
         {
-            loggedInUsername.Text = name;
-            UserModel getLoggedInUser = await FirebaseHelper.GetUsrFromName(name);
+            try
+            {
+                UserProfileName.Text = name;
+                profiledUser = name;
+                getLoggedInUser = await FirebaseHelper.GetUsrFromName(profiledUser);
+                //targetUser = await firebase.GetUserByName(name);
 
-            //Assign Profile Values. :D 
-            noDuels.Text = getLoggedInUser.duels.ToString();
-            noPoints.Text = getLoggedInUser.points.ToString();
-            noRanking.Text = getLoggedInUser.ranking.ToString();
+                //Assign Profile Values. :D 
+                noDuels.Text = getLoggedInUser.duels.ToString();
+                noPoints.Text = getLoggedInUser.points.ToString();
+                noRanking.Text = getLoggedInUser.ranking.ToString();
+
+                       }
+            catch(Exception ex)
+            {
+                await DisplayAlert("Error!" ,$"Please contact developer. {ex}", "OK!");
+            }
         } 
 
         private async void ShowUserDuels(string username)
@@ -95,7 +120,7 @@ namespace Kudomion.ViewModel
                 if(userStatPicker.SelectedIndex == 1)
                 {
                     //TODO Show user Duels.
-                    ShowUserDuels(loggedInUsername.Text);
+                    ShowUserDuels(UserProfileName.Text);
 
                     //Switch Visibility for StackLayout.
                     stats.IsVisible = false;
@@ -130,22 +155,66 @@ namespace Kudomion.ViewModel
             };
         }
 
-        private void InviteToDuelClicked(object sender, EventArgs e)
+        private async void InviteToDuelClicked(object sender, EventArgs e)
         {
             //Change BG of Button.
-          //  invDuel.BackgroundColor = Colors.White;
+            // chatReq.BackgroundColor = Colors.White;
+            //1- Send Friend Request to target user:
+            /*NOTE: Changes will be made to server side
+            So you may need to add sth to the 
+                 newsLinq Implementation*/
 
-            //Prompt Alert (Testing Purposes).
-            DisplayAlert("Warning!", $"Duels Invitation is not available in this beta release.", "OK!");
+            // Get YourUserName and TargetUserName:
+            
+            getLoggedInUser = await FirebaseHelper.GetUsrFromName(MainPage.currentLoggedInUser);
+            targetUser = await firebase.GetUserByName(profiledUser);
+            Console.WriteLine($"Your User: {getLoggedInUser.name} ," +
+                $" Target User: {targetUser.name}");
+
+            //List With New FriendRequest to TargetUser:
+           /* var newRequestList = targetUser.friendRequests;
+            newRequestList.Add(getLoggedInUser);*/
+
+            // Add YourUsrname To TargetUserName -> friendRequests:
+            UserModel usrToUdpate = new UserModel { 
+                name = targetUser.name,
+                blockedList = targetUser.blockedList,
+                friendsList = targetUser.friendsList,
+                duels = targetUser.duels,
+                JoinedAt = targetUser.JoinedAt, 
+                points = targetUser.points,
+                ranking = targetUser.ranking,
+                posts = targetUser.posts,
+                status = targetUser.status,
+                password = targetUser.password,
+                Id = targetUser.Id, 
+                usertype = targetUser.usertype,
+                friendRequests = targetUser.friendRequests.Concat(
+                    new[] { getLoggedInUser }).ToList(),
+            };
+           //TODO, add currentUser to already firends request.
+              //Update User from API:
+            await firebase.UpdateUser(targetUser.name, usrToUdpate);
+
+            //TODO Send Notification to TargetUser: (Friend Req sent):
+
+            //Change Text and Maybe:BG of the Button: (Sent..) (Disabled)
+            InviteToDuelBtn.Text = "Friend Request -> SENT!";
+            InviteToDuelBtn.IsEnabled = false;
+
+            //2- Prompt (Pop-Up) chat UI: (will be developed later on)
+            //Temp ChatUI pop-up for the duel only, if opp inactive 5 mins, disable:
+
+
+            //Prompt Alert (Testing Purposes)
+            await DisplayAlert("Warning!", "Duel/Chat Invitation is not available in thei beta release!", "OK!");
         }
 
-        private void SendChatRequest(object sender, EventArgs e)
+        private void BlockBtnClicked(object sender, EventArgs e)
         {
-            //Change BG of Button.
-           // chatReq.BackgroundColor = Colors.White;
-           
             //Prompt Alert (Testing Purposes)
-            DisplayAlert("Warning!", "Chat Invitation is not available in thei beta release!", "OK!");
+            DisplayAlert("Warning!", "You blocked this contact!", "OK!");
+
         }
     }
 }
