@@ -58,45 +58,13 @@
 
             <StackLayout Padding="10" x:Name="MenuGrid">
                 <Border HeightRequest="190" Stroke="RoyalBlue" BackgroundColor="#1c1c1c">
-                    <ScrollView HorizontalOptions="FillAndExpand" Margin="5" Orientation="Horizontal" VerticalOptions="Center">
-                        <StackLayout Orientation="Horizontal">
-                            <StackLayout Margin="5" x:Name="TournamentCard">
-                                <Border Stroke="Red" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
-                                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                                        <Image Source="https://i.imgur.com/RrXXaPy.png" HeightRequest="70"/>
-                                        <Label FontSize="11" FontAttributes="Bold" TextColor="White" Text="Tournaments" HorizontalOptions="CenterAndExpand"/>
-                                    </StackLayout>
-                                    <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="40" />
-                                    </Border.StrokeShape>
-                                </Border>
-                            </StackLayout>
+                        <StackLayout x:Name="CurrentTournament">
+                            <Label Text="YKJ Elite Tournament" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="12" x:Name="Title" />
 
-                            <StackLayout Margin="5" x:Name="RankingCard">
-                                <Border Stroke="DarkOrange" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
-                                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
-                                        <Image HeightRequest="70" Source="https://i.imgur.com/IjEApTZ.png"/>
-                                        <Label Text="League" FontSize="11" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand"/>
-                                    </StackLayout>
-                                    <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="40" />
-                                    </Border.StrokeShape>
-                                </Border>
-                            </StackLayout>
-
-                            <StackLayout Margin="5" x:Name="LeagueCard">
-                                <Border Stroke="SeaGreen" BackgroundColor="#3E3E3E" HeightRequest="130" WidthRequest="170">
-                                    <StackLayout Orientation="Vertical" VerticalOptions="Center"> 
-                                        <Image Source="https://i.imgur.com/152X4BY.png" HeightRequest="70" />
-                                        <Label FontSize="11" Text="Decks Library" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="White" />
-                                    </StackLayout>
-                                    <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="40" />
-                                    </Border.StrokeShape>
-                                </Border>
-                            </StackLayout>
-                        </StackLayout>
-                    </ScrollView>
+                            <Image WidthRequest="250" HeightRequest="140" Source="https://i.imgur.com/E8i6E1V.png"/>
+                             <Label Text="Open" HorizontalOptions="Center" FontSize="10" TextColor="White" x:Name="Status" />
+                            <Label Text="02:00:00 Remaining" HorizontalOptions="Center" TextColor="White" FontSize="10" x:Name="Countdown Timer"/>
+                        </StackLayout>    
                 </Border>
             </StackLayout>
     
