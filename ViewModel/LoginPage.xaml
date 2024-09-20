@@ -69,10 +69,10 @@
                                 <StackLayout x:Name="FirstTournament">
                                       <Border Stroke="Black" BackgroundColor="#3E3E3E" HeightRequest="220" WidthRequest="230">
                                         <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                                            <Label Text="YKJ Elite Tournament" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="12" x:Name="Title" />
-                                            <Image WidthRequest="250" HeightRequest="140" Source="https://i.imgur.com/E8i6E1V.png"/>
-                                            <Label Text="Open" HorizontalOptions="Center" FontSize="10" TextColor="White" x:Name="Status" />
-                                            <Label Text="02:00:00 Remaining" HorizontalOptions="Center" TextColor="White" FontSize="10" x:Name="Countdown Timer"/>
+                                            <Label Text="YKJ Elite Tournament" x:Name="FirstTournamentTitle" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="12"/>
+                                            <Image WidthRequest="250" HeightRequest="140" Source="https://i.imgur.com/E8i6E1V.png" x:Name="FirstTournamentImage"/>
+                                            <Label Text="Open" HorizontalOptions="Center" FontSize="10" TextColor="White" x:Name="FirstTournamentStatus"/>
+                                            <Label Text="??:??:?? Remaining" HorizontalOptions="Center" TextColor="White" FontSize="10" x:Name="FirstTournamentCountdown"/>
                                         </StackLayout>
                                     </Border>
                                 </StackLayout>
@@ -80,10 +80,10 @@
                                 <StackLayout x:Name="SecondTournament">
                                         <Border Stroke="Black" BackgroundColor="#3E3E3E" HeightRequest="220" WidthRequest="230">
                                         <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                                            <Label Text="YKJ Neutral Tournament" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="12" x:Name="Title2" />
-                                            <Image WidthRequest="250" HeightRequest="140" Source="https://i.imgur.com/GjgxsR9.jpg"/>
-                                            <Label Text="Open" HorizontalOptions="Center" FontSize="10" TextColor="White" x:Name="Status2" />
-                                            <Label Text="02:00:00 Remaining" HorizontalOptions="Center" TextColor="White" FontSize="10" x:Name="Countdown Timer2"/>
+                                            <Label Text="YKJ Neutral Tournament" TextColor="White" x:Name="SecondTournamentTitle" HorizontalOptions="CenterAndExpand" FontSize="12"/>
+                                            <Image WidthRequest="250" HeightRequest="140" x:Name="SecondTournamentImage" Source="https://i.imgur.com/GjgxsR9.jpg"/>
+                                            <Label Text="Open" HorizontalOptions="Center" x:Name="SecondTournamentStatus" FontSize="10" TextColor="White"/>
+                                            <Label Text="??:??:?? Remaining" x:Name="SecondTournamentCountdown" HorizontalOptions="Center" TextColor="White" FontSize="10"/>
                                         </StackLayout>
                                     </Border>
                                 </StackLayout>
@@ -91,23 +91,17 @@
                                 <StackLayout x:Name="ThirdTournament">
                                     <Border Stroke="Black" BackgroundColor="#3E3E3E" HeightRequest="220" WidthRequest="230">
                                         <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                                            <Label Text="YKJ Duelist of The Month" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="12" x:Name="Title3" />
-                                            <Image WidthRequest="250" HeightRequest="140" Source="https://i.imgur.com/BvY1VfZ.jpg"/>
-                                            <Label Text="Open" HorizontalOptions="Center" FontSize="10" TextColor="White" x:Name="Status3" />
-                                            <Label Text="02:00:00 Remaining" HorizontalOptions="Center" TextColor="White" FontSize="10" x:Name="Countdown Timer3"/>
+                                            <Label Text="YKJ Duelist of The Month" TextColor="White" x:Name="ThirdTournamentTitle" HorizontalOptions="CenterAndExpand" FontSize="12"/>
+                                            <Image WidthRequest="250" HeightRequest="140" x:Name="ThirdTournamentImage" Source="https://i.imgur.com/BvY1VfZ.jpg"/>
+                                            <Label Text="Open" HorizontalOptions="Center" x:Name="ThirdTournamentStatus" FontSize="10" TextColor="White"/>
+                                            <Label Text="??:??:?? Remaining" HorizontalOptions="Center" x:Name="ThirdTournamentCountdown" TextColor="White" FontSize="10"/>
                                         </StackLayout>
                                     </Border>
                                 </StackLayout>
 
                             </StackLayout>
                         </ScrollView>
-                       <!--<StackLayout x:Name="CurrentTournament">
-                            <Label Text="YKJ Elite Tournament" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="12" x:Name="Title" />
-
-                            <Image WidthRequest="250" HeightRequest="140" Source="https://i.imgur.com/E8i6E1V.png"/>
-                             <Label Text="Open" HorizontalOptions="Center" FontSize="10" TextColor="White" x:Name="Status" />
-                            <Label Text="02:00:00 Remaining" HorizontalOptions="Center" TextColor="White" FontSize="10" x:Name="Countdown Timer"/>
-                        </StackLayout>-->    
+                        
                 </Border>
             </StackLayout>
     

@@ -19,6 +19,7 @@ using Kudomion.MVVM.Models;
 using Kudomion.MVVM.ViewModels;
 
 
+
 /*using Android.Text;
 using Microsoft.Maui.Controls.Compatibility.Platform.Android;*/
 
@@ -30,6 +31,7 @@ namespace Kudomion
         //Carousel List<View> (For Binding).
         List<EventsCarouselModel> eventsList { get; set; } = new List<EventsCarouselModel>();
 
+        List<Tournament> AllTournamentsInDB; 
         //Firebase Plugin Parameters..
        // private string _deviceToken;
         FirebaseHelper firebase = new FirebaseHelper();
@@ -45,7 +47,11 @@ namespace Kudomion
 
             //Load Users to SearchBar.
             LoadUsersIntoSearchBar();
+
+            //Load All and Current Tournamewnts to DB: 
             
+            LoadCurrentTournaments();
+
             //Call: Load Carousel Items.
             LoadCarouselItems();
 
@@ -66,6 +72,8 @@ namespace Kudomion
             //Process Refresh:
             RefreshIndicator.IsRefreshing = true;
 
+            
+
             //Apply Rankings Updates;
             ApplyDuelistsRanking();
 
@@ -85,6 +93,49 @@ namespace Kudomion
             RefreshIndicator.IsRefreshing = false;
         }
 
+       
+
+        //Tourny Status to String
+        async Task<string> IsTournyActive(int tournyIndex)
+        {
+            AllTournamentsInDB = await firebase.GetAllTournaments();
+            if (AllTournamentsInDB[tournyIndex].signUpActive == true)
+            {
+                return "OPEN!";
+            }
+            if (AllTournamentsInDB[tournyIndex].signUpActive == false)
+            {
+                return "CLOSED!";
+            }
+            return "Unknown";
+        }
+
+        private async void LoadCurrentTournaments()
+        {
+            try
+            {
+                var AllTournamentsInDB = await firebase.GetAllTournaments();
+                 
+                //Loading Tournament 1:
+                FirstTournamentTitle.Text = AllTournamentsInDB[0].title;
+                FirstTournamentImage.Source = AllTournamentsInDB[0].tournyBannerSrc;
+                FirstTournamentStatus.Text = await IsTournyActive(0);
+
+                //Loading Tournament 2:
+                SecondTournamentTitle.Text = AllTournamentsInDB[1].title;
+                SecondTournamentImage.Source = AllTournamentsInDB[1].tournyBannerSrc;
+                SecondTournamentStatus.Text = await IsTournyActive(1);
+
+                //Loading Tournament 3:
+                ThirdTournamentTitle.Text = AllTournamentsInDB[2].title;
+                ThirdTournamentImage.Source = AllTournamentsInDB[2].tournyBannerSrc;
+                ThirdTournamentStatus.Text = await IsTournyActive(2);
+            }
+            catch(Exception ex)
+            {
+                await DisplayAlert("Unexpected Error!", $"An error occured! Please Contact The Developer. {ex}", "OK!");
+            }
+        }
 
         private async void CreateTrialNewsItem()
         {
