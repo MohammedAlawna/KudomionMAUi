@@ -22,6 +22,7 @@ namespace Kudomion.ViewModel.MVVM.Views
 
         //Data to load:
         UserModel currentUser;
+
         public News()
         {
             InitializeComponent();
@@ -56,6 +57,26 @@ namespace Kudomion.ViewModel.MVVM.Views
                 Debug.WriteLine("Error: " + ex);
             }
         }
+
+        //Change BG color of Button If User Reacted On-Loaded:
+     /*   bool ChangeBGColor(UserModel loggedInUser)
+        {
+            try
+            {
+                /*  
+                    ==ALGORITHM STARTS== 
+                 1- Instance for loggedIn User.
+                 2- 
+                    ==/ALGORITHM ENDS==
+                
+            }
+            catch(Exception ex)
+            {
+                DisplayAlert("Error!", $"There was an error. Please Contact Developer. {ex}", "OK!");
+                return false;
+            }
+            //return false;
+        }*/
 
         //Load Data:
         private async void LoadRequiredInfo()
@@ -95,11 +116,14 @@ namespace Kudomion.ViewModel.MVVM.Views
                    var getStackChild = (StackLayout)getBorderParent.Children[1];
                    var getDesiredText = (Label)getStackChild.Children[0];
 
+            //Quick Changing of BG Color:
+            getThisBorder.BackgroundColor = Colors.RoyalBlue;
+
             //Get Desired Post from DB (Query):
             var queryPost = await newsLinq.GetNewsItemByName(getDesiredText.Text);
 
             //Access BG Button:
-            Debug.WriteLine($"Border BG IS: {getThisBorder.BackgroundColor.ToHex()}");
+            //Debug.WriteLine($"Border BG IS: {getThisBorder.BackgroundColor.ToHex()}");
             
             //Check if User Already Reacted (Return and Prompt: You already reacted with this post)
             //Process Reaction:
@@ -111,13 +135,11 @@ namespace Kudomion.ViewModel.MVVM.Views
                 //FromHex is obsolete: no longer recommended to be used. Its deprecated.
                 getThisBorder.BackgroundColor = Color.FromHex("#1c1c1c");
 
-                //2- Visaul redcution of Reactions number:
+                //2- Visual reduction of Reactions number:
 
 
                 //3- Un-React, new c
                 UnreactToNewsItem(queryPost, "LOVE", getDesiredText.Text);
-
-                
             }
             if(DidUserReact == false)
             {
@@ -148,7 +170,8 @@ namespace Kudomion.ViewModel.MVVM.Views
             try
             {
                 //Get Current User Reaction:
-                var getUserReaction = newsItem.ListOfReactions.Find(x => x.typeOfReaction == _typeOfReaction && x.userThatReacted.name == currentUser.name);
+                var getUserReaction = newsItem.ListOfReactions.Find(x => x.typeOfReaction == 
+                _typeOfReaction && x.userThatReacted.name == currentUser.name);
 
                 if (_typeOfReaction == "LOVE")
                 {
@@ -237,7 +260,7 @@ namespace Kudomion.ViewModel.MVVM.Views
                 bool DidUserReactToThis = listOfSpecificReactions.Contains(currentUsername);
 
                 //Debugging Line:
-                Debug.WriteLine($"Checking result: {DidUserReactToThis}");
+                //Debug.WriteLine($"Checking result: {DidUserReactToThis}");
 
                 return DidUserReactToThis;
 
@@ -272,11 +295,16 @@ namespace Kudomion.ViewModel.MVVM.Views
             var getStackChild = (StackLayout)getBorderParent.Children[1];
             var getDesiredText = (Label)getStackChild.Children[0];
 
+            //Temp Change BG Fast: 
+            getThisBorder.BackgroundColor = Colors.RoyalBlue;
+
+            //TODO Change number of reaction fast hee: (MVVM should be there laster for binding)
+
             //Get Desired Post from DB (Query):
             var queryPost = await newsLinq.GetNewsItemByName(getDesiredText.Text);
 
             //Access BG Button:
-            Debug.WriteLine($"Border BG IS: {getThisBorder.BackgroundColor.ToHex()}");
+            //Debug.WriteLine($"Border BG IS: {getThisBorder.BackgroundColor.ToHex()}");
 
             //Check if User Already Reacted (Return and Prompt: You already reacted with this post)
             //Process Reaction:
