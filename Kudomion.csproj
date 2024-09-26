@@ -212,6 +212,6 @@
 	  <Folder Include="Shared\Link\" />
 	</ItemGroup>
 
-	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionKudomionHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionKudomionHideInfoBar="True" XamarinHotReloadGenericExceptionInfoBarKudomionHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 
 </Project>

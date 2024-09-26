@@ -6,6 +6,7 @@ using Newtonsoft.Json.Bson;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -116,12 +117,29 @@ namespace Kudomion.ViewModel.MVVM.Views
                    var getStackChild = (StackLayout)getBorderParent.Children[1];
                    var getDesiredText = (Label)getStackChild.Children[0];
 
-            //Quick Changing of BG Color:
+                   var getNewChildren = (StackLayout) getBorderParent.Children[0];
+                   var getReactFrameChild = (StackLayout)getNewChildren.Children[1];
+                   var getBorderChild =(Border) getReactFrameChild.Children[0];
+                   var getReactStack = (StackLayout) getBorderChild.Content;
+                   var getReactLabel = (Label) getReactStack.Children[1];
+                   
+                   //Debug.WriteLine("NO REACTIONS: " + getReactLabel.Text);
+
+            //Quick Changing of BG Color and Number of Reactions:
             getThisBorder.BackgroundColor = Colors.RoyalBlue;
+            int NumberOfCurrentReactions = Int32.Parse(getReactLabel.Text);
+            
+            //Debug.WriteLine(IncrementedNumberOfReactions.ToString());
+            
+          
+
+
+            //getReactLabel.Text = IncrementedNumberOfReactions.ToString();
+
 
             //Get Desired Post from DB (Query):
             var queryPost = await newsLinq.GetNewsItemByName(getDesiredText.Text);
-
+            
             //Access BG Button:
             //Debug.WriteLine($"Border BG IS: {getThisBorder.BackgroundColor.ToHex()}");
             
@@ -129,14 +147,15 @@ namespace Kudomion.ViewModel.MVVM.Views
             //Process Reaction:
 
             bool DidUserReact = CheckIfUserReacted(MainPage.currentLoggedInUser, "LOVE", queryPost);
-            if (DidUserReact == true)
+            if (DidUserReact == true) 
             {
                 //1- Change BG color to 1c1c1c
                 //FromHex is obsolete: no longer recommended to be used. Its deprecated.
                 getThisBorder.BackgroundColor = Color.FromHex("#1c1c1c");
 
                 //2- Visual reduction of Reactions number:
-
+                int DecrementedNumberOfReactions = NumberOfCurrentReactions - 1;
+                getReactLabel.Text = DecrementedNumberOfReactions.ToString();
 
                 //3- Un-React, new c
                 UnreactToNewsItem(queryPost, "LOVE", getDesiredText.Text);
@@ -147,7 +166,9 @@ namespace Kudomion.ViewModel.MVVM.Views
                 //2- Change Button's BG to RoyalBlue Temp:
                 getThisBorder.BackgroundColor = Colors.RoyalBlue;
 
-                //2- Visaul redcution of Reactions number:
+                //2- Visaul increase of Reactions number:
+                int IncrementedNumberOfReactions = NumberOfCurrentReactions + 1;
+                getReactLabel.Text = IncrementedNumberOfReactions.ToString();
 
 
                 //3- Call React Method:

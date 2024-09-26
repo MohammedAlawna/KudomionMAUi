@@ -26,19 +26,19 @@
                         <StackLayout Padding="7" Margin="3" Orientation="Vertical" VerticalOptions="FillAndExpand">
                             <Border BackgroundColor="#363636" HeightRequest="450" StrokeShape="RoundRectangle 0, 0, 0, 50" Stroke="Black" StrokeThickness="2">
 
-                                <StackLayout Orientation="Vertical">
+                                <StackLayout x:Name="GetBorderParentRef" Orientation="Vertical">
                                 <StackLayout Spacing="88" VerticalOptions="Start" Orientation="Horizontal">
                                     
                                     <StackLayout Orientation="Horizontal">
                                     <Image Margin="5, 7, 0, 0" Source="https://i.imgur.com/z6HDkT2.png" HeightRequest="20" VerticalOptions="Start" HorizontalOptions="Start" />
                                     <Label Margin="5, 7, 0, 0" Text="Kudomion" HorizontalOptions="Start" VerticalOptions="Start" TextColor="White" />
                                     </StackLayout>
-                                    
-                                    <StackLayout x:Name="LoveReactionContainer" Spacing="5" Margin="0, 3, 0, 0" Orientation="Horizontal">
+                                           
+                                            <StackLayout x:Name="LoveReactionContainer" Spacing="5" Margin="0, 3, 0, 0" Orientation="Horizontal">
                                         <Border BackgroundColor="#1c1c1c" Stroke="Transparent" StrokeShape="RoundRectangle 10, 10, 10, 10" WidthRequest="65" HeightRequest="40">
                                         <StackLayout Orientation="Horizontal" Spacing="3">
-                                          <Image Margin="0, 0, 0, 0" Source="https://i.imgur.com/kxrhydb.png" HeightRequest="30" WidthRequest="30" />
-                                                <Label Text="{Binding NoLoveReactions}" HorizontalOptions="Start" HorizontalTextAlignment="Start"  TextColor="White" VerticalOptions="Center"/>
+                                        <Image Margin="0, 0, 0, 0" Source="https://i.imgur.com/kxrhydb.png" HeightRequest="30" WidthRequest="30" />
+                                        <Label Text="{Binding NoLoveReactions}" HorizontalOptions="Start" x:Name="NLoveReactions" HorizontalTextAlignment="Start"  TextColor="White" VerticalOptions="Center"/>
                                         </StackLayout>
                                                 <Border.GestureRecognizers>
                                                     <TapGestureRecognizer Tapped="LoveReactionTapped"/>
