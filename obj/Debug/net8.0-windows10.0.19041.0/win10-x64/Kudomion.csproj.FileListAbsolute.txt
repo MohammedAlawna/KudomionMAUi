@@ -10,3 +10,15 @@ D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net8.0-windows10.0.
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
 D:\OGRE Tech CO\KudomionUpgraded\Kudomion\Kudomion\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Kudomion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Kudomion.csproj.AssemblyReference.cache
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Kudomion.GeneratedMSBuildEditorConfig.editorconfig
