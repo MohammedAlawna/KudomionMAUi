@@ -15,10 +15,6 @@
       "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:mvvm\\viewmodels\\newsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\viewmodel\\newsfeed.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:viewmodel\\newsfeed.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\viewmodel\\newsfeed.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:viewmodel\\newsfeed.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -71,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "NewsFeed.xaml",
               "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\NewsFeed.xaml",
               "RelativeDocumentMoniker": "ViewModel\\NewsFeed.xaml",
@@ -80,18 +76,6 @@
               "ViewState": "AQIAAAwAAAAAAAAAAAAhwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-21T11:27:11.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NewsFeed.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\NewsFeed.xaml.cs",
-              "RelativeDocumentMoniker": "ViewModel\\NewsFeed.xaml.cs",
-              "ToolTip": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\NewsFeed.xaml.cs",
-              "RelativeToolTip": "ViewModel\\NewsFeed.xaml.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABIAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T11:27:10.141Z"
             }
           ]
         }

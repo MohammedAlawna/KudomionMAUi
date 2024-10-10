@@ -4,6 +4,7 @@ obj\Release\net8.0-android\android-arm\aot\CommunityToolkit.Maui.dll.so
 obj\Release\net8.0-android\android-arm\aot\CommunityToolkit.Maui.Core.dll.so
 obj\Release\net8.0-android\android-arm\aot\CommunityToolkit.Mvvm.dll.so
 obj\Release\net8.0-android\android-arm\aot\FirebaseAdmin.dll.so
+obj\Release\net8.0-android\android-arm\aot\Firebase.Auth.dll.so
 obj\Release\net8.0-android\android-arm\aot\Firebase.dll.so
 obj\Release\net8.0-android\android-arm\aot\Google.Api.Gax.dll.so
 obj\Release\net8.0-android\android-arm\aot\Google.Api.Gax.Rest.dll.so
@@ -109,6 +110,7 @@ obj\Release\net8.0-android\android-arm\aot\System.Reflection.Emit.ILGeneration.d
 obj\Release\net8.0-android\android-arm\aot\System.Reflection.Emit.Lightweight.dll.so
 obj\Release\net8.0-android\android-arm\aot\System.Reflection.Primitives.dll.so
 obj\Release\net8.0-android\android-arm\aot\System.Runtime.InteropServices.dll.so
+obj\Release\net8.0-android\android-arm\aot\System.Runtime.Loader.dll.so
 obj\Release\net8.0-android\android-arm\aot\System.Runtime.Numerics.dll.so
 obj\Release\net8.0-android\android-arm\aot\System.Runtime.Serialization.Formatters.dll.so
 obj\Release\net8.0-android\android-arm\aot\System.Runtime.Serialization.Primitives.dll.so

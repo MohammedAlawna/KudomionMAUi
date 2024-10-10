@@ -6,19 +6,21 @@
     <members>
         <member name="T:Kudomion.MVVM.ViewModels.NewsViewModel">
             <inheritdoc/>
-            <inheritdoc/>
+        </member>
+        <member name="P:Kudomion.MVVM.ViewModels.NewsViewModel.NewsList">
+            <inheritdoc cref="F:Kudomion.MVVM.ViewModels.NewsViewModel.newsList"/>
+        </member>
+        <member name="P:Kudomion.MVVM.ViewModels.NewsViewModel.LoveReactionsCount">
+            <inheritdoc cref="F:Kudomion.MVVM.ViewModels.NewsViewModel.loveReactionsCount"/>
+        </member>
+        <member name="P:Kudomion.MVVM.ViewModels.NewsViewModel.LaughReactionsCount">
+            <inheritdoc cref="F:Kudomion.MVVM.ViewModels.NewsViewModel.laughReactionsCount"/>
         </member>
         <member name="P:Kudomion.MVVM.ViewModels.NewsViewModel.LoveReaction">
             <inheritdoc cref="F:Kudomion.MVVM.ViewModels.NewsViewModel.loveReaction"/>
         </member>
         <member name="P:Kudomion.MVVM.ViewModels.NewsViewModel.LaughReaction">
             <inheritdoc cref="F:Kudomion.MVVM.ViewModels.NewsViewModel.laughReaction"/>
-        </member>
-        <member name="F:Kudomion.MVVM.ViewModels.NewsViewModel.reactCommand">
-            <summary>The backing field for <see cref="P:Kudomion.MVVM.ViewModels.NewsViewModel.ReactCommand"/>.</summary>
-        </member>
-        <member name="P:Kudomion.MVVM.ViewModels.NewsViewModel.ReactCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Kudomion.MVVM.ViewModels.NewsViewModel.React(System.String)"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
@@ -146,6 +148,15 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewsList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewsList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.LoveReactionsCount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "LoveReactionsCount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.LaughReactionsCount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "LaughReactionsCount" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.LoveReaction">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "LoveReaction" generated properties.</summary>
         </member>
@@ -157,6 +168,15 @@
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewsList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewsList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.LoveReactionsCount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "LoveReactionsCount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.LaughReactionsCount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "LaughReactionsCount" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.LoveReaction">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "LoveReaction" generated properties.</summary>
