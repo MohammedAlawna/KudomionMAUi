@@ -43,6 +43,7 @@
             WidthRequest="110"
                 VerticalOptions="Center"
                 Text="Register"
+                IsEnabled="False"
                 TextColor="White"
                 Clicked="TapGestureRecognizer_Tapped"
                 BackgroundColor="#212121" 

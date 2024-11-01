@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kudomion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b8f39f0f007a8a86b05a8cd67394c8b4c82db006")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cd991fc389b90b31d64aa748658576100001d9a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kudomion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kudomion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
