@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\viewmodel\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:viewmodel\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\viewmodel\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:viewmodel\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\mvvm\\views\\news.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:mvvm\\views\\news.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,31 +39,55 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "News.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\MVVM\\Views\\News.xaml.cs",
-              "RelativeDocumentMoniker": "MVVM\\Views\\News.xaml.cs",
-              "ToolTip": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\MVVM\\Views\\News.xaml.cs",
-              "RelativeToolTip": "MVVM\\Views\\News.xaml.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAgwJoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T11:28:46.346Z",
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\MainPage.xaml",
+              "RelativeDocumentMoniker": "ViewModel\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\MainPage.xaml",
+              "RelativeToolTip": "ViewModel\\MainPage.xaml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-01T23:17:00.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "ViewModel\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\LoginPage.xaml",
+              "RelativeToolTip": "ViewModel\\LoginPage.xaml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-01T23:16:56.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "News.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\MVVM\\Views\\News.xaml.cs",
+              "RelativeDocumentMoniker": "MVVM\\Views\\News.xaml.cs",
+              "ToolTip": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\MVVM\\Views\\News.xaml.cs",
+              "RelativeToolTip": "MVVM\\Views\\News.xaml.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAgwJkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T11:28:46.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "News.xaml",
               "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\MVVM\\Views\\News.xaml",
               "RelativeDocumentMoniker": "MVVM\\Views\\News.xaml",
               "ToolTip": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\MVVM\\Views\\News.xaml",
               "RelativeToolTip": "MVVM\\Views\\News.xaml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACoAAABGAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAIBJwCoAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-21T11:28:43.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NewsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\MVVM\\ViewModels\\NewsViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\ViewModels\\NewsViewModel.cs",
@@ -67,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "NewsFeed.xaml",
               "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\NewsFeed.xaml",
               "RelativeDocumentMoniker": "ViewModel\\NewsFeed.xaml",
