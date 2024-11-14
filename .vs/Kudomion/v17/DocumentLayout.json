@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\viewmodel\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:viewmodel\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\viewmodel\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:viewmodel\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\viewmodel\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|solutionrelative:viewmodel\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3774979D-DDB2-436A-ACF1-0A58AD085221}|Kudomion.csproj|c:\\users\\kudo\\documents\\github\\kudomionmaui\\mvvm\\views\\news.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,32 +34,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\MainPage.xaml",
               "RelativeDocumentMoniker": "ViewModel\\MainPage.xaml",
               "ToolTip": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\MainPage.xaml",
               "RelativeToolTip": "ViewModel\\MainPage.xaml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAACgAAAAAAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAA8AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-01T23:17:00.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T23:17:00.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\LoginPage.xaml",
               "RelativeDocumentMoniker": "ViewModel\\LoginPage.xaml",
               "ToolTip": "C:\\Users\\Kudo\\Documents\\GitHub\\KudomionMAUi\\ViewModel\\LoginPage.xaml",
               "RelativeToolTip": "ViewModel\\LoginPage.xaml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACYAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-01T23:16:56.719Z"
+              "WhenOpened": "2024-11-01T23:16:56.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
