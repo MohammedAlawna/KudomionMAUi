@@ -61,6 +61,30 @@
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ranking.scale-100.png">
+      <PackagePath>ranking.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlebtn.scale-100.png">
+      <PackagePath>btlebtn.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\prf.scale-100.png">
+      <PackagePath>prf.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\btle.scale-100.png">
+      <PackagePath>btle.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\splsh.scale-100.jpg">
+      <PackagePath>splsh.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\emj.scale-100.png">
+      <PackagePath>emj.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\prfle.scale-100.png">
+      <PackagePath>prfle.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dscrd.scale-100.png">
+      <PackagePath>dscrd.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
@@ -202,158 +226,23 @@
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ytb.scale-100.png">
       <PackagePath>ytb.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjptm.scale-100.png">
+      <PackagePath>ykjptm.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjoma.scale-100.png">
+      <PackagePath>ykjoma.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjblog.scale-100.png">
+      <PackagePath>ykjblog.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ygb.scale-100.jpg">
+      <PackagePath>ygb.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\yg.scale-100.png">
       <PackagePath>yg.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\splsh.scale-100.jpg">
-      <PackagePath>splsh.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\prf.scale-100.png">
-      <PackagePath>prf.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dscrd.scale-100.png">
-      <PackagePath>dscrd.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\btle.scale-100.png">
-      <PackagePath>btle.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-400.png">
-      <PackagePath>bluestrLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-200.png">
-      <PackagePath>bluestrLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-150.png">
-      <PackagePath>bluestrLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-125.png">
-      <PackagePath>bluestrLargeTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-100.png">
-      <PackagePath>bluestrLargeTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-400.png">
-      <PackagePath>bluestrWideTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-200.png">
-      <PackagePath>bluestrWideTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-150.png">
-      <PackagePath>bluestrWideTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-125.png">
-      <PackagePath>bluestrWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-100.png">
-      <PackagePath>bluestrWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-400.png">
-      <PackagePath>bluestrMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-200.png">
-      <PackagePath>bluestrMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-150.png">
-      <PackagePath>bluestrMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-125.png">
-      <PackagePath>bluestrMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-100.png">
-      <PackagePath>bluestrMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-400.png">
-      <PackagePath>bluestrSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-200.png">
-      <PackagePath>bluestrSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-150.png">
-      <PackagePath>bluestrSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-125.png">
-      <PackagePath>bluestrSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-100.png">
-      <PackagePath>bluestrSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-400.png">
-      <PackagePath>bluestrStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-200.png">
-      <PackagePath>bluestrStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-150.png">
-      <PackagePath>bluestrStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-125.png">
-      <PackagePath>bluestrStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-100.png">
-      <PackagePath>bluestrStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>bluestrLogo.altform-unplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>bluestrLogo.altform-unplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>bluestrLogo.altform-unplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>bluestrLogo.altform-unplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>bluestrLogo.altform-unplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-256.png">
-      <PackagePath>bluestrLogo.targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-48.png">
-      <PackagePath>bluestrLogo.targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-32.png">
-      <PackagePath>bluestrLogo.targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-24.png">
-      <PackagePath>bluestrLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-16.png">
-      <PackagePath>bluestrLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-400.png">
-      <PackagePath>bluestrLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-200.png">
-      <PackagePath>bluestrLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-150.png">
-      <PackagePath>bluestrLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-125.png">
-      <PackagePath>bluestrLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-100.png">
-      <PackagePath>bluestrLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestr.ico">
-      <PackagePath>bluestr.ico</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fbk.scale-100.png">
+      <PackagePath>fbk.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notifLargeTile.scale-400.png">
       <PackagePath>notifLargeTile.scale-400.png</PackagePath>
@@ -493,20 +382,146 @@
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notif.ico">
       <PackagePath>notif.ico</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjblog.scale-100.png">
-      <PackagePath>ykjblog.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-400.png">
+      <PackagePath>bluestrLargeTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ygb.scale-100.jpg">
-      <PackagePath>ygb.scale-100.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-200.png">
+      <PackagePath>bluestrLargeTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\prfle.scale-100.png">
-      <PackagePath>prfle.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-150.png">
+      <PackagePath>bluestrLargeTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\emj.scale-100.png">
-      <PackagePath>emj.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-125.png">
+      <PackagePath>bluestrLargeTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\btlebtn.scale-100.png">
-      <PackagePath>btlebtn.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLargeTile.scale-100.png">
+      <PackagePath>bluestrLargeTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-400.png">
+      <PackagePath>bluestrWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-200.png">
+      <PackagePath>bluestrWideTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-150.png">
+      <PackagePath>bluestrWideTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-125.png">
+      <PackagePath>bluestrWideTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrWideTile.scale-100.png">
+      <PackagePath>bluestrWideTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-400.png">
+      <PackagePath>bluestrMediumTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-200.png">
+      <PackagePath>bluestrMediumTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-150.png">
+      <PackagePath>bluestrMediumTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-125.png">
+      <PackagePath>bluestrMediumTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrMediumTile.scale-100.png">
+      <PackagePath>bluestrMediumTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-400.png">
+      <PackagePath>bluestrSmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-200.png">
+      <PackagePath>bluestrSmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-150.png">
+      <PackagePath>bluestrSmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-125.png">
+      <PackagePath>bluestrSmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrSmallTile.scale-100.png">
+      <PackagePath>bluestrSmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-400.png">
+      <PackagePath>bluestrStoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-200.png">
+      <PackagePath>bluestrStoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-150.png">
+      <PackagePath>bluestrStoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-125.png">
+      <PackagePath>bluestrStoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrStoreLogo.scale-100.png">
+      <PackagePath>bluestrStoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>bluestrLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>bluestrLogo.altform-unplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>bluestrLogo.altform-unplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>bluestrLogo.altform-unplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>bluestrLogo.altform-unplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>bluestrLogo.altform-unplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-256.png">
+      <PackagePath>bluestrLogo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-48.png">
+      <PackagePath>bluestrLogo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-32.png">
+      <PackagePath>bluestrLogo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-24.png">
+      <PackagePath>bluestrLogo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.targetsize-16.png">
+      <PackagePath>bluestrLogo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-400.png">
+      <PackagePath>bluestrLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-200.png">
+      <PackagePath>bluestrLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-150.png">
+      <PackagePath>bluestrLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-125.png">
+      <PackagePath>bluestrLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestrLogo.scale-100.png">
+      <PackagePath>bluestrLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bluestr.ico">
+      <PackagePath>bluestr.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chtbtn.scale-100.png">
+      <PackagePath>chtbtn.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_botLargeTile.scale-400.png">
       <PackagePath>dotnet_botLargeTile.scale-400.png</PackagePath>
@@ -783,21 +798,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconfg.ico">
       <PackagePath>appiconfg.ico</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjptm.scale-100.png">
-      <PackagePath>ykjptm.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ykjoma.scale-100.png">
-      <PackagePath>ykjoma.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ranking.scale-100.png">
-      <PackagePath>ranking.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fbk.scale-100.png">
-      <PackagePath>fbk.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chtbtn.scale-100.png">
-      <PackagePath>chtbtn.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kudo\Documents\GitHub\KudomionMAUi\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Kudomion.deps.json">
       <PackagePath>Kudomion.deps.json</PackagePath>

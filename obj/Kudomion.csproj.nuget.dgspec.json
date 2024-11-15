@@ -108,13 +108,17 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Plugin.Firebase": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Plugin.Firebase.CloudMessaging": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "PropertyChanged.Fody": {
               "target": "Package",
               "version": "[4.1.0, )"
-            },
-            "Xamarin.Firebase.Messaging": {
-              "target": "Package",
-              "version": "[123.1.1.1, )"
             },
             "Xamarin.Google.Dagger": {
               "target": "Package",
@@ -122,7 +126,7 @@
             },
             "Xamarin.GooglePlayServices.Base": {
               "target": "Package",
-              "version": "[118.1.0.1, )"
+              "version": "[118.5.0.3, )"
             }
           },
           "imports": [
@@ -190,6 +194,14 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Plugin.Firebase": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Plugin.Firebase.CloudMessaging": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "PropertyChanged.Fody": {
               "target": "Package",
@@ -262,6 +274,14 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Plugin.Firebase": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Plugin.Firebase.CloudMessaging": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "PropertyChanged.Fody": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -327,6 +347,14 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Plugin.Firebase": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Plugin.Firebase.CloudMessaging": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "PropertyChanged.Fody": {
               "target": "Package",

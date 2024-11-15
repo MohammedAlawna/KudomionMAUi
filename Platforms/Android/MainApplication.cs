@@ -1,7 +1,7 @@
 ﻿using Android.App;
+using Android.OS;
 using Android.Runtime;
 using Microsoft.Maui.Controls.Compatibility.Platform.Android;
-
 namespace Kudomion;
 
 [Application]
@@ -12,7 +12,7 @@ public class MainApplication : MauiApplication
 	{
 	}
 
-	protected override MauiApp CreateMauiApp()
+    protected override MauiApp CreateMauiApp()
 	{
         // Remove Entry control underline
         Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping("NoUnderline", (h, v) =>

@@ -2,12 +2,16 @@
 using CommunityToolkit.Maui;
 using Firebase.Auth;
 using Firebase.Auth.Providers;
+//using Plugin.Firebase.Core.Platforms.Android;
 using Kudomion.MVVM.Models;
 using Kudomion.Features.SignUp;
 using Kudomion.Features.SignIn;
 using Kudomion.Entities.Users;
+using Microsoft.Maui.LifecycleEvents;
+
 
 namespace Kudomion;
+
 
 public static class MauiProgram
 {
@@ -33,6 +37,10 @@ public static class MauiProgram
             handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
 #endif
         });
+
+        //To be added later below the android if case:
+        //CrossFirebase.Initialize(activity, CreateCrossFirebaseSettings())));
+        //CrossFirebaseCrashlytics.Current.SetCrashlyticsCollectionEnabled(true);
 
         builder.Services.AddTransient<SignUpFormViewModel>();
         builder.Services.AddTransient<SignUpViewModel>();
@@ -62,4 +70,11 @@ public static class MauiProgram
 
         return builder.Build();
     }
+
+  
+   /* private static CrossFirebaseSettings CreateCrossFirebasSettings()
+    {
+        return new CrossFirebaseSettings(isAuthEnabled: true,
+   isCloudMessagingEnabled: true, isAnalyticsEnabled: true);
+    }*/
 }

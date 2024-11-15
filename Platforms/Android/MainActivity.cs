@@ -12,9 +12,10 @@ public class MainActivity : MauiAppCompatActivity
     protected override void OnCreate(Bundle savedInstanceState)
     {
         base.OnCreate(savedInstanceState);
-        CreateNotificationChannel();
+
+        //CreateNotificationChannel();
     }
-   
+
     private void CreateNotificationChannel()
     {
         //Below Call is reachable only for Android 21.0
